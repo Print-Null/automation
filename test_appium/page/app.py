@@ -1,6 +1,10 @@
+import datetime
 from time import sleep
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
+from selenium.webdriver.android.webdriver import WebDriver
+from selenium.webdriver.support.wait import WebDriverWait
+
 from test_appium.page.basepage import BasePage
 from test_appium.page.main import Main
 
@@ -25,7 +29,7 @@ class App(BasePage):
             # caps["unicodeKeyrboard"] = True
             # caps["resetKeyboard"] = True
             self._driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
-            self._driver.implicitly_wait(20)
+            self._driver.implicitly_wait(5)
         else:
             # 如果driver已经存在，则直接复用driver启动activity
             self._driver.start_activity(self._package, self._activity)
@@ -43,5 +47,14 @@ class App(BasePage):
         self._driver.quit()
 
     def wait_load_main(self):
-        self.find(MobileBy.ID, "tv_agree").click()
+        def wait_load(driver):
+            print(datetime.datetime.now())
+            source = self._driver.page_source
+            if "我的" in source:
+                return True
+            if "同意" in source:
+                return True
+            return False
+
+        WebDriverWait(self._driver, 10).until(wait_load)
         return Main(self._driver)
