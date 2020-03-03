@@ -1,5 +1,4 @@
 from time import sleep
-
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 from test_appium.page.basepage import BasePage
@@ -11,6 +10,7 @@ class App(BasePage):
     _activity = ".view.WelcomeActivityAlias"
 
     def start(self):
+        # 初始化driver，如果继承至父类的driver默认是None，则按以下方式初始化driver
         if self._driver is None:
             caps = {}
             caps["platformName"] = "android"
@@ -27,7 +27,9 @@ class App(BasePage):
             self._driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
             self._driver.implicitly_wait(20)
         else:
+            # 如果driver已经存在，则直接复用driver启动activity
             self._driver.start_activity(self._package, self._activity)
+        # return self以便初始化App实例时继续调用该方法以初始化driver
         return self
 
     def restart(self):
