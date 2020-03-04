@@ -41,48 +41,48 @@ class TestPrice:
         size = self.driver.get_window_size()
         x = int(size['width'] * 0.95)
         y = int(size['height'] * 0.95)
-        self.driver.find_element(MobileBy.ID, "tv_agree").click()
         # 点击首页弹框的同意
-        self.driver.find_element(MobileBy.ID, "tv_search").click()
+        self.driver.find_element(MobileBy.ID, "tv_agree").click()
         # 点击首页的搜索框
-        self.driver.find_element(MobileBy.ID, "search_input_text").send_keys("alibaba")
+        self.driver.find_element(MobileBy.ID, "tv_search").click()
         # 在搜索框中输入"alibaba"
-        self.driver.swipe(x, y, x, y, 100)
+        self.driver.find_element(MobileBy.ID, "search_input_text").send_keys("alibaba")
         # 点击输入键盘上的搜索图标
-        self.driver.find_element(MobileBy.XPATH, "//*[contains(@resource-id,'title_container')]/*[2]").click()
+        self.driver.swipe(x, y, x, y, 100)
         # 点击股票
+        self.driver.find_element(MobileBy.XPATH, "//*[contains(@resource-id,'title_container')]/*[2]").click()
         price = (By.XPATH, "//*[contains(@resource-id,'list')]/*[2]//*[contains(@resource-id,'current_price')]")
-        assert float(self.driver.find_element(*price).text) > 200
         # 断言香港上市的阿里巴巴股价大于200
+        assert float(self.driver.find_element(*price).text) > 200
 
     def test_selected(self):
+        # 定义加自选按钮的定位符
         go_to_select_locator = (
             MobileBy.XPATH, "//*[@text='SH600519']/../../..//*[contains(@resource-id,'follow_btn')]")
-        # 定义自选按钮的定位符
-        selected_locator = (MobileBy.XPATH, "//*[@text='SH600519']/../../..//*[contains(@resource-id,'followed_btn')]")
         # 定义已添加按钮的定位符
-        self.driver.find_element(MobileBy.ID, "tv_agree").click()
+        selected_locator = (MobileBy.XPATH, "//*[@text='SH600519']/../../..//*[contains(@resource-id,'followed_btn')]")
         # 点击首页弹框的同意
-        self.driver.find_element(MobileBy.ID, "tv_search").click()
+        self.driver.find_element(MobileBy.ID, "tv_agree").click()
         # 点击首页的搜索框
-        self.driver.find_element(MobileBy.ID, "search_input_text").send_keys("茅台")
-        # 在搜索框中输入"茅台"
-        self.driver.find_element(MobileBy.XPATH, "//*[contains(@resource-id,'listview')]//*[@text='贵州茅台']").click()
-        # 选择"贵州茅台"并点击
-        self.driver.find_element(*go_to_select_locator).click()
-        # 点击"贵州茅台"的"加自选"
-        self.driver.find_element(MobileBy.ID, "tv_left").click()
-        # 点击弹出框上的"下次再说"
-        self.driver.find_element(MobileBy.ID, "action_close").click()
-        # 点击"取消"搜索
         self.driver.find_element(MobileBy.ID, "tv_search").click()
-        # 再次点击搜索框
+        # 在搜索框中输入"茅台"
         self.driver.find_element(MobileBy.ID, "search_input_text").send_keys("茅台")
-        # 再次在搜索框中输入"茅台"
+        # 选择"贵州茅台"并点击
         self.driver.find_element(MobileBy.XPATH, "//*[contains(@resource-id,'listview')]//*[@text='贵州茅台']").click()
+        # 点击"贵州茅台"的"加自选"
+        self.driver.find_element(*go_to_select_locator).click()
+        # 点击弹出框上的"下次再说"
+        self.driver.find_element(MobileBy.ID, "tv_left").click()
+        # 点击"取消"搜索
+        self.driver.find_element(MobileBy.ID, "action_close").click()
+        # 再次点击搜索框
+        self.driver.find_element(MobileBy.ID, "tv_search").click()
+        # 再次在搜索框中输入"茅台"
+        self.driver.find_element(MobileBy.ID, "search_input_text").send_keys("茅台")
         # 再次选中"贵州茅台"并点击
-        assert self.driver.find_element(*selected_locator).get_attribute("text") == "已添加"
+        self.driver.find_element(MobileBy.XPATH, "//*[contains(@resource-id,'listview')]//*[@text='贵州茅台']").click()
         # 判断"贵州茅台"是否已加入自选
+        assert self.driver.find_element(*selected_locator).get_attribute("text") == "已添加"
 
     def test_source(self):
         print(self.driver.page_source)

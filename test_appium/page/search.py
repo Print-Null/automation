@@ -12,3 +12,10 @@ class Search(BasePage):
     def get_price(self, key: str):
         price = (MobileBy.ID, "current_price")
         return float(self.find(*price).text)
+
+    def add_select(self):
+        self.find(By.ID, "follow_btn").click()
+        return self
+
+    def add_selected(self):
+        return self.find(By.ID, "followed_btn").text

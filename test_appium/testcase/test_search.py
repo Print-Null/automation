@@ -10,6 +10,9 @@ class TestSearch:
     def test_search(self):
         self.main.goto_search().search("alibaba").get_price("BABA")
 
+    def test_add_selected(self):
+        assert "已添加" in self.main.goto_search().search("maotai").add_select().add_selected()
+
     @pytest.mark.parametrize("key, stock_key, price", [
         ("alibaba", "BABA", 200),
         ("JD", "JD", 20)

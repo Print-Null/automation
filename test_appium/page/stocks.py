@@ -3,7 +3,7 @@ from test_appium.page.basepage import BasePage
 
 
 class Stocks(BasePage):
-    def goto_search(self, key: str):
+    def stocks_search(self, key: str):
         self.find(By.XPATH, "//*[contains(@resource-id,'action_search')]").click()
         self.find(By.ID, "search_input_text").send_keys(key)
         self.find(By.XPATH, "//*[contains(@resource-id,'listview')]//*[@text='贵州茅台']").click()

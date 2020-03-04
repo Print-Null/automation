@@ -1,10 +1,7 @@
 import datetime
 from time import sleep
 from appium import webdriver
-from appium.webdriver.common.mobileby import MobileBy
-from selenium.webdriver.android.webdriver import WebDriver
 from selenium.webdriver.support.wait import WebDriverWait
-
 from test_appium.page.basepage import BasePage
 from test_appium.page.main import Main
 
@@ -49,12 +46,21 @@ class App(BasePage):
     def wait_load_main(self):
         def wait_load(driver):
             print(datetime.datetime.now())
+            # 以下任意一个元素出现在page_source中则表示首页加载完成
             source = self._driver.page_source
-            if "我的" in source:
-                return True
-            if "同意" in source:
-                return True
+            # if "我的" in source:
+            #     return True
+            # if "同意" in source:
+            #     return True
+            # if "image_cancel" in source:
+            #     return True
+            # return False
+            _source_list = ["我的", "同意", "image_cancel"]
+            for ele in _source_list:
+                if ele in source:
+                    return True
             return False
 
+        # 显示等待首页加载完成
         WebDriverWait(self._driver, 10).until(wait_load)
         return Main(self._driver)

@@ -14,7 +14,7 @@ class Main(BasePage):
         pass
 
     def goto_stocks(self):
-        self.find(MobileBy.XPATH, "//*[contains(@resource-id,'tab_name') and (@text='交易')]").click()
+        self.find(MobileBy.XPATH, "//*[contains(@resource-id,'tab_name') and (@text='行情')]").click()
         return Stocks(self._driver)
 
     def goto_trade(self):
