@@ -19,7 +19,7 @@ class BasePage:
     # 定义异常处理次数的计数器
     _error_count = 0
 
-    # 初始化driver，限定driver为WebDriver类型，默认值为空
+    # 初始化driver，限定driver为WebDriver类型，默认值为None
     def __init__(self, driver: WebDriver = None):
         self._driver = driver
 

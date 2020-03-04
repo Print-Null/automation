@@ -6,20 +6,20 @@ from test_appium.page.stocks import Stocks
 
 
 class Main(BasePage):
-    def goto_search(self):
+    def goto_search_page(self):
         self.find(MobileBy.ID, "tv_search").click()
         return Search(self._driver)
 
     def goto_messages(self):
         pass
 
-    def goto_stocks(self):
+    def goto_stocks_page(self):
         self.find(MobileBy.XPATH, "//*[contains(@resource-id,'tab_name') and (@text='行情')]").click()
         return Stocks(self._driver)
 
     def goto_trade(self):
         pass
 
-    def goto_profile(self):
+    def goto_profile_page(self):
         self.find(MobileBy.XPATH, "//*[contains(@resource-id,'tab_name') and (@text='我的')]").click()
         return Profile(self._driver)
