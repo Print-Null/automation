@@ -26,8 +26,8 @@ print(c)
 def test02():
     print("yxf")
     print("杨晓锋")
-    return
-    print("hello")
+    return  # 没有返回值默认的返回值为None
+    print("hello")  # return表示函数已结束，所以return后的代码不会被执行
 
 
 d = test02()

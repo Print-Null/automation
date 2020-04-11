@@ -37,7 +37,7 @@ class BasePage:
         except Exception as e:
             # 每次进入异常处理，则异常处理计数器+1，直到大于定义的最大异常处理次数，则退出异常处理逻辑，直接抛出异常
             self._error_count += 1
-            if self._error_count > self._error_max:
+            if self._error_count >= self._error_max:
                 raise e
             print("第%s次查找异常" % self._error_count)
             # 尝试在异常黑名单里查找导致异常的元素

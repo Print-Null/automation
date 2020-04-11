@@ -26,7 +26,9 @@ class App(BasePage):
             # caps["unicodeKeyrboard"] = True
             # caps["resetKeyboard"] = True
             self._driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
-            self._driver.implicitly_wait(5)
+            # seleniumGrid模式
+            # self._driver = webdriver.Remote("http://localhost:4444/wd/hub", caps)
+            self._driver.implicitly_wait(30)
         else:
             # 如果driver已经存在，则直接复用driver启动activity
             self._driver.start_activity(self._package, self._activity)
