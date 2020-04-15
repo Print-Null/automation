@@ -1,5 +1,3 @@
-import json
-
 import requests
 
 from test_requests.test_wework.api.base_api import BaseApi
@@ -23,8 +21,8 @@ class Department(BaseApi):
         self.format(r)
         return r.json()
 
-    def update_department(self, id, name, **kwargs):
-        json_data = {"id": id, "name": name}
+    def update_department(self, id, **kwargs):
+        json_data = {"id": id}
         json_data.update(kwargs)
         url_update = "https://qyapi.weixin.qq.com/cgi-bin/department/update"
         r = requests.post(url_update, params={"access_token": WeWork.get_token(self.secret)}, json=json_data)

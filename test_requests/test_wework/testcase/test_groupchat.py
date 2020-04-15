@@ -1,15 +1,17 @@
 from test_requests.test_wework.api.groupchat import GroupChat
-from test_requests.test_wework.api.wework import WeWork
 
 
 class TestGroupChat:
     @classmethod
     def setup(cls):
         cls.group_chat = GroupChat()
-        cls.token = WeWork.get_token(GroupChat.secret)
 
     def test_group_chat_status(self):
-        r = self.group_chat.group_chat_list(status_filler=0)
+        owner_filter = {
+            "userid_list": ["YangXiaoFeng"],
+            "partyid_list": [2]
+        }
+        r = self.group_chat.group_chat_list(status_filler=0, owner_filter=owner_filter)
         assert r["errcode"] == 0
 
     def test_group_chat_list(self):
