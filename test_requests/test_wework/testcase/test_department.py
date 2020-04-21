@@ -13,8 +13,10 @@ class TestDepartment:
 
     # 测试创建部门
     def test_create_department(self):
-        r = self.department.create_department(name="部门003", parentid=1)
+        r = self.department.create_department(name="部门005", parentid=1)
         assert r["errcode"] == 0
+        # 测试完成后清理数据
+        self.department.delete_department(id=r["id"])
 
     # 测试创建已存在的部门
     def test_department_existed(self):
@@ -42,7 +44,8 @@ class TestDepartment:
 
     # 测试删除部门
     def test_delete_department(self):
-        r = self.department.delete_department(id=4)
+        r = self.department.create_department(name="部门006", parentid=1)
+        r = self.department.delete_department(id=r["id"])
         assert r["errcode"] == 0
 
     # 测试删除不存在的部门
@@ -59,8 +62,11 @@ class TestDepartment:
 
     # 测试修改部门
     def test_update_department(self):
-        r = self.department.update_department(id=8, name="部门004")
+        r1 = self.department.create_department(name="部门007", parentid=1)
+        r = self.department.update_department(id=r1["id"], name="修改名字后的部门007")
         assert r["errcode"] == 0
+        # 测试完成后清理数据
+        self.department.delete_department(id=r1["id"])
 
     # 测试修改不存在的部门
     def test_update_no_exist(self):

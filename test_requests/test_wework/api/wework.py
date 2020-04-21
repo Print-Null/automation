@@ -10,8 +10,8 @@ class WeWork(BaseApi):
 
     @classmethod
     def get_token(cls, secret):
-        # if secret is None:
-        #     return cls.token[secret]
+        if secret is None:
+            return cls.token[secret]
         if secret not in cls.token.keys():
             r = cls.get_access_token(secret)
             cls.token[secret] = r["access_token"]
