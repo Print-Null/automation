@@ -10,6 +10,7 @@ class TestSearch:
 
     def setup_method(self):
         self.driver = webdriver.Chrome()
+        self.driver.maximize_window()
         self.driver.implicitly_wait(10)
 
     def teardown(self):

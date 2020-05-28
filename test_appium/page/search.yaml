@@ -1,14 +1,9 @@
--
-  - maotai
-  - SH600519
-  - 50
--
-  - alibaba
-  - BABA
-  - 200
--
-  - jd
-  - JD
-  - 20
+- by: id
+  locator: search_input_text
 
+- action: send
+  value: "{search_name}"
 
+- by: id
+  locator: name
+  action: click

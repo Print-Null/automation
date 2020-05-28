@@ -5,6 +5,7 @@ import yaml
 
 
 class BaseApi:
+    params = {}
     data = {}
 
     @classmethod
@@ -22,6 +23,11 @@ class BaseApi:
     # 使用数据驱动模拟requests请求
     def api_send(self, req: dict):
         # req["params"]["access_token"] = self.get_token(self.secret)
+        content = yaml.dump(req)
+        for key, value in self.params.items():
+            content = content.replace(f"${{{key}}}", repr(value))
+        req = yaml.safe_load(content)
+
         r = requests.request(req["method"], url=req["url"], params=req["params"], json=req["json"])
         self.format(r)
         return r.json()

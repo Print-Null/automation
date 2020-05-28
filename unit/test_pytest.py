@@ -1,67 +1,49 @@
-"""
-class Persion():
-    def __init__(self,name,score,weight):
-        self.name = name
-        self.score = score
-        self.weight = weight
+def setup_module():
+    print("=====整个.py模块开始前只执行一次:打开浏览器=====")
 
 
-student = Persion('yxf', 100, 170)
-#print(student)
-#print(Persion)
-#student.name = 'yxf'
-#student.score = 100
-print(student.name)
-print(student.score)
-
-"""
+def teardown_module():
+    print("=====整个.py模块结束后只执行一次:关闭浏览器=====")
 
 
-class Persion():
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-
-    def add(self):
-        sum = self.x + self.y
-        return sum
-
-    def square(self):
-        squr = pow(self.x, 3) + pow(self.y, 3)
-        return squr
-
-    def add_square(self):
-        c = self.add() + self.square()
-        return c
+def setup_function():
+    print("===每个函数级别用例开始前都执行setup_function===")
 
 
-student = Persion(2, 3)
-print(student.add())
-print(student.square())
-print("--------我是可爱的分割线--------")
-print(student.add_square())
+def teardown_function():
+    print("===每个函数级别用例结束后都执行teardown_function===")
 
 
-class Persion():
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-
-    def add(self, z=16):
-        sum = self.x + self.y + z
-        return sum
-
-    def square(self):
-        sqr = pow(self.x, 3) + pow(self.y, 3)
-        return sqr
-
-    def add_square(self, z):
-        c = self.add() + self.square() + z
-        return c
+def test_one():
+    print("one")
 
 
-student = Persion(3, 4)
-print(student.add())
-print(student.square())
-print("--------我是可爱的分割线--------")
-print(student.add_square(16))
+def test_two():
+    print("two")
+
+
+class TestCase:
+
+    def setup_class(self):
+        print("====整个测试类开始前只执行一次setup_class====")
+
+    def teardown_class(self):
+        print("====整个测试类结束后只执行一次teardown_class====")
+
+    def setup_method(self):
+        print("==类里面每个用例执行前都会执行setup_method==")
+
+    def teardown_method(self):
+        print("==类里面每个用例结束后都会执行teardown_method==")
+
+    def setup(self):
+        print("=类里面每个用例执行前都会执行setup=")
+
+    def teardown(self):
+        print("=类里面每个用例结束后都会执行teardown=")
+
+    def test_three(self):
+        print("three")
+
+    def test_four(self):
+        print("four")

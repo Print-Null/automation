@@ -19,7 +19,7 @@ class TestPrice:
         caps["chromedriverExecutable"] = r"C:\WebDriver\2.20\chromedriver.exe"
         # caps["chromedriverExecutableDir"] = r"C:\WebDriver\2.20"
         # caps["noReset"] = True
-        # caps["unicodeKeyrboard"] = True
+        # caps["unicodeKeyboard"] = True
         # caps["resetKeyboard"] = True
         self.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
         self.driver.implicitly_wait(20)

@@ -7,7 +7,10 @@ from test_appium.page.stocks import Stocks
 
 class Main(BasePage):
     def goto_search_page(self):
+        # 不使用数据驱动的实现
         self.find(MobileBy.ID, "tv_search").click()
+        # 使用数据驱动的实现
+        self.data_driven(r"D:\MyProjects\test_appium\page\main.yaml")
         return Search(self._driver)
 
     def goto_messages(self):

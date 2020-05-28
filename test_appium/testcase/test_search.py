@@ -9,6 +9,9 @@ class TestSearch:
         self.main = App().start().wait_load_main()
 
     def test_search(self):
+        self.main.goto_search_page().search("jd")
+
+    def test_get_price(self):
         self.main.goto_search_page().search("alibaba").get_price("BABA")
 
     def test_add_selected(self):
@@ -20,7 +23,7 @@ class TestSearch:
     # ])
     # 基于外部yaml文件的数据驱动
     @pytest.mark.parametrize("key, stock_key, price",
-                             yaml.safe_load(open(r"D:\MyProjects\test_appium\page\search.yaml")))
+                             yaml.safe_load(open(r"D:\MyProjects\test_appium\testcase\test_search.yaml")))
     def test_search_price(self, key, stock_key, price):
         assert self.main.goto_search_page().search(key).get_price(stock_key) > price
 

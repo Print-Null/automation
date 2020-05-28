@@ -9,8 +9,6 @@ class CorpTag(BaseApi):
 
     def __init__(self):
         self.data = self.api_load(r"D:\MyProjects\test_requests\test_wework\api\corptag.yaml")
-        self.data["get"]["params"]["access_token"] = self.token
-        # print("\n打印初始化的data", self.data)
 
     def get_corptag(self):
         url_get = "https://qyapi.weixin.qq.com/cgi-bin/externalcontact/get_corp_tag_list"
@@ -19,7 +17,8 @@ class CorpTag(BaseApi):
         return r.json()
 
     # 通过数据驱动实现获取企业标签的功能
-    def get_api(self):
+    def get_api(self, **kwargs):
+        self.data["get"]["params"]["access_token"] = self.token
         return self.api_send(self.data['get'])
 
     def add_corptag(self, tag_name, name="demo1", **kwargs):
@@ -34,8 +33,17 @@ class CorpTag(BaseApi):
         self.format(r)
         return r.json()
 
-    def update_corptag(self):
-        pass
+    # 通过数据驱动实现添加企业标签的功能
+    def add_api(self, tag_name, **kwargs):
+        self.params["name"] = tag_name
+        self.data["add"]["params"]["access_token"] = self.token
+        return self.api_send(self.data["add"])
+
+    def update_corptag(self, tag_id, newname):
+        self.params["tag_id"] = tag_id
+        self.params["newname"] = newname
+        self.data["update"]["params"]["access_token"] = self.token
+        return self.api_send(self.data["update"])
 
     def delete_corptag(self, tag_id=[], group_id=[]):
         url_delete = "https://qyapi.weixin.qq.com/cgi-bin/externalcontact/del_corp_tag"
@@ -46,3 +54,10 @@ class CorpTag(BaseApi):
                           )
         self.format(r)
         return r.json()
+
+    # 通过数据驱动实现删除企业标签的功能
+    def delete_api(self, tag_id: list, group_id: list):
+        self.params["tag_id"] = tag_id
+        self.params["group_id"] = group_id
+        self.data["delete"]["params"]["access_token"] = self.token
+        return self.api_send(self.data["delete"])
