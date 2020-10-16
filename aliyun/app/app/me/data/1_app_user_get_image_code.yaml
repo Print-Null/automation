@@ -1,0 +1,38 @@
+host: app_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: /api/user/v1/auth/get_image_code
+headers:
+  0:
+    Accept-Language: th-CN
+    content-type: application/json
+
+success:
+  parameter:
+    0:
+      version: "$[config]app_version$"
+      os: "ios"
+      clientsd: "$[config]user_clientsd$"
+      clientid: "$[config]app_clientid$"
+      mobile: "$[config]user_phone$"
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    json_schema: "1_app_user_get_image_code.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

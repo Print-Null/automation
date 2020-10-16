@@ -1,0 +1,53 @@
+host: ms_host
+http_type: http
+request_type: get
+parameter_type: json
+timeout: 120
+address:
+  0: ms/api/fleet/line/approve/$manager_backyard_overtime_car_ms_fleet_line_approve_FD_unilateral_0_0_["data"]["items"][-1]["id"]$
+  1: ms/api/fleet/line/approve/$manager_backyard_overtime_car_ms_fleet_line_approve_FD_unilateral_0_0_["data"]["items"][-2]["id"]$
+  2: ms/api/fleet/line/approve/$manager_backyard_overtime_car_ms_fleet_line_approve_FD_unilateral_0_0_["data"]["items"][-3]["id"]$
+  3: ms/api/fleet/line/approve/$manager_backyard_overtime_car_ms_fleet_line_approve_FD_unilateral_0_0_["data"]["items"][-4]["id"]$
+  4: ms/api/fleet/line/approve/$manager_backyard_overtime_car_ms_fleet_line_approve_FD_unilateral_0_0_["data"]["items"][-5]["id"]$
+  5: ms/api/fleet/line/approve/$manager_backyard_overtime_car_ms_fleet_line_approve_FD_unilateral_0_0_["data"]["items"][-6]["id"]$
+  6: ms/api/fleet/line/approve/$manager_backyard_overtime_car_ms_fleet_line_approve_FD_unilateral_0_0_["data"]["items"][-7]["id"]$
+  7: ms/api/fleet/line/approve/$manager_backyard_overtime_car_ms_fleet_line_approve_FD_unilateral_0_0_["data"]["items"][-8]["id"]$
+
+headers:
+  0:
+    Accept-Language: zh-CN
+    X-MS-SESSION-ID: $backyard_overtime_car_ms_api_auth_signin_0_0_0_["data"]["session_id"]$
+    Accept: application/json, text/plain, */*
+#  1:
+#    Accept-Language: en-US
+#    X-MS-SESSION-ID: $backyard_overtime_car_ms_api_auth_signin_0_0_["data"]["session_id"]$
+#    Accept: application/json, text/plain, */*
+#  2:
+#    Accept-Language: th-CN
+#    X-MS-SESSION-ID: $backyard_overtime_car_ms_api_auth_signin_0_0_["data"]["session_id"]$
+#    Accept: application/json, text/plain, */*
+success:
+  parameter: {}
+    #ms加班车申请（中控审批界面）
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+
+  relevance:
+    - '["data"]["start_store"]'
+    - '["data"]["end_store"]'
+    - '["data"]["car_type"]'
+    - '["data"]["car_type_text"]'
+
+error:
+  parameter: {}
+  check: {}

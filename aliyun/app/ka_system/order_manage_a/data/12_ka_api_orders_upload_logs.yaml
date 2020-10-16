@@ -1,0 +1,44 @@
+host: ka_system_host
+http_type: http
+request_type: get
+parameter_type: json
+timeout: 120
+address:
+  0: /ka/api/orders/uploadLogs
+headers:
+  0:
+    content-type: application/json;charset=UTF-8
+    Accept-Language: zh-CN
+    X-KA-SESSION-ID: $ka_api_auth_signin_0_0_0_["data"]["session_id"]$
+  1:
+    content-type: application/json;charset=UTF-8
+    Accept-Language: en
+    X-KA-SESSION-ID: $ka_api_auth_signin_0_0_0_["data"]["session_id"]$
+  2:
+    content-type: application/json;charset=UTF-8
+    Accept-Language: th
+    X-KA-SESSION-ID: $ka_api_auth_signin_0_0_0_["data"]["session_id"]$
+
+success:
+  parameter: {}
+
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+
+  relevance:
+    - '["data"][0]["id"]'
+
+error:
+  parameter: {}
+  check: {}

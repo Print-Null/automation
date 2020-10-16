@@ -1,0 +1,76 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "确认妥投",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The Code Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1.0
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The Message Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The Data Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "prompt": true,
+                    "royalty_amount": 500.0
+                }
+            ],
+            "additionalProperties": true,
+            "required": [
+                "prompt",
+                "royalty_amount"
+            ],
+            "properties": {
+                "prompt": {
+                    "$id": "#/properties/data/properties/prompt",
+                    "type": "boolean",
+                    "title": "The Prompt Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "royalty_amount": {
+                    "$id": "#/properties/data/properties/royalty_amount",
+                    "type": "integer",
+                    "title": "The Royalty_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        500.0
+                    ]
+                }
+            }
+        }
+    }
+}

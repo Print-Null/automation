@@ -1,0 +1,45 @@
+host: host
+http_type: http
+request_type: get
+parameter_type: json
+timeout: 120
+address: api/courier/v1/parcels/$courier_pno_number18$/marker_info
+
+headers:
+  0:
+    Accept-Language: zh-CN
+    By-Platform: "RB_KIT"
+    X-FLE-EQUIPMENT-TYPE: "kit"
+    X-FLE-SESSION-ID: $backyard_overtime_car_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+  1:
+    Accept-Language: en-US
+    By-Platform: "RB_KIT"
+    X-FLE-EQUIPMENT-TYPE: "kit"
+    X-FLE-SESSION-ID: $backyard_overtime_car_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+  2:
+    Accept-Language: th-CN
+    By-Platform: "RB_KIT"
+    X-FLE-EQUIPMENT-TYPE: "kit"
+    X-FLE-SESSION-ID: $backyard_overtime_car_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+success:
+  parameter: {}
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    json_schema: "80pre_delivery_note_handover_cargo_storage_inadequate_check_by.json"
+  relevance: {}
+
+
+
+error:
+  parameter: {}
+  check: {}

@@ -1,0 +1,50 @@
+host: kit_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: /api/courier/v1/ticket/parcels/$kit_user_sender_courier_ticket_pickups_cn_0_0_["data"]["collected_parcels"][1]["pno"]$/delivery_confirm
+
+headers:
+  0:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: zh-CN
+    X-FLE-SESSION-ID: $kit_user_sender_courier_new_device_login_cn_0_0_0_["data"]["sessionid"]$
+  1:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: en-US
+    X-FLE-SESSION-ID: $kit_user_sender_courier_new_device_login_cn_0_0_0_["data"]["sessionid"]$
+  2:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: th-TH
+    X-FLE-SESSION-ID: $kit_user_sender_courier_new_device_login_cn_0_0_0_["data"]["sessionid"]$
+
+
+success:
+  parameter:
+
+    0:
+      "signer_category": 0
+      "sign_image_key": "deliveryPickupsMarkUpload/1554113259-2ee455ae43ac41208ae7a6396f462e15"
+      "signer_content": $[config]user_dst_name$
+      "call_duration": 200
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    json_schema: "15_kit_user_sender_courier_parcels_delivery_confirm_cn.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

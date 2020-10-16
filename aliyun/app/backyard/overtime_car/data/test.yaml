@@ -1,0 +1,12 @@
+# 测试用例
+case_data: backyard/overtime_car/data/
+case_path: backyard/overtime_car/test_cash/
+test_case:
+  #第一种4W
+  #1
+  - test_name: backyard_login_4W
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 1
+    #用例描述
+    info: backyard登入
+    extend: backyard_login.yaml

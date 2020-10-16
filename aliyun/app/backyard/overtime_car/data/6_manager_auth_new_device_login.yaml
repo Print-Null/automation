@@ -1,0 +1,46 @@
+host: backyard_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address: api/backyard/v1/auth/new_device_login
+headers:
+  0:
+    content-type: application/json
+    Accept-Language: zh-CN
+#  1:
+#    content-type: application/json
+#    Accept-Language: en-US
+#  2:
+#    content-type: application/json
+#    Accept-Language: th-CN
+
+success:
+  parameter:
+    #网点经理登入
+    0:
+      login: '$[config]Outlet_manager_login$'
+      password: '$[config]Outlet_manager_pwd$'
+      clientid: "8626360321249741575447597157"
+      clientsd: "1575447597168"
+      os: "android"
+#      version: "1.2.8"
+      version: '$[config]backyard_version$'
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+
+  relevance:
+    - '["data"]["sessionid"]'
+error:
+  parameter: {}
+  check: {}

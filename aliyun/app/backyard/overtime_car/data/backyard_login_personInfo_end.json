@@ -1,0 +1,8 @@
+{
+    "login": '$[config]Warehouse_man_personInfo_end_login$',
+    "password": '$[config]Warehouse_man_personInfo_end_pwd$',
+    "clientid": "8626360321249741579004667707",
+    "clientsd": "1579004667712",
+    "os": "android",
+    "version": "1.2.8"
+}

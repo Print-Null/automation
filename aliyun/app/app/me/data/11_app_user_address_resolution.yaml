@@ -1,0 +1,44 @@
+host: app_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: /api/user/v1/resolution_addr
+headers:
+  0:
+    Accept-Language: zh-Hans-CN
+    content-type: application/json
+    X-FLE-SESSION-ID: $app_user_login_0_0_0_["data"]["sessionid"]$
+  1:
+    Accept-Language: en-CN
+    content-type: application/json
+    X-FLE-SESSION-ID: $app_user_login_0_0_0_["data"]["sessionid"]$
+  2:
+    Accept-Language: th-CN
+    content-type: application/json
+    X-FLE-SESSION-ID: $app_user_login_0_0_0_["data"]["sessionid"]$
+
+success:
+  parameter:
+    # 解析地址
+    0:
+      addr_text: "resolution\n13512345678\n地址解析测试 10110"
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    json_schema: "11_app_user_address_resolution.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

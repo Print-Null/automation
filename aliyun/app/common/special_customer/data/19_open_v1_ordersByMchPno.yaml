@@ -1,0 +1,93 @@
+host: common_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: /open/v1/ordersByMchPno
+headers:
+  0:
+    content-type: application/x-www-form-urlencoded
+    Charset: UTF-8
+    Accept-Language: ZH-CN
+
+success:
+  parameter:
+    0:
+      nonceStr: $[python]str(int(time.mktime(time.strptime(str(datetime.datetime.now()),"%Y-%m-%d %H:%M:%S.%f"))))$
+      sign: "sha256"
+      mchId: $[config]merchant_id$
+      mchPno: $[python]str(random.randint(100000000,999999999))$
+      warehouseNo: ""
+      srcName: "ภาคย์ คำมูลตา"
+      srcPhone: $[python]"0150"+str(random.randint(100000,999999))$
+      srcProvinceName: $[config]srcProvinceName$
+      srcCityName: $[config]srcCityName$
+      srcPostalCode: $[config]srcPostalCode$
+      srcDetailAddress: "HOME168 88"
+      dstName: "น้ำพริกแม่อำพร"
+      dstPhone: $[python]"0151"+str(random.randint(100000,999999))$
+      dstHomePhone: ""
+      dstProvinceName: "เชียงใหม่"
+      dstCityName: "ฝาง"
+      dstPostalCode: "50110"
+      dstDetailAddress: "test"
+      articleCategory: $[python]random.choice([0,1,2,3,4,5,6,7,9,10,99])$
+      expressCategory: 1
+      weight: $[python]random.randint(1,30000)$
+      codEnabled: 0
+      codAmount: 0
+      remark: "test pno order"
+      srcDistrictName: ""
+      dstDistrictName: ""
+      insured: 1
+      insureDeclareValue: $[python]random.randrange(100,5000001,100)$
+      length: $[python]random.randint(1,100)$
+      width: $[python]random.randint(1,100)$
+      height: $[python]random.randint(1,80)$
+    1:
+      nonceStr: $[python]str(int(time.mktime(time.strptime(str(datetime.datetime.now()),"%Y-%m-%d %H:%M:%S.%f"))))$
+      sign: "sha256"
+      mchId: $[config]merchant_id$
+      mchPno: $[python]str(random.randint(100000000,999999999))$
+      warehouseNo: ""
+      srcName: "ภาคย์ คำมูลตา"
+      srcPhone: $[python]"0150"+str(random.randint(100000,999999))$
+      srcProvinceName: $[config]srcProvinceName$
+      srcCityName: $[config]srcCityName$
+      srcPostalCode: $[config]srcPostalCode$
+      srcDetailAddress: "HOME168 88"
+      dstName: "น้ำพริกแม่อำพร"
+      dstPhone: $[python]"0151"+str(random.randint(100000,999999))$
+      dstHomePhone: ""
+      dstProvinceName: "เชียงใหม่"
+      dstCityName: "ฝาง"
+      dstPostalCode: "50110"
+      dstDetailAddress: "test"
+      articleCategory: $[python]random.choice([0,1,2,3,4,5,6,7,9,10,99])$
+      expressCategory: 1
+      weight: $[python]random.randint(1,30000)$
+      codEnabled: 1
+      codAmount: $[python]random.randrange(100,5000001,100)$
+      remark: "test pno order"
+      srcDistrictName: ""
+      dstDistrictName: ""
+      insured: 0
+      insureDeclareValue: 0
+      length: $[python]random.randint(1,100)$
+      width: $[python]random.randint(1,100)$
+      height: $[python]random.randint(1,80)$
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    message: "success"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

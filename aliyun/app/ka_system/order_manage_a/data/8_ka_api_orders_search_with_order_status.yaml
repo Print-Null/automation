@@ -1,0 +1,46 @@
+host: ka_system_host
+http_type: http
+request_type: get
+parameter_type: json
+timeout: 120
+address:
+  #筛选待打印订单
+  0: /ka/api/orders?state=0&pageSize=20&pageNum=1&startTime=&startCreatedTime=$[python]str(int(time.mktime(time.strptime(str(datetime.datetime.now()-datetime.timedelta(hours=datetime.datetime.now().hour,minutes=datetime.datetime.now().minute,seconds=datetime.datetime.now().second,microseconds=datetime.datetime.now().microsecond)),"%Y-%m-%d %H:%M:%S"))))$&endCreatedTime=$[python]str(int(time.time()))$&endTime=
+  #筛选已打印订单
+  1: /ka/api/orders?state=1&pageSize=20&pageNum=1&startTime=&startCreatedTime=$[python]str(int(time.mktime(time.strptime(str(datetime.datetime.now()-datetime.timedelta(hours=datetime.datetime.now().hour,minutes=datetime.datetime.now().minute,seconds=datetime.datetime.now().second,microseconds=datetime.datetime.now().microsecond)),"%Y-%m-%d %H:%M:%S"))))$&endCreatedTime=$[python]str(int(time.time()))$&endTime=
+headers:
+  0:
+    content-type: application/json;charset=UTF-8
+    Accept-Language: zh-CN
+    X-KA-SESSION-ID: $ka_api_auth_signin_0_0_0_["data"]["session_id"]$
+  1:
+    content-type: application/json;charset=UTF-8
+    Accept-Language: en
+    X-KA-SESSION-ID: $ka_api_auth_signin_0_0_0_["data"]["session_id"]$
+  2:
+    content-type: application/json;charset=UTF-8
+    Accept-Language: th
+    X-KA-SESSION-ID: $ka_api_auth_signin_0_0_0_["data"]["session_id"]$
+
+success:
+  parameter: {}
+
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

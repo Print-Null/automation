@@ -1,0 +1,51 @@
+host: backyard_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:  api/_/auditList/getList
+
+headers:
+  0:
+    Accept-Language: zh-CN
+    Content-Type: "application/json"
+    BY-PLATFORM: "FB_ANDROID"
+    X-BY-SESSION-ID: $backyard_overtime_car_manager_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+  1:
+    Accept-Language: en-US
+    Content-Type: "application/json"
+    BY-PLATFORM: "FB_ANDROID"
+    X-BY-SESSION-ID: $backyard_overtime_car_manager_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+  2:
+    Accept-Language: th-CN
+    Content-Type: "application/json"
+    BY-PLATFORM: "FB_ANDROID"
+    X-BY-SESSION-ID: $backyard_overtime_car_manager_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+success:
+  parameter:
+    0:
+      audit_show_type: 2
+      audit_state_type: 1
+      page_num: 1
+
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "msg"
+      z_message: "请求成功!"
+      e_message: "请求成功!"
+      t_message: "请求成功!"
+      headers_language: "Accept-Language"
+    json_schema: "58backyard_overtime_car_api_auditList_getList.json"
+  relevance:
+    - '["data"]["dataList"][0]["id"]'
+
+
+
+error:
+  parameter: {}
+  check: {}

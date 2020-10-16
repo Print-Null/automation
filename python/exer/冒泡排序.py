@@ -29,3 +29,10 @@ for i in range(len(color1) - 1):
         if color1[j] == "白色":
             color1[j], color1[j + 1] = color1[j + 1], color1[j]
 print(color1)
+
+bubble = [7, 1, 4, 6, 8, 2, 9, 3, 5]
+for i in range(len(bubble) - 1):
+    for j in range(len(bubble) - i - 1):
+        if bubble[j] > bubble[j+1]:
+            bubble[j], bubble[j+1] = bubble[j+1], bubble[j]
+print(bubble)

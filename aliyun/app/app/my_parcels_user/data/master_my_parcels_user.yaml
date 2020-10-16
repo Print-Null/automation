@@ -1,0 +1,231 @@
+# 测试用例
+case_data: app/my_parcels_user/data/
+case_path: app/my_parcels_user/test_cash/
+test_case:
+#  #1 app端B客户登入
+#  - test_name: app_ka_login
+#    case_id: 1
+#    #用例描述
+#    info: APP端B客户登录
+#    extend: 1_app_ka_login.yaml
+#-------------------------------------------中文--------------------------------------------
+  #2 app端C客户：寄件人获取图片验证码
+  - test_name: app_user_sender_get_image_code_cn
+    case_id: 2
+  #用例描述
+    info: APP端C客户的寄件人获取图片验证码
+    extend: 2_app_user_sender_get_image_code_cn.yaml
+  #3 app端C客户：寄件人获取短信验证码
+  - test_name: app_user_sender_send_sms_code_cn
+    case_id: 3
+  #用例描述
+    info: APP端C客户获取短信验证码
+    extend: 3_app_user_sender_send_sms_code_cn.yaml
+  #4 app端C客户：寄件人登入
+  - test_name: app_user_sender_login_cn
+    case_id: 4
+  #用例描述
+    info: APP端C客户的寄件人登入
+    extend: 4_app_user_sender_login_cn.yaml
+  #5 C客户：寄件人创建订单任务
+  - test_name: app_user_sender_order_create_cn
+    case_id: 5
+  # 用例描述
+    info: 寄件人创建订单任务
+    extend: 5_app_user_sender_order_create_cn.yaml
+  #6 C客户：寄件人查询订单列表
+  - test_name: app_user_sender_ticket_pickup_list_cn
+    case_id: 6
+    # 用例描述
+    info: C客户的寄件人查询下单历史查看快递员ID
+    extend: 6_app_user_sender_ticket_pickup_list_cn.yaml
+  #7 kit：C客户的快递员登录
+  - test_name: kit_user_sender_courier_new_device_login_cn
+    case_id: 7
+  # 用例描述
+    info: C客户的快递员登录kit
+    extend: 7_kit_user_sender_courier_new_device_login_cn.yaml
+  #8 kit: C客户的快递员进入揽收任务
+  - test_name: kit_user_sender_courier_ticket_pickups_cn
+    case_id: 8
+    # 用例描述
+    info: C客户的快递员点击揽收任务
+    extend: 8_kit_user_sender_courier_ticket_pickups_cn.yaml
+  #9 kit: C客户的快递员确认包裹信息后进行揽收
+  - test_name: kit_user_sender_courier_ticket_pickups_confirm_cn
+    case_id: 9
+    # 用例描述
+    info: C客户的快递员确认包裹信息后揽收快件
+    extend: 9_kit_user_sender_courier_ticket_pickups_confirm_cn.yaml
+  #10 kit：C客户的快递员点击揽收完成
+  - test_name: kit_user_sender_courier_ticket_cn
+    case_id: 10
+    # 用例描述
+    info: C客户的快递员点击揽收完成
+    extend: 10_kit_user_sender_courier_ticket_cn.yaml
+  #11 kit：获取已完成揽收订单的包裹信息
+  - test_name: kit_user_sender_courier_ticket_pickups_cn
+    case_id: 11
+    #用例描述
+    info: kit快递员查看完成揽收的订单包裹信息
+    extend: 11_kit_user_sender_courier_ticket_pickups_cn.yaml
+### 生成已滞留的订单数据 ###
+#  #12 登录MS->根据寄件地址邮编获取网点仓管员ID->仓管员登录kit
+#  - test_name: kit_get_warehouse_id_and_login_cn
+#    case_id: 12
+#    # 用例描述
+#    info: 获取仓管员ID并登录kit
+#    extend: 12_kit_get_warehouse_id_and_login_cn.yaml
+  #13 kit：仓管员对运单做货件留仓
+  - test_name: kit_user_courier_parcels_detain_warehouse_cn
+    case_id: 13
+    # 用例描述
+    info: 快递员确认取消寄件
+    extend: 13_kit_user_courier_parcels_detain_warehouse_cn.yaml
+### 生成已签收的订单数据 ###
+  #14 kit：快递员对运单做交接
+  - test_name: kit_user_sender_courier_parcels_delivery_ticket_creation_scan_cn
+    case_id: 14
+    # 用例描述
+    info: kit运单交接
+    extend: 14_kit_user_sender_courier_parcels_delivery_ticket_creation_scan_cn.yaml
+  #15 kit: 快递员对运单做妥投
+  - test_name: kit_user_sender_courier_parcels_delivery_confirm_cn
+    case_id: 15
+    # 用例描述
+    info: kit运单妥投
+    extend: 15_kit_user_sender_courier_parcels_delivery_confirm_cn.yaml
+### 数据生成后登陆APP查看我发送的数据
+  #16 APP C客户：我的包裹->我发送的->运送中
+  - test_name: app_user_sender_parcels_parcel_info_list1_cn
+    case_id: 16
+    # 用例描述
+    info: C客户查看我的包裹中我发送的并且正在运送中的订单
+    extend: 16_app_user_sender_parcels_parcel_info_list1_cn.yaml
+  #17 APP C客户：我的包裹->我发送的->已签收
+  - test_name: app_user_sender_parcels_parcel_info_list2_cn
+    case_id: 17
+    # 用例描述
+    info: C客户查看我的包裹中我发送的并且已签收的订单
+    extend: 17_app_user_sender_parcels_parcel_info_list2_cn.yaml
+  #18 APP C客户：我的包裹->我发送的->其他
+  - test_name: app_user_sender_parcels_parcel_info_list3_cn
+    case_id: 18
+    # 用例描述
+    info: C客户查看我的包裹中我发送的其他的订单
+    extend: 18_app_user_sender_parcels_parcel_info_list3_cn.yaml
+  #19 APP C客户：我的包裹->我发送的->搜索
+  - test_name: app_user_sender_parcels_parcel_info_list_search_cn
+    case_id: 19
+    # 用例描述
+    info: C客户在我的包裹中搜索指定的包裹
+    extend: 19_app_user_sender_parcels_parcel_info_list_search_cn.yaml
+  #20 APP C客户：我的包裹->我发送的->运送中-操作
+  - test_name: app_user_sender_parcels_pre_parcel_change_cn
+    case_id: 20
+    # 用例描述
+    info: C客户在我发送的包裹中选择运送中的包裹点击操作
+    extend: 20_app_user_sender_parcels_pre_parcel_change_cn.yaml
+  #21 APP C客户：我的包裹->我发送的->运送中->操作->催单
+  - test_name: app_user_sender_parcels_reminder_cn
+    case_id: 21
+    # 用例描述
+    info: C客户对运送中的运单催单
+    extend: 21_app_user_sender_parcels_reminder_cn.yaml
+  #22 APP C客户：我的包裹->我发送的->运送中->操作->改包裹信息
+  - test_name: app_user_sender_parcels_parcel_change_detail_cn
+    case_id: 22
+    # 用例描述
+    info: C客户在我发送的选择运送中的包裹点击改包裹信息
+    extend: 22_app_user_sender_parcels_parcel_change_detail_cn.yaml
+  #23 APP C客户：我的包裹->我发送的->运送中->操作->改包裹信息->保存
+  - test_name: app_user_sender_parcels_modify_cn
+    case_id: 23
+    # 用例描述
+    info: C客户修改运送中的运单的包裹信息后保存
+    extend: 23_app_user_sender_parcels_modify_cn.yaml
+  #24 APP C客户：我的包裹->我发送的->点击订单->物流信息
+  - test_name: app_user_sender_parcels_cn
+    case_id: 24
+    # 用例描述
+    info: C客户查看我发送的包裹的物流信息
+    extend: 24_app_user_sender_parcels_cn.yaml
+  #25 APP C客户：我的包裹->我发送的->点击订单->运单详情
+  - test_name: app_user_sender_parcels_parcel_detail_cn
+    case_id: 25
+    # 用例描述
+    info: C客户查看我发送的包裹的运单详情
+    extend: 25_app_user_sender_parcels_parcel_detail_cn.yaml
+### 登陆APP查看寄给我的数据
+  #26 app端C客户：收件人获取图片验证码
+  - test_name: app_user_receiver_get_image_code_cn
+    case_id: 26
+  #用例描述
+    info: APP端C客户的收件人获取图片验证码
+    extend: 26_app_user_receiver_get_image_code_cn.yaml
+  #27 app端C客户：收件人获取短信验证码
+  - test_name: app_user_receiver_send_sms_code_cn
+    case_id: 27
+  #用例描述
+    info: APP端C客户收件人获取短信验证码
+    extend: 27_app_user_receiver_send_sms_code_cn.yaml
+  #28 app端C客户：寄件人登入
+  - test_name: app_user_receiver_login_cn
+    case_id: 28
+  #用例描述
+    info: APP端C客户的收件人登入
+    extend: 28_app_user_receiver_login_cn.yaml
+  #29 APP C客户：我的包裹->寄给我的->运送中
+  - test_name: app_user_parcels_send_to_me_parcel_info_list1_cn
+    case_id: 29
+    # 用例描述
+    info: C客户查看我的包裹中寄给我的并且正在运送中的订单
+    extend: 29_app_user_parcels_send_to_me_parcel_info_list1_cn.yaml
+  #30 APP C客户：我的包裹->寄给我的->已签收
+  - test_name: app_user_parcels_send_to_me_parcel_info_list2_cn
+    case_id: 30
+    # 用例描述
+    info: C客户查看我的包裹中寄给我的并且已签收的订单
+    extend: 30_app_user_parcels_send_to_me_parcel_info_list2_cn.yaml
+  #31 APP C客户：我的包裹->寄给我的->其他
+  - test_name: app_user_parcels_send_to_me_parcel_info_list3_cn
+    case_id: 31
+    # 用例描述
+    info: C客户查看我的包裹中寄给我的其他的订单
+    extend: 31_app_user_parcels_send_to_me_parcel_info_list3_cn.yaml
+  #32 APP C客户：我的包裹->寄给我的->搜索
+  - test_name: app_user_parcels_send_to_me_parcel_info_list_search_cn
+    case_id: 32
+    # 用例描述
+    info: C客户在我的包裹中搜索指定的包裹
+    extend: 32_app_user_parcels_send_to_me_parcel_info_list_search_cn.yaml
+  #33 APP C客户：我的包裹->寄给我的->运送中-操作
+  - test_name: app_user_parcels_send_to_me_pre_parcel_change_cn
+    case_id: 33
+    # 用例描述
+    info: C客户在寄给我的包裹中选择运送中的包裹点击操作
+    extend: 33_app_user_parcels_send_to_me_pre_parcel_change_cn.yaml
+  #34 APP C客户：我的包裹->寄给我的->运送中->操作->催单
+  - test_name: app_user_parcels_send_to_me_reminder_cn
+    case_id: 34
+    # 用例描述
+    info: C客户对寄给我的并且是运送中的运单催单
+    extend: 34_app_user_parcels_send_to_me_reminder_cn.yaml
+  #35 APP C客户：我的包裹->寄给我的->运送中->操作->改约派送时间
+  - test_name: app_user_parcels_send_to_me_renewal_cn
+    case_id: 35
+    # 用例描述
+    info: C客户在寄给我的并且选择运送中的包裹点击改约派送时间
+    extend: 35_app_user_parcels_send_to_me_renewal_cn.yaml
+  #36 APP C客户：我的包裹->寄给我的->点击订单->物流信息
+  - test_name: app_user_parcels_send_to_me_cn
+    case_id: 36
+    # 用例描述
+    info: C客户查看寄给我的包裹的物流信息
+    extend: 36_app_user_parcels_send_to_me_cn.yaml
+  #37 APP C客户：我的包裹->寄给我的->点击订单->运单详情
+  - test_name: app_user_parcels_send_to_me_parcel_detail_cn
+    case_id: 37
+    # 用例描述
+    info: C客户查看寄给我的包裹的运单详情
+    extend: 37_app_user_parcels_send_to_me_parcel_detail_cn.yaml

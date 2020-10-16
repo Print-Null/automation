@@ -1,0 +1,40 @@
+host: app_host
+http_type: http
+request_type: get
+parameter_type: json
+timeout: 120
+address:
+  0: /api/pub/v1/parcels/$kit_ka_sender_courier_ticket_pickups_cn_0_0_["data"]["collected_parcels"][2]["pno"]$
+headers:
+  0:
+    Accept-Language: zh-Hans-CN
+    content-type: application/json
+    X-KA-SESSION-ID: $app_ka_sender_login_cn_0_0_0_["data"]["sessionid"]$
+  1:
+    content-type: application/json
+    Accept-Language: en-CN
+    X-KA-SESSION-ID: $app_ka_sender_login_cn_0_0_0_["data"]["sessionid"]$
+  2:
+    content-type: application/json
+    Accept-Language: th-CN
+    X-KA-SESSION-ID: $app_ka_sender_login_cn_0_0_0_["data"]["sessionid"]$
+
+success:
+  parameter: {}
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    json_schema: "24_app_ka_sender_parcels_cn.json"
+
+  relevance: {}
+error:
+  parameter: {}
+  check: {}

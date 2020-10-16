@@ -1,0 +1,49 @@
+host: kit_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: /api/courier/v1/parcels/$kit_user_sender_courier_ticket_pickups_cn_0_0_["data"]["collected_parcels"][1]["pno"]$/delivery_ticket_creation_scan?isFromScanner=false
+headers:
+  0:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: zh-CN
+    X-FLE-SESSION-ID: $kit_user_sender_courier_new_device_login_cn_0_0_0_["data"]["sessionid"]$
+  1:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: en-US
+    X-FLE-SESSION-ID: $kit_user_sender_courier_new_device_login_cn_0_0_0_["data"]["sessionid"]$
+  2:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: th-TH
+    X-FLE-SESSION-ID: $kit_user_sender_courier_new_device_login_cn_0_0_0_["data"]["sessionid"]$
+
+success:
+  parameter:
+    0:
+      "continue_de_enabled": false
+      "openned": true
+      "routed_at": 1593348506
+      "routed_at_device": 1593348506
+      "routed_at_ntp": 1593348503
+      "cod_enabled": true
+      "skipped_enabled": false
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    json_schema: "14_kit_user_sender_courier_parcels_delivery_ticket_creation_scan_cn.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

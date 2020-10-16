@@ -1,0 +1,854 @@
+# 测试用例
+case_data: Kit/my_public_funds/data/
+case_path: Kit/my_public_funds/test_cash/
+test_case:
+  #
+  #1登入
+  - test_name: kit_auth_new_device_login
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 1
+    #用例描述
+    info: kit-快递员、仓管员登入
+    extend: 1_kit_login.yaml
+####################################################################################################
+####以下是快递员-我的公款的流程
+####################################################################################################
+
+###--------------------------------------------------------------------------------------------------
+#######               快递员-揽件收费
+#
+###--------------------------------------------------------------------------------------------------
+
+##  2揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 2
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 2_choose_senders.yaml
+#
+##  3揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 3
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 3_choose_recipient_name.yaml
+
+##  4揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 4
+    #用例描述
+    info: 揽件收款来源-输入收件人地址
+    extend: 4_choose_recipient_addressee_details.yaml
+
+##  5揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 5
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 5_submit_solicitation_information.yaml
+
+##  6揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 6
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 6_collection_completed_1.yaml
+
+##  7揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 7
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 7_collection_completed_2.yaml
+
+###  8揽件下单-揽收完成-3
+#  - test_name: kit_message_pickupReward
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 8
+#    #用例描述
+#    info: 揽件收款来源-揽收完成-3
+#    extend: 8_collection_completed_3.yaml
+
+
+####--------------------------------------------------------------------------------------------------
+#######                  快递员-代收货款-COD
+
+####--------------------------------------------------------------------------------------------------
+##  9代收货款-COD-选择寄件人
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 9
+    #用例描述
+    info: 代收货款-COD-选择寄件人
+    extend: 2_choose_senders.yaml
+#
+###  10代收货款-COD-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 10
+    #用例描述
+    info: 代收货款-COD-输入收件人姓名
+    extend: 3_choose_recipient_name.yaml
+
+###  11代收货款-COD-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 11
+    #用例描述
+    info: 代收货款-COD-输入收件人地址
+    extend: 4_choose_recipient_addressee_details.yaml
+
+##  12代收货款-COD-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 12
+    #用例描述
+    info: 代收货款-COD-提交揽件信息
+    extend: 5_submit_solicitation_information.yaml
+
+##  13代收货款-COD--揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 13
+    #用例描述
+    info: 代收货款-COD-揽收完成-1
+    extend: 6_collection_completed_1.yaml
+#
+##  14代收货款-COD--揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 14
+    #用例描述
+    info: 代收货款-COD-揽收完成-2
+    extend: 7_collection_completed_2.yaml
+#
+###  15代收货款-COD--揽收完成-3
+#  - test_name: kit_message_pickupReward
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 15
+#    #用例描述
+#    info: 代收货款-COD-揽收完成-3
+#    extend: 8_collection_completed_3.yaml
+#
+##  16代收货款-COD--交接
+  - test_name: kit_delivery_ticket_creation_scan
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 16
+    #用例描述
+    info: 代收货款-COD-交接
+    extend: 16_handover.yaml
+#
+##  17代收货款-COD--待完成列表
+  - test_name: kit_ticket_simplified_list
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 17
+    #用例描述
+    info: 快递员-待完成列表
+    extend: 17_uncompleted_list.yaml
+#
+##  18代收货款-COD--妥投
+  - test_name: kit_pre_delivery_confirm
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 18
+    #用例描述
+    info: 代收货款-COD--妥投
+    extend: 18_delivered.yaml
+#
+######--------------------------------------------------------------------------------------------------
+#######              快递员-到付运费
+##
+#######--------------------------------------------------------------------------------------------------
+#
+#  19到付快递费-选择寄件人
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 19
+    #用例描述
+    info: 到付运费-选择寄件人
+    extend: 2_choose_senders.yaml
+
+###  20到付快递费-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 20
+    #用例描述
+    info: 到付运费-输入收件人姓名
+    extend: 3_choose_recipient_name.yaml
+
+###  21到付快递费-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 21
+    #用例描述
+    info: 到付运费-输入收件人地址
+    extend: 4_choose_recipient_addressee_details.yaml
+
+##  22到付快递费-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 22
+    #用例描述
+    info: 到付运费-提交揽件信息
+    extend: 5_submit_solicitation_information.yaml
+
+##  23到付快递费--揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 23
+    #用例描述
+    info: 到付运费-揽收完成-1
+    extend: 6_collection_completed_1.yaml
+#
+##  24到付快递费--揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 24
+    #用例描述
+    info: 到付运费-揽收完成-2
+    extend: 7_collection_completed_2.yaml
+#
+###  25到付快递费--揽收完成-3
+#  - test_name: kit_message_pickupReward
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 25
+#    #用例描述
+#    info: 到付运费-揽收完成-3
+#    extend: 8_collection_completed_3.yaml
+#
+##  26到付快递费--仓管员问题单提交-1
+  - test_name: kit_marker_info
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 26
+    #用例描述
+    info: 到付运费-仓管员问题单提交-输入订单号
+    extend: 26_problem_submission_1.yaml
+#
+##  27到付快递费--仓管员问题单提交-2
+  - test_name: kit_get_phone_contact
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 27
+    #用例描述
+    info: 到付运费-仓管员问题单提交-选择原因
+    extend: 27_problem_submission_2.yaml
+#
+##  28到付快递费--仓管员问题单提交-3
+  - test_name: kit_problem_submission
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 28
+    #用例描述
+    info: 到付运费-仓管员问题单提交-提交3
+    extend: 28_problem_submission_3.yaml
+##
+#####--------------------------------------------------------------------------------------------------
+##########            ms系统处理成退货
+###
+######--------------------------------------------------------------------------------------------------
+##
+#  29MS登录-寄件网点-网点经理登录
+  - test_name: ms_auth_signin
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 29
+    #用例描述
+    info: 到付运费-ms-寄件网点-网点经理登录
+    extend: 29_ms_login.yaml
+##
+##  30 MS登录-寄件网点-待网点沟通
+  - test_name: ms_store_pickup_diff_tickets
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 30
+    #用例描述
+    info: 到付运费-ms-寄件网点-网点经理登录-待网点沟通-1
+    extend: 30_waiting_for_network_communication_1.yaml
+#
+##  31 MS登录-寄件网点-待网点沟通
+  - test_name: ms_store_pickup_diff_tickets
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 31
+    #用例描述
+    info: 到付运费-ms-寄件网点-网点经理登录-待网点沟通-2
+    extend: 31_waiting_for_network_communication_2.yaml
+
+##  32 MS登录-寄件网点-待网点沟通
+  - test_name: mis_pickup_diff_tickets_consult
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 32
+    #用例描述
+    info: 到付运费-ms-寄件网点-网点经理登录-待网点沟通-3
+    extend: 32_waiting_for_network_communication_3.yaml
+#
+###  33 MS登录-提交疑难件网点登录-问题件处理-----get请求需要依赖address跟headers，自己写用例
+#  - test_name: ms_store_diff_tickets
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 33
+#    #用例描述
+#    info: 到付运费-ms-提交疑难件网点登录-问题件处理-1
+#    extend: 33_problem_handling_1.yaml
+
+##  34 MS登录-提交疑难件网点登录-问题件处理
+  - test_name: ms_store_diff_tickets_stat
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 34
+    #用例描述
+    info: 到付运费-ms-提交疑难件网点登录-问题件处理-2
+    extend: 34_problem_handling_2.yaml
+#
+###  35 MS登录-10000查询根据原单号退货单号-----get请求需要依赖address跟headers，自己写用例
+#  - test_name: ms_store_parcel_v0
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 35
+#    #用例描述
+#    info: 到付运费-ms-10000查询根据原单号退货单号
+#    extend: 35_returned_pno.yaml
+#
+##  36 kit快递员登录-交接
+  - test_name: kit_delivery_ticket_creation_scan
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 36
+    #用例描述
+    info: 到付运费-kit快递员登录-对退货单号进行交接
+    extend: 36_handover_r.yaml
+#
+##
+##  37 kit快递员登录-待完成列表
+  - test_name: kit_ticket_simplified_list
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 37
+    #用例描述
+    info: 到付运费-快递员-待完成列表
+    extend: 17_uncompleted_list.yaml
+#
+##  38 kit快递员登录-妥投
+  - test_name: kit_store_diff_tickets_stat
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 38
+    #用例描述
+    info: 到付运费-kit快递员登录-对退货单号进行妥投
+    extend: 38_query_return_order_no.yaml
+#
+#  39  揽件下单-查看我的公款-未结清列表 1已结清 0未结清
+  - test_name: kit_my_public_funds_lists_uncleared
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 39
+    #用例描述
+    info: 查看我的公款-未结清列表
+    extend: 39_funds_lists_uncleared.yaml
+####
+###  40 查看我的公款--未结清-揽件费用合计-----get请求需要依赖address跟headers，自己写用例
+#  - test_name: kit_my_public_funds_lists_uncleared_collection_fee
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 40
+#    #用例描述
+#    info: 我的公款-未结清列表-揽件费用合计
+#    extend: 40_uncleared_lists_1.yaml
+#
+##  41 获取我的公款列表-未结清-到付运费、代收货款合计   ---需要参数化pno=TH0304GG427   5需要4的返回值---已解决   -----get请求需要依赖address跟headers，自己写用例
+#  - test_name: kit_my_public_funds_lists_uncleared_collection_of_payment
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 41
+#    #用例描述
+#    info: 我的公款-未结清列表-到付运费、代收货款合计
+#    extend: 41_uncleared_lists_2.yaml
+
+#####
+#  #42 获取我的公款列表-未结清-到付运费、代收货款合计-快件详情-----get请求需要依赖address跟headers，自己写用例
+#  - test_name: kit_my_public_funds_lists_uncleared_collection_of_payment_express_details
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 42
+#    #用例描述
+#    info: 我的公款-未结清列表-到付运费、代收货款合计-快件详情
+#    extend: 42_express_details.yaml
+#
+
+#  #43:快递员回款前，需要处理之前因为添加中英泰所产生的垃圾数据
+
+#  #43 ms-财务人员登录-快递员回款-----get请求需要依赖address跟headers，自己写用例
+#  - test_name: ms_store_receivable_bill
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 43
+#    #用例描述
+#    info: ms-财务人员登录-快递员回款-1
+#    extend: 43_payment_collection_by_courier_1.yaml
+#
+  #44 ms-财务人员登录-快递员回款
+  - test_name: ms_store_receivable_bill
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 44
+    #用例描述
+    info: ms-财务人员登录-快递员回款-查询回款详情
+    extend: 44_payment_collection_by_courier_2.yaml
+#
+  #45 ms-财务人员登录-快递员回款
+  - test_name: ms_store_receivable_bill
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 45
+    #用例描述
+    info: ms-财务人员登录-快递员回款-确认回款
+    extend: 45_payment_collection_by_courier_3.yaml
+#
+  #46 ms-财务人员登录-快递员回款
+  - test_name: ms_store_receivable_bill
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 46
+    #用例描述
+    info: ms-财务人员登录-快递员回款-确认回款提交
+    extend: 46_payment_collection_by_courier_4.yaml
+#
+#
+  #47 kit-快递员登录查看已结清列表
+  - test_name: kit_staff_simplified_receivable
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 47
+    #用例描述
+    info: 我的公款-已结清列表
+    extend: 47_cleared_lists.yaml
+####
+  #48获取我的公款列表-已结清列表-揽件费用
+  - test_name: kit_my_public_funds_lists_cleared
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 48
+    #用例描述
+    info: 我的公款-已结清列表-揽件费用
+    extend: 48_funds_lists_cleared_1.yaml
+#
+  #49获取我的公款列表-已结清列表-到付运费、代收货款合计
+  - test_name: kit_my_public_funds_lists_cleared
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 49
+    #用例描述
+    info: 我的公款-已结清列表-揽件费用-到付运费、代收货款合计
+    extend: 49_funds_lists_cleared_2.yaml
+#
+  #50 获取我的公款列表-已结清-到付运费、代收货款合计-快件详情
+  - test_name: kit_my_public_funds_lists_uncleared_collection_of_payment_express_details
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 50
+    #用例描述
+    info: 我的公款-未结清列表-到付运费、代收货款合计-快件详情
+    extend: 50_express_cleared_details.yaml
+######################################################################################################
+######以下是仓管员-我的公款的流程
+######################################################################################################
+##
+########--------------------------------------------------------------------------------------------------
+##########               仓管员-揽件收费
+####
+#########--------------------------------------------------------------------------------------------------
+###
+###
+##  51揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 51
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 51_choose_senders.yaml
+##
+##  52揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 52
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 52_choose_recipient_name.yaml
+
+##  53揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 53
+    #用例描述
+    info: 揽件收款来源-输入收件人地址
+    extend: 53_choose_recipient_addressee_details.yaml
+
+##  54揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 54
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 54_submit_solicitation_information.yaml
+
+##  55揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 55
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 55_collection_completed_1.yaml
+
+##  56揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 56
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 56_collection_completed_2.yaml
+
+###  57揽件下单-揽收完成-3
+#  - test_name: kit_message_pickupReward
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 57
+#    #用例描述
+#    info: 揽件收款来源-揽收完成-3
+#    extend: 57_collection_completed_3.yaml
+
+
+######--------------------------------------------------------------------------------------------------
+#######                  仓管员-代收货款-COD
+
+######--------------------------------------------------------------------------------------------------
+##  58代收货款-COD-选择寄件人
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 58
+    #用例描述
+    info: 代收货款-COD-选择寄件人
+    extend: 51_choose_senders.yaml
+
+###  59代收货款-COD-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 59
+    #用例描述
+    info: 代收货款-COD-输入收件人姓名
+    extend: 52_choose_recipient_name.yaml
+
+###  60代收货款-COD-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 60
+    #用例描述
+    info: 代收货款-COD-输入收件人地址
+    extend: 53_choose_recipient_addressee_details.yaml
+
+##  61代收货款-COD-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 61
+    #用例描述
+    info: 代收货款-COD-提交揽件信息
+    extend: 54_submit_solicitation_information.yaml
+
+##  62代收货款-COD--揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 62
+    #用例描述
+    info: 代收货款-COD-揽收完成-1
+    extend: 55_collection_completed_1.yaml
+#
+##  63代收货款-COD--揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 63
+    #用例描述
+    info: 代收货款-COD-揽收完成-2
+    extend: 56_collection_completed_2.yaml
+#
+###  64代收货款-COD--揽收完成-3
+#  - test_name: kit_message_pickupReward
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 64
+#    #用例描述
+#    info: 代收货款-COD-揽收完成-3
+#    extend: 57_collection_completed_3.yaml
+
+##  65代收货款-COD--交接（快递员才可以做交接和妥投，所以这里session_id是快递员的）
+  - test_name: kit_delivery_ticket_creation_scan
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 65
+    #用例描述
+    info: 代收货款-COD-交接
+    extend: 16_handover.yaml
+
+##  66代收货款-COD--待完成列表
+  - test_name: kit_ticket_simplified_list
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 66
+    #用例描述
+    info: 快递员-待完成列表
+    extend: 66_uncompleted_list.yaml
+
+##  67代收货款-COD--妥投（快递员才可以做交接和妥投，所以这里session_id是快递员的）
+  - test_name: kit_pre_delivery_confirm
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 67
+    #用例描述
+    info: 代收货款-COD--妥投
+    extend: 18_delivered.yaml
+#
+#######--------------------------------------------------------------------------------------------------
+#######              仓管员-到付运费
+##
+#######--------------------------------------------------------------------------------------------------
+#
+#  68到付快递费-选择寄件人
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 68
+    #用例描述
+    info: 到付运费-选择寄件人
+    extend: 51_choose_senders.yaml
+
+###  69到付快递费-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 69
+    #用例描述
+    info: 到付运费-输入收件人姓名
+    extend: 52_choose_recipient_name.yaml
+
+###  70到付快递费-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 70
+    #用例描述
+    info: 到付运费-输入收件人地址
+    extend: 53_choose_recipient_addressee_details.yaml
+
+##  71到付快递费-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 71
+    #用例描述
+    info: 到付运费-提交揽件信息
+    extend: 54_submit_solicitation_information.yaml
+
+##  72到付快递费--揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 72
+    #用例描述
+    info: 到付运费-揽收完成-1
+    extend: 55_collection_completed_1.yaml
+#
+##  73到付快递费--揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 73
+    #用例描述
+    info: 到付运费-揽收完成-2
+    extend: 56_collection_completed_2.yaml
+#
+###  74到付快递费--揽收完成-3
+#  - test_name: kit_message_pickupReward
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 74
+#    #用例描述
+#    info: 到付运费-揽收完成-3
+#    extend: 57_collection_completed_3.yaml
+
+##  75到付快递费--仓管员问题单提交-1
+  - test_name: kit_marker_info
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 75
+    #用例描述
+    info: 到付运费-仓管员问题单提交-输入订单号
+    extend: 26_problem_submission_1.yaml
+
+##  76到付快递费--仓管员问题单提交-2
+  - test_name: kit_get_phone_contact
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 76
+    #用例描述
+    info: 到付运费-仓管员问题单提交-选择原因
+    extend: 76_problem_submission_2.yaml
+
+##  77到付快递费--仓管员问题单提交-3
+  - test_name: kit_problem_submission
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 77
+    #用例描述
+    info: 到付运费-仓管员问题单提交-提交3
+    extend: 77_problem_submission_3.yaml
+##
+#######--------------------------------------------------------------------------------------------------
+##########            ms系统处理成退货
+###
+#######--------------------------------------------------------------------------------------------------
+##
+#  78MS登录-寄件网点-网点经理登录
+  - test_name: ms_auth_signin
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 78
+    #用例描述
+    info: 到付运费-ms-寄件网点-网点经理登录
+    extend: 29_ms_login.yaml
+##
+##  79 MS登录-寄件网点-待网点沟通
+  - test_name: ms_store_pickup_diff_tickets
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 79
+    #用例描述
+    info: 到付运费-ms-寄件网点-网点经理登录-待网点沟通-1
+    extend: 30_waiting_for_network_communication_1.yaml
+
+##  80 MS登录-寄件网点-待网点沟通
+  - test_name: ms_store_pickup_diff_tickets
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 80
+    #用例描述
+    info: 到付运费-ms-寄件网点-网点经理登录-待网点沟通-2
+    extend: 31_waiting_for_network_communication_2.yaml
+
+##  81 MS登录-寄件网点-待网点沟通
+  - test_name: mis_pickup_diff_tickets_consult
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 81
+    #用例描述
+    info: 到付运费-ms-寄件网点-网点经理登录-待网点沟通-3
+    extend: 32_waiting_for_network_communication_3.yaml
+#
+####  82 MS登录-提交疑难件网点登录-问题件处理 -----自己写用例
+##  - test_name: ms_store_diff_tickets
+##    # 用例ID，第一条用例必填，从1开始递增
+##    case_id: 82
+##    #用例描述
+##    info: 到付运费-ms-提交疑难件网点登录-问题件处理-1
+##    extend: 33_problem_handling_1.yaml
+#
+##  83 MS登录-提交疑难件网点登录-问题件处理
+  - test_name: ms_store_diff_tickets_stat
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 83
+    #用例描述
+    info: 到付运费-ms-提交疑难件网点登录-问题件处理-2
+    extend: 34_problem_handling_2.yaml
+##
+####  84 MS登录-10000查询根据原单号退货单号  --自己写用例
+##  - test_name: ms_store_parcel_v0
+##    # 用例ID，第一条用例必填，从1开始递增
+##    case_id: 84
+##    #用例描述
+##    info: 到付运费-ms-10000查询根据原单号退货单号
+##    extend: 35_returned_pno.yaml
+##
+##  85 kit仓管员登录-交接（快递员才可以做交接和妥投，所以这里session_id是快递员的）
+  - test_name: kit_delivery_ticket_creation_scan
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 85
+    #用例描述
+    info: 到付运费-kit快递员登录-对退货单号进行交接
+    extend: 36_handover_r.yaml
+#
+##
+##  86 kit仓管员登录-待完成列表
+  - test_name: kit_ticket_simplified_list
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 86
+    #用例描述
+    info: 到付运费-快递员-待完成列表
+    extend: 66_uncompleted_list.yaml
+#
+##  87 kit仓管员登录-妥投（快递员才可以做交接和妥投，所以这里session_id是快递员的）
+  - test_name: kit_store_diff_tickets_stat
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 87
+    #用例描述
+    info: 到付运费-kit快递员登录-对退货单号进行妥投
+    extend: 38_query_return_order_no.yaml
+#
+#  88 揽件下单-查看我的公款-未结清列表 1已结清 0未结清
+  - test_name: kit_my_public_funds_lists_uncleared
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 88
+    #用例描述
+    info: 查看我的公款-未结清列表
+    extend: 88_funds_lists_uncleared.yaml
+####
+##  89 查看我的公款--未结清-揽件费用合计
+  - test_name: kit_my_public_funds_lists_uncleared_collection_fee
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 89
+    #用例描述
+    info: 我的公款-未结清列表-揽件费用合计
+    extend: 89_uncleared_lists_1.yaml
+
+##  90 获取我的公款列表-未结清-到付运费、代收货款合计   ---需要参数化pno=TH0304GG427   5需要4的返回值---已解决------------------------交接、妥投，只有快递员可以做，仓管员没有这样的数据
+#  - test_name: kit_my_public_funds_lists_uncleared_collection_of_payment
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 90
+#    #用例描述
+#    info: 我的公款-未结清列表-到付运费、代收货款合计
+#    extend: 90_uncleared_lists_2.yaml
+#
+#####
+  #91 获取我的公款列表-未结清-到付运费、代收货款合计-快件详情
+  - test_name: kit_my_public_funds_lists_uncleared_collection_of_payment_express_details
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 91
+    #用例描述
+    info: 我的公款-未结清列表-到付运费、代收货款合计-快件详情
+    extend: 91_express_details.yaml
+
+#  #91快递员回款前，需要处理之前因为添加中英泰所产生的垃圾数据
+
+#  #92 ms-财务人员登录-快递员回款----------自己写用例
+#  - test_name: ms_store_receivable_bill
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 92
+#    #用例描述
+#    info: ms-财务人员登录-快递员回款-1
+#    extend: 92_payment_collection_by_courier_1.yaml
+#
+  #93 ms-财务人员登录-快递员回款
+  - test_name: ms_store_receivable_bill
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 93
+    #用例描述
+    info: ms-财务人员登录-快递员回款-查询回款详情
+    extend: 44_payment_collection_by_courier_2.yaml
+#
+  #94 ms-财务人员登录-快递员回款
+  - test_name: ms_store_receivable_bill
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 94
+    #用例描述
+    info: ms-财务人员登录-快递员回款-确认回款
+    extend: 45_payment_collection_by_courier_3.yaml
+
+  #95 ms-财务人员登录-快递员回款
+  - test_name: ms_store_receivable_bill
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 95
+    #用例描述
+    info: ms-财务人员登录-快递员回款-确认回款提交
+    extend: 46_payment_collection_by_courier_4.yaml
+
+
+  #96 kit-仓管员登录查看已结清列表
+  - test_name: kit_staff_simplified_receivable
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 96
+    #用例描述
+    info: 我的公款-已结清列表
+    extend: 96_cleared_lists.yaml
+###
+  #97获取我的公款列表-已结清列表-揽件费用
+  - test_name: kit_my_public_funds_lists_cleared
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 97
+    #用例描述
+    info: 我的公款-已结清列表-揽件费用
+    extend: 97_funds_lists_cleared_1.yaml
+
+#  #98获取我的公款列表-已结清列表-到付运费、代收货款合计--------交接、妥投，只有快递员可以做，仓管员没有这样的数据
+#  - test_name: kit_my_public_funds_lists_cleared
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 98
+#    #用例描述
+#    info: 我的公款-已结清列表-揽件费用-到付运费、代收货款合计
+#    extend: 98_funds_lists_cleared_2.yaml
+
+  #99 获取我的公款列表-已结清-到付运费、代收货款合计-快件详情
+  - test_name: kit_my_public_funds_lists_uncleared_collection_of_payment_express_details
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 99
+    #用例描述
+    info: 我的公款-未结清列表-到付运费、代收货款合计-快件详情
+    extend: 99_express_cleared_details.yaml

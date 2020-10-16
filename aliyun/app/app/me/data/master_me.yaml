@@ -1,0 +1,292 @@
+# 测试用例
+case_data: app/me/data/
+case_path: app/me/test_cash/
+test_case:
+  #1 app端C客户获取图片验证码
+  - test_name: app_user_get_image_code
+    case_id: 1
+  #用例描述
+    info: APP端C客户获取图片验证码
+    extend: 1_app_user_get_image_code.yaml
+  #2 app端C客户获取短信验证码
+  - test_name: app_user_send_sms_code
+    case_id: 2
+  #用例描述
+    info: APP端C客户获取短信验证码
+    extend: 2_app_user_send_sms_code.yaml
+  #3 app端C客户登入
+  - test_name: app_user_login
+    case_id: 3
+  #用例描述
+    info: APP端C客户登入
+    extend: 3_app_user_login.yaml
+  #4 C客户:我->我的余额
+  - test_name: app_user_balance
+    case_id: 4
+    # 用例描述
+    info: C客户查询我的余额
+    extend: 4_app_user_balance.yaml
+  #5 C客户:我->优惠券
+  - test_name: app_user_info_coupon_balance
+    case_id: 5
+    # 用例描述
+    info: C客户查询优惠券
+    extend: 5_app_user_info_coupon_balance.yaml
+  #6 C客户:我->我的地址->新建地址
+  - test_name: app_user_sender_add_address
+    case_id: 6
+    # 用例描述
+    info: C客户新建寄件人地址
+    extend: 6_app_user_sender_add_address.yaml
+  #7 C客户:我->我的地址
+  - test_name: app_user_sender_get_addrbooks
+    case_id: 7
+    # 用例描述
+    info: C客户获取我的地址列表
+    extend: 7_app_user_sender_get_addrbooks.yaml
+  #8 C客户:我->我的地址->输入关键字搜索地址信息
+  - test_name: app_user_sender_search_addrbooks
+    case_id: 8
+    # 用例描述
+    info: C客户在我的地址列表中按关键字搜索地址信息
+    extend: 8_app_user_sender_search_addrbooks.yaml
+  #9 C客户:我->我的地址->编辑地址信息
+  - test_name: app_user_sender_edit_addrbooks
+    case_id: 9
+    # 用例描述
+    info: C客户修改寄件地址信息
+    extend: 9_app_user_sender_edit_addrbooks.yaml
+  #10 C客户:我->我的地址->删除地址信息
+  - test_name: app_user_sender_delete_addrbooks
+    case_id: 10
+    # 用例描述
+    info: C客户删除寄件地址信息
+    extend: 10_app_user_sender_delete_addrbooks.yaml
+  #11 C客户:我->我的地址->新建地址->智能解析地址
+  - test_name: app_user_address_resolution
+    case_id: 11
+    # 用例描述
+    info: C客户新建地址时解析地址
+    extend: 11_app_user_address_resolution.yaml
+  #12 C客户:我->收件人地址薄->新建地址
+  - test_name: app_user_receiver_add_address
+    case_id: 12
+    # 用例描述
+    info: C客户选择寄收件人信息后可勾选speed服务
+    extend: 12_app_user_receiver_add_address.yaml
+  #13 C客户:我->收件人地址薄
+  - test_name: app_user_receiver_get_addrbooks
+    case_id: 13
+    # 用例描述
+    info: C客户获取收件人地址薄列表
+    extend: 13_app_user_receiver_get_addrbooks.yaml
+  #14 C客户:我->收件人地址薄->输入关键字搜索地址信息
+  - test_name: app_user_receiver_search_addrbooks
+    case_id: 14
+    # 用例描述
+    info: C客户在收件人地址薄列表中按关键字搜索地址信息
+    extend: 14_app_user_receiver_search_addrbooks.yaml
+  #15 C客户:我->收件人地址薄->编辑地址信息
+  - test_name: app_user_receiver_edit_addrbooks
+    case_id: 15
+    # 用例描述
+    info: C客户修改收件地址信息
+    extend: 15_app_user_receiver_edit_addrbooks.yaml
+  #16 C客户:我->收件人地址薄->删除地址信息
+  - test_name: app_user_receiver_delete_addrbooks
+    case_id: 16
+    # 用例描述
+    info: C客户删除收件地址信息
+    extend: 16_app_user_receiver_delete_addrbooks.yaml
+  #17 app端B客户登入
+  - test_name: app_ka_login
+    case_id: 17
+    #用例描述
+    info: APP端B客户登录
+    extend: 17_app_ka_login.yaml
+  #18 B客户:我->揽件地址->新建地址
+  - test_name: app_ka_add_warehouse
+    case_id: 18
+    # 用例描述
+    info: B客户新建仓库地址信息
+    extend: 18_app_ka_add_warehouse.yaml
+  #19 B客户:我->揽件地址->获取揽件地址列表
+  - test_name: app_ka_get_warehouse
+    case_id: 19
+    # 用例描述
+    info: B客户获取揽件地址列表
+    extend: 19_app_ka_get_warehouse.yaml
+  #20 B客户:我->揽件地址->按关键字搜索揽件地址
+  - test_name: app_ka_search_warehouse
+    case_id: 20
+    # 用例描述
+    info: B客户按关键字搜索揽件地址
+    extend: 20_app_ka_search_warehouse.yaml
+  #21 B客户:我->揽件地址->编辑揽件地址
+  - test_name: app_ka_edit_warehouse
+    case_id: 21
+    # 用例描述
+    info: B客户按关键字搜索揽件地址
+    extend: 21_app_ka_edit_warehouse.yaml
+  #22 B客户:我->揽件地址->删除揽件地址
+  - test_name: app_ka_delete_warehouse
+    case_id: 22
+    # 用例描述
+    info: B客户删除揽件地址
+    extend: 22_app_ka_delete_warehouse.yaml
+  #23 B客户:我->地址薄->新建地址->解析
+  - test_name: app_ka_address_resolution
+    case_id: 23
+    # 用例描述
+    info: B客户解析地址
+    extend: 23_app_ka_address_resolution.yaml
+  #24 B客户:我->地址薄->新建地址
+  - test_name: app_ka_add_address
+    case_id: 24
+    # 用例描述
+    info: B客户新建地址信息
+    extend: 24_app_ka_add_address.yaml
+  #25 B客户:我->地址薄->获取地址信息列表
+  - test_name: app_ka_get_addrbooks
+    case_id: 25
+    # 用例描述
+    info: B客户获取地址簿地址信息
+    extend: 25_app_ka_get_addrbooks.yaml
+  #26 B客户:我->地址薄->按关键字搜索地址信息
+  - test_name: app_ka_search_addrbooks
+    case_id: 26
+    # 用例描述
+    info: B客户按关键字搜索地址信息
+    extend: 26_app_ka_search_addrbooks.yaml
+  #27 B客户:我->地址薄->编辑地址
+  - test_name: app_ka_edit_addrbooks
+    case_id: 27
+    # 用例描述
+    info: B客户编辑地址
+    extend: 27_app_ka_edit_addrbooks.yaml
+  #28 B客户:我->地址薄->删除地址
+  - test_name: app_ka_delete_addrbooks
+    case_id: 28
+    # 用例描述
+    info: B客户删除地址
+    extend: 28_app_ka_delete_addrbooks.yaml
+  #29 B客户:我->COD收款日历
+  - test_name: app_ka_cod_bills
+    case_id: 29
+    # 用例描述
+    info: B客户查看COD收款日历
+    extend: 29_app_ka_cod_bills.yaml
+#  #29 B客户:寄件->填单->下单
+#  - test_name: app_ka_orders
+#    case_id: 29
+#    # 用例描述
+#    info: B客户下单
+#    extend: 29_app_ka_orders.yaml
+#  #30 B/C公用:寄件->填单->定位时基于输入信息获取的建议地址
+#  - test_name: app_maps_suggested_address
+#    case_id: 30
+#    # 用例描述
+#    info: 定位时基于输入信息获取的建议地址
+#    extend: 30_app_maps_suggested_address.yaml
+#  #31 B/C公用:寄件->填单->根据建议地址的place_id查询详细地址
+#  - test_name: app_maps_place_detail
+#    case_id: 31
+#    # 用例描述
+#    info: 根据建议地址的place_id查询详细地址
+#    extend: 31_app_maps_place_detail.yaml
+#  #32 B客户:寄件->呼叫快递员->基于位置信息查询仓库列表
+#  - test_name: app_ka_ticket_assignment_get_store_list
+#    case_id: 32
+#    # 用例描述
+#    info: B客户基于位置信息查询仓库列表
+#    extend: 32_app_ka_ticket_assignment_get_store_list.yaml
+#  #33 C客户:寄件->下单->呼叫快递员->基于位置信息查询仓库列表
+#  - test_name: app_user_ticket_assignment_get_store_list
+#    case_id: 33
+#    # 用例描述
+#    info: C客户基于位置信息查询仓库列表
+#    extend: 33_app_user_ticket_assignment_get_store_list.yaml
+#  #34 B客户:寄件->下单->呼叫快递员->分配快递员
+#  - test_name: app_ka_ticket_assignment
+#    case_id: 34
+#    # 用例描述
+#    info: B客户呼叫快递员并分配
+#    extend: 34_app_ka_ticket_assignment.yaml
+#  #35 C客户:寄件->下单->呼叫快递员->分配快递员
+#  - test_name: app_user_ticket_assignment
+#    case_id: 35
+#    # 用例描述
+#    info: C客户呼叫快递员并分配
+#    extend: 35_app_user_ticket_assignment.yaml
+#  #36 C客户:寄件->下单历史->查询下单历史列表
+#  - test_name: app_user_ticket_pickup_list
+#    case_id: 36
+#    # 用例描述
+#    info: C客户查询下单历史
+#    extend: 36_app_user_ticket_pickup_list.yaml
+#  #37 C客户:寄件->下单历史->修改->查询包裹列表
+#  - test_name: app_user_ticket_orders_list
+#    case_id: 37
+#    # 用例描述
+#    info: C客户查询某个订单的包裹信息
+#    extend: 37_app_user_ticket_orders_list.yaml
+#  #38 C客户:寄件->下单历史->修改->查询包裹列表->查询某个包裹详情
+#  - test_name: app_user_orders_order_detail
+#    case_id: 38
+#    # 用例描述
+#    info: C客户查询某个订单下的包裹详情
+#    extend: 38_app_user_orders_order_detail.yaml
+#  #39 C客户:寄件->下单历史->修改->修改包裹信息
+#  - test_name: app_user_orders_update
+#    case_id: 39
+#    # 用例描述
+#    info: C客户修改某个订单下的包裹信息
+#    extend: 39_app_user_orders_update.yaml
+#  #40 C客户:寄件->下单历史->修改->删除包裹信息（原始包裹信息有两条或两条以上）
+#  - test_name: app_user_orders_delete
+#    case_id: 40
+#    # 用例描述
+#    info: C客户删除某个订单下的包裹信息
+#    extend: 40_app_user_orders_delete.yaml
+#  #41 C客户:寄件->下单历史->取消下单
+#  - test_name: app_user_ticket_cancel
+#    case_id: 41
+#    # 用例描述
+#    info: C客户取消订单
+#    extend: 41_app_user_ticket_cancel.yaml
+#  #42 B客户:寄件->下单历史->查询下单历史列表
+#  - test_name: app_ka_ticket_pickup_list
+#    case_id: 42
+#    # 用例描述
+#    info: B客户查询下单历史
+#    extend: 42_app_ka_ticket_pickup_list.yaml
+#  #43 B客户:寄件->下单历史->修改->查询包裹列表
+#  - test_name: app_ka_ticket_orders_list
+#    case_id: 43
+#    # 用例描述
+#    info: B客户查询某个订单的包裹信息
+#    extend: 43_app_ka_ticket_orders_list.yaml
+#  #44 B客户:寄件->下单历史->修改->查询包裹列表->查询某个包裹详情
+#  - test_name: app_ka_orders_order_detail
+#    case_id: 44
+#    # 用例描述
+#    info: B客户查询某个订单下的包裹详情
+#    extend: 44_app_ka_orders_order_detail.yaml
+#  #45 B客户:寄件->下单历史->修改->修改包裹信息
+#  - test_name: app_ka_orders_update
+#    case_id: 45
+#    # 用例描述
+#    info: B客户修改某个订单下的包裹信息
+#    extend: 45_app_ka_orders_update.yaml
+#  #46 B客户:寄件->下单历史->修改->删除包裹信息（原始包裹信息有两条或两条以上）
+#  - test_name: app_ka_orders_delete
+#    case_id: 46
+#    # 用例描述
+#    info: B客户删除某个订单下的包裹信息
+#    extend: 46_app_ka_orders_delete.yaml
+#  #47 B客户:寄件->下单历史->取消下单
+#  - test_name: app_ka_ticket_cancel
+#    case_id: 47
+#    # 用例描述
+#    info: B客户取消订单
+#    extend: 47_app_ka_ticket_cancel.yaml

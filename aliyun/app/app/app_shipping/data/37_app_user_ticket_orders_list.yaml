@@ -1,0 +1,36 @@
+host: app_host
+http_type: http
+request_type: get
+parameter_type: json
+timeout: 120
+address:
+  0: /api/user/v1/ticket/orders_list/$app_user_ticket_pickup_list_0_0_["data"]["list"][1]["id"]$
+headers:
+  0:
+    Accept-Language: zh-Hans-CN
+    content-type: application/json
+    X-FLE-SESSION-ID: $app_user_login_0_0_0_["data"]["sessionid"]$
+#    Accept-Language: zh-CN
+#  1:
+#    content-type: application/json
+#    Accept-Language: en-US
+#  2:
+#    content-type: application/json
+#    Accept-Language: th-CN
+
+success:
+  parameter: {}
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    message: "success"
+
+  relevance:
+    - '["data"][0]["id"]'
+    - '["data"][1]["id"]'
+
+error:
+  parameter: {}
+  check: {}

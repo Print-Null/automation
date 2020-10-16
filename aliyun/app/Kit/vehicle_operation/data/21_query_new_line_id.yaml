@@ -1,0 +1,52 @@
+host: ms_host
+http_type: http
+request_type: get
+parameter_type: json
+timeout: 120
+address:
+#  0: ms/api/fleet/van/line?sortingNo=&type=&originStoreId=&targetStoreId=&ms_houtai_login_user=$line_name$&pageSize=20&pageNum=1&passStoreId=
+  0: ms/api/fleet/van/line?sortingNo=&type=&originStoreId=&targetStoreId=&lineName=&pageSize=20&pageNum=1&passStoreId=
+headers:
+  #10000登录
+  0:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: zh-CN
+    X-MS-SESSION-ID: $ms_auth_signin_2_0_0_["data"]["session_id"]$
+
+  1:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: en-US
+    X-MS-SESSION-ID: $ms_auth_signin_2_1_0_["data"]["session_id"]$
+
+  2:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: th-TN
+    X-MS-SESSION-ID: $ms_auth_signin_2_2_0_["data"]["session_id"]$
+
+
+success:
+  parameter: {}
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+# #schema校验 注：路径存储是当前目录的
+#    json_schema: "21_query_new_line_id.json"
+
+  relevance:
+    - '["data"]["items"][0]["id"]'
+    - '["data"]["items"][1]["id"]'
+    - '["data"]["items"][2]["id"]'
+
+error:
+  parameter: {}
+  check: {}

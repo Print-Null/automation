@@ -1,0 +1,50 @@
+{
+    "car_type": $backyard_overtime_car_ms_api_fleet_line_approve_1_0_0_["data"]["car_type"]$, #16
+    "fleet_id": '$backyard_overtime_car_ms_approve_van_info_query_0_0_["data"][0]["line_van_query_dto"]["fleet_id"]$', # 18
+    "plan_date": "$[python]datetime.datetime.now().strftime('%Y-%m-%d')$",
+    "single_line": 1,
+    "system_quote": None,
+    "abnormal_cost": None,
+    "final_cost": 2200,
+    "line_cost": 2200,
+    "line_back_cost": None,
+    "line_name": 'DD1-$backyard_overtime_car_ms_api_fleet_line_approve_1_0_0_["data"]["car_type_text"]$-LT1-qwqe-$[python]datetime.datetime.now().strftime("%Y-%m-%d 23:30")$', # 16
+    "line_back_name": 'DD2-$backyard_overtime_car_ms_api_fleet_line_approve_1_0_0_["data"]["car_type_text"]$-qwqe-LT1-null null', # 16
+    "driver": "xingming",
+    "driver_phone": "1111111111",
+    "province_code": '$backyard_overtime_car_ms_approve_van_info_query_0_0_["data"][0]["line_van_query_dto"]["province_code"]$',  # 18
+    "plate_name": '$backyard_overtime_car_ms_approve_van_info_query_0_0_["data"][0]["plate_name"]$', # 18
+    "audit_type": 1,
+    "fd_courier_id": None,
+    "fd_courier_name": None,
+    "line_timetable_dtolist": [
+        {
+            "order_no": 1,
+            "store_id": '$backyard_overtime_car_ms_api_fleet_line_approve_1_0_0_["data"]["start_store"]$', # 16
+            "estimate_end_time": "838",
+            "estimate_start_time": "898"
+        },
+        {
+            "order_no": 2,
+            "store_id": '$backyard_overtime_car_ms_api_fleet_line_approve_1_0_0_["data"]["end_store"]$', # 16
+            "estimate_start_time": "",
+            "estimate_end_time": "958"
+        }
+    ],
+    "line_back_timetable_dtolist": [
+        {
+            "order_no": 1,
+            "store_id": '$backyard_overtime_car_ms_api_fleet_line_approve_1_0_0_["data"]["end_store"]$', #  16
+            "estimate_end_time": "",
+            "estimate_start_time": "",
+            "running_mileage": ""
+        },
+        {
+            "order_no": 2,
+            "store_id": '$backyard_overtime_car_ms_api_fleet_line_approve_1_0_0_["data"]["start_store"]$', # 16
+            "running_mileage": "",
+            "estimate_start_time": "",
+            "estimate_end_time": ""
+        }
+    ]
+}

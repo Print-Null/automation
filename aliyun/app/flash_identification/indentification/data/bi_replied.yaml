@@ -1,0 +1,46 @@
+host: fbi_host_domain
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+
+  0: workorder/mydealing_ajax?draw=1&columns[0][data]=speed_level&columns[0][name]=&columns[0][searchable]=false&columns[0][orderable]=false&columns[0][search][value]=&columns[0][search][regex]=false&columns[1][data]=status&columns[1][name]=&columns[1][searchable]=true&columns[1][orderable]=false&columns[1][search][value]=&columns[1][search][regex]=false&columns[2][data]=title&columns[2][name]=&columns[2][searchable]=true&columns[2][orderable]=false&columns[2][search][value]=&columns[2][search][regex]=false&columns[3][data]=order_type&columns[3][name]=&columns[3][searchable]=false&columns[3][orderable]=false&columns[3][search][value]=&columns[3][search][regex]=false&columns[4][data]=reply_time&columns[4][name]=&columns[4][searchable]=false&columns[4][orderable]=false&columns[4][search][value]=&columns[4][search][regex]=false&columns[5][data]=created_at&columns[5][name]=&columns[5][searchable]=false&columns[5][orderable]=false&columns[5][search][value]=&columns[5][search][regex]=false&columns[6][data]=reminder_pno_created_at&columns[6][name]=&columns[6][searchable]=false&columns[6][orderable]=false&columns[6][search][value]=&columns[6][search][regex]=false&columns[7][data]=reply_staff_info_name&columns[7][name]=&columns[7][searchable]=false&columns[7][orderable]=false&columns[7][search][value]=&columns[7][search][regex]=false&columns[8][data]=latest_deal_at&columns[8][name]=&columns[8][searchable]=false&columns[8][orderable]=false&columns[8][search][value]=&columns[8][search][regex]=false&columns[9][data]=staff_info_id&columns[9][name]=&columns[9][searchable]=false&columns[9][orderable]=false&columns[9][search][value]=&columns[9][search][regex]=false&columns[10][data]=worder_staff_store_name&columns[10][name]=&columns[10][searchable]=false&columns[10][orderable]=false&columns[10][search][value]=&columns[10][search][regex]=false&start=0&length=100&search[value]=&search[regex]=false&f=my_dealing&date=$[python]str(datetime.date.today()) + " 00:00:00" +" - " + str(datetime.date.today()) + " 23:59:59"$&staff_id=&status=0
+headers:
+  0:
+    Accept: application/json, text/plain, */*
+    Accept-Encoding: gzip, deflate
+    Accept-Language: zh-CN
+    BI-PLATFORM:
+    Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+    Cookie: $[config]bi_shansu_cookie$
+
+
+#    Content-Type: "application/json"
+#    Accept-Language: zh-CN
+
+success:
+  parameter: {}
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    data:
+      - 'resp.json()["data"]["row"][-1]["state_str"] == "已工单回复"'
+    msg:
+      data_key: "msg"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+#    json_schema: "login.json"
+
+  relevance:
+    - '["data"]["DataList"][0]["pnos"]'
+    - '["data"]["DataList"][0]["order_id"]'
+
+error:
+  parameter: {}
+  check: {}

@@ -1,0 +1,59 @@
+host: ms_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: api/courier/v1/fleet/proof/outbound/new/$ms_houtai_login_user_0_#headers#_0_["data"]["id"]$
+
+headers:
+#  #仓管员 车辆出港提交类就写了泰文一种
+#  0:
+#    content-type: application/json; charset=UTF-8
+#    Accept-Language: zh-CN
+#    X-FLE-SESSION-ID: $kit_auth_new_device_login_1_0_0_["data"]["sessionid"]$
+#
+#  1:
+#    content-type: application/json; charset=UTF-8
+#    Accept-Language: en-US
+#    X-FLE-SESSION-ID: $kit_auth_new_device_login_1_1_0_["data"]["sessionid"]$
+
+  2:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: th-TN
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_1_2_0_["data"]["sessionid"]$
+
+
+success:
+  parameter:
+    0:
+      fleet_bound_images:
+        -
+          sealing_number: $[python]random.choice(["P","V","A"])+str(random.randint(0000000000,9999999999))$
+      outbound_autograph_image:
+        image_key: $kit_aparcels_receive_warehouse_#headers#_0_["data"]["object_key"]$
+        image_name: $kit_aparcels_receive_warehouse_#headers#_0_["data"]["object_key"]$
+      outbound_image:
+        image_key: "fleetOutbound/1595596630-630ad43d97d5429893d4079a581bf11c.jpg"
+        image_name: "1595596630-630ad43d97d5429893d4079a581bf11c.jpg"
+      signer_content: $[config]signer_content$
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+###schema校验 注：路径存储是当前目录的
+#    json_schema: "31_vehicle_closure.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

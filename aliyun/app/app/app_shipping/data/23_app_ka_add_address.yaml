@@ -1,0 +1,61 @@
+host: app_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  #B客户新增收/寄件人地址信息为一个同样的接口
+  0: /api/ka/v1/addrbooks
+headers:
+  0:
+    Accept-Language: zh-Hans-CN
+    content-type: application/json
+    X-KA-SESSION-ID: $app_ka_login_0_0_0_["data"]["sessionid"]$
+#    Accept-Language: zh-CN
+#  1:
+#    content-type: application/json
+#    Accept-Language: en-US
+#  2:
+#    content-type: application/json
+#    Accept-Language: th-CN
+
+success:
+  parameter:
+    # 新增寄件人地址
+    0:
+      src_default: true
+      detail_address: $[python]"自动化B客户寄件地址新增"+chr(random.randint(65,90))+chr(random.randint(97,122))+str(random.randint(1,100))$
+      name: $[python]"自动化B客户寄件人新增"+chr(random.randint(65,90))+chr(random.randint(97,122))+str(random.randint(1,100))$
+      province_code: "TH05"
+      postal_code: "13000"
+      district_code: "TH050101"
+      city_code: "TH0501"
+      phone: $[python]random.choice(["136","138"])+str(random.randint(10000000,99999999))$
+      dst_home_phone: ""
+      dst_default: false
+    # 新增收件人地址
+    1:
+      postal_code: "10500"
+      dst_home_phone: ""
+      dst_default: true
+      phone: $[python]random.choice(["191","192"])+str(random.randint(10000000,99999999))$
+      city_code: "TH0125"
+      district_code: "TH012501"
+      name: $[python]"自动化B客户收件人新增"+chr(random.randint(65,91))+chr(random.randint(97,123))+str(random.randint(1,100))$
+      detail_address: $[python]"自动化B客户收件地址新增"+chr(random.randint(65,91))+chr(random.randint(97,123))+str(random.randint(1,100))$
+      src_default: false
+      province_code: "TH01"
+
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    message: "success"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

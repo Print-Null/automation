@@ -1,0 +1,256 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "复称",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The Code Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1.0
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The Message Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The Data Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "parcel_amount_before": null,
+                    "deducted_total_amount": null,
+                    "vat_cod_poundage_amount": null,
+                    "store_height": 1.0,
+                    "receivable_amount": null,
+                    "pickup_total_weight": null,
+                    "parcel_coupon_amount": null,
+                    "pickup_total_amount": null,
+                    "store_width": 1.0,
+                    "parcel_info_list": null,
+                    "deductions_amount": null,
+                    "pickup_parcel_number": null,
+                    "exhibition_weight": 4000.0,
+                    "store_total_amount": null,
+                    "coupon_use_amount": null,
+                    "store_parcel_amount": null,
+                    "store_length": 1.0
+                }
+            ],
+            "additionalProperties": true,
+            "required": [
+                "deductions_amount",
+                "deducted_total_amount",
+                "store_parcel_amount",
+                "exhibition_weight",
+                "store_length",
+                "store_width",
+                "store_height",
+                "store_total_amount",
+                "pickup_parcel_number",
+                "pickup_total_weight",
+                "pickup_total_amount",
+                "parcel_amount_before",
+                "coupon_use_amount",
+                "receivable_amount",
+                "parcel_coupon_amount",
+                "vat_cod_poundage_amount",
+                "parcel_info_list"
+            ],
+            "properties": {
+                "deductions_amount": {
+                    "$id": "#/properties/data/properties/deductions_amount",
+                    "type": "null",
+                    "title": "The Deductions_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "deducted_total_amount": {
+                    "$id": "#/properties/data/properties/deducted_total_amount",
+                    "type": "null",
+                    "title": "The Deducted_total_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "store_parcel_amount": {
+                    "$id": "#/properties/data/properties/store_parcel_amount",
+                    "type": "null",
+                    "title": "The Store_parcel_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "exhibition_weight": {
+                    "$id": "#/properties/data/properties/exhibition_weight",
+                    "type": "integer",
+                    "title": "The Exhibition_weight Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        4000.0
+                    ]
+                },
+                "store_length": {
+                    "$id": "#/properties/data/properties/store_length",
+                    "type": "integer",
+                    "title": "The Store_length Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1.0
+                    ]
+                },
+                "store_width": {
+                    "$id": "#/properties/data/properties/store_width",
+                    "type": "integer",
+                    "title": "The Store_width Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1.0
+                    ]
+                },
+                "store_height": {
+                    "$id": "#/properties/data/properties/store_height",
+                    "type": "integer",
+                    "title": "The Store_height Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1.0
+                    ]
+                },
+                "store_total_amount": {
+                    "$id": "#/properties/data/properties/store_total_amount",
+                    "type": "null",
+                    "title": "The Store_total_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "pickup_parcel_number": {
+                    "$id": "#/properties/data/properties/pickup_parcel_number",
+                    "type": "null",
+                    "title": "The Pickup_parcel_number Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "pickup_total_weight": {
+                    "$id": "#/properties/data/properties/pickup_total_weight",
+                    "type": "null",
+                    "title": "The Pickup_total_weight Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "pickup_total_amount": {
+                    "$id": "#/properties/data/properties/pickup_total_amount",
+                    "type": "null",
+                    "title": "The Pickup_total_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "parcel_amount_before": {
+                    "$id": "#/properties/data/properties/parcel_amount_before",
+                    "type": "null",
+                    "title": "The Parcel_amount_before Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "coupon_use_amount": {
+                    "$id": "#/properties/data/properties/coupon_use_amount",
+                    "type": "null",
+                    "title": "The Coupon_use_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "receivable_amount": {
+                    "$id": "#/properties/data/properties/receivable_amount",
+                    "type": "null",
+                    "title": "The Receivable_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "parcel_coupon_amount": {
+                    "$id": "#/properties/data/properties/parcel_coupon_amount",
+                    "type": "null",
+                    "title": "The Parcel_coupon_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "vat_cod_poundage_amount": {
+                    "$id": "#/properties/data/properties/vat_cod_poundage_amount",
+                    "type": "null",
+                    "title": "The Vat_cod_poundage_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "parcel_info_list": {
+                    "$id": "#/properties/data/properties/parcel_info_list",
+                    "type": "null",
+                    "title": "The Parcel_info_list Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                }
+            }
+        }
+    }
+}

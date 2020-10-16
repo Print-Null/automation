@@ -1,0 +1,889 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "code": 1,
+            "message": "success",
+            "data": {
+                "id": 14343,
+                "serial_no": "VA084079131594752",
+                "audit_type": 1,
+                "audit_type_text": "普通加班车",
+                "fd_courier_id": null,
+                "fd_courier_name": null,
+                "fd_courier_phone": null,
+                "fd_courier_plate": null,
+                "province_code": null,
+                "province_name": null,
+                "car_type": 100,
+                "car_type_text": "4W",
+                "fleet_id": null,
+                "fleet_name": null,
+                "plate_id": null,
+                "plate_name": null,
+                "plate_exclude_province": null,
+                "capacity": 44,
+                "expected_date": [
+                    2020,
+                    8,
+                    1,
+                    7,
+                    0
+                ],
+                "plan_date": null,
+                "plan_back_date": null,
+                "expected_date_text": "2020-07-31 23:00",
+                "plan_date_text": null,
+                "plan_back_date_text": null,
+                "start_store": "TH65040101",
+                "start_store_name": "KLT_SP-????????",
+                "start_store_short_name": "KLT",
+                "end_store": "TH47150103",
+                "end_store_name": "HDG_SP-?????",
+                "end_store_short_name": "HDG",
+                "region": "S",
+                "reason": "Auto加班车",
+                "reject_reason": null,
+                "line_id": null,
+                "line_back_id": null,
+                "single_line": null,
+                "single_line_text": null,
+                "system_quote": 0,
+                "abnormal_cost": 0,
+                "line_cost": null,
+                "line_back_cost": null,
+                "final_cost": 0,
+                "submitter_id": 31515,
+                "submitter_name": "自动化测试",
+                "submitter_job_title_id": 97,
+                "submitter_job_title": "Shop Cashier",
+                "store_name": "KLT_SP-????????",
+                "audit_state": 1,
+                "status": 7,
+                "status_text": "待审批",
+                "final_approver": 0,
+                "final_approval_time": null,
+                "approve_time": 1596176573.0,
+                "created_at": 1596176569.252,
+                "updated_at": 1596176573.208,
+                "driver": null,
+                "driver_phone": null,
+                "apply_image_list": [],
+                "line_timetable_dtolist": null,
+                "line_back_timetable_dtolist": null,
+                "outbound_enabled": false
+            }
+        }
+    ],
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The message schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "id": 14343,
+                    "serial_no": "VA084079131594752",
+                    "audit_type": 1,
+                    "audit_type_text": "普通加班车",
+                    "fd_courier_id": null,
+                    "fd_courier_name": null,
+                    "fd_courier_phone": null,
+                    "fd_courier_plate": null,
+                    "province_code": null,
+                    "province_name": null,
+                    "car_type": 100,
+                    "car_type_text": "4W",
+                    "fleet_id": null,
+                    "fleet_name": null,
+                    "plate_id": null,
+                    "plate_name": null,
+                    "plate_exclude_province": null,
+                    "capacity": 44,
+                    "expected_date": [
+                        2020,
+                        8,
+                        1,
+                        7,
+                        0
+                    ],
+                    "plan_date": null,
+                    "plan_back_date": null,
+                    "expected_date_text": "2020-07-31 23:00",
+                    "plan_date_text": null,
+                    "plan_back_date_text": null,
+                    "start_store": "TH65040101",
+                    "start_store_name": "KLT_SP-????????",
+                    "start_store_short_name": "KLT",
+                    "end_store": "TH47150103",
+                    "end_store_name": "HDG_SP-?????",
+                    "end_store_short_name": "HDG",
+                    "region": "S",
+                    "reason": "Auto加班车",
+                    "reject_reason": null,
+                    "line_id": null,
+                    "line_back_id": null,
+                    "single_line": null,
+                    "single_line_text": null,
+                    "system_quote": 0,
+                    "abnormal_cost": 0,
+                    "line_cost": null,
+                    "line_back_cost": null,
+                    "final_cost": 0,
+                    "submitter_id": 31515,
+                    "submitter_name": "自动化测试",
+                    "submitter_job_title_id": 97,
+                    "submitter_job_title": "Shop Cashier",
+                    "store_name": "KLT_SP-????????",
+                    "audit_state": 1,
+                    "status": 7,
+                    "status_text": "待审批",
+                    "final_approver": 0,
+                    "final_approval_time": null,
+                    "approve_time": 1596176573.0,
+                    "created_at": 1596176569.252,
+                    "updated_at": 1596176573.208,
+                    "driver": null,
+                    "driver_phone": null,
+                    "apply_image_list": [],
+                    "line_timetable_dtolist": null,
+                    "line_back_timetable_dtolist": null,
+                    "outbound_enabled": false
+                }
+            ],
+            "required": [
+                "id",
+                "serial_no",
+                "audit_type",
+                "audit_type_text",
+                "fd_courier_id",
+                "fd_courier_name",
+                "fd_courier_phone",
+                "fd_courier_plate",
+                "province_code",
+                "province_name",
+                "car_type",
+                "car_type_text",
+                "fleet_id",
+                "fleet_name",
+                "plate_id",
+                "plate_name",
+                "plate_exclude_province",
+                "capacity",
+                "expected_date",
+                "plan_date",
+                "plan_back_date",
+                "expected_date_text",
+                "plan_date_text",
+                "plan_back_date_text",
+                "start_store",
+                "start_store_name",
+                "start_store_short_name",
+                "end_store",
+                "end_store_name",
+                "end_store_short_name",
+                "region",
+                "reason",
+                "reject_reason",
+                "line_id",
+                "line_back_id",
+                "single_line",
+                "single_line_text",
+                "system_quote",
+                "abnormal_cost",
+                "line_cost",
+                "line_back_cost",
+                "final_cost",
+                "submitter_id",
+                "submitter_name",
+                "submitter_job_title_id",
+                "submitter_job_title",
+                "store_name",
+                "audit_state",
+                "status",
+                "status_text",
+                "final_approver",
+                "final_approval_time",
+                "approve_time",
+                "created_at",
+                "updated_at",
+                "driver",
+                "driver_phone",
+                "apply_image_list",
+                "line_timetable_dtolist",
+                "line_back_timetable_dtolist",
+                "outbound_enabled"
+            ],
+            "properties": {
+                "id": {
+                    "$id": "#/properties/data/properties/id",
+                    "type": "integer",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        14343
+                    ]
+                },
+                "serial_no": {
+                    "$id": "#/properties/data/properties/serial_no",
+                    "type": "string",
+                    "title": "The serial_no schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "VA084079131594752"
+                    ]
+                },
+                "audit_type": {
+                    "$id": "#/properties/data/properties/audit_type",
+                    "type": "integer",
+                    "title": "The audit_type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "audit_type_text": {
+                    "$id": "#/properties/data/properties/audit_type_text",
+                    "type": "string",
+                    "title": "The audit_type_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "普通加班车"
+                    ]
+                },
+                "fd_courier_id": {
+                    "$id": "#/properties/data/properties/fd_courier_id",
+                    "type": "null",
+                    "title": "The fd_courier_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "fd_courier_name": {
+                    "$id": "#/properties/data/properties/fd_courier_name",
+                    "type": "null",
+                    "title": "The fd_courier_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "fd_courier_phone": {
+                    "$id": "#/properties/data/properties/fd_courier_phone",
+                    "type": "null",
+                    "title": "The fd_courier_phone schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "fd_courier_plate": {
+                    "$id": "#/properties/data/properties/fd_courier_plate",
+                    "type": "null",
+                    "title": "The fd_courier_plate schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "province_code": {
+                    "$id": "#/properties/data/properties/province_code",
+                    "type": "null",
+                    "title": "The province_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "province_name": {
+                    "$id": "#/properties/data/properties/province_name",
+                    "type": "null",
+                    "title": "The province_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "car_type": {
+                    "$id": "#/properties/data/properties/car_type",
+                    "type": "integer",
+                    "title": "The car_type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        100
+                    ]
+                },
+                "car_type_text": {
+                    "$id": "#/properties/data/properties/car_type_text",
+                    "type": "string",
+                    "title": "The car_type_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "4W"
+                    ]
+                },
+                "fleet_id": {
+                    "$id": "#/properties/data/properties/fleet_id",
+                    "type": "null",
+                    "title": "The fleet_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "fleet_name": {
+                    "$id": "#/properties/data/properties/fleet_name",
+                    "type": "null",
+                    "title": "The fleet_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "plate_id": {
+                    "$id": "#/properties/data/properties/plate_id",
+                    "type": "null",
+                    "title": "The plate_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "plate_name": {
+                    "$id": "#/properties/data/properties/plate_name",
+                    "type": "null",
+                    "title": "The plate_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "plate_exclude_province": {
+                    "$id": "#/properties/data/properties/plate_exclude_province",
+                    "type": "null",
+                    "title": "The plate_exclude_province schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "capacity": {
+                    "$id": "#/properties/data/properties/capacity",
+                    "type": "integer",
+                    "title": "The capacity schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        44
+                    ]
+                },
+                "expected_date": {
+                    "$id": "#/properties/data/properties/expected_date",
+                    "type": "array",
+                    "title": "The expected_date schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            2020,
+                            8
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/data/properties/expected_date/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/data/properties/expected_date/items/anyOf/0",
+                                "type": "integer",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    2020,
+                                    8
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "plan_date": {
+                    "$id": "#/properties/data/properties/plan_date",
+                    "type": "null",
+                    "title": "The plan_date schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "plan_back_date": {
+                    "$id": "#/properties/data/properties/plan_back_date",
+                    "type": "null",
+                    "title": "The plan_back_date schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "expected_date_text": {
+                    "$id": "#/properties/data/properties/expected_date_text",
+                    "type": "string",
+                    "title": "The expected_date_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2020-07-31 23:00"
+                    ]
+                },
+                "plan_date_text": {
+                    "$id": "#/properties/data/properties/plan_date_text",
+                    "type": "null",
+                    "title": "The plan_date_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "plan_back_date_text": {
+                    "$id": "#/properties/data/properties/plan_back_date_text",
+                    "type": "null",
+                    "title": "The plan_back_date_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "start_store": {
+                    "$id": "#/properties/data/properties/start_store",
+                    "type": "string",
+                    "title": "The start_store schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH65040101"
+                    ]
+                },
+                "start_store_name": {
+                    "$id": "#/properties/data/properties/start_store_name",
+                    "type": "string",
+                    "title": "The start_store_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "KLT_SP-????????"
+                    ]
+                },
+                "start_store_short_name": {
+                    "$id": "#/properties/data/properties/start_store_short_name",
+                    "type": "string",
+                    "title": "The start_store_short_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "KLT"
+                    ]
+                },
+                "end_store": {
+                    "$id": "#/properties/data/properties/end_store",
+                    "type": "string",
+                    "title": "The end_store schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH47150103"
+                    ]
+                },
+                "end_store_name": {
+                    "$id": "#/properties/data/properties/end_store_name",
+                    "type": "string",
+                    "title": "The end_store_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "HDG_SP-?????"
+                    ]
+                },
+                "end_store_short_name": {
+                    "$id": "#/properties/data/properties/end_store_short_name",
+                    "type": "string",
+                    "title": "The end_store_short_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "HDG"
+                    ]
+                },
+                "region": {
+                    "$id": "#/properties/data/properties/region",
+                    "type": "string",
+                    "title": "The region schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "S"
+                    ]
+                },
+                "reason": {
+                    "$id": "#/properties/data/properties/reason",
+                    "type": "string",
+                    "title": "The reason schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Auto加班车"
+                    ]
+                },
+                "reject_reason": {
+                    "$id": "#/properties/data/properties/reject_reason",
+                    "type": "null",
+                    "title": "The reject_reason schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "line_id": {
+                    "$id": "#/properties/data/properties/line_id",
+                    "type": "null",
+                    "title": "The line_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "line_back_id": {
+                    "$id": "#/properties/data/properties/line_back_id",
+                    "type": "null",
+                    "title": "The line_back_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "single_line": {
+                    "$id": "#/properties/data/properties/single_line",
+                    "type": "null",
+                    "title": "The single_line schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "single_line_text": {
+                    "$id": "#/properties/data/properties/single_line_text",
+                    "type": "null",
+                    "title": "The single_line_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "system_quote": {
+                    "$id": "#/properties/data/properties/system_quote",
+                    "type": ["integer","null"],
+                    "title": "The system_quote schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "abnormal_cost": {
+                    "$id": "#/properties/data/properties/abnormal_cost",
+                    "type": "integer",
+                    "title": "The abnormal_cost schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "line_cost": {
+                    "$id": "#/properties/data/properties/line_cost",
+                    "type": "null",
+                    "title": "The line_cost schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "line_back_cost": {
+                    "$id": "#/properties/data/properties/line_back_cost",
+                    "type": "null",
+                    "title": "The line_back_cost schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "final_cost": {
+                    "$id": "#/properties/data/properties/final_cost",
+                    "type": ["integer","null"],
+                    "title": "The final_cost schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "submitter_id": {
+                    "$id": "#/properties/data/properties/submitter_id",
+                    "type": "integer",
+                    "title": "The submitter_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        31515
+                    ]
+                },
+                "submitter_name": {
+                    "$id": "#/properties/data/properties/submitter_name",
+                    "type": "string",
+                    "title": "The submitter_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "自动化测试"
+                    ]
+                },
+                "submitter_job_title_id": {
+                    "$id": "#/properties/data/properties/submitter_job_title_id",
+                    "type": "integer",
+                    "title": "The submitter_job_title_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        97
+                    ]
+                },
+                "submitter_job_title": {
+                    "$id": "#/properties/data/properties/submitter_job_title",
+                    "type": "string",
+                    "title": "The submitter_job_title schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Shop Cashier"
+                    ]
+                },
+                "store_name": {
+                    "$id": "#/properties/data/properties/store_name",
+                    "type": "string",
+                    "title": "The store_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "KLT_SP-????????"
+                    ]
+                },
+                "audit_state": {
+                    "$id": "#/properties/data/properties/audit_state",
+                    "type": "integer",
+                    "title": "The audit_state schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "status": {
+                    "$id": "#/properties/data/properties/status",
+                    "type": "integer",
+                    "title": "The status schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        7
+                    ]
+                },
+                "status_text": {
+                    "$id": "#/properties/data/properties/status_text",
+                    "type": "string",
+                    "title": "The status_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "待审批"
+                    ]
+                },
+                "final_approver": {
+                    "$id": "#/properties/data/properties/final_approver",
+                    "type": ["integer","null"],
+                    "title": "The final_approver schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "final_approval_time": {
+                    "$id": "#/properties/data/properties/final_approval_time",
+                    "type": "null",
+                    "title": "The final_approval_time schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "approve_time": {
+                    "$id": "#/properties/data/properties/approve_time",
+                    "type": "number",
+                    "title": "The approve_time schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        1596176573.0
+                    ]
+                },
+                "created_at": {
+                    "$id": "#/properties/data/properties/created_at",
+                    "type": "number",
+                    "title": "The created_at schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        1596176569.252
+                    ]
+                },
+                "updated_at": {
+                    "$id": "#/properties/data/properties/updated_at",
+                    "type": "number",
+                    "title": "The updated_at schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        1596176573.208
+                    ]
+                },
+                "driver": {
+                    "$id": "#/properties/data/properties/driver",
+                    "type": "null",
+                    "title": "The driver schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "driver_phone": {
+                    "$id": "#/properties/data/properties/driver_phone",
+                    "type": "null",
+                    "title": "The driver_phone schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "apply_image_list": {
+                    "$id": "#/properties/data/properties/apply_image_list",
+                    "type": "array",
+                    "title": "The apply_image_list schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        []
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/data/properties/apply_image_list/items"
+                    }
+                },
+                "line_timetable_dtolist": {
+                    "$id": "#/properties/data/properties/line_timetable_dtolist",
+                    "type": "null",
+                    "title": "The line_timetable_dtolist schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "line_back_timetable_dtolist": {
+                    "$id": "#/properties/data/properties/line_back_timetable_dtolist",
+                    "type": "null",
+                    "title": "The line_back_timetable_dtolist schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "outbound_enabled": {
+                    "$id": "#/properties/data/properties/outbound_enabled",
+                    "type": "boolean",
+                    "title": "The outbound_enabled schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

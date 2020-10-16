@@ -1,0 +1,116 @@
+host: host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: api/courier/v1/ticket/pickups/parcel
+headers:
+  0:
+    X-FLE-SESSION-ID: '$courier_login_0_0_0_["data"]["sessionid"]$'
+    Accept-Language: 'zh-CN'
+    By-Platform: 'RB_KIT'
+    X-DEVICE-ID: '8673510346528821571665712622'
+    Content-Type: 'application/json'
+
+success:
+  parameter:
+    0:
+      addr_core_ids: []
+      article_category: 0
+      call_duration: 0
+      client_id: $[config]kam_courier_write_order$
+      cod_amount: 0
+      cod_enabled: false
+      customer_type_category: 2
+      dst_city_code: TH0101
+      dst_country_code: TH
+      dst_detail_address: 自动化地址
+      dst_district_code: TH010102
+      dst_name: 自动化名
+      dst_phone: '1232311232'
+      dst_postal_code: '10110'
+      dst_province_code: TH01
+      express_category: 1
+      freight_insure_enabled: false
+      height: 1
+      insure_declare_value: 0
+      insured: false
+      length: 1
+      material_amount: 500
+      material_category: 0
+      request_ids: []
+      settlement_category: 2
+      skipping_tips: []
+      src_city_code: TH0201
+      src_country_code: TH
+      src_detail_address: eee
+      src_district_code: TH020103
+      src_name: '0507'
+      src_phone: '6982507546'
+      src_postal_code: '10270'
+      src_province_code: TH02
+      total_amount: 3000
+      weight: 1000
+      width: 1
+#    0:
+#      addr_core_ids: []
+#      article_category: 0
+#      call_duration: 0
+##      client_id: AA0039
+#      client_id: $[config]kam_courier_write_order$
+#      cod_amount: 0
+#      cod_enabled: false
+#      customer_type_category: 2
+#      dst_city_code: TH0101
+#      dst_country_code: TH
+#      dst_detail_address: 自动化地址
+#      dst_district_code: TH010102
+#      dst_name: 自动化名
+#      dst_phone: '1232311330'
+#      dst_postal_code: '10110'
+#      dst_province_code: TH01
+#      express_category: 1
+#      freight_insure_enabled: false
+#      height: 1
+#      insure_declare_value: 0
+#      insured: false
+#      length: 1
+#      material_amount: 500
+#      material_category: 0
+#      request_ids: []
+#      settlement_category: 2
+#      skipping_tips: []
+#      src_city_code: TH0201
+#      src_country_code: TH
+#      src_detail_address: eee
+#      src_district_code: TH020103
+#      src_name: '0507'
+#      src_phone: '6982507546'
+#      src_postal_code: '10270'
+#      src_province_code: TH02
+#      total_amount: 3500
+#      weight: 2000
+#      width: 1
+#
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+#    json_schema: "login.json"
+
+  relevance:
+    - '["data"]["parcel_info"]["pno"]'
+    - '["data"]["ticket_pickup_id"]'
+
+error:
+  parameter: {}
+  check: {}

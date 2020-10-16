@@ -1,0 +1,2387 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "code": 1,
+            "message": "success",
+            "data": {
+                "pno": "TH05022A474A",
+                "recent_pno": "TH05022A474A",
+                "pno_display": "TH05022A474A",
+                "pkg_code": null,
+                "exchange_pno": null,
+                "pickup_source_category": 1,
+                "parcel_category": 1,
+                "replacement_enabled": false,
+                "out_trade_no": null,
+                "same_province": false,
+                "price_strategy": null,
+                "client_grade": 1,
+                "customer_type_category": 2,
+                "customer_type_category_text": "签约客户",
+                "channel_category": 5,
+                "channel_category_text": "KIT",
+                "client_id": "BA0020",
+                "agent_id": null,
+                "client_name": null,
+                "express_category": 1,
+                "express_category_text": "标准",
+                "pickuped_at": 1596185672.0,
+                "article_category": 99,
+                "article_category_text": "其它",
+                "material_category": null,
+                "material_category_text": null,
+                "material_amount": 0,
+                "freight_insure_enabled": false,
+                "freight_insure_amount": 0,
+                "weight": 2000,
+                "courier_weight": 2000,
+                "store_keeper_weight": 4000,
+                "exhibition_weight": 4000,
+                "store_weight": 4000,
+                "length": 1,
+                "courier_length": 1,
+                "store_keeper_length": 1,
+                "store_length": 1,
+                "exhibition_length": 1,
+                "width": 1,
+                "courier_width": 1,
+                "store_keeper_width": 1,
+                "store_width": 1,
+                "exhibition_width": 1,
+                "height": 1,
+                "courier_height": 1,
+                "store_keeper_height": 1,
+                "store_height": 1,
+                "exhibition_height": 1,
+                "insured": false,
+                "insure_amount": 0,
+                "parcel_amount": 7920,
+                "store_parcel_amount": 9900,
+                "parcel_amount_before": 9900,
+                "coupon_deduction_amount": 0,
+                "total_amount": 7920,
+                "store_total_amount": 9900,
+                "price_policy": 1,
+                "upcountry": false,
+                "upcountry_amount": 0,
+                "cod_enabled": false,
+                "cod_settlement_category": 0,
+                "cod_uniform_amount": null,
+                "cod_amount": 0,
+                "label_amount": 0,
+                "cod_poundage_rate": 20,
+                "cod_poundage_amount": 0,
+                "cod_poundage_minimum": 4000,
+                "handover_thailandpost_enabled": false,
+                "bar_code": null,
+                "src_name": "1",
+                "src_phone": "01232311232",
+                "src_country_code": "TH",
+                "src_country_name": "Thailand",
+                "src_province_code": "TH11",
+                "src_province_name": "???????",
+                "src_city_code": "TH1101",
+                "src_city_name": "????????????",
+                "src_district_code": "TH110101",
+                "src_district_name": "???????",
+                "src_detail_address": "1",
+                "src_postal_code": "26000",
+                "dst_name": "2",
+                "dst_phone": "01346999281",
+                "dst_home_phone": null,
+                "dst_country_code": "TH",
+                "dst_country_name": "Thailand",
+                "dst_province_code": "TH05",
+                "dst_province_name": "???????????????",
+                "dst_city_code": "TH0502",
+                "dst_city_name": "???????",
+                "dst_district_code": "TH050201",
+                "dst_district_name": "???????",
+                "dst_detail_address": "2",
+                "dst_postal_code": "13130",
+                "ticket_delivery_staff_lat": null,
+                "ticket_delivery_staff_lng": null,
+                "settlement_category": 2,
+                "settlement_category_text": "定期结算",
+                "settlement_type": 1,
+                "settlement_type_text": "寄付",
+                "returned": false,
+                "returned_pno": null,
+                "returned_pno_display": null,
+                "customary_pno": null,
+                "customary_pno_display": null,
+                "signer_category": null,
+                "signer_content": null,
+                "insure_declare_value": 0,
+                "detained_marker_category": null,
+                "detained_marker_category_text": null,
+                "difficulty_marker_category": null,
+                "difficulty_marker_category_text": null,
+                "difficulty_state": null,
+                "difficulty_created_at": null,
+                "difficulty_staff_info_id": null,
+                "difficulty_staff_info_name": null,
+                "state": 2,
+                "state_text": "运输中",
+                "parcel_note": null,
+                "remark_first": "-",
+                "remark_second": "",
+                "remark_third": "",
+                "printing_count": 0,
+                "ka_warehouse_id": null,
+                "dst_code": "AYU",
+                "created_at": 1596185672.0,
+                "updated_at": 1596188755.0,
+                "disc_freight_mark": true,
+                "signed_info": null,
+                "dst_store_name": "BAM_SP-???????",
+                "dst_store_id": "TH10060201",
+                "send_province_code": null,
+                "send_province_name": null,
+                "sendcountrycode": null,
+                "sendcountryname": null,
+                "send_city_code": null,
+                "send_city_name": null,
+                "send_district_code": null,
+                "send_district_name": null,
+                "send_detail_address": null,
+                "ticket_pickup_store_id": "TH01100201",
+                "ticket_pickup_store_text": "TLC_SP-????????",
+                "cancel_marker_category": null,
+                "cancel_marker_category_text": null,
+                "cancel_remark": null,
+                "weighing_category": 0,
+                "weighing_category_note": "该客户按重量或体积计费",
+                "sorting_no": "C",
+                "sorting_province_no": "05",
+                "parcel_given_time": 0,
+                "estimate_finished_at": null,
+                "finished_at": null,
+                "up_country_note": null,
+                "discard_enabled": false,
+                "discard_reason": null,
+                "discard_at": null,
+                "ka_diff_ticket_id": null,
+                "rejected_date": null,
+                "rejection_category_text": null,
+                "sorting_code": "05C-16024-28",
+                "sorting_line": "7",
+                "sorting_line_code": "C01",
+                "ticket_pickup_id": 499432,
+                "ticket_delivery_id": null,
+                "return_receipt_enabled": false,
+                "receipt_text": "不需要",
+                "return_receipt_no": null,
+                "speed_enabled": false,
+                "max_length": 100,
+                "max_width": 100,
+                "max_height": 100,
+                "max_sum_of_lwh": 280,
+                "printed_enabled": false,
+                "display_enabled": true,
+                "speed_sla_dto": null,
+                "dst_district_default": false,
+                "address_error_enabled": null,
+                "customer_modify_enabled": null
+            }
+        }
+    ],
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The message schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "pno": "TH05022A474A",
+                    "recent_pno": "TH05022A474A",
+                    "pno_display": "TH05022A474A",
+                    "pkg_code": null,
+                    "exchange_pno": null,
+                    "pickup_source_category": 1,
+                    "parcel_category": 1,
+                    "replacement_enabled": false,
+                    "out_trade_no": null,
+                    "same_province": false,
+                    "price_strategy": null,
+                    "client_grade": 1,
+                    "customer_type_category": 2,
+                    "customer_type_category_text": "签约客户",
+                    "channel_category": 5,
+                    "channel_category_text": "KIT",
+                    "client_id": "BA0020",
+                    "agent_id": null,
+                    "client_name": null,
+                    "express_category": 1,
+                    "express_category_text": "标准",
+                    "pickuped_at": 1596185672.0,
+                    "article_category": 99,
+                    "article_category_text": "其它",
+                    "material_category": null,
+                    "material_category_text": null,
+                    "material_amount": 0,
+                    "freight_insure_enabled": false,
+                    "freight_insure_amount": 0,
+                    "weight": 2000,
+                    "courier_weight": 2000,
+                    "store_keeper_weight": 4000,
+                    "exhibition_weight": 4000,
+                    "store_weight": 4000,
+                    "length": 1,
+                    "courier_length": 1,
+                    "store_keeper_length": 1,
+                    "store_length": 1,
+                    "exhibition_length": 1,
+                    "width": 1,
+                    "courier_width": 1,
+                    "store_keeper_width": 1,
+                    "store_width": 1,
+                    "exhibition_width": 1,
+                    "height": 1,
+                    "courier_height": 1,
+                    "store_keeper_height": 1,
+                    "store_height": 1,
+                    "exhibition_height": 1,
+                    "insured": false,
+                    "insure_amount": 0,
+                    "parcel_amount": 7920,
+                    "store_parcel_amount": 9900,
+                    "parcel_amount_before": 9900,
+                    "coupon_deduction_amount": 0,
+                    "total_amount": 7920,
+                    "store_total_amount": 9900,
+                    "price_policy": 1,
+                    "upcountry": false,
+                    "upcountry_amount": 0,
+                    "cod_enabled": false,
+                    "cod_settlement_category": 0,
+                    "cod_uniform_amount": null,
+                    "cod_amount": 0,
+                    "label_amount": 0,
+                    "cod_poundage_rate": 20,
+                    "cod_poundage_amount": 0,
+                    "cod_poundage_minimum": 4000,
+                    "handover_thailandpost_enabled": false,
+                    "bar_code": null,
+                    "src_name": "1",
+                    "src_phone": "01232311232",
+                    "src_country_code": "TH",
+                    "src_country_name": "Thailand",
+                    "src_province_code": "TH11",
+                    "src_province_name": "???????",
+                    "src_city_code": "TH1101",
+                    "src_city_name": "????????????",
+                    "src_district_code": "TH110101",
+                    "src_district_name": "???????",
+                    "src_detail_address": "1",
+                    "src_postal_code": "26000",
+                    "dst_name": "2",
+                    "dst_phone": "01346999281",
+                    "dst_home_phone": null,
+                    "dst_country_code": "TH",
+                    "dst_country_name": "Thailand",
+                    "dst_province_code": "TH05",
+                    "dst_province_name": "???????????????",
+                    "dst_city_code": "TH0502",
+                    "dst_city_name": "???????",
+                    "dst_district_code": "TH050201",
+                    "dst_district_name": "???????",
+                    "dst_detail_address": "2",
+                    "dst_postal_code": "13130",
+                    "ticket_delivery_staff_lat": null,
+                    "ticket_delivery_staff_lng": null,
+                    "settlement_category": 2,
+                    "settlement_category_text": "定期结算",
+                    "settlement_type": 1,
+                    "settlement_type_text": "寄付",
+                    "returned": false,
+                    "returned_pno": null,
+                    "returned_pno_display": null,
+                    "customary_pno": null,
+                    "customary_pno_display": null,
+                    "signer_category": null,
+                    "signer_content": null,
+                    "insure_declare_value": 0,
+                    "detained_marker_category": null,
+                    "detained_marker_category_text": null,
+                    "difficulty_marker_category": null,
+                    "difficulty_marker_category_text": null,
+                    "difficulty_state": null,
+                    "difficulty_created_at": null,
+                    "difficulty_staff_info_id": null,
+                    "difficulty_staff_info_name": null,
+                    "state": 2,
+                    "state_text": "运输中",
+                    "parcel_note": null,
+                    "remark_first": "-",
+                    "remark_second": "",
+                    "remark_third": "",
+                    "printing_count": 0,
+                    "ka_warehouse_id": null,
+                    "dst_code": "AYU",
+                    "created_at": 1596185672.0,
+                    "updated_at": 1596188755.0,
+                    "disc_freight_mark": true,
+                    "signed_info": null,
+                    "dst_store_name": "BAM_SP-???????",
+                    "dst_store_id": "TH10060201",
+                    "send_province_code": null,
+                    "send_province_name": null,
+                    "sendcountrycode": null,
+                    "sendcountryname": null,
+                    "send_city_code": null,
+                    "send_city_name": null,
+                    "send_district_code": null,
+                    "send_district_name": null,
+                    "send_detail_address": null,
+                    "ticket_pickup_store_id": "TH01100201",
+                    "ticket_pickup_store_text": "TLC_SP-????????",
+                    "cancel_marker_category": null,
+                    "cancel_marker_category_text": null,
+                    "cancel_remark": null,
+                    "weighing_category": 0,
+                    "weighing_category_note": "该客户按重量或体积计费",
+                    "sorting_no": "C",
+                    "sorting_province_no": "05",
+                    "parcel_given_time": 0,
+                    "estimate_finished_at": null,
+                    "finished_at": null,
+                    "up_country_note": null,
+                    "discard_enabled": false,
+                    "discard_reason": null,
+                    "discard_at": null,
+                    "ka_diff_ticket_id": null,
+                    "rejected_date": null,
+                    "rejection_category_text": null,
+                    "sorting_code": "05C-16024-28",
+                    "sorting_line": "7",
+                    "sorting_line_code": "C01",
+                    "ticket_pickup_id": 499432,
+                    "ticket_delivery_id": null,
+                    "return_receipt_enabled": false,
+                    "receipt_text": "不需要",
+                    "return_receipt_no": null,
+                    "speed_enabled": false,
+                    "max_length": 100,
+                    "max_width": 100,
+                    "max_height": 100,
+                    "max_sum_of_lwh": 280,
+                    "printed_enabled": false,
+                    "display_enabled": true,
+                    "speed_sla_dto": null,
+                    "dst_district_default": false,
+                    "address_error_enabled": null,
+                    "customer_modify_enabled": null
+                }
+            ],
+            "required": [
+                "pno",
+                "recent_pno",
+                "pno_display",
+                "pkg_code",
+                "exchange_pno",
+                "pickup_source_category",
+                "parcel_category",
+                "replacement_enabled",
+                "out_trade_no",
+                "same_province",
+                "price_strategy",
+                "client_grade",
+                "customer_type_category",
+                "customer_type_category_text",
+                "channel_category",
+                "channel_category_text",
+                "client_id",
+                "agent_id",
+                "client_name",
+                "express_category",
+                "express_category_text",
+                "pickuped_at",
+                "article_category",
+                "article_category_text",
+                "material_category",
+                "material_category_text",
+                "material_amount",
+                "freight_insure_enabled",
+                "freight_insure_amount",
+                "weight",
+                "courier_weight",
+                "store_keeper_weight",
+                "exhibition_weight",
+                "store_weight",
+                "length",
+                "courier_length",
+                "store_keeper_length",
+                "store_length",
+                "exhibition_length",
+                "width",
+                "courier_width",
+                "store_keeper_width",
+                "store_width",
+                "exhibition_width",
+                "height",
+                "courier_height",
+                "store_keeper_height",
+                "store_height",
+                "exhibition_height",
+                "insured",
+                "insure_amount",
+                "parcel_amount",
+                "store_parcel_amount",
+                "parcel_amount_before",
+                "coupon_deduction_amount",
+                "total_amount",
+                "store_total_amount",
+                "price_policy",
+                "upcountry",
+                "upcountry_amount",
+                "cod_enabled",
+                "cod_settlement_category",
+                "cod_uniform_amount",
+                "cod_amount",
+                "label_amount",
+                "cod_poundage_rate",
+                "cod_poundage_amount",
+                "cod_poundage_minimum",
+                "handover_thailandpost_enabled",
+                "bar_code",
+                "src_name",
+                "src_phone",
+                "src_country_code",
+                "src_country_name",
+                "src_province_code",
+                "src_province_name",
+                "src_city_code",
+                "src_city_name",
+                "src_district_code",
+                "src_district_name",
+                "src_detail_address",
+                "src_postal_code",
+                "dst_name",
+                "dst_phone",
+                "dst_home_phone",
+                "dst_country_code",
+                "dst_country_name",
+                "dst_province_code",
+                "dst_province_name",
+                "dst_city_code",
+                "dst_city_name",
+                "dst_district_code",
+                "dst_district_name",
+                "dst_detail_address",
+                "dst_postal_code",
+                "ticket_delivery_staff_lat",
+                "ticket_delivery_staff_lng",
+                "settlement_category",
+                "settlement_category_text",
+                "settlement_type",
+                "settlement_type_text",
+                "returned",
+                "returned_pno",
+                "returned_pno_display",
+                "customary_pno",
+                "customary_pno_display",
+                "signer_category",
+                "signer_content",
+                "insure_declare_value",
+                "detained_marker_category",
+                "detained_marker_category_text",
+                "difficulty_marker_category",
+                "difficulty_marker_category_text",
+                "difficulty_state",
+                "difficulty_created_at",
+                "difficulty_staff_info_id",
+                "difficulty_staff_info_name",
+                "state",
+                "state_text",
+                "parcel_note",
+                "remark_first",
+                "remark_second",
+                "remark_third",
+                "printing_count",
+                "ka_warehouse_id",
+                "dst_code",
+                "created_at",
+                "updated_at",
+                "disc_freight_mark",
+                "signed_info",
+                "dst_store_name",
+                "dst_store_id",
+                "send_province_code",
+                "send_province_name",
+                "sendcountrycode",
+                "sendcountryname",
+                "send_city_code",
+                "send_city_name",
+                "send_district_code",
+                "send_district_name",
+                "send_detail_address",
+                "ticket_pickup_store_id",
+                "ticket_pickup_store_text",
+                "cancel_marker_category",
+                "cancel_marker_category_text",
+                "cancel_remark",
+                "weighing_category",
+                "weighing_category_note",
+                "sorting_no",
+                "sorting_province_no",
+                "parcel_given_time",
+                "estimate_finished_at",
+                "finished_at",
+                "up_country_note",
+                "discard_enabled",
+                "discard_reason",
+                "discard_at",
+                "ka_diff_ticket_id",
+                "rejected_date",
+                "rejection_category_text",
+                "sorting_code",
+                "sorting_line",
+                "sorting_line_code",
+                "ticket_pickup_id",
+                "ticket_delivery_id",
+                "return_receipt_enabled",
+                "receipt_text",
+                "return_receipt_no",
+                "speed_enabled",
+                "max_length",
+                "max_width",
+                "max_height",
+                "max_sum_of_lwh",
+                "printed_enabled",
+                "display_enabled",
+                "speed_sla_dto",
+                "dst_district_default",
+                "address_error_enabled",
+                "customer_modify_enabled"
+            ],
+            "properties": {
+                "pno": {
+                    "$id": "#/properties/data/properties/pno",
+                    "type": "string",
+                    "title": "The pno schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH05022A474A"
+                    ]
+                },
+                "recent_pno": {
+                    "$id": "#/properties/data/properties/recent_pno",
+                    "type": "string",
+                    "title": "The recent_pno schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH05022A474A"
+                    ]
+                },
+                "pno_display": {
+                    "$id": "#/properties/data/properties/pno_display",
+                    "type": "string",
+                    "title": "The pno_display schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH05022A474A"
+                    ]
+                },
+                "pkg_code": {
+                    "$id": "#/properties/data/properties/pkg_code",
+                    "type": "null",
+                    "title": "The pkg_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "exchange_pno": {
+                    "$id": "#/properties/data/properties/exchange_pno",
+                    "type": "null",
+                    "title": "The exchange_pno schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "pickup_source_category": {
+                    "$id": "#/properties/data/properties/pickup_source_category",
+                    "type": "integer",
+                    "title": "The pickup_source_category schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "parcel_category": {
+                    "$id": "#/properties/data/properties/parcel_category",
+                    "type": "integer",
+                    "title": "The parcel_category schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "replacement_enabled": {
+                    "$id": "#/properties/data/properties/replacement_enabled",
+                    "type": "boolean",
+                    "title": "The replacement_enabled schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "out_trade_no": {
+                    "$id": "#/properties/data/properties/out_trade_no",
+                    "type": "null",
+                    "title": "The out_trade_no schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "same_province": {
+                    "$id": "#/properties/data/properties/same_province",
+                    "type": "boolean",
+                    "title": "The same_province schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "price_strategy": {
+                    "$id": "#/properties/data/properties/price_strategy",
+                    "type": "null",
+                    "title": "The price_strategy schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "client_grade": {
+                    "$id": "#/properties/data/properties/client_grade",
+                    "type": "integer",
+                    "title": "The client_grade schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "customer_type_category": {
+                    "$id": "#/properties/data/properties/customer_type_category",
+                    "type": "integer",
+                    "title": "The customer_type_category schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        2
+                    ]
+                },
+                "customer_type_category_text": {
+                    "$id": "#/properties/data/properties/customer_type_category_text",
+                    "type": "string",
+                    "title": "The customer_type_category_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "签约客户"
+                    ]
+                },
+                "channel_category": {
+                    "$id": "#/properties/data/properties/channel_category",
+                    "type": "integer",
+                    "title": "The channel_category schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        5
+                    ]
+                },
+                "channel_category_text": {
+                    "$id": "#/properties/data/properties/channel_category_text",
+                    "type": "string",
+                    "title": "The channel_category_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "KIT"
+                    ]
+                },
+                "client_id": {
+                    "$id": "#/properties/data/properties/client_id",
+                    "type": "string",
+                    "title": "The client_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "BA0020"
+                    ]
+                },
+                "agent_id": {
+                    "$id": "#/properties/data/properties/agent_id",
+                    "type": "null",
+                    "title": "The agent_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "client_name": {
+                    "$id": "#/properties/data/properties/client_name",
+                    "type": "null",
+                    "title": "The client_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "express_category": {
+                    "$id": "#/properties/data/properties/express_category",
+                    "type": "integer",
+                    "title": "The express_category schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "express_category_text": {
+                    "$id": "#/properties/data/properties/express_category_text",
+                    "type": "string",
+                    "title": "The express_category_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "标准"
+                    ]
+                },
+                "pickuped_at": {
+                    "$id": "#/properties/data/properties/pickuped_at",
+                    "type": "number",
+                    "title": "The pickuped_at schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        1596185672.0
+                    ]
+                },
+                "article_category": {
+                    "$id": "#/properties/data/properties/article_category",
+                    "type": "integer",
+                    "title": "The article_category schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        99
+                    ]
+                },
+                "article_category_text": {
+                    "$id": "#/properties/data/properties/article_category_text",
+                    "type": "string",
+                    "title": "The article_category_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "其它"
+                    ]
+                },
+                "material_category": {
+                    "$id": "#/properties/data/properties/material_category",
+                    "type": "null",
+                    "title": "The material_category schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "material_category_text": {
+                    "$id": "#/properties/data/properties/material_category_text",
+                    "type": "null",
+                    "title": "The material_category_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "material_amount": {
+                    "$id": "#/properties/data/properties/material_amount",
+                    "type": "integer",
+                    "title": "The material_amount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "freight_insure_enabled": {
+                    "$id": "#/properties/data/properties/freight_insure_enabled",
+                    "type": "boolean",
+                    "title": "The freight_insure_enabled schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "freight_insure_amount": {
+                    "$id": "#/properties/data/properties/freight_insure_amount",
+                    "type": "integer",
+                    "title": "The freight_insure_amount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "weight": {
+                    "$id": "#/properties/data/properties/weight",
+                    "type": "integer",
+                    "title": "The weight schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        2000
+                    ]
+                },
+                "courier_weight": {
+                    "$id": "#/properties/data/properties/courier_weight",
+                    "type": "integer",
+                    "title": "The courier_weight schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        2000
+                    ]
+                },
+                "store_keeper_weight": {
+                    "$id": "#/properties/data/properties/store_keeper_weight",
+                    "type": "integer",
+                    "title": "The store_keeper_weight schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        4000
+                    ]
+                },
+                "exhibition_weight": {
+                    "$id": "#/properties/data/properties/exhibition_weight",
+                    "type": "integer",
+                    "title": "The exhibition_weight schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        4000
+                    ]
+                },
+                "store_weight": {
+                    "$id": "#/properties/data/properties/store_weight",
+                    "type": "integer",
+                    "title": "The store_weight schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        4000
+                    ]
+                },
+                "length": {
+                    "$id": "#/properties/data/properties/length",
+                    "type": "integer",
+                    "title": "The length schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "courier_length": {
+                    "$id": "#/properties/data/properties/courier_length",
+                    "type": "integer",
+                    "title": "The courier_length schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "store_keeper_length": {
+                    "$id": "#/properties/data/properties/store_keeper_length",
+                    "type": "integer",
+                    "title": "The store_keeper_length schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "store_length": {
+                    "$id": "#/properties/data/properties/store_length",
+                    "type": "integer",
+                    "title": "The store_length schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "exhibition_length": {
+                    "$id": "#/properties/data/properties/exhibition_length",
+                    "type": "integer",
+                    "title": "The exhibition_length schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "width": {
+                    "$id": "#/properties/data/properties/width",
+                    "type": "integer",
+                    "title": "The width schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "courier_width": {
+                    "$id": "#/properties/data/properties/courier_width",
+                    "type": "integer",
+                    "title": "The courier_width schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "store_keeper_width": {
+                    "$id": "#/properties/data/properties/store_keeper_width",
+                    "type": "integer",
+                    "title": "The store_keeper_width schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "store_width": {
+                    "$id": "#/properties/data/properties/store_width",
+                    "type": "integer",
+                    "title": "The store_width schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "exhibition_width": {
+                    "$id": "#/properties/data/properties/exhibition_width",
+                    "type": "integer",
+                    "title": "The exhibition_width schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "height": {
+                    "$id": "#/properties/data/properties/height",
+                    "type": "integer",
+                    "title": "The height schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "courier_height": {
+                    "$id": "#/properties/data/properties/courier_height",
+                    "type": "integer",
+                    "title": "The courier_height schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "store_keeper_height": {
+                    "$id": "#/properties/data/properties/store_keeper_height",
+                    "type": "integer",
+                    "title": "The store_keeper_height schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "store_height": {
+                    "$id": "#/properties/data/properties/store_height",
+                    "type": "integer",
+                    "title": "The store_height schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "exhibition_height": {
+                    "$id": "#/properties/data/properties/exhibition_height",
+                    "type": "integer",
+                    "title": "The exhibition_height schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "insured": {
+                    "$id": "#/properties/data/properties/insured",
+                    "type": "boolean",
+                    "title": "The insured schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "insure_amount": {
+                    "$id": "#/properties/data/properties/insure_amount",
+                    "type": "integer",
+                    "title": "The insure_amount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "parcel_amount": {
+                    "$id": "#/properties/data/properties/parcel_amount",
+                    "type": "integer",
+                    "title": "The parcel_amount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        7920
+                    ]
+                },
+                "store_parcel_amount": {
+                    "$id": "#/properties/data/properties/store_parcel_amount",
+                    "type": "integer",
+                    "title": "The store_parcel_amount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        9900
+                    ]
+                },
+                "parcel_amount_before": {
+                    "$id": "#/properties/data/properties/parcel_amount_before",
+                    "type": "integer",
+                    "title": "The parcel_amount_before schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        9900
+                    ]
+                },
+                "coupon_deduction_amount": {
+                    "$id": "#/properties/data/properties/coupon_deduction_amount",
+                    "type": "integer",
+                    "title": "The coupon_deduction_amount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "total_amount": {
+                    "$id": "#/properties/data/properties/total_amount",
+                    "type": "integer",
+                    "title": "The total_amount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        7920
+                    ]
+                },
+                "store_total_amount": {
+                    "$id": "#/properties/data/properties/store_total_amount",
+                    "type": "integer",
+                    "title": "The store_total_amount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        9900
+                    ]
+                },
+                "price_policy": {
+                    "$id": "#/properties/data/properties/price_policy",
+                    "type": "integer",
+                    "title": "The price_policy schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "upcountry": {
+                    "$id": "#/properties/data/properties/upcountry",
+                    "type": "boolean",
+                    "title": "The upcountry schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "upcountry_amount": {
+                    "$id": "#/properties/data/properties/upcountry_amount",
+                    "type": "integer",
+                    "title": "The upcountry_amount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "cod_enabled": {
+                    "$id": "#/properties/data/properties/cod_enabled",
+                    "type": "boolean",
+                    "title": "The cod_enabled schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "cod_settlement_category": {
+                    "$id": "#/properties/data/properties/cod_settlement_category",
+                    "type": "integer",
+                    "title": "The cod_settlement_category schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "cod_uniform_amount": {
+                    "$id": "#/properties/data/properties/cod_uniform_amount",
+                    "type": "null",
+                    "title": "The cod_uniform_amount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "cod_amount": {
+                    "$id": "#/properties/data/properties/cod_amount",
+                    "type": "integer",
+                    "title": "The cod_amount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "label_amount": {
+                    "$id": "#/properties/data/properties/label_amount",
+                    "type": "integer",
+                    "title": "The label_amount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "cod_poundage_rate": {
+                    "$id": "#/properties/data/properties/cod_poundage_rate",
+                    "type": "integer",
+                    "title": "The cod_poundage_rate schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        20
+                    ]
+                },
+                "cod_poundage_amount": {
+                    "$id": "#/properties/data/properties/cod_poundage_amount",
+                    "type": "integer",
+                    "title": "The cod_poundage_amount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "cod_poundage_minimum": {
+                    "$id": "#/properties/data/properties/cod_poundage_minimum",
+                    "type": "integer",
+                    "title": "The cod_poundage_minimum schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        4000
+                    ]
+                },
+                "handover_thailandpost_enabled": {
+                    "$id": "#/properties/data/properties/handover_thailandpost_enabled",
+                    "type": "boolean",
+                    "title": "The handover_thailandpost_enabled schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "bar_code": {
+                    "$id": "#/properties/data/properties/bar_code",
+                    "type": "null",
+                    "title": "The bar_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "src_name": {
+                    "$id": "#/properties/data/properties/src_name",
+                    "type": "string",
+                    "title": "The src_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "1"
+                    ]
+                },
+                "src_phone": {
+                    "$id": "#/properties/data/properties/src_phone",
+                    "type": "string",
+                    "title": "The src_phone schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "01232311232"
+                    ]
+                },
+                "src_country_code": {
+                    "$id": "#/properties/data/properties/src_country_code",
+                    "type": "string",
+                    "title": "The src_country_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH"
+                    ]
+                },
+                "src_country_name": {
+                    "$id": "#/properties/data/properties/src_country_name",
+                    "type": "string",
+                    "title": "The src_country_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Thailand"
+                    ]
+                },
+                "src_province_code": {
+                    "$id": "#/properties/data/properties/src_province_code",
+                    "type": "string",
+                    "title": "The src_province_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH11"
+                    ]
+                },
+                "src_province_name": {
+                    "$id": "#/properties/data/properties/src_province_name",
+                    "type": "string",
+                    "title": "The src_province_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "???????"
+                    ]
+                },
+                "src_city_code": {
+                    "$id": "#/properties/data/properties/src_city_code",
+                    "type": "string",
+                    "title": "The src_city_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH1101"
+                    ]
+                },
+                "src_city_name": {
+                    "$id": "#/properties/data/properties/src_city_name",
+                    "type": "string",
+                    "title": "The src_city_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "????????????"
+                    ]
+                },
+                "src_district_code": {
+                    "$id": "#/properties/data/properties/src_district_code",
+                    "type": "string",
+                    "title": "The src_district_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH110101"
+                    ]
+                },
+                "src_district_name": {
+                    "$id": "#/properties/data/properties/src_district_name",
+                    "type": "string",
+                    "title": "The src_district_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "???????"
+                    ]
+                },
+                "src_detail_address": {
+                    "$id": "#/properties/data/properties/src_detail_address",
+                    "type": "string",
+                    "title": "The src_detail_address schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "1"
+                    ]
+                },
+                "src_postal_code": {
+                    "$id": "#/properties/data/properties/src_postal_code",
+                    "type": "string",
+                    "title": "The src_postal_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "26000"
+                    ]
+                },
+                "dst_name": {
+                    "$id": "#/properties/data/properties/dst_name",
+                    "type": "string",
+                    "title": "The dst_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2"
+                    ]
+                },
+                "dst_phone": {
+                    "$id": "#/properties/data/properties/dst_phone",
+                    "type": "string",
+                    "title": "The dst_phone schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "01346999281"
+                    ]
+                },
+                "dst_home_phone": {
+                    "$id": "#/properties/data/properties/dst_home_phone",
+                    "type": "null",
+                    "title": "The dst_home_phone schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "dst_country_code": {
+                    "$id": "#/properties/data/properties/dst_country_code",
+                    "type": "string",
+                    "title": "The dst_country_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH"
+                    ]
+                },
+                "dst_country_name": {
+                    "$id": "#/properties/data/properties/dst_country_name",
+                    "type": "string",
+                    "title": "The dst_country_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Thailand"
+                    ]
+                },
+                "dst_province_code": {
+                    "$id": "#/properties/data/properties/dst_province_code",
+                    "type": "string",
+                    "title": "The dst_province_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH05"
+                    ]
+                },
+                "dst_province_name": {
+                    "$id": "#/properties/data/properties/dst_province_name",
+                    "type": "string",
+                    "title": "The dst_province_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "???????????????"
+                    ]
+                },
+                "dst_city_code": {
+                    "$id": "#/properties/data/properties/dst_city_code",
+                    "type": "string",
+                    "title": "The dst_city_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH0502"
+                    ]
+                },
+                "dst_city_name": {
+                    "$id": "#/properties/data/properties/dst_city_name",
+                    "type": "string",
+                    "title": "The dst_city_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "???????"
+                    ]
+                },
+                "dst_district_code": {
+                    "$id": "#/properties/data/properties/dst_district_code",
+                    "type": "string",
+                    "title": "The dst_district_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH050201"
+                    ]
+                },
+                "dst_district_name": {
+                    "$id": "#/properties/data/properties/dst_district_name",
+                    "type": "string",
+                    "title": "The dst_district_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "???????"
+                    ]
+                },
+                "dst_detail_address": {
+                    "$id": "#/properties/data/properties/dst_detail_address",
+                    "type": "string",
+                    "title": "The dst_detail_address schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2"
+                    ]
+                },
+                "dst_postal_code": {
+                    "$id": "#/properties/data/properties/dst_postal_code",
+                    "type": "string",
+                    "title": "The dst_postal_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "13130"
+                    ]
+                },
+                "ticket_delivery_staff_lat": {
+                    "$id": "#/properties/data/properties/ticket_delivery_staff_lat",
+                    "type": "null",
+                    "title": "The ticket_delivery_staff_lat schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "ticket_delivery_staff_lng": {
+                    "$id": "#/properties/data/properties/ticket_delivery_staff_lng",
+                    "type": "null",
+                    "title": "The ticket_delivery_staff_lng schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "settlement_category": {
+                    "$id": "#/properties/data/properties/settlement_category",
+                    "type": "integer",
+                    "title": "The settlement_category schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        2
+                    ]
+                },
+                "settlement_category_text": {
+                    "$id": "#/properties/data/properties/settlement_category_text",
+                    "type": "string",
+                    "title": "The settlement_category_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "定期结算"
+                    ]
+                },
+                "settlement_type": {
+                    "$id": "#/properties/data/properties/settlement_type",
+                    "type": "integer",
+                    "title": "The settlement_type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "settlement_type_text": {
+                    "$id": "#/properties/data/properties/settlement_type_text",
+                    "type": "string",
+                    "title": "The settlement_type_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "寄付"
+                    ]
+                },
+                "returned": {
+                    "$id": "#/properties/data/properties/returned",
+                    "type": "boolean",
+                    "title": "The returned schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "returned_pno": {
+                    "$id": "#/properties/data/properties/returned_pno",
+                    "type": "null",
+                    "title": "The returned_pno schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "returned_pno_display": {
+                    "$id": "#/properties/data/properties/returned_pno_display",
+                    "type": "null",
+                    "title": "The returned_pno_display schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "customary_pno": {
+                    "$id": "#/properties/data/properties/customary_pno",
+                    "type": "null",
+                    "title": "The customary_pno schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "customary_pno_display": {
+                    "$id": "#/properties/data/properties/customary_pno_display",
+                    "type": "null",
+                    "title": "The customary_pno_display schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "signer_category": {
+                    "$id": "#/properties/data/properties/signer_category",
+                    "type": "null",
+                    "title": "The signer_category schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "signer_content": {
+                    "$id": "#/properties/data/properties/signer_content",
+                    "type": "null",
+                    "title": "The signer_content schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "insure_declare_value": {
+                    "$id": "#/properties/data/properties/insure_declare_value",
+                    "type": "integer",
+                    "title": "The insure_declare_value schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "detained_marker_category": {
+                    "$id": "#/properties/data/properties/detained_marker_category",
+                    "type": "null",
+                    "title": "The detained_marker_category schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "detained_marker_category_text": {
+                    "$id": "#/properties/data/properties/detained_marker_category_text",
+                    "type": "null",
+                    "title": "The detained_marker_category_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "difficulty_marker_category": {
+                    "$id": "#/properties/data/properties/difficulty_marker_category",
+                    "type": "null",
+                    "title": "The difficulty_marker_category schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "difficulty_marker_category_text": {
+                    "$id": "#/properties/data/properties/difficulty_marker_category_text",
+                    "type": "null",
+                    "title": "The difficulty_marker_category_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "difficulty_state": {
+                    "$id": "#/properties/data/properties/difficulty_state",
+                    "type": "null",
+                    "title": "The difficulty_state schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "difficulty_created_at": {
+                    "$id": "#/properties/data/properties/difficulty_created_at",
+                    "type": "null",
+                    "title": "The difficulty_created_at schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "difficulty_staff_info_id": {
+                    "$id": "#/properties/data/properties/difficulty_staff_info_id",
+                    "type": "null",
+                    "title": "The difficulty_staff_info_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "difficulty_staff_info_name": {
+                    "$id": "#/properties/data/properties/difficulty_staff_info_name",
+                    "type": "null",
+                    "title": "The difficulty_staff_info_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "state": {
+                    "$id": "#/properties/data/properties/state",
+                    "type": "integer",
+                    "title": "The state schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        2
+                    ]
+                },
+                "state_text": {
+                    "$id": "#/properties/data/properties/state_text",
+                    "type": "string",
+                    "title": "The state_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "运输中"
+                    ]
+                },
+                "parcel_note": {
+                    "$id": "#/properties/data/properties/parcel_note",
+                    "type": "null",
+                    "title": "The parcel_note schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "remark_first": {
+                    "$id": "#/properties/data/properties/remark_first",
+                    "type": "string",
+                    "title": "The remark_first schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "-"
+                    ]
+                },
+                "remark_second": {
+                    "$id": "#/properties/data/properties/remark_second",
+                    "type": "string",
+                    "title": "The remark_second schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "remark_third": {
+                    "$id": "#/properties/data/properties/remark_third",
+                    "type": "string",
+                    "title": "The remark_third schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "printing_count": {
+                    "$id": "#/properties/data/properties/printing_count",
+                    "type": "integer",
+                    "title": "The printing_count schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "ka_warehouse_id": {
+                    "$id": "#/properties/data/properties/ka_warehouse_id",
+                    "type": "null",
+                    "title": "The ka_warehouse_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "dst_code": {
+                    "$id": "#/properties/data/properties/dst_code",
+                    "type": "string",
+                    "title": "The dst_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "AYU"
+                    ]
+                },
+                "created_at": {
+                    "$id": "#/properties/data/properties/created_at",
+                    "type": "number",
+                    "title": "The created_at schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        1596185672.0
+                    ]
+                },
+                "updated_at": {
+                    "$id": "#/properties/data/properties/updated_at",
+                    "type": "number",
+                    "title": "The updated_at schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        1596188755.0
+                    ]
+                },
+                "disc_freight_mark": {
+                    "$id": "#/properties/data/properties/disc_freight_mark",
+                    "type": "boolean",
+                    "title": "The disc_freight_mark schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "signed_info": {
+                    "$id": "#/properties/data/properties/signed_info",
+                    "type": "null",
+                    "title": "The signed_info schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "dst_store_name": {
+                    "$id": "#/properties/data/properties/dst_store_name",
+                    "type": "string",
+                    "title": "The dst_store_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "BAM_SP-???????"
+                    ]
+                },
+                "dst_store_id": {
+                    "$id": "#/properties/data/properties/dst_store_id",
+                    "type": "string",
+                    "title": "The dst_store_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH10060201"
+                    ]
+                },
+                "send_province_code": {
+                    "$id": "#/properties/data/properties/send_province_code",
+                    "type": "null",
+                    "title": "The send_province_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "send_province_name": {
+                    "$id": "#/properties/data/properties/send_province_name",
+                    "type": "null",
+                    "title": "The send_province_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "sendcountrycode": {
+                    "$id": "#/properties/data/properties/sendcountrycode",
+                    "type": "null",
+                    "title": "The sendcountrycode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "sendcountryname": {
+                    "$id": "#/properties/data/properties/sendcountryname",
+                    "type": "null",
+                    "title": "The sendcountryname schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "send_city_code": {
+                    "$id": "#/properties/data/properties/send_city_code",
+                    "type": "null",
+                    "title": "The send_city_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "send_city_name": {
+                    "$id": "#/properties/data/properties/send_city_name",
+                    "type": "null",
+                    "title": "The send_city_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "send_district_code": {
+                    "$id": "#/properties/data/properties/send_district_code",
+                    "type": "null",
+                    "title": "The send_district_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "send_district_name": {
+                    "$id": "#/properties/data/properties/send_district_name",
+                    "type": "null",
+                    "title": "The send_district_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "send_detail_address": {
+                    "$id": "#/properties/data/properties/send_detail_address",
+                    "type": "null",
+                    "title": "The send_detail_address schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "ticket_pickup_store_id": {
+                    "$id": "#/properties/data/properties/ticket_pickup_store_id",
+                    "type": "string",
+                    "title": "The ticket_pickup_store_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH01100201"
+                    ]
+                },
+                "ticket_pickup_store_text": {
+                    "$id": "#/properties/data/properties/ticket_pickup_store_text",
+                    "type": "string",
+                    "title": "The ticket_pickup_store_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TLC_SP-????????"
+                    ]
+                },
+                "cancel_marker_category": {
+                    "$id": "#/properties/data/properties/cancel_marker_category",
+                    "type": "null",
+                    "title": "The cancel_marker_category schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "cancel_marker_category_text": {
+                    "$id": "#/properties/data/properties/cancel_marker_category_text",
+                    "type": "null",
+                    "title": "The cancel_marker_category_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "cancel_remark": {
+                    "$id": "#/properties/data/properties/cancel_remark",
+                    "type": "null",
+                    "title": "The cancel_remark schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "weighing_category": {
+                    "$id": "#/properties/data/properties/weighing_category",
+                    "type": "integer",
+                    "title": "The weighing_category schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "weighing_category_note": {
+                    "$id": "#/properties/data/properties/weighing_category_note",
+                    "type": "string",
+                    "title": "The weighing_category_note schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "该客户按重量或体积计费"
+                    ]
+                },
+                "sorting_no": {
+                    "$id": "#/properties/data/properties/sorting_no",
+                    "type": "string",
+                    "title": "The sorting_no schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "C"
+                    ]
+                },
+                "sorting_province_no": {
+                    "$id": "#/properties/data/properties/sorting_province_no",
+                    "type": "string",
+                    "title": "The sorting_province_no schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "05"
+                    ]
+                },
+                "parcel_given_time": {
+                    "$id": "#/properties/data/properties/parcel_given_time",
+                    "type": "integer",
+                    "title": "The parcel_given_time schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "estimate_finished_at": {
+                    "$id": "#/properties/data/properties/estimate_finished_at",
+                    "type": "null",
+                    "title": "The estimate_finished_at schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "finished_at": {
+                    "$id": "#/properties/data/properties/finished_at",
+                    "type": "null",
+                    "title": "The finished_at schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "up_country_note": {
+                    "$id": "#/properties/data/properties/up_country_note",
+                    "type": "null",
+                    "title": "The up_country_note schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "discard_enabled": {
+                    "$id": "#/properties/data/properties/discard_enabled",
+                    "type": "boolean",
+                    "title": "The discard_enabled schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "discard_reason": {
+                    "$id": "#/properties/data/properties/discard_reason",
+                    "type": "null",
+                    "title": "The discard_reason schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "discard_at": {
+                    "$id": "#/properties/data/properties/discard_at",
+                    "type": "null",
+                    "title": "The discard_at schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "ka_diff_ticket_id": {
+                    "$id": "#/properties/data/properties/ka_diff_ticket_id",
+                    "type": "null",
+                    "title": "The ka_diff_ticket_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "rejected_date": {
+                    "$id": "#/properties/data/properties/rejected_date",
+                    "type": "null",
+                    "title": "The rejected_date schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "rejection_category_text": {
+                    "$id": "#/properties/data/properties/rejection_category_text",
+                    "type": "null",
+                    "title": "The rejection_category_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "sorting_code": {
+                    "$id": "#/properties/data/properties/sorting_code",
+                    "type": "string",
+                    "title": "The sorting_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "05C-16024-28"
+                    ]
+                },
+                "sorting_line": {
+                    "$id": "#/properties/data/properties/sorting_line",
+                    "type": "string",
+                    "title": "The sorting_line schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "7"
+                    ]
+                },
+                "sorting_line_code": {
+                    "$id": "#/properties/data/properties/sorting_line_code",
+                    "type": "string",
+                    "title": "The sorting_line_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "C01"
+                    ]
+                },
+                "ticket_pickup_id": {
+                    "$id": "#/properties/data/properties/ticket_pickup_id",
+                    "type": "integer",
+                    "title": "The ticket_pickup_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        499432
+                    ]
+                },
+                "ticket_delivery_id": {
+                    "$id": "#/properties/data/properties/ticket_delivery_id",
+                    "type": "null",
+                    "title": "The ticket_delivery_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "return_receipt_enabled": {
+                    "$id": "#/properties/data/properties/return_receipt_enabled",
+                    "type": "boolean",
+                    "title": "The return_receipt_enabled schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "receipt_text": {
+                    "$id": "#/properties/data/properties/receipt_text",
+                    "type": "string",
+                    "title": "The receipt_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "不需要"
+                    ]
+                },
+                "return_receipt_no": {
+                    "$id": "#/properties/data/properties/return_receipt_no",
+                    "type": "null",
+                    "title": "The return_receipt_no schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "speed_enabled": {
+                    "$id": "#/properties/data/properties/speed_enabled",
+                    "type": "boolean",
+                    "title": "The speed_enabled schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "max_length": {
+                    "$id": "#/properties/data/properties/max_length",
+                    "type": "integer",
+                    "title": "The max_length schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        100
+                    ]
+                },
+                "max_width": {
+                    "$id": "#/properties/data/properties/max_width",
+                    "type": "integer",
+                    "title": "The max_width schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        100
+                    ]
+                },
+                "max_height": {
+                    "$id": "#/properties/data/properties/max_height",
+                    "type": "integer",
+                    "title": "The max_height schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        100
+                    ]
+                },
+                "max_sum_of_lwh": {
+                    "$id": "#/properties/data/properties/max_sum_of_lwh",
+                    "type": "integer",
+                    "title": "The max_sum_of_lwh schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        280
+                    ]
+                },
+                "printed_enabled": {
+                    "$id": "#/properties/data/properties/printed_enabled",
+                    "type": "boolean",
+                    "title": "The printed_enabled schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "display_enabled": {
+                    "$id": "#/properties/data/properties/display_enabled",
+                    "type": "boolean",
+                    "title": "The display_enabled schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "speed_sla_dto": {
+                    "$id": "#/properties/data/properties/speed_sla_dto",
+                    "type": "null",
+                    "title": "The speed_sla_dto schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "dst_district_default": {
+                    "$id": "#/properties/data/properties/dst_district_default",
+                    "type": "boolean",
+                    "title": "The dst_district_default schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "address_error_enabled": {
+                    "$id": "#/properties/data/properties/address_error_enabled",
+                    "type": "null",
+                    "title": "The address_error_enabled schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "customer_modify_enabled": {
+                    "$id": "#/properties/data/properties/customer_modify_enabled",
+                    "type": "null",
+                    "title": "The customer_modify_enabled schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

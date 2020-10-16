@@ -1,0 +1,193 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "无头件已上传列表",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The Code Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1.0
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The Message Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "array",
+            "title": "The Data Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "state_text": "未认领",
+                        "state": 0.0,
+                        "parcel_discover_date": "2020-04-23",
+                        "hno": "3421000030",
+                        "current_pno": null,
+                        "pno": null,
+                        "created_at": 1587613920.024
+                    },
+                    {
+                        "parcel_discover_date": "2020-04-23",
+                        "hno": "3421000029",
+                        "current_pno": null,
+                        "pno": null,
+                        "created_at": 1587613851.628,
+                        "state_text": "未认领",
+                        "state": 0.0
+                    },
+                    {
+                        "pno": null,
+                        "created_at": 1582362711.709,
+                        "state": 0.0,
+                        "state_text": "未认领",
+                        "parcel_discover_date": "2020-02-22",
+                        "hno": "3421000028",
+                        "current_pno": null
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/data/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "current_pno": null,
+                        "pno": null,
+                        "created_at": 1587613920.024,
+                        "state_text": "未认领",
+                        "state": 0.0,
+                        "parcel_discover_date": "2020-04-23",
+                        "hno": "3421000030"
+                    },
+                    {
+                        "pno": null,
+                        "created_at": 1587613851.628,
+                        "state_text": "未认领",
+                        "state": 0.0,
+                        "parcel_discover_date": "2020-04-23",
+                        "hno": "3421000029",
+                        "current_pno": null
+                    },
+                    {
+                        "pno": null,
+                        "created_at": 1582362711.709,
+                        "state_text": "未认领",
+                        "state": 0.0,
+                        "parcel_discover_date": "2020-02-22",
+                        "hno": "3421000028",
+                        "current_pno": null
+                    }
+                ],
+                "additionalProperties": true,
+                "required": [
+                    "hno",
+                    "pno",
+                    "current_pno",
+                    "state",
+                    "state_text",
+                    "parcel_discover_date",
+                    "created_at"
+                ],
+                "properties": {
+                    "hno": {
+                        "$id": "#/properties/data/items/properties/hno",
+                        "type": "string",
+                        "title": "The Hno Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "3421000030"
+                        ]
+                    },
+                    "pno": {
+                        "$id": "#/properties/data/items/properties/pno",
+                        "type": "null",
+                        "title": "The Pno Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "current_pno": {
+                        "$id": "#/properties/data/items/properties/current_pno",
+                        "type": "null",
+                        "title": "The Current_pno Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "state": {
+                        "$id": "#/properties/data/items/properties/state",
+                        "type": "integer",
+                        "title": "The State Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            0.0
+                        ]
+                    },
+                    "state_text": {
+                        "$id": "#/properties/data/items/properties/state_text",
+                        "type": "string",
+                        "title": "The State_text Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "未认领"
+                        ]
+                    },
+                    "parcel_discover_date": {
+                        "$id": "#/properties/data/items/properties/parcel_discover_date",
+                        "type": "string",
+                        "title": "The Parcel_discover_date Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "2020-04-23"
+                        ]
+                    },
+                    "created_at": {
+                        "$id": "#/properties/data/items/properties/created_at",
+                        "type": "number",
+                        "title": "The Created_at Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            1587613920.024
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

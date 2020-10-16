@@ -1,0 +1,55 @@
+host: ms_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: ms/api/customer/issues/add
+headers:
+  0:
+    Accept: "application/json, text/plain, */*"
+    Accept-Language: "zh-CN"
+    Content-Type: "application/json;charset=UTF-8"
+    X-MS-SESSION-ID: '$ms_general_customer_service_login_0_0_0_["data"]["session_id"]$'
+
+success:
+  parameter:
+    0:
+      pno: $courier_write_order_0_0_0_["data"]["parcel_info"]["pno"]$
+      grade: ''
+      channel_category: 3
+      requester_category: 1
+      customer_name: '自动化姓名'
+      customer_phone: ''
+      customer_email: ''
+      request_sup_type: 22
+      request_sub_type: 220
+      remark: '自动化快递丢失。自动化快递丢失。自动化快递丢失。'
+      opened: false
+      back_visit_category: ''
+      need_ring_back: false
+      assign_to_me: false
+      need_close: true
+      customer_team: 1
+      images: []
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+#    data:
+#      - 'resp.json()["data"]["items"][0]["state_text"] == "未处理"'
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+#    json_schema: "login.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

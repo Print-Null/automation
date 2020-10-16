@@ -1,0 +1,41 @@
+# 测试用例
+case_data: Kit/headless_upload/data/
+case_path: Kit/headless_upload/test_cash/
+test_case:
+##############################################################################
+####流程描述：kit快递员/仓管员登录-查看本网点上传的包裹-新增无头件包裹
+###############################################################################
+
+  #1数据准备工作，自己编写用例，为后面的用例做准备
+
+  #2kit登入
+  - test_name: kit_auth_new_device_login
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 2
+    #用例描述
+    info: kit-快递员、仓管员登入
+    extend: 2_kit_login.yaml
+
+  #3无头件上传-查看本网点上传的包裹
+  - test_name: kit_headless_get_headless
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 3
+    #用例描述
+    info: 查看本网点上传的包裹
+    extend: 3_check_the_packages_uploaded_by_our_website.yaml
+
+  #4无头件上传-新增无头件包裹-获取包裹图片
+  - test_name: kit_headless_upload_photos
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 4
+    #用例描述
+    info: 新增无头件包裹-获取包裹图片
+    extend: 4_headless_upload_photos.yaml
+
+  #5无头件上传-新增无头件包裹
+  - test_name: kit_headless_add
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 5
+    #用例描述
+    info: 新增无头件包裹
+    extend: 5_add_headless_packages.yaml

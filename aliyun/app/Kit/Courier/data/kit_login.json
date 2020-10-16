@@ -1,0 +1,8 @@
+{
+    "login": '$[config]courier_man_login$',
+    "password": '$[config]courier_man_pwd$',
+    "clientid": "15900319595691590031959572",
+    "clientsd": "1590031959575",
+    "os": "android",
+    "version": "3.4.0"
+}

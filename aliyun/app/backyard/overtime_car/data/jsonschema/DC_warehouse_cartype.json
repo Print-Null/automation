@@ -1,0 +1,345 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "code": 1,
+            "msg": "请求成功!",
+            "data": {
+                "dataList": {
+                    "car_type": [
+                        {
+                            "type": 100,
+                            "type_txt": "4W"
+                        },
+                        {
+                            "type": 101,
+                            "type_txt": "4WJ"
+                        },
+                        {
+                            "type": 200,
+                            "type_txt": "6W5.5"
+                        },
+                        {
+                            "type": 201,
+                            "type_txt": "6W6.5"
+                        },
+                        {
+                            "type": 203,
+                            "type_txt": "6W7.2"
+                        },
+                        {
+                            "type": 210,
+                            "type_txt": "6W8.8"
+                        },
+                        {
+                            "type": 300,
+                            "type_txt": "10W"
+                        },
+                        {
+                            "type": 400,
+                            "type_txt": "14w"
+                        }
+                    ],
+                    "fleet_type": [
+                        {
+                            "type": 1,
+                            "type_txt": "普通加班车"
+                        },
+                        {
+                            "type": 2,
+                            "type_txt": "FD Courier"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "required": [
+        "code",
+        "msg",
+        "data"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "msg": {
+            "$id": "#/properties/msg",
+            "type": "string",
+            "title": "The msg schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "请求成功!"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "dataList": {
+                        "car_type": [
+                            {
+                                "type": 100,
+                                "type_txt": "4W"
+                            },
+                            {
+                                "type": 101,
+                                "type_txt": "4WJ"
+                            },
+                            {
+                                "type": 200,
+                                "type_txt": "6W5.5"
+                            },
+                            {
+                                "type": 201,
+                                "type_txt": "6W6.5"
+                            },
+                            {
+                                "type": 203,
+                                "type_txt": "6W7.2"
+                            },
+                            {
+                                "type": 210,
+                                "type_txt": "6W8.8"
+                            },
+                            {
+                                "type": 300,
+                                "type_txt": "10W"
+                            },
+                            {
+                                "type": 400,
+                                "type_txt": "14w"
+                            }
+                        ],
+                        "fleet_type": [
+                            {
+                                "type": 1,
+                                "type_txt": "普通加班车"
+                            },
+                            {
+                                "type": 2,
+                                "type_txt": "FD Courier"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "required": [
+                "dataList"
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "dataList": {
+                    "$id": "#/properties/data/properties/dataList",
+                    "type": "object",
+                    "title": "The dataList schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "car_type": [
+                                {
+                                    "type": 100,
+                                    "type_txt": "4W"
+                                },
+                                {
+                                    "type": 101,
+                                    "type_txt": "4WJ"
+                                },
+                                {
+                                    "type": 200,
+                                    "type_txt": "6W5.5"
+                                },
+                                {
+                                    "type": 201,
+                                    "type_txt": "6W6.5"
+                                },
+                                {
+                                    "type": 203,
+                                    "type_txt": "6W7.2"
+                                },
+                                {
+                                    "type": 210,
+                                    "type_txt": "6W8.8"
+                                },
+                                {
+                                    "type": 300,
+                                    "type_txt": "10W"
+                                },
+                                {
+                                    "type": 400,
+                                    "type_txt": "14w"
+                                }
+                            ],
+                            "fleet_type": [
+                                {
+                                    "type": 1,
+                                    "type_txt": "普通加班车"
+                                },
+                                {
+                                    "type": 2,
+                                    "type_txt": "FD Courier"
+                                }
+                            ]
+                        }
+                    ],
+                    "required": [
+                        "car_type",
+                        "fleet_type"
+                    ],
+                    "additionalProperties": true,
+                    "properties": {
+                        "car_type": {
+                            "$id": "#/properties/data/properties/dataList/properties/car_type",
+                            "type": "array",
+                            "title": "The car_type schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": [],
+                            "examples": [
+                                [
+                                    {
+                                        "type": 100,
+                                        "type_txt": "4W"
+                                    },
+                                    {
+                                        "type": 101,
+                                        "type_txt": "4WJ"
+                                    }
+                                ]
+                            ],
+                            "additionalItems": true,
+                            "items": {
+                                "anyOf": [
+                                    {
+                                        "$id": "#/properties/data/properties/dataList/properties/car_type/items/anyOf/0",
+                                        "type": "object",
+                                        "title": "The first anyOf schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "type": 100,
+                                                "type_txt": "4W"
+                                            }
+                                        ],
+                                        "required": [
+                                            "type",
+                                            "type_txt"
+                                        ],
+                                        "additionalProperties": true,
+                                        "properties": {
+                                            "type": {
+                                                "$id": "#/properties/data/properties/dataList/properties/car_type/items/anyOf/0/properties/type",
+                                                "type": "integer",
+                                                "title": "The type schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": 0,
+                                                "examples": [
+                                                    100
+                                                ]
+                                            },
+                                            "type_txt": {
+                                                "$id": "#/properties/data/properties/dataList/properties/car_type/items/anyOf/0/properties/type_txt",
+                                                "type": "string",
+                                                "title": "The type_txt schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "4W"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "$id": "#/properties/data/properties/dataList/properties/car_type/items"
+                            }
+                        },
+                        "fleet_type": {
+                            "$id": "#/properties/data/properties/dataList/properties/fleet_type",
+                            "type": "array",
+                            "title": "The fleet_type schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": [],
+                            "examples": [
+                                [
+                                    {
+                                        "type": 1,
+                                        "type_txt": "普通加班车"
+                                    },
+                                    {
+                                        "type": 2,
+                                        "type_txt": "FD Courier"
+                                    }
+                                ]
+                            ],
+                            "additionalItems": true,
+                            "items": {
+                                "anyOf": [
+                                    {
+                                        "$id": "#/properties/data/properties/dataList/properties/fleet_type/items/anyOf/0",
+                                        "type": "object",
+                                        "title": "The first anyOf schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "type": 1,
+                                                "type_txt": "普通加班车"
+                                            }
+                                        ],
+                                        "required": [
+                                            "type",
+                                            "type_txt"
+                                        ],
+                                        "additionalProperties": true,
+                                        "properties": {
+                                            "type": {
+                                                "$id": "#/properties/data/properties/dataList/properties/fleet_type/items/anyOf/0/properties/type",
+                                                "type": "integer",
+                                                "title": "The type schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": 0,
+                                                "examples": [
+                                                    1
+                                                ]
+                                            },
+                                            "type_txt": {
+                                                "$id": "#/properties/data/properties/dataList/properties/fleet_type/items/anyOf/0/properties/type_txt",
+                                                "type": "string",
+                                                "title": "The type_txt schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "普通加班车"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ],
+                                "$id": "#/properties/data/properties/dataList/properties/fleet_type/items"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

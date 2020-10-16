@@ -1,0 +1,65 @@
+host: kit_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: api/courier/v1/parcels/$kit_pickups_parcel_0_#headers#_0_["data"]["parcel_info"]["pno"]$/problem_submission
+
+headers:
+  0:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: zh-CN
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_1_0_0_["data"]["sessionid"]$
+  1:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: en-US
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_1_1_0_["data"]["sessionid"]$
+
+  2:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: th-TN
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_1_2_0_["data"]["sessionid"]$
+
+success:
+  parameter:
+#####收件人拒收---需要kit打电话
+#####COD金额不正确----需要kit打电话
+###收件人号码错误----需要kit打电话
+#收件人/地址不清晰或不正确---需要kit打电话
+    0:
+      difficulty_marker_category: 31
+      dst_city_code: $[config]dst_city_code$
+      dst_city_name: $[config]dst_city_name$
+      dst_country_code: $[config]dst_country_code$
+      dst_country_name: $[config]dst_country_name$
+      dst_detail_address: $[config]recipient_address$
+      dst_district_code: $[config]dst_district_code$
+      dst_district_default: $[config]dst_district_default$
+      dst_district_name: $[config]dst_district_name$
+      dst_name: $[config]recipient_name$
+      dst_phone: $[config]dst_phone$
+      dst_postal_code: $[config]dst_postal_code$
+      dst_province_code: $[config]dst_province_code$
+      dst_province_name: $[config]dst_province_name$
+
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+##schema校验 注：路径存储是当前目录的
+#    json_schema: "28_problem_submission_3.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

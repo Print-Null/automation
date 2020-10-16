@@ -1,0 +1,71 @@
+host: host_10000
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address: ms/api/fleet/van/line
+headers:
+#  0:
+#    Accept-Language: zh-CN
+#    Content-Type: application/json;charset=UTF-8
+#    X-MS-SESSION-ID: $ms_login_10000_0_0_0_["data"]["session_id"]$
+#  1:
+#    Accept-Language: en-US
+#    Content-Type: application/json;charset=UTF-8
+#    X-MS-SESSION-ID: $ms_login_10000_0_0_0_["data"]["session_id"]$
+  2:
+    Accept-Language: th-CN
+    Content-Type: application/json;charset=UTF-8
+    X-MS-SESSION-ID: $ms_login_10000_0_0_0_["data"]["session_id"]$
+success:
+  parameter:
+    0:
+      name: auto$[python]str(time.time()).split(".")[0]$
+      area: ''
+      type: 0
+      mode: 1
+      period:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+      price: 2200
+      fleet_id: $get_plate_number_0_0_["data"]["items"][0]["fleet_id"]$
+      plate_id: $get_plate_number_0_0_["data"]["items"][0]["id"]$
+      plate_type: 100
+      driver: autotest
+      driver_phone: '1111111111'
+      time_tables:
+        - order_no: 1
+          store_id: $id_1$
+          estimate_end_time: '960'
+          estimate_start_time: '990'
+          running_mileage: ''
+        - order_no: 2
+          store_id: $id_2$
+          running_mileage: '111'
+          estimate_start_time: null
+          estimate_end_time: '1086'
+      sorting_no: B
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    json_schema: "13new_general_line.json"
+  relevance: {}
+
+
+
+error:
+  parameter: {}
+  check: {}

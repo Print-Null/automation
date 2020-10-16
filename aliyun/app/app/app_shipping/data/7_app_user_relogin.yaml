@@ -1,0 +1,43 @@
+host: app_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: /api/user/v1/auth/device_relogin
+headers:
+  0:
+    Accept-Language: zh-Hans-CN
+    content-type: application/json
+    X-FLE-SESSION-ID: $app_user_login_0_0_0_["data"]["sessionid"]$
+#    Accept-Language: zh-CN
+#  1:
+#    content-type: application/json
+#    Accept-Language: en-US
+#  2:
+#    content-type: application/json
+#    Accept-Language: th-CN
+
+success:
+  parameter:
+    0:
+      clientid: "$[config]app_clientid$"
+      version: "$[config]app_version$"
+      sessionid: $app_user_login_0_0_0_["data"]["sessionid"]$
+      tid: $app_user_login_0_0_0_["data"]["tid"]$
+      os: "ios"
+      clientsd: "$[config]user_clientsd$"
+
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    message: "success"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

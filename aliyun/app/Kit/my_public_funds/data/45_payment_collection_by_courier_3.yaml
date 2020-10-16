@@ -1,0 +1,48 @@
+host: ms_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+#  0: ms/api/store/receivable_bill/$ms_store_receivable_bill_#headers#_0_["data"]["items"][0]["id"]$/exclude
+  0: ms/api/store/receivable_bill/$ms_store_receivable_bill_#headers#_["data"]["items"][0]["id"]$/exclude
+
+headers:
+  0:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: zh-CN
+    X-MS-SESSION-ID: $ms_auth_signin_3_0_0_["data"]["session_id"]$
+  1:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: en-US
+    X-MS-SESSION-ID: $ms_auth_signin_3_1_0_["data"]["session_id"]$
+  2:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: th-TN
+    X-MS-SESSION-ID: $ms_auth_signin_3_2_0_["data"]["session_id"]$
+
+success:
+  parameter:
+    0:
+      exclude_ids: []
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+##schema校验 注：路径存储是当前目录的
+#    json_schema: "45_payment_collection_by_courier_3.json"
+
+  relevance:
+    - '["data"]["bill_info"]["unpaid_amount"]'
+
+error:
+  parameter: {}
+  check: {}

@@ -1,0 +1,40 @@
+host: app_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: /api/user/v1/auth/send_sms_code
+headers:
+  0:
+    Accept-Language: th-CN
+    content-type: application/json
+
+success:
+  parameter:
+    0:
+      version: "$[config]app_version$"
+      os: "ios"
+      clientsd: "$[config]user_clientsd$"
+      clientid: "$[config]app_clientid$"
+      image_code: "6666"
+      mobile: "$[config]user_phone$"
+      type: 2
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    json_schema: "2_app_user_send_sms_code.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

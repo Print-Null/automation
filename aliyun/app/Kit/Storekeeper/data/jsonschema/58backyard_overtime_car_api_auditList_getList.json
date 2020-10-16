@@ -1,0 +1,1836 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "code": 1,
+            "msg": "请求成功!",
+            "data": {
+                "dataList": [
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_11541",
+                        "created_at": "2020-07-30 16:41:42",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4W"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-30 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_11542",
+                        "created_at": "2020-07-30 16:41:42",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4W"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-30 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_11540",
+                        "created_at": "2020-07-30 16:41:41",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4W"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-30 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_11537",
+                        "created_at": "2020-07-30 16:41:11",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4W"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-30 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_11538",
+                        "created_at": "2020-07-30 16:41:11",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4W"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-30 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_11539",
+                        "created_at": "2020-07-30 16:41:11",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4W"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-30 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_11534",
+                        "created_at": "2020-07-30 16:40:24",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4W"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-30 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_11535",
+                        "created_at": "2020-07-30 16:40:24",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4W"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-30 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_11536",
+                        "created_at": "2020-07-30 16:40:24",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4W"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-30 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_11531",
+                        "created_at": "2020-07-30 16:40:08",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4W"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-30 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_11532",
+                        "created_at": "2020-07-30 16:40:08",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4W"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-30 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_11533",
+                        "created_at": "2020-07-30 16:40:08",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4W"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-30 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_11528",
+                        "created_at": "2020-07-30 16:38:14",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4W"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-30 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_11529",
+                        "created_at": "2020-07-30 16:38:14",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4W"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-30 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_11530",
+                        "created_at": "2020-07-30 16:38:14",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4W"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-30 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_9020",
+                        "created_at": "2020-07-09 13:50:39",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "10W"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-09 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_9021",
+                        "created_at": "2020-07-09 13:50:39",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "14w"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-09 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_9009",
+                        "created_at": "2020-07-09 13:50:38",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4W"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-09 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_9010",
+                        "created_at": "2020-07-09 13:50:38",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4WJ"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-09 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_9011",
+                        "created_at": "2020-07-09 13:50:38",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "6W5.5"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-09 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_9012",
+                        "created_at": "2020-07-09 13:50:38",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "6W6.5"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-09 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_9013",
+                        "created_at": "2020-07-09 13:50:38",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "6W7.2"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-09 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_9014",
+                        "created_at": "2020-07-09 13:50:38",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4W"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-09 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_9015",
+                        "created_at": "2020-07-09 13:50:38",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4WJ"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-09 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_9016",
+                        "created_at": "2020-07-09 13:50:38",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "6W5.5"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-09 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_9017",
+                        "created_at": "2020-07-09 13:50:38",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "6W6.5"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-09 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_9008",
+                        "created_at": "2020-07-09 13:50:37",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "14w"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-09 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_8998",
+                        "created_at": "2020-07-09 13:50:36",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "6W5.5"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-09 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_9000",
+                        "created_at": "2020-07-09 13:50:36",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "10W"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-09 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    },
+                    {
+                        "type": "12",
+                        "type_txt": "加班车申请",
+                        "status": "101",
+                        "status_txt": "待审批",
+                        "staff_id": "22602",
+                        "id": "fleet_9001",
+                        "created_at": "2020-07-09 13:50:36",
+                        "summary": [
+                            {
+                                "key": "车辆类型",
+                                "value": "4WJ"
+                            },
+                            {
+                                "key": "期望到达时间",
+                                "value": "2020-07-09 23:00"
+                            },
+                            {
+                                "key": "出发网点",
+                                "value": "自动化测试001"
+                            }
+                        ],
+                        "is_red": "",
+                        "name": "shop出纳2"
+                    }
+                ]
+            }
+        }
+    ],
+    "required": [
+        "code",
+        "msg",
+        "data"
+    ],
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "msg": {
+            "$id": "#/properties/msg",
+            "type": "string",
+            "title": "The msg schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "请求成功!"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "dataList": [
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_11541",
+                            "created_at": "2020-07-30 16:41:42",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4W"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-30 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_11542",
+                            "created_at": "2020-07-30 16:41:42",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4W"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-30 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_11540",
+                            "created_at": "2020-07-30 16:41:41",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4W"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-30 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_11537",
+                            "created_at": "2020-07-30 16:41:11",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4W"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-30 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_11538",
+                            "created_at": "2020-07-30 16:41:11",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4W"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-30 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_11539",
+                            "created_at": "2020-07-30 16:41:11",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4W"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-30 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_11534",
+                            "created_at": "2020-07-30 16:40:24",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4W"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-30 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_11535",
+                            "created_at": "2020-07-30 16:40:24",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4W"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-30 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_11536",
+                            "created_at": "2020-07-30 16:40:24",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4W"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-30 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_11531",
+                            "created_at": "2020-07-30 16:40:08",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4W"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-30 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_11532",
+                            "created_at": "2020-07-30 16:40:08",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4W"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-30 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_11533",
+                            "created_at": "2020-07-30 16:40:08",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4W"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-30 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_11528",
+                            "created_at": "2020-07-30 16:38:14",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4W"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-30 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_11529",
+                            "created_at": "2020-07-30 16:38:14",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4W"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-30 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_11530",
+                            "created_at": "2020-07-30 16:38:14",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4W"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-30 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_9020",
+                            "created_at": "2020-07-09 13:50:39",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "10W"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-09 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_9021",
+                            "created_at": "2020-07-09 13:50:39",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "14w"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-09 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_9009",
+                            "created_at": "2020-07-09 13:50:38",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4W"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-09 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_9010",
+                            "created_at": "2020-07-09 13:50:38",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4WJ"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-09 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_9011",
+                            "created_at": "2020-07-09 13:50:38",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "6W5.5"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-09 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_9012",
+                            "created_at": "2020-07-09 13:50:38",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "6W6.5"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-09 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_9013",
+                            "created_at": "2020-07-09 13:50:38",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "6W7.2"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-09 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_9014",
+                            "created_at": "2020-07-09 13:50:38",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4W"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-09 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_9015",
+                            "created_at": "2020-07-09 13:50:38",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4WJ"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-09 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_9016",
+                            "created_at": "2020-07-09 13:50:38",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "6W5.5"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-09 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_9017",
+                            "created_at": "2020-07-09 13:50:38",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "6W6.5"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-09 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_9008",
+                            "created_at": "2020-07-09 13:50:37",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "14w"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-09 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_8998",
+                            "created_at": "2020-07-09 13:50:36",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "6W5.5"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-09 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_9000",
+                            "created_at": "2020-07-09 13:50:36",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "10W"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-09 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        },
+                        {
+                            "type": "12",
+                            "type_txt": "加班车申请",
+                            "status": "101",
+                            "status_txt": "待审批",
+                            "staff_id": "22602",
+                            "id": "fleet_9001",
+                            "created_at": "2020-07-09 13:50:36",
+                            "summary": [
+                                {
+                                    "key": "车辆类型",
+                                    "value": "4WJ"
+                                },
+                                {
+                                    "key": "期望到达时间",
+                                    "value": "2020-07-09 23:00"
+                                },
+                                {
+                                    "key": "出发网点",
+                                    "value": "自动化测试001"
+                                }
+                            ],
+                            "is_red": "",
+                            "name": "shop出纳2"
+                        }
+                    ]
+                }
+            ],
+            "required": [
+                "dataList"
+            ],
+            "properties": {
+                "dataList": {
+                    "$id": "#/properties/data/properties/dataList",
+                    "type": "array",
+                    "title": "The dataList schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "type": "12",
+                                "type_txt": "加班车申请",
+                                "status": "101",
+                                "status_txt": "待审批",
+                                "staff_id": "22602",
+                                "id": "fleet_11541",
+                                "created_at": "2020-07-30 16:41:42",
+                                "summary": [
+                                    {
+                                        "key": "车辆类型",
+                                        "value": "4W"
+                                    },
+                                    {
+                                        "key": "期望到达时间",
+                                        "value": "2020-07-30 23:00"
+                                    },
+                                    {
+                                        "key": "出发网点",
+                                        "value": "自动化测试001"
+                                    }
+                                ],
+                                "is_red": "",
+                                "name": "shop出纳2"
+                            },
+                            {
+                                "type": "12",
+                                "type_txt": "加班车申请",
+                                "status": "101",
+                                "status_txt": "待审批",
+                                "staff_id": "22602",
+                                "id": "fleet_11542",
+                                "created_at": "2020-07-30 16:41:42",
+                                "summary": [
+                                    {
+                                        "key": "车辆类型",
+                                        "value": "4W"
+                                    },
+                                    {
+                                        "key": "期望到达时间",
+                                        "value": "2020-07-30 23:00"
+                                    },
+                                    {
+                                        "key": "出发网点",
+                                        "value": "自动化测试001"
+                                    }
+                                ],
+                                "is_red": "",
+                                "name": "shop出纳2"
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/data/properties/dataList/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/data/properties/dataList/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "type": "12",
+                                        "type_txt": "加班车申请",
+                                        "status": "101",
+                                        "status_txt": "待审批",
+                                        "staff_id": "22602",
+                                        "id": "fleet_11541",
+                                        "created_at": "2020-07-30 16:41:42",
+                                        "summary": [
+                                            {
+                                                "key": "车辆类型",
+                                                "value": "4W"
+                                            },
+                                            {
+                                                "key": "期望到达时间",
+                                                "value": "2020-07-30 23:00"
+                                            },
+                                            {
+                                                "key": "出发网点",
+                                                "value": "自动化测试001"
+                                            }
+                                        ],
+                                        "is_red": "",
+                                        "name": "shop出纳2"
+                                    }
+                                ],
+                                "required": [
+                                    "type",
+                                    "type_txt",
+                                    "status",
+                                    "status_txt",
+                                    "staff_id",
+                                    "id",
+                                    "created_at",
+                                    "summary",
+                                    "is_red",
+                                    "name"
+                                ],
+                                "properties": {
+                                    "type": {
+                                        "$id": "#/properties/data/properties/dataList/items/anyOf/0/properties/type",
+                                        "type": "string",
+                                        "title": "The type schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "12"
+                                        ]
+                                    },
+                                    "type_txt": {
+                                        "$id": "#/properties/data/properties/dataList/items/anyOf/0/properties/type_txt",
+                                        "type": "string",
+                                        "title": "The type_txt schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "加班车申请"
+                                        ]
+                                    },
+                                    "status": {
+                                        "$id": "#/properties/data/properties/dataList/items/anyOf/0/properties/status",
+                                        "type": "string",
+                                        "title": "The status schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "101"
+                                        ]
+                                    },
+                                    "status_txt": {
+                                        "$id": "#/properties/data/properties/dataList/items/anyOf/0/properties/status_txt",
+                                        "type": "string",
+                                        "title": "The status_txt schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "待审批"
+                                        ]
+                                    },
+                                    "staff_id": {
+                                        "$id": "#/properties/data/properties/dataList/items/anyOf/0/properties/staff_id",
+                                        "type": "string",
+                                        "title": "The staff_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "22602"
+                                        ]
+                                    },
+                                    "id": {
+                                        "$id": "#/properties/data/properties/dataList/items/anyOf/0/properties/id",
+                                        "type": "string",
+                                        "title": "The id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "fleet_11541"
+                                        ]
+                                    },
+                                    "created_at": {
+                                        "$id": "#/properties/data/properties/dataList/items/anyOf/0/properties/created_at",
+                                        "type": "string",
+                                        "title": "The created_at schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "2020-07-30 16:41:42"
+                                        ]
+                                    },
+                                    "summary": {
+                                        "$id": "#/properties/data/properties/dataList/items/anyOf/0/properties/summary",
+                                        "type": "array",
+                                        "title": "The summary schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": [],
+                                        "examples": [
+                                            [
+                                                {
+                                                    "key": "车辆类型",
+                                                    "value": "4W"
+                                                },
+                                                {
+                                                    "key": "期望到达时间",
+                                                    "value": "2020-07-30 23:00"
+                                                }
+                                            ]
+                                        ],
+                                        "additionalItems": true,
+                                        "items": {
+                                            "$id": "#/properties/data/properties/dataList/items/anyOf/0/properties/summary/items",
+                                            "anyOf": [
+                                                {
+                                                    "$id": "#/properties/data/properties/dataList/items/anyOf/0/properties/summary/items/anyOf/0",
+                                                    "type": "object",
+                                                    "title": "The first anyOf schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": {},
+                                                    "examples": [
+                                                        {
+                                                            "key": "车辆类型",
+                                                            "value": "4W"
+                                                        }
+                                                    ],
+                                                    "required": [
+                                                        "key",
+                                                        "value"
+                                                    ],
+                                                    "properties": {
+                                                        "key": {
+                                                            "$id": "#/properties/data/properties/dataList/items/anyOf/0/properties/summary/items/anyOf/0/properties/key",
+                                                            "type": "string",
+                                                            "title": "The key schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "车辆类型"
+                                                            ]
+                                                        },
+                                                        "value": {
+                                                            "$id": "#/properties/data/properties/dataList/items/anyOf/0/properties/summary/items/anyOf/0/properties/value",
+                                                            "type": "string",
+                                                            "title": "The value schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "4W"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "additionalProperties": true
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "is_red": {
+                                        "$id": "#/properties/data/properties/dataList/items/anyOf/0/properties/is_red",
+                                        "type": "string",
+                                        "title": "The is_red schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            ""
+                                        ]
+                                    },
+                                    "name": {
+                                        "$id": "#/properties/data/properties/dataList/items/anyOf/0/properties/name",
+                                        "type": "string",
+                                        "title": "The name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "shop出纳2"
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

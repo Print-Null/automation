@@ -1,0 +1,69 @@
+host: ms_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address: ms/api/fleet/line/approve/van_info_query
+
+headers:
+  0:
+    Accept-Language: zh-CN
+    X-MS-SESSION-ID: $backyard_overtime_car_ms_api_auth_signin_0_0_0_["data"]["session_id"]$
+    Accept: application/json, text/plain, */*
+#  1:
+#    Accept-Language: en-US
+#    X-MS-SESSION-ID: $backyard_overtime_car_ms_api_auth_signin_0_0_["data"]["session_id"]$
+#    Accept: application/json, text/plain, */*
+#  2:
+#    Accept-Language: th-CN
+#    X-MS-SESSION-ID: $backyard_overtime_car_ms_api_auth_signin_0_0_["data"]["session_id"]$
+#    Accept: application/json, text/plain, */*
+success:
+  parameter:
+    #加班车申请（中控审批界面）->车牌号模糊查询
+    0:
+      plate_name: "3"
+      province_code: "TH01"
+      fuzzy: True
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+
+  relevance:
+    - '["data"][0]["line_van_query_dto"]["fleet_id"]'
+    - '["data"][0]["line_van_query_dto"]["province_code"]'
+    - '["data"][0]["plate_name"]'
+    - '["data"][1]["line_van_query_dto"]["fleet_id"]'
+    - '["data"][1]["line_van_query_dto"]["province_code"]'
+    - '["data"][1]["plate_name"]'
+    - '["data"][2]["line_van_query_dto"]["fleet_id"]'
+    - '["data"][2]["line_van_query_dto"]["province_code"]'
+    - '["data"][2]["plate_name"]'
+    - '["data"][3]["line_van_query_dto"]["fleet_id"]'
+    - '["data"][3]["line_van_query_dto"]["province_code"]'
+    - '["data"][3]["plate_name"]'
+    - '["data"][4]["line_van_query_dto"]["fleet_id"]'
+    - '["data"][4]["line_van_query_dto"]["province_code"]'
+    - '["data"][4]["plate_name"]'
+    - '["data"][5]["line_van_query_dto"]["fleet_id"]'
+    - '["data"][5]["line_van_query_dto"]["province_code"]'
+    - '["data"][5]["plate_name"]'
+    - '["data"][6]["line_van_query_dto"]["fleet_id"]'
+    - '["data"][6]["line_van_query_dto"]["province_code"]'
+    - '["data"][6]["plate_name"]'
+    - '["data"][7]["line_van_query_dto"]["fleet_id"]'
+    - '["data"][7]["line_van_query_dto"]["province_code"]'
+    - '["data"][7]["plate_name"]'
+
+error:
+  parameter: {}
+  check: {}

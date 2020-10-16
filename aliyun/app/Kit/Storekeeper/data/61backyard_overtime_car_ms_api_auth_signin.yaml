@@ -1,0 +1,45 @@
+host: ms_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:  ms/api/auth/signin
+
+headers:
+  0:
+    Accept-Language: zh-CN
+    Accept-Accept: "application/json, text/plain, */*"
+  1:
+    Accept-Language: en-US
+    Accept-Accept: "application/json, text/plain, */*"
+  2:
+    Accept-Language: th-CN
+    Accept-Accept: "application/json, text/plain, */*"
+success:
+  parameter:
+    0:
+      login: $[config]ms_central_control_login$
+      password: $[config]ms_central_control_pwd$
+
+
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    json_schema: "61backyard_overtime_car_ms_api_auth_signin.json"
+  relevance:
+    - '["data"]["session_id"]'
+
+
+
+error:
+  parameter: {}
+  check: {}

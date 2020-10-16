@@ -1,0 +1,1430 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "code": 1,
+            "message": "success",
+            "data": {
+                "isLastPage": false,
+                "list": [
+                    {
+                        "id": 467446,
+                        "state": 1,
+                        "created_at": 1595333857.0,
+                        "updated_at": 1595333857.0,
+                        "parcel_number": 1,
+                        "cod_number": 0,
+                        "total_amount": 0,
+                        "state_text": "待揽件",
+                        "estimate_total_amount": 5000,
+                        "staff_info_id": 20508,
+                        "staff_info_name": "นาย กิตติ ดิษยโชค",
+                        "staff_info_mobile": "0970248240",
+                        "avatar_path": null,
+                        "avatar_bucket": null,
+                        "src_name": "sender自动化Nf90",
+                        "src_phone": "015889085617",
+                        "src_country_code": "TH",
+                        "src_country_name": "Thailand",
+                        "src_province_code": "TH01",
+                        "src_province_name": "กรุงเทพ",
+                        "src_city_code": "TH0122",
+                        "src_city_name": "บางนา",
+                        "src_district_code": "TH012201",
+                        "src_district_name": "บางนา",
+                        "src_detail_address": "自动化寄件地址Eh23",
+                        "src_postal_code": "10260",
+                        "coupon_total_amount": null,
+                        "evaluation": false,
+                        "cancelable": true,
+                        "update_enabled": true,
+                        "store_id": "TH02030201",
+                        "store_diff_phones": [
+                            "0953968420"
+                        ],
+                        "timeout_at": 1595412000.0,
+                        "timeout_at_text": "明天 15:00 ~ 17:00",
+                        "ticket_message": "15:00之后的收件任务我们不一定能够及时上门，但我们会尽力安排。如果今天快递员无法上门，敬请谅解！"
+                    },
+                    {
+                        "id": 467444,
+                        "state": 1,
+                        "created_at": 1595333829.0,
+                        "updated_at": 1595333832.0,
+                        "parcel_number": 1,
+                        "cod_number": 0,
+                        "total_amount": 11000,
+                        "state_text": "待揽件",
+                        "estimate_total_amount": 14000,
+                        "staff_info_id": 20508,
+                        "staff_info_name": "นาย กิตติ ดิษยโชค",
+                        "staff_info_mobile": "0970248240",
+                        "avatar_path": null,
+                        "avatar_bucket": null,
+                        "src_name": "sender自动化Rz41",
+                        "src_phone": "015939436355",
+                        "src_country_code": "TH",
+                        "src_country_name": "Thailand",
+                        "src_province_code": "TH01",
+                        "src_province_name": "กรุงเทพ",
+                        "src_city_code": "TH0122",
+                        "src_city_name": "บางนา",
+                        "src_district_code": "TH012201",
+                        "src_district_name": "บางนา",
+                        "src_detail_address": "自动化寄件地址Qt95",
+                        "src_postal_code": "10260",
+                        "coupon_total_amount": null,
+                        "evaluation": false,
+                        "cancelable": false,
+                        "update_enabled": false,
+                        "store_id": "TH02030201",
+                        "store_diff_phones": [
+                            "0953968420"
+                        ],
+                        "timeout_at": 1595412000.0,
+                        "timeout_at_text": "明天 15:00 ~ 17:00",
+                        "ticket_message": "15:00之后的收件任务我们不一定能够及时上门，但我们会尽力安排。如果今天快递员无法上门，敬请谅解！"
+                    },
+                    {
+                        "id": 467434,
+                        "state": 1,
+                        "created_at": 1595333475.0,
+                        "updated_at": 1595333477.0,
+                        "parcel_number": 1,
+                        "cod_number": 0,
+                        "total_amount": 7000,
+                        "state_text": "待揽件",
+                        "estimate_total_amount": 8500,
+                        "staff_info_id": 20508,
+                        "staff_info_name": "นาย กิตติ ดิษยโชค",
+                        "staff_info_mobile": "0970248240",
+                        "avatar_path": null,
+                        "avatar_bucket": null,
+                        "src_name": "sender自动化Wb37",
+                        "src_phone": "015852210905",
+                        "src_country_code": "TH",
+                        "src_country_name": "Thailand",
+                        "src_province_code": "TH01",
+                        "src_province_name": "กรุงเทพ",
+                        "src_city_code": "TH0122",
+                        "src_city_name": "บางนา",
+                        "src_district_code": "TH012201",
+                        "src_district_name": "บางนา",
+                        "src_detail_address": "自动化寄件地址Wo26",
+                        "src_postal_code": "10260",
+                        "coupon_total_amount": null,
+                        "evaluation": false,
+                        "cancelable": false,
+                        "update_enabled": false,
+                        "store_id": "TH02030201",
+                        "store_diff_phones": [
+                            "0953968420"
+                        ],
+                        "timeout_at": 1595412000.0,
+                        "timeout_at_text": "明天 15:00 ~ 17:00",
+                        "ticket_message": "15:00之后的收件任务我们不一定能够及时上门，但我们会尽力安排。如果今天快递员无法上门，敬请谅解！"
+                    },
+                    {
+                        "id": 467432,
+                        "state": 1,
+                        "created_at": 1595333194.0,
+                        "updated_at": 1595333197.0,
+                        "parcel_number": 1,
+                        "cod_number": 0,
+                        "total_amount": 15000,
+                        "state_text": "待揽件",
+                        "estimate_total_amount": 10000,
+                        "staff_info_id": 20508,
+                        "staff_info_name": "นาย กิตติ ดิษยโชค",
+                        "staff_info_mobile": "0970248240",
+                        "avatar_path": null,
+                        "avatar_bucket": null,
+                        "src_name": "sender自动化Da14",
+                        "src_phone": "015911374813",
+                        "src_country_code": "TH",
+                        "src_country_name": "Thailand",
+                        "src_province_code": "TH01",
+                        "src_province_name": "กรุงเทพ",
+                        "src_city_code": "TH0122",
+                        "src_city_name": "บางนา",
+                        "src_district_code": "TH012201",
+                        "src_district_name": "บางนา",
+                        "src_detail_address": "自动化寄件地址Oh99",
+                        "src_postal_code": "10260",
+                        "coupon_total_amount": null,
+                        "evaluation": false,
+                        "cancelable": false,
+                        "update_enabled": false,
+                        "store_id": "TH02030201",
+                        "store_diff_phones": [
+                            "0953968420"
+                        ],
+                        "timeout_at": 1595412000.0,
+                        "timeout_at_text": "明天 15:00 ~ 17:00",
+                        "ticket_message": "15:00之后的收件任务我们不一定能够及时上门，但我们会尽力安排。如果今天快递员无法上门，敬请谅解！"
+                    },
+                    {
+                        "id": 467423,
+                        "state": 1,
+                        "created_at": 1595331685.0,
+                        "updated_at": 1595331688.0,
+                        "parcel_number": 1,
+                        "cod_number": 0,
+                        "total_amount": 4900,
+                        "state_text": "待揽件",
+                        "estimate_total_amount": 16000,
+                        "staff_info_id": 20508,
+                        "staff_info_name": "นาย กิตติ ดิษยโชค",
+                        "staff_info_mobile": "0970248240",
+                        "avatar_path": null,
+                        "avatar_bucket": null,
+                        "src_name": "sender自动化Fc81",
+                        "src_phone": "015947218964",
+                        "src_country_code": "TH",
+                        "src_country_name": "Thailand",
+                        "src_province_code": "TH01",
+                        "src_province_name": "กรุงเทพ",
+                        "src_city_code": "TH0122",
+                        "src_city_name": "บางนา",
+                        "src_district_code": "TH012201",
+                        "src_district_name": "บางนา",
+                        "src_detail_address": "自动化寄件地址Sk93",
+                        "src_postal_code": "10260",
+                        "coupon_total_amount": null,
+                        "evaluation": false,
+                        "cancelable": false,
+                        "update_enabled": false,
+                        "store_id": "TH02030201",
+                        "store_diff_phones": [
+                            "0953968420"
+                        ],
+                        "timeout_at": 1595412000.0,
+                        "timeout_at_text": "明天 15:00 ~ 17:00",
+                        "ticket_message": "15:00之后的收件任务我们不一定能够及时上门，但我们会尽力安排。如果今天快递员无法上门，敬请谅解！"
+                    },
+                    {
+                        "id": 467420,
+                        "state": 1,
+                        "created_at": 1595331552.0,
+                        "updated_at": 1595331555.0,
+                        "parcel_number": 1,
+                        "cod_number": 0,
+                        "total_amount": 14000,
+                        "state_text": "待揽件",
+                        "estimate_total_amount": 11000,
+                        "staff_info_id": 20508,
+                        "staff_info_name": "นาย กิตติ ดิษยโชค",
+                        "staff_info_mobile": "0970248240",
+                        "avatar_path": null,
+                        "avatar_bucket": null,
+                        "src_name": "sender自动化Er80",
+                        "src_phone": "01597585182",
+                        "src_country_code": "TH",
+                        "src_country_name": "Thailand",
+                        "src_province_code": "TH01",
+                        "src_province_name": "กรุงเทพ",
+                        "src_city_code": "TH0122",
+                        "src_city_name": "บางนา",
+                        "src_district_code": "TH012201",
+                        "src_district_name": "บางนา",
+                        "src_detail_address": "自动化寄件地址Am84",
+                        "src_postal_code": "10260",
+                        "coupon_total_amount": null,
+                        "evaluation": false,
+                        "cancelable": false,
+                        "update_enabled": false,
+                        "store_id": "TH02030201",
+                        "store_diff_phones": [
+                            "0953968420"
+                        ],
+                        "timeout_at": 1595412000.0,
+                        "timeout_at_text": "明天 15:00 ~ 17:00",
+                        "ticket_message": "15:00之后的收件任务我们不一定能够及时上门，但我们会尽力安排。如果今天快递员无法上门，敬请谅解！"
+                    },
+                    {
+                        "id": 467409,
+                        "state": 1,
+                        "created_at": 1595330293.0,
+                        "updated_at": 1595330293.0,
+                        "parcel_number": 0,
+                        "cod_number": 0,
+                        "total_amount": 0,
+                        "state_text": "待揽件",
+                        "estimate_total_amount": 0,
+                        "staff_info_id": 29548,
+                        "staff_info_name": "นาย ณัฐวุฒิ พงศ์กิจเจริญ ",
+                        "staff_info_mobile": "0889738414",
+                        "avatar_path": "https://fle-asset-internal.oss-ap-southeast-1.aliyuncs.com/reimburse/1592211598-47850d821d054488bd7045fb401e6869.jpg",
+                        "avatar_bucket": "fle-asset-internal",
+                        "src_name": "C客户自动化快递员Yn92",
+                        "src_phone": "013559527403",
+                        "src_country_code": "TH",
+                        "src_country_name": "Thailand",
+                        "src_province_code": "TH01",
+                        "src_province_name": "กรุงเทพ",
+                        "src_city_code": "TH0141",
+                        "src_city_name": "วังทองหลาง",
+                        "src_district_code": "TH014101",
+                        "src_district_name": "คลองเจ้าคุณสิงห์",
+                        "src_detail_address": "2/8 Pracha Rat Bamphen Rd, Khwaeng Huai Khwang, Khet Huai Khwang, Krung Thep Maha Nakhon 10310泰国",
+                        "src_postal_code": "10310",
+                        "coupon_total_amount": null,
+                        "evaluation": false,
+                        "cancelable": true,
+                        "update_enabled": false,
+                        "store_id": "TH01410104",
+                        "store_diff_phones": [
+                            "0870616662"
+                        ],
+                        "timeout_at": 1595397600.0,
+                        "timeout_at_text": "明天 11:00 ~ 13:00",
+                        "ticket_message": "15:00之后的收件任务我们不一定能够及时上门，但我们会尽力安排。如果今天快递员无法上门，敬请谅解！"
+                    },
+                    {
+                        "id": 467319,
+                        "state": 0,
+                        "created_at": 1595330206.0,
+                        "updated_at": 1595330295.0,
+                        "parcel_number": 1,
+                        "cod_number": 0,
+                        "total_amount": 0,
+                        "state_text": "待分配",
+                        "estimate_total_amount": 10000,
+                        "staff_info_id": null,
+                        "staff_info_name": null,
+                        "staff_info_mobile": null,
+                        "avatar_path": null,
+                        "avatar_bucket": null,
+                        "src_name": "sender自动化Ms72",
+                        "src_phone": "015927694955",
+                        "src_country_code": "TH",
+                        "src_country_name": "Thailand",
+                        "src_province_code": "TH03",
+                        "src_province_name": "นนทบุรี",
+                        "src_city_code": "TH0301",
+                        "src_city_name": "เมืองนนทบุรี",
+                        "src_district_code": "TH030101",
+                        "src_district_name": "สวนใหญ่",
+                        "src_detail_address": "自动化寄件地址Ql32",
+                        "src_postal_code": "11000",
+                        "coupon_total_amount": null,
+                        "evaluation": false,
+                        "cancelable": true,
+                        "update_enabled": true,
+                        "store_id": "TH03010202",
+                        "store_diff_phones": [
+                            "0855325737"
+                        ],
+                        "timeout_at": 1595333806.785,
+                        "timeout_at_text": null,
+                        "ticket_message": null
+                    },
+                    {
+                        "id": 467317,
+                        "state": 4,
+                        "created_at": 1595330205.0,
+                        "updated_at": 1595330296.0,
+                        "parcel_number": 0,
+                        "cod_number": 0,
+                        "total_amount": 0,
+                        "state_text": "已取消",
+                        "estimate_total_amount": 25000,
+                        "staff_info_id": null,
+                        "staff_info_name": null,
+                        "staff_info_mobile": null,
+                        "avatar_path": null,
+                        "avatar_bucket": null,
+                        "src_name": "sender自动化Ce34",
+                        "src_phone": "015838759047",
+                        "src_country_code": "TH",
+                        "src_country_name": "Thailand",
+                        "src_province_code": "TH03",
+                        "src_province_name": "นนทบุรี",
+                        "src_city_code": "TH0301",
+                        "src_city_name": "เมืองนนทบุรี",
+                        "src_district_code": "TH030101",
+                        "src_district_name": "สวนใหญ่",
+                        "src_detail_address": "自动化寄件地址Xn35",
+                        "src_postal_code": "11000",
+                        "coupon_total_amount": null,
+                        "evaluation": false,
+                        "cancelable": false,
+                        "update_enabled": false,
+                        "store_id": "TH03010202",
+                        "store_diff_phones": [
+                            "0855325737"
+                        ],
+                        "timeout_at": 1595333805.011,
+                        "timeout_at_text": null,
+                        "ticket_message": null
+                    },
+                    {
+                        "id": 467318,
+                        "state": 0,
+                        "created_at": 1595330205.0,
+                        "updated_at": 1595330205.0,
+                        "parcel_number": 0,
+                        "cod_number": 0,
+                        "total_amount": 0,
+                        "state_text": "待分配",
+                        "estimate_total_amount": 7000,
+                        "staff_info_id": null,
+                        "staff_info_name": null,
+                        "staff_info_mobile": null,
+                        "avatar_path": null,
+                        "avatar_bucket": null,
+                        "src_name": "sender自动化Jj7",
+                        "src_phone": "015870488116",
+                        "src_country_code": "TH",
+                        "src_country_name": "Thailand",
+                        "src_province_code": "TH03",
+                        "src_province_name": "นนทบุรี",
+                        "src_city_code": "TH0301",
+                        "src_city_name": "เมืองนนทบุรี",
+                        "src_district_code": "TH030101",
+                        "src_district_name": "สวนใหญ่",
+                        "src_detail_address": "自动化寄件地址Ix69",
+                        "src_postal_code": "11000",
+                        "coupon_total_amount": null,
+                        "evaluation": false,
+                        "cancelable": true,
+                        "update_enabled": true,
+                        "store_id": "TH03010202",
+                        "store_diff_phones": [
+                            "0855325737"
+                        ],
+                        "timeout_at": 1595333805.884,
+                        "timeout_at_text": null,
+                        "ticket_message": null
+                    }
+                ]
+            }
+        }
+    ],
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The message schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "isLastPage": false,
+                    "list": [
+                        {
+                            "id": 467446,
+                            "state": 1,
+                            "created_at": 1595333857.0,
+                            "updated_at": 1595333857.0,
+                            "parcel_number": 1,
+                            "cod_number": 0,
+                            "total_amount": 0,
+                            "state_text": "待揽件",
+                            "estimate_total_amount": 5000,
+                            "staff_info_id": 20508,
+                            "staff_info_name": "นาย กิตติ ดิษยโชค",
+                            "staff_info_mobile": "0970248240",
+                            "avatar_path": null,
+                            "avatar_bucket": null,
+                            "src_name": "sender自动化Nf90",
+                            "src_phone": "015889085617",
+                            "src_country_code": "TH",
+                            "src_country_name": "Thailand",
+                            "src_province_code": "TH01",
+                            "src_province_name": "กรุงเทพ",
+                            "src_city_code": "TH0122",
+                            "src_city_name": "บางนา",
+                            "src_district_code": "TH012201",
+                            "src_district_name": "บางนา",
+                            "src_detail_address": "自动化寄件地址Eh23",
+                            "src_postal_code": "10260",
+                            "coupon_total_amount": null,
+                            "evaluation": false,
+                            "cancelable": true,
+                            "update_enabled": true,
+                            "store_id": "TH02030201",
+                            "store_diff_phones": [
+                                "0953968420"
+                            ],
+                            "timeout_at": 1595412000.0,
+                            "timeout_at_text": "明天 15:00 ~ 17:00",
+                            "ticket_message": "15:00之后的收件任务我们不一定能够及时上门，但我们会尽力安排。如果今天快递员无法上门，敬请谅解！"
+                        },
+                        {
+                            "id": 467444,
+                            "state": 1,
+                            "created_at": 1595333829.0,
+                            "updated_at": 1595333832.0,
+                            "parcel_number": 1,
+                            "cod_number": 0,
+                            "total_amount": 11000,
+                            "state_text": "待揽件",
+                            "estimate_total_amount": 14000,
+                            "staff_info_id": 20508,
+                            "staff_info_name": "นาย กิตติ ดิษยโชค",
+                            "staff_info_mobile": "0970248240",
+                            "avatar_path": null,
+                            "avatar_bucket": null,
+                            "src_name": "sender自动化Rz41",
+                            "src_phone": "015939436355",
+                            "src_country_code": "TH",
+                            "src_country_name": "Thailand",
+                            "src_province_code": "TH01",
+                            "src_province_name": "กรุงเทพ",
+                            "src_city_code": "TH0122",
+                            "src_city_name": "บางนา",
+                            "src_district_code": "TH012201",
+                            "src_district_name": "บางนา",
+                            "src_detail_address": "自动化寄件地址Qt95",
+                            "src_postal_code": "10260",
+                            "coupon_total_amount": null,
+                            "evaluation": false,
+                            "cancelable": false,
+                            "update_enabled": false,
+                            "store_id": "TH02030201",
+                            "store_diff_phones": [
+                                "0953968420"
+                            ],
+                            "timeout_at": 1595412000.0,
+                            "timeout_at_text": "明天 15:00 ~ 17:00",
+                            "ticket_message": "15:00之后的收件任务我们不一定能够及时上门，但我们会尽力安排。如果今天快递员无法上门，敬请谅解！"
+                        },
+                        {
+                            "id": 467434,
+                            "state": 1,
+                            "created_at": 1595333475.0,
+                            "updated_at": 1595333477.0,
+                            "parcel_number": 1,
+                            "cod_number": 0,
+                            "total_amount": 7000,
+                            "state_text": "待揽件",
+                            "estimate_total_amount": 8500,
+                            "staff_info_id": 20508,
+                            "staff_info_name": "นาย กิตติ ดิษยโชค",
+                            "staff_info_mobile": "0970248240",
+                            "avatar_path": null,
+                            "avatar_bucket": null,
+                            "src_name": "sender自动化Wb37",
+                            "src_phone": "015852210905",
+                            "src_country_code": "TH",
+                            "src_country_name": "Thailand",
+                            "src_province_code": "TH01",
+                            "src_province_name": "กรุงเทพ",
+                            "src_city_code": "TH0122",
+                            "src_city_name": "บางนา",
+                            "src_district_code": "TH012201",
+                            "src_district_name": "บางนา",
+                            "src_detail_address": "自动化寄件地址Wo26",
+                            "src_postal_code": "10260",
+                            "coupon_total_amount": null,
+                            "evaluation": false,
+                            "cancelable": false,
+                            "update_enabled": false,
+                            "store_id": "TH02030201",
+                            "store_diff_phones": [
+                                "0953968420"
+                            ],
+                            "timeout_at": 1595412000.0,
+                            "timeout_at_text": "明天 15:00 ~ 17:00",
+                            "ticket_message": "15:00之后的收件任务我们不一定能够及时上门，但我们会尽力安排。如果今天快递员无法上门，敬请谅解！"
+                        },
+                        {
+                            "id": 467432,
+                            "state": 1,
+                            "created_at": 1595333194.0,
+                            "updated_at": 1595333197.0,
+                            "parcel_number": 1,
+                            "cod_number": 0,
+                            "total_amount": 15000,
+                            "state_text": "待揽件",
+                            "estimate_total_amount": 10000,
+                            "staff_info_id": 20508,
+                            "staff_info_name": "นาย กิตติ ดิษยโชค",
+                            "staff_info_mobile": "0970248240",
+                            "avatar_path": null,
+                            "avatar_bucket": null,
+                            "src_name": "sender自动化Da14",
+                            "src_phone": "015911374813",
+                            "src_country_code": "TH",
+                            "src_country_name": "Thailand",
+                            "src_province_code": "TH01",
+                            "src_province_name": "กรุงเทพ",
+                            "src_city_code": "TH0122",
+                            "src_city_name": "บางนา",
+                            "src_district_code": "TH012201",
+                            "src_district_name": "บางนา",
+                            "src_detail_address": "自动化寄件地址Oh99",
+                            "src_postal_code": "10260",
+                            "coupon_total_amount": null,
+                            "evaluation": false,
+                            "cancelable": false,
+                            "update_enabled": false,
+                            "store_id": "TH02030201",
+                            "store_diff_phones": [
+                                "0953968420"
+                            ],
+                            "timeout_at": 1595412000.0,
+                            "timeout_at_text": "明天 15:00 ~ 17:00",
+                            "ticket_message": "15:00之后的收件任务我们不一定能够及时上门，但我们会尽力安排。如果今天快递员无法上门，敬请谅解！"
+                        },
+                        {
+                            "id": 467423,
+                            "state": 1,
+                            "created_at": 1595331685.0,
+                            "updated_at": 1595331688.0,
+                            "parcel_number": 1,
+                            "cod_number": 0,
+                            "total_amount": 4900,
+                            "state_text": "待揽件",
+                            "estimate_total_amount": 16000,
+                            "staff_info_id": 20508,
+                            "staff_info_name": "นาย กิตติ ดิษยโชค",
+                            "staff_info_mobile": "0970248240",
+                            "avatar_path": null,
+                            "avatar_bucket": null,
+                            "src_name": "sender自动化Fc81",
+                            "src_phone": "015947218964",
+                            "src_country_code": "TH",
+                            "src_country_name": "Thailand",
+                            "src_province_code": "TH01",
+                            "src_province_name": "กรุงเทพ",
+                            "src_city_code": "TH0122",
+                            "src_city_name": "บางนา",
+                            "src_district_code": "TH012201",
+                            "src_district_name": "บางนา",
+                            "src_detail_address": "自动化寄件地址Sk93",
+                            "src_postal_code": "10260",
+                            "coupon_total_amount": null,
+                            "evaluation": false,
+                            "cancelable": false,
+                            "update_enabled": false,
+                            "store_id": "TH02030201",
+                            "store_diff_phones": [
+                                "0953968420"
+                            ],
+                            "timeout_at": 1595412000.0,
+                            "timeout_at_text": "明天 15:00 ~ 17:00",
+                            "ticket_message": "15:00之后的收件任务我们不一定能够及时上门，但我们会尽力安排。如果今天快递员无法上门，敬请谅解！"
+                        },
+                        {
+                            "id": 467420,
+                            "state": 1,
+                            "created_at": 1595331552.0,
+                            "updated_at": 1595331555.0,
+                            "parcel_number": 1,
+                            "cod_number": 0,
+                            "total_amount": 14000,
+                            "state_text": "待揽件",
+                            "estimate_total_amount": 11000,
+                            "staff_info_id": 20508,
+                            "staff_info_name": "นาย กิตติ ดิษยโชค",
+                            "staff_info_mobile": "0970248240",
+                            "avatar_path": null,
+                            "avatar_bucket": null,
+                            "src_name": "sender自动化Er80",
+                            "src_phone": "01597585182",
+                            "src_country_code": "TH",
+                            "src_country_name": "Thailand",
+                            "src_province_code": "TH01",
+                            "src_province_name": "กรุงเทพ",
+                            "src_city_code": "TH0122",
+                            "src_city_name": "บางนา",
+                            "src_district_code": "TH012201",
+                            "src_district_name": "บางนา",
+                            "src_detail_address": "自动化寄件地址Am84",
+                            "src_postal_code": "10260",
+                            "coupon_total_amount": null,
+                            "evaluation": false,
+                            "cancelable": false,
+                            "update_enabled": false,
+                            "store_id": "TH02030201",
+                            "store_diff_phones": [
+                                "0953968420"
+                            ],
+                            "timeout_at": 1595412000.0,
+                            "timeout_at_text": "明天 15:00 ~ 17:00",
+                            "ticket_message": "15:00之后的收件任务我们不一定能够及时上门，但我们会尽力安排。如果今天快递员无法上门，敬请谅解！"
+                        },
+                        {
+                            "id": 467409,
+                            "state": 1,
+                            "created_at": 1595330293.0,
+                            "updated_at": 1595330293.0,
+                            "parcel_number": 0,
+                            "cod_number": 0,
+                            "total_amount": 0,
+                            "state_text": "待揽件",
+                            "estimate_total_amount": 0,
+                            "staff_info_id": 29548,
+                            "staff_info_name": "นาย ณัฐวุฒิ พงศ์กิจเจริญ ",
+                            "staff_info_mobile": "0889738414",
+                            "avatar_path": "https://fle-asset-internal.oss-ap-southeast-1.aliyuncs.com/reimburse/1592211598-47850d821d054488bd7045fb401e6869.jpg",
+                            "avatar_bucket": "fle-asset-internal",
+                            "src_name": "C客户自动化快递员Yn92",
+                            "src_phone": "013559527403",
+                            "src_country_code": "TH",
+                            "src_country_name": "Thailand",
+                            "src_province_code": "TH01",
+                            "src_province_name": "กรุงเทพ",
+                            "src_city_code": "TH0141",
+                            "src_city_name": "วังทองหลาง",
+                            "src_district_code": "TH014101",
+                            "src_district_name": "คลองเจ้าคุณสิงห์",
+                            "src_detail_address": "2/8 Pracha Rat Bamphen Rd, Khwaeng Huai Khwang, Khet Huai Khwang, Krung Thep Maha Nakhon 10310泰国",
+                            "src_postal_code": "10310",
+                            "coupon_total_amount": null,
+                            "evaluation": false,
+                            "cancelable": true,
+                            "update_enabled": false,
+                            "store_id": "TH01410104",
+                            "store_diff_phones": [
+                                "0870616662"
+                            ],
+                            "timeout_at": 1595397600.0,
+                            "timeout_at_text": "明天 11:00 ~ 13:00",
+                            "ticket_message": "15:00之后的收件任务我们不一定能够及时上门，但我们会尽力安排。如果今天快递员无法上门，敬请谅解！"
+                        },
+                        {
+                            "id": 467319,
+                            "state": 0,
+                            "created_at": 1595330206.0,
+                            "updated_at": 1595330295.0,
+                            "parcel_number": 1,
+                            "cod_number": 0,
+                            "total_amount": 0,
+                            "state_text": "待分配",
+                            "estimate_total_amount": 10000,
+                            "staff_info_id": null,
+                            "staff_info_name": null,
+                            "staff_info_mobile": null,
+                            "avatar_path": null,
+                            "avatar_bucket": null,
+                            "src_name": "sender自动化Ms72",
+                            "src_phone": "015927694955",
+                            "src_country_code": "TH",
+                            "src_country_name": "Thailand",
+                            "src_province_code": "TH03",
+                            "src_province_name": "นนทบุรี",
+                            "src_city_code": "TH0301",
+                            "src_city_name": "เมืองนนทบุรี",
+                            "src_district_code": "TH030101",
+                            "src_district_name": "สวนใหญ่",
+                            "src_detail_address": "自动化寄件地址Ql32",
+                            "src_postal_code": "11000",
+                            "coupon_total_amount": null,
+                            "evaluation": false,
+                            "cancelable": true,
+                            "update_enabled": true,
+                            "store_id": "TH03010202",
+                            "store_diff_phones": [
+                                "0855325737"
+                            ],
+                            "timeout_at": 1595333806.785,
+                            "timeout_at_text": null,
+                            "ticket_message": null
+                        },
+                        {
+                            "id": 467317,
+                            "state": 4,
+                            "created_at": 1595330205.0,
+                            "updated_at": 1595330296.0,
+                            "parcel_number": 0,
+                            "cod_number": 0,
+                            "total_amount": 0,
+                            "state_text": "已取消",
+                            "estimate_total_amount": 25000,
+                            "staff_info_id": null,
+                            "staff_info_name": null,
+                            "staff_info_mobile": null,
+                            "avatar_path": null,
+                            "avatar_bucket": null,
+                            "src_name": "sender自动化Ce34",
+                            "src_phone": "015838759047",
+                            "src_country_code": "TH",
+                            "src_country_name": "Thailand",
+                            "src_province_code": "TH03",
+                            "src_province_name": "นนทบุรี",
+                            "src_city_code": "TH0301",
+                            "src_city_name": "เมืองนนทบุรี",
+                            "src_district_code": "TH030101",
+                            "src_district_name": "สวนใหญ่",
+                            "src_detail_address": "自动化寄件地址Xn35",
+                            "src_postal_code": "11000",
+                            "coupon_total_amount": null,
+                            "evaluation": false,
+                            "cancelable": false,
+                            "update_enabled": false,
+                            "store_id": "TH03010202",
+                            "store_diff_phones": [
+                                "0855325737"
+                            ],
+                            "timeout_at": 1595333805.011,
+                            "timeout_at_text": null,
+                            "ticket_message": null
+                        },
+                        {
+                            "id": 467318,
+                            "state": 0,
+                            "created_at": 1595330205.0,
+                            "updated_at": 1595330205.0,
+                            "parcel_number": 0,
+                            "cod_number": 0,
+                            "total_amount": 0,
+                            "state_text": "待分配",
+                            "estimate_total_amount": 7000,
+                            "staff_info_id": null,
+                            "staff_info_name": null,
+                            "staff_info_mobile": null,
+                            "avatar_path": null,
+                            "avatar_bucket": null,
+                            "src_name": "sender自动化Jj7",
+                            "src_phone": "015870488116",
+                            "src_country_code": "TH",
+                            "src_country_name": "Thailand",
+                            "src_province_code": "TH03",
+                            "src_province_name": "นนทบุรี",
+                            "src_city_code": "TH0301",
+                            "src_city_name": "เมืองนนทบุรี",
+                            "src_district_code": "TH030101",
+                            "src_district_name": "สวนใหญ่",
+                            "src_detail_address": "自动化寄件地址Ix69",
+                            "src_postal_code": "11000",
+                            "coupon_total_amount": null,
+                            "evaluation": false,
+                            "cancelable": true,
+                            "update_enabled": true,
+                            "store_id": "TH03010202",
+                            "store_diff_phones": [
+                                "0855325737"
+                            ],
+                            "timeout_at": 1595333805.884,
+                            "timeout_at_text": null,
+                            "ticket_message": null
+                        }
+                    ]
+                }
+            ],
+            "required": [
+                "isLastPage",
+                "list"
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "isLastPage": {
+                    "$id": "#/properties/data/properties/isLastPage",
+                    "type": "boolean",
+                    "title": "The isLastPage schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "list": {
+                    "$id": "#/properties/data/properties/list",
+                    "type": "array",
+                    "title": "The list schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "id": 467446,
+                                "state": 1,
+                                "created_at": 1595333857.0,
+                                "updated_at": 1595333857.0,
+                                "parcel_number": 1,
+                                "cod_number": 0,
+                                "total_amount": 0,
+                                "state_text": "待揽件",
+                                "estimate_total_amount": 5000,
+                                "staff_info_id": 20508,
+                                "staff_info_name": "นาย กิตติ ดิษยโชค",
+                                "staff_info_mobile": "0970248240",
+                                "avatar_path": null,
+                                "avatar_bucket": null,
+                                "src_name": "sender自动化Nf90",
+                                "src_phone": "015889085617",
+                                "src_country_code": "TH",
+                                "src_country_name": "Thailand",
+                                "src_province_code": "TH01",
+                                "src_province_name": "กรุงเทพ",
+                                "src_city_code": "TH0122",
+                                "src_city_name": "บางนา",
+                                "src_district_code": "TH012201",
+                                "src_district_name": "บางนา",
+                                "src_detail_address": "自动化寄件地址Eh23",
+                                "src_postal_code": "10260",
+                                "coupon_total_amount": null,
+                                "evaluation": false,
+                                "cancelable": true,
+                                "update_enabled": true,
+                                "store_id": "TH02030201",
+                                "store_diff_phones": [
+                                    "0953968420"
+                                ],
+                                "timeout_at": 1595412000.0,
+                                "timeout_at_text": "明天 15:00 ~ 17:00",
+                                "ticket_message": "15:00之后的收件任务我们不一定能够及时上门，但我们会尽力安排。如果今天快递员无法上门，敬请谅解！"
+                            },
+                            {
+                                "id": 467444,
+                                "state": 1,
+                                "created_at": 1595333829.0,
+                                "updated_at": 1595333832.0,
+                                "parcel_number": 1,
+                                "cod_number": 0,
+                                "total_amount": 11000,
+                                "state_text": "待揽件",
+                                "estimate_total_amount": 14000,
+                                "staff_info_id": 20508,
+                                "staff_info_name": "นาย กิตติ ดิษยโชค",
+                                "staff_info_mobile": "0970248240",
+                                "avatar_path": null,
+                                "avatar_bucket": null,
+                                "src_name": "sender自动化Rz41",
+                                "src_phone": "015939436355",
+                                "src_country_code": "TH",
+                                "src_country_name": "Thailand",
+                                "src_province_code": "TH01",
+                                "src_province_name": "กรุงเทพ",
+                                "src_city_code": "TH0122",
+                                "src_city_name": "บางนา",
+                                "src_district_code": "TH012201",
+                                "src_district_name": "บางนา",
+                                "src_detail_address": "自动化寄件地址Qt95",
+                                "src_postal_code": "10260",
+                                "coupon_total_amount": null,
+                                "evaluation": false,
+                                "cancelable": false,
+                                "update_enabled": false,
+                                "store_id": "TH02030201",
+                                "store_diff_phones": [
+                                    "0953968420"
+                                ],
+                                "timeout_at": 1595412000.0,
+                                "timeout_at_text": "明天 15:00 ~ 17:00",
+                                "ticket_message": "15:00之后的收件任务我们不一定能够及时上门，但我们会尽力安排。如果今天快递员无法上门，敬请谅解！"
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/data/properties/list/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "id": 467446,
+                                        "state": 1,
+                                        "created_at": 1595333857.0,
+                                        "updated_at": 1595333857.0,
+                                        "parcel_number": 1,
+                                        "cod_number": 0,
+                                        "total_amount": 0,
+                                        "state_text": "待揽件",
+                                        "estimate_total_amount": 5000,
+                                        "staff_info_id": 20508,
+                                        "staff_info_name": "นาย กิตติ ดิษยโชค",
+                                        "staff_info_mobile": "0970248240",
+                                        "avatar_path": null,
+                                        "avatar_bucket": null,
+                                        "src_name": "sender自动化Nf90",
+                                        "src_phone": "015889085617",
+                                        "src_country_code": "TH",
+                                        "src_country_name": "Thailand",
+                                        "src_province_code": "TH01",
+                                        "src_province_name": "กรุงเทพ",
+                                        "src_city_code": "TH0122",
+                                        "src_city_name": "บางนา",
+                                        "src_district_code": "TH012201",
+                                        "src_district_name": "บางนา",
+                                        "src_detail_address": "自动化寄件地址Eh23",
+                                        "src_postal_code": "10260",
+                                        "coupon_total_amount": null,
+                                        "evaluation": false,
+                                        "cancelable": true,
+                                        "update_enabled": true,
+                                        "store_id": "TH02030201",
+                                        "store_diff_phones": [
+                                            "0953968420"
+                                        ],
+                                        "timeout_at": 1595412000.0,
+                                        "timeout_at_text": "明天 15:00 ~ 17:00",
+                                        "ticket_message": "15:00之后的收件任务我们不一定能够及时上门，但我们会尽力安排。如果今天快递员无法上门，敬请谅解！"
+                                    }
+                                ],
+                                "required": [
+                                    "id",
+                                    "state",
+                                    "created_at",
+                                    "updated_at",
+                                    "parcel_number",
+                                    "cod_number",
+                                    "total_amount",
+                                    "state_text",
+                                    "estimate_total_amount",
+                                    "staff_info_id",
+                                    "staff_info_name",
+                                    "staff_info_mobile",
+                                    "avatar_path",
+                                    "avatar_bucket",
+                                    "src_name",
+                                    "src_phone",
+                                    "src_country_code",
+                                    "src_country_name",
+                                    "src_province_code",
+                                    "src_province_name",
+                                    "src_city_code",
+                                    "src_city_name",
+                                    "src_district_code",
+                                    "src_district_name",
+                                    "src_detail_address",
+                                    "src_postal_code",
+                                    "coupon_total_amount",
+                                    "evaluation",
+                                    "cancelable",
+                                    "update_enabled",
+                                    "store_id",
+                                    "store_diff_phones",
+                                    "timeout_at",
+                                    "timeout_at_text",
+                                    "ticket_message"
+                                ],
+                                "additionalProperties": true,
+                                "properties": {
+                                    "id": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/id",
+                                        "type": "integer",
+                                        "title": "The id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            467446
+                                        ]
+                                    },
+                                    "state": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/state",
+                                        "type": "integer",
+                                        "title": "The state schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            1
+                                        ]
+                                    },
+                                    "created_at": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/created_at",
+                                        "type": "number",
+                                        "title": "The created_at schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0.0,
+                                        "examples": [
+                                            1595333857.0
+                                        ]
+                                    },
+                                    "updated_at": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/updated_at",
+                                        "type": "number",
+                                        "title": "The updated_at schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0.0,
+                                        "examples": [
+                                            1595333857.0
+                                        ]
+                                    },
+                                    "parcel_number": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/parcel_number",
+                                        "type": "integer",
+                                        "title": "The parcel_number schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            1
+                                        ]
+                                    },
+                                    "cod_number": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/cod_number",
+                                        "type": "integer",
+                                        "title": "The cod_number schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            0
+                                        ]
+                                    },
+                                    "total_amount": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/total_amount",
+                                        "type": "integer",
+                                        "title": "The total_amount schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            0
+                                        ]
+                                    },
+                                    "state_text": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/state_text",
+                                        "type": "string",
+                                        "title": "The state_text schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "待揽件"
+                                        ]
+                                    },
+                                    "estimate_total_amount": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/estimate_total_amount",
+                                        "type": "integer",
+                                        "title": "The estimate_total_amount schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            5000
+                                        ]
+                                    },
+                                    "staff_info_id": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/staff_info_id",
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ],
+                                        "title": "The staff_info_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            20508
+                                        ]
+                                    },
+                                    "staff_info_name": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/staff_info_name",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "title": "The staff_info_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "นาย กิตติ ดิษยโชค"
+                                        ]
+                                    },
+                                    "staff_info_mobile": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/staff_info_mobile",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "title": "The staff_info_mobile schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "0970248240"
+                                        ]
+                                    },
+                                    "avatar_path": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/avatar_path",
+                                        "type": [
+                                            "null",
+                                            "string"
+                                        ],
+                                        "title": "The avatar_path schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "avatar_bucket": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/avatar_bucket",
+                                        "type": [
+                                            "null",
+                                            "string"
+                                        ],
+                                        "title": "The avatar_bucket schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "src_name": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/src_name",
+                                        "type": "string",
+                                        "title": "The src_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "sender自动化Nf90"
+                                        ]
+                                    },
+                                    "src_phone": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/src_phone",
+                                        "type": "string",
+                                        "title": "The src_phone schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "015889085617"
+                                        ]
+                                    },
+                                    "src_country_code": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/src_country_code",
+                                        "type": "string",
+                                        "title": "The src_country_code schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH"
+                                        ]
+                                    },
+                                    "src_country_name": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/src_country_name",
+                                        "type": "string",
+                                        "title": "The src_country_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Thailand"
+                                        ]
+                                    },
+                                    "src_province_code": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/src_province_code",
+                                        "type": "string",
+                                        "title": "The src_province_code schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH01"
+                                        ]
+                                    },
+                                    "src_province_name": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/src_province_name",
+                                        "type": "string",
+                                        "title": "The src_province_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "กรุงเทพ"
+                                        ]
+                                    },
+                                    "src_city_code": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/src_city_code",
+                                        "type": "string",
+                                        "title": "The src_city_code schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH0122"
+                                        ]
+                                    },
+                                    "src_city_name": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/src_city_name",
+                                        "type": "string",
+                                        "title": "The src_city_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "บางนา"
+                                        ]
+                                    },
+                                    "src_district_code": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/src_district_code",
+                                        "type": "string",
+                                        "title": "The src_district_code schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH012201"
+                                        ]
+                                    },
+                                    "src_district_name": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/src_district_name",
+                                        "type": "string",
+                                        "title": "The src_district_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "บางนา"
+                                        ]
+                                    },
+                                    "src_detail_address": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/src_detail_address",
+                                        "type": "string",
+                                        "title": "The src_detail_address schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "自动化寄件地址Eh23"
+                                        ]
+                                    },
+                                    "src_postal_code": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/src_postal_code",
+                                        "type": "string",
+                                        "title": "The src_postal_code schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "10260"
+                                        ]
+                                    },
+                                    "coupon_total_amount": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/coupon_total_amount",
+                                        "type": "null",
+                                        "title": "The coupon_total_amount schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "evaluation": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/evaluation",
+                                        "type": "boolean",
+                                        "title": "The evaluation schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": false,
+                                        "examples": [
+                                            false
+                                        ]
+                                    },
+                                    "cancelable": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/cancelable",
+                                        "type": "boolean",
+                                        "title": "The cancelable schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": false,
+                                        "examples": [
+                                            true
+                                        ]
+                                    },
+                                    "update_enabled": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/update_enabled",
+                                        "type": "boolean",
+                                        "title": "The update_enabled schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": false,
+                                        "examples": [
+                                            true
+                                        ]
+                                    },
+                                    "store_id": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/store_id",
+                                        "type": "string",
+                                        "title": "The store_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH02030201"
+                                        ]
+                                    },
+                                    "store_diff_phones": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/store_diff_phones",
+                                        "type": "array",
+                                        "title": "The store_diff_phones schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": [],
+                                        "examples": [
+                                            [
+                                                "0953968420"
+                                            ]
+                                        ],
+                                        "additionalItems": true,
+                                        "items": {
+                                            "anyOf": [
+                                                {
+                                                    "$id": "#/properties/data/properties/list/items/anyOf/0/properties/store_diff_phones/items/anyOf/0",
+                                                    "type": "string",
+                                                    "title": "The first anyOf schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "0953968420"
+                                                    ]
+                                                }
+                                            ],
+                                            "$id": "#/properties/data/properties/list/items/anyOf/0/properties/store_diff_phones/items"
+                                        }
+                                    },
+                                    "timeout_at": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/timeout_at",
+                                        "type": "number",
+                                        "title": "The timeout_at schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0.0,
+                                        "examples": [
+                                            1595412000.0
+                                        ]
+                                    },
+                                    "timeout_at_text": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/timeout_at_text",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "title": "The timeout_at_text schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "明天 15:00 ~ 17:00"
+                                        ]
+                                    },
+                                    "ticket_message": {
+                                        "$id": "#/properties/data/properties/list/items/anyOf/0/properties/ticket_message",
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ],
+                                        "title": "The ticket_message schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "15:00之后的收件任务我们不一定能够及时上门，但我们会尽力安排。如果今天快递员无法上门，敬请谅解！"
+                                        ]
+                                    }
+                                }
+                            }
+                        ],
+                        "$id": "#/properties/data/properties/list/items"
+                    }
+                }
+            }
+        }
+    }
+}

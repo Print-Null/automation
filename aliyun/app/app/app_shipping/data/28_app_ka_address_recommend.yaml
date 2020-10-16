@@ -1,0 +1,42 @@
+host: app_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: /api/ka/v1/address/recommend/addressRecommend
+headers:
+  0:
+    Accept-Language: zh-Hans-CN
+    content-type: application/json
+    X-KA-SESSION-ID: $app_ka_login_0_0_0_["data"]["sessionid"]$
+#    Accept-Language: zh-CN
+#  1:
+#    content-type: application/json
+#    Accept-Language: en-US
+#  2:
+#    content-type: application/json
+#    Accept-Language: th-CN
+
+success:
+  parameter:
+    0:
+      from_channel: "10"
+      detail_address: $app_ka_get_addrbooks_0_0_["data"]["user_addrbooks"][1]["detail_address"]$
+      district_code: $app_ka_get_addrbooks_0_0_["data"]["user_addrbooks"][1]["district_code"]$
+      province_code: $app_ka_get_addrbooks_0_0_["data"]["user_addrbooks"][1]["province_code"]$
+      city_code: $app_ka_get_addrbooks_0_0_["data"]["user_addrbooks"][1]["city_code"]$
+      postal_code: $app_ka_get_addrbooks_0_0_["data"]["user_addrbooks"][1]["postal_code"]$
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    message: "success"
+
+  relevance:
+    - '["data"]["request_id"]'
+
+error:
+  parameter: {}
+  check: {}

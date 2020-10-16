@@ -1,0 +1,83 @@
+host: backyard_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address: /api/_/fleet/updateFleet
+headers:
+  #仓管员session
+  0:
+    Accept-Language: zh-CN
+    X-BY-SESSION-ID: $regional_manager_login_FD_0_0_0_["data"]["sessionid"]$
+    Accept-Accept: application/json, text/plain, */*
+    BY-PLATFORM: FB_ANDROID
+#  1:
+#    Accept-Language: en-US
+#    X-BY-SESSION-ID: $backyard_overtime_car_auth_new_device_login_0_0_["data"]["sessionid"]$
+#    Accept-Accept: application/json, text/plain, */*
+#    BY-PLATFORM: FB_ANDROID
+#  2:
+#    Accept-Language: th-CN
+#    X-BY-SESSION-ID: $backyard_overtime_car_auth_new_device_login_0_0_["data"]["sessionid"]$
+#    Accept-Accept: application/json, text/plain, */*
+#    BY-PLATFORM: FB_ANDROID
+
+success:
+  parameter:
+    0:
+      status: 2
+      audit_id: $regional_manager_login_FD_getList_detail_0_0_0_["data"]["head"]["id"]$
+      reject_reason: "1"
+      extend: {}
+    1:
+      status: 2
+      audit_id: $regional_manager_login_FD_getList_detail_1_0_0_["data"]["head"]["id"]$
+      reject_reason: "1"
+      extend: {}
+    2:
+      status: 2
+      audit_id: $regional_manager_login_FD_getList_detail_2_0_0_["data"]["head"]["id"]$
+      reject_reason: "1"
+      extend: {}
+    3:
+      status: 2
+      audit_id: $regional_manager_login_FD_getList_detail_3_0_0_["data"]["head"]["id"]$
+      reject_reason: "1"
+      extend: {}
+    4:
+      status: 2
+      audit_id: $regional_manager_login_FD_getList_detail_4_0_0_["data"]["head"]["id"]$
+      reject_reason: "1"
+      extend: {}
+    5:
+      status: 2
+      audit_id: $regional_manager_login_FD_getList_detail_5_0_0_["data"]["head"]["id"]$
+      reject_reason: "1"
+      extend: {}
+    6:
+      status: 2
+      audit_id: $regional_manager_login_FD_getList_detail_6_0_0_["data"]["head"]["id"]$
+      reject_reason: "1"
+      extend: {}
+    7:
+      status: 2
+      audit_id: $regional_manager_login_FD_getList_detail_7_0_0_["data"]["head"]["id"]$
+      reject_reason: "1"
+      extend: {}
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "msg"
+      z_message: "请求成功!"
+      e_message: "请求成功!"
+      t_message: "请求成功!"
+      headers_language: "Accept-Language"
+
+  relevance: {}
+error:
+  parameter: {}
+  check: {}

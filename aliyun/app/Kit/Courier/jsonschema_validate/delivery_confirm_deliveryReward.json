@@ -1,0 +1,100 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "确认妥投后-收入金额提示",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "code",
+        "msg",
+        "data"
+    ],
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The Code Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1.0
+            ]
+        },
+        "msg": {
+            "$id": "#/properties/msg",
+            "type": "string",
+            "title": "The Msg Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "成功"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The Data Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "reward_amount": 900.0,
+                    "bool_show": 1.0,
+                    "bool_reward": 1.0,
+                    "bool_display": true
+                }
+            ],
+            "additionalProperties": true,
+            "required": [
+                "bool_display",
+                "bool_reward",
+                "bool_show",
+                "reward_amount"
+            ],
+            "properties": {
+                "bool_display": {
+                    "$id": "#/properties/data/properties/bool_display",
+                    "type": "boolean",
+                    "title": "The Bool_display Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "bool_reward": {
+                    "$id": "#/properties/data/properties/bool_reward",
+                    "type": "integer",
+                    "title": "The Bool_reward Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1.0
+                    ]
+                },
+                "bool_show": {
+                    "$id": "#/properties/data/properties/bool_show",
+                    "type": "integer",
+                    "title": "The Bool_show Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1.0
+                    ]
+                },
+                "reward_amount": {
+                    "$id": "#/properties/data/properties/reward_amount",
+                    "type": "integer",
+                    "title": "The Reward_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        900.0
+                    ]
+                }
+            }
+        }
+    }
+}

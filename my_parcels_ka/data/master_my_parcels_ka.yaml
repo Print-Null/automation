@@ -1,0 +1,17 @@
+# 测试用例
+case_data: app/my_parcels_ka/data/
+case_path: app/my_parcels_ka/test_cash/
+test_case:
+  #4 app端B客户：寄件人登入
+  - test_name: app_ka_sender_login_cn
+    case_id: 4
+  #用例描述
+    info: APP端B客户的寄件人登入
+    extend: 4_app_ka_sender_login_cn.yaml
+  #5 B客户：寄件人创建订单任务
+  - test_name: app_ka_sender_order_create_cn
+    case_id: 5
+  # 用例描述
+    info: 寄件人创建订单任务
+    extend: 5_app_ka_sender_order_create_cn.yaml
+

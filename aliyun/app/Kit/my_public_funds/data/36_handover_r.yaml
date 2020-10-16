@@ -1,0 +1,52 @@
+host: kit_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: api/courier/v1/parcels/$ms_store_parcel_v0_#headers#_0_["data"]["parcel_info"]["returned_pno"]$/delivery_ticket_creation_scan?isFromScanner=false
+headers:
+  0:
+    content-type: application/json
+    Accept-Language: zh-CN
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+  1:
+    content-type: application/json
+    Accept-Language: en-US
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_0_1_0_["data"]["sessionid"]$
+  2:
+    content-type: application/json
+    Accept-Language: th-TN
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_0_2_0_["data"]["sessionid"]$
+
+success:
+  parameter:
+
+    0:
+      "continue_de_enabled": false
+      "openned": true
+      "routed_at": 1593348506
+      "routed_at_device": 1593348506
+      "routed_at_ntp": 1593348503
+      "cod_enabled": true
+      "skipped_enabled": false
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+# #schema校验 注：路径存储是当前目录的
+#    json_schema: "36_handover_r.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

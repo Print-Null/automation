@@ -1,0 +1,67 @@
+host: ms_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address: ms/api/fleet/line/approve/price_matching
+
+headers:
+  0:
+    Accept-Language: zh-CN
+    Accept: "application/json, text/plain, */*"
+    X-MS-SESSION-ID: $backyard_overtime_car_ms_api_auth_signin_0_0_0_["data"]["session_id"]$
+  1:
+    Accept-Language: en-US
+    Accept-Accept: "application/json, text/plain, */*"
+    X-MS-SESSION-ID: $backyard_overtime_car_ms_api_auth_signin_0_0_0_["data"]["session_id"]$
+  2:
+    Accept-Language: th-CN
+    Accept-Accept: "application/json, text/plain, */*"
+    X-MS-SESSION-ID: $backyard_overtime_car_ms_api_auth_signin_0_0_0_["data"]["session_id"]$
+success:
+  parameter:
+    0:
+      car_type: 100
+      single_line: 2
+      line_timetable_dtolist:
+        - order_no: 1
+          store_id: $backyard_overtime_car_hc_personInfo_0_0_["data"]["store_id"]$
+          estimate_end_time: '1399'
+          estimate_start_time: '1401'
+        - order_no: 2
+          store_id: $backyard_overtime_car_hc_personInfo_end_0_0_["data"]["store_id"]$
+          estimate_start_time: ''
+          estimate_end_time: '1039'
+      line_back_timetable_dtolist:
+        - order_no: 1
+          store_id: $backyard_overtime_car_hc_personInfo_end_0_0_["data"]["store_id"]$
+          estimate_end_time: '1410'
+          estimate_start_time: '1415'
+          running_mileage: ''
+        - order_no: 2
+          store_id: $backyard_overtime_car_hc_personInfo_0_0_["data"]["store_id"]$
+          running_mileage: ''
+          estimate_start_time: ''
+          estimate_end_time: '1430'
+
+
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    json_schema: "65backyard_overtime_car_ms_approve_price_matching.json"
+  relevance: {}
+
+
+
+error:
+  parameter: {}
+  check: {}

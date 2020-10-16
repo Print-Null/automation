@@ -1,0 +1,6 @@
+====整个测试类开始前只执行一次setup_class====
+==类里面每个用例执行前都会执行setup_method==
+=类里面每个用例执行前都会执行setup=
+three
+=类里面每个用例结束后都会执行teardown=
+==类里面每个用例结束后都会执行teardown_method==

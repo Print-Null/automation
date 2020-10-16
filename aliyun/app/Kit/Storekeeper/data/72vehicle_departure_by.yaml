@@ -1,0 +1,54 @@
+host: host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address: api/courier/v1/fleet/proof/outbound/new/$vehicle_voucher_by_id$
+
+headers:
+  0:
+    Accept-Language: zh-CN
+    By-Platform: "RB_KIT"
+    X-FLE-EQUIPMENT-TYPE: "kit"
+    X-FLE-SESSION-ID: $backyard_overtime_car_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+#  1:
+#    Accept-Language: en-US
+#    By-Platform: "RB_KIT"
+#    X-FLE-EQUIPMENT-TYPE: "kit"
+#    X-FLE-SESSION-ID: $backyard_overtime_car_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+#  2:
+#    Accept-Language: th-CN
+#    By-Platform: "RB_KIT"
+#    X-FLE-EQUIPMENT-TYPE: "kit"
+#    X-FLE-SESSION-ID: $backyard_overtime_car_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+success:
+  parameter:
+    0:
+      fleet_bound_images:
+        - image_url: fleetSealing/1586938648-4547be7a613443bfaa60df7f34c313e0.jpg
+          img: >-
+            https://fle-staging-asset-internal.oss-ap-southeast-1.aliyuncs.com/fleetSealing/1586938648-4547be7a613443bfaa60df7f34c313e0.jpg
+          sealing_number: $car_seal_code$
+      outbound_image:
+        image_key: fleetOutbound/1586938615-cf2b70bc28004f9ab4c37b24fb4745e5.jpg
+        image_name: 1586938615-cf2b70bc28004f9ab4c37b24fb4745e5.jpg
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    json_schema: "72vehicle_departure_by.json"
+  relevance: {}
+
+
+
+error:
+  parameter: {}
+  check: {}

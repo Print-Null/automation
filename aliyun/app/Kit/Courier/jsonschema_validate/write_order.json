@@ -1,0 +1,2426 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "填单",
+    "description": "The root schema comprises the entire JSON document.",
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The Code Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The Message Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The Data Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "deductions_amount": 0.0,
+                    "coupon_use_amount": 800.0,
+                    "id": null,
+                    "replacement": null,
+                    "parcel_info": {
+                        "dst_postal_code": "13130",
+                        "store_keeper_weight": 0.0,
+                        "dst_code": "AYU",
+                        "express_category_text": "标准",
+                        "exchange_pno": null,
+                        "upcountry_amount": 0.0,
+                        "material_category_text": null,
+                        "store_height": 1.0,
+                        "returned_pno": null,
+                        "settlement_type_text": "寄付",
+                        "dst_district_code": "TH050201",
+                        "receipt_text": "不需要",
+                        "customer_type_category_text": "签约客户",
+                        "difficulty_staff_info_name": null,
+                        "courier_height": 1.0,
+                        "src_country_name": "Thailand",
+                        "difficulty_state": null,
+                        "cod_poundage_amount": 0.0,
+                        "return_receipt_enabled": false,
+                        "estimate_finished_at": null,
+                        "parcel_given_time": 0.0,
+                        "difficulty_created_at": null,
+                        "exhibition_weight": 2000.0,
+                        "dst_detail_address": "2",
+                        "pno_display": "TH050218YC2A",
+                        "detained_marker_category": null,
+                        "store_weight": 2000.0,
+                        "send_district_name": null,
+                        "pkg_code": null,
+                        "courier_weight": 2000.0,
+                        "width": 1.0,
+                        "remark_third": "",
+                        "price_strategy": null,
+                        "store_keeper_width": 0.0,
+                        "express_category": 1.0,
+                        "article_category_text": "其它",
+                        "dst_name": "2",
+                        "sorting_code": "52C-02019-01",
+                        "sorting_line": "0",
+                        "signer_category": null,
+                        "dst_city_code": "TH0502",
+                        "discard_at": null,
+                        "dst_district_name": "ท่าเรือ",
+                        "ticket_pickup_store_text": "网点今日应派件",
+                        "weighing_category_note": null,
+                        "src_name": "1",
+                        "difficulty_marker_category_text": null,
+                        "upcountry": false,
+                        "material_category": null,
+                        "send_province_code": null,
+                        "length": 1.0,
+                        "finished_at": null,
+                        "src_district_code": "TH110101",
+                        "cod_poundage_minimum": 4000.0,
+                        "replacement_enabled": false,
+                        "customary_pno_display": null,
+                        "store_keeper_length": 0.0,
+                        "dst_province_code": "TH05",
+                        "dst_phone": "1346999281",
+                        "sendcountrycode": null,
+                        "ticket_delivery_staff_lat": null,
+                        "dst_city_name": "ท่าเรือ",
+                        "client_name": null,
+                        "created_at": 1586602317.546,
+                        "display_enabled": true,
+                        "sorting_province_no": "05",
+                        "rejection_category_text": null,
+                        "sorting_no": "C",
+                        "agent_id": null,
+                        "printing_count": null,
+                        "dst_country_code": "TH",
+                        "max_sum_of_lwh": null,
+                        "remark_first": "-",
+                        "ticket_delivery_id": null,
+                        "client_id": "CA0546",
+                        "parcel_category": 1.0,
+                        "pno": "TH050218YC2A",
+                        "pickuped_at": 1586602317.546,
+                        "dst_store_name": "测试002",
+                        "dst_district_default": false,
+                        "state": 1.0,
+                        "cod_settlement_category": 0.0,
+                        "send_province_name": null,
+                        "store_total_amount": 3200.0,
+                        "store_length": 1.0,
+                        "cod_enabled": false,
+                        "cancel_marker_category_text": null,
+                        "src_district_name": "นครนายก",
+                        "recent_pno": "TH050218YC2A",
+                        "courier_length": 1.0,
+                        "same_province": false,
+                        "handover_thailandpost_enabled": false,
+                        "up_country_note": null,
+                        "state_text": "已揽收",
+                        "settlement_type": 1.0,
+                        "src_detail_address": "1",
+                        "max_height": null,
+                        "dst_province_name": "พระนครศรีอยุธยา",
+                        "src_city_code": "TH1101",
+                        "parcel_amount": 4000.0,
+                        "updated_at": null,
+                        "sendcountryname": null,
+                        "printed_enabled": false,
+                        "speed_enabled": false,
+                        "send_city_code": null,
+                        "ticket_delivery_staff_lng": null,
+                        "store_width": 1.0,
+                        "price_policy": 1.0,
+                        "dst_country_name": "Thailand",
+                        "out_trade_no": null,
+                        "disc_freight_mark": false,
+                        "bar_code": null,
+                        "dst_home_phone": null,
+                        "ka_diff_ticket_id": null,
+                        "src_province_code": "TH11",
+                        "cancel_remark": null,
+                        "client_grade": 104.0,
+                        "difficulty_marker_category": null,
+                        "difficulty_staff_info_id": null,
+                        "cod_poundage_rate": 20.0,
+                        "discard_reason": null,
+                        "ticket_pickup_store_id": "TH01510101",
+                        "rejected_date": null,
+                        "signed_info": null,
+                        "weighing_category": null,
+                        "src_postal_code": "26000",
+                        "discard_enabled": null,
+                        "returned_pno_display": null,
+                        "settlement_category": 1.0,
+                        "src_city_name": "เมืองนครนายก",
+                        "freight_insure_amount": 0.0,
+                        "channel_category_text": "KIT",
+                        "speed_sla_dto": null,
+                        "customer_type_category": 2.0,
+                        "detained_marker_category_text": null,
+                        "send_city_name": null,
+                        "send_detail_address": null,
+                        "insured": false,
+                        "parcel_note": null,
+                        "src_phone": "1232311232",
+                        "material_amount": 0.0,
+                        "total_amount": 4000.0,
+                        "courier_width": 1.0,
+                        "freight_insure_enabled": false,
+                        "settlement_category_text": "现场结算",
+                        "insure_declare_value": 0.0,
+                        "insure_amount": 0.0,
+                        "src_province_name": "นครนายก",
+                        "height": 1.0,
+                        "ka_warehouse_id": null,
+                        "signer_content": null,
+                        "parcel_amount_before": 4000.0,
+                        "pickup_source_category": 1.0,
+                        "cod_amount": 0.0,
+                        "src_country_code": "TH",
+                        "cancel_marker_category": null,
+                        "max_width": null,
+                        "store_keeper_height": 0.0,
+                        "channel_category": 5.0,
+                        "customary_pno": null,
+                        "coupon_deduction_amount": 800.0,
+                        "remark_second": "",
+                        "ticket_pickup_id": 32774.0,
+                        "article_category": 99.0,
+                        "returned": false,
+                        "weight": 2000.0,
+                        "send_district_code": null,
+                        "return_receipt_no": null,
+                        "store_parcel_amount": 3200.0,
+                        "max_length": null,
+                        "cod_uniform_amount": null
+                    },
+                    "same_province": null,
+                    "parcel_number": 1.0,
+                    "deducted_total_amount": 3200.0,
+                    "created_at": 1586602317.546,
+                    "pickup_category": 1.0,
+                    "vat_cod_poundage_amount": 0.0,
+                    "total_weight": 2000.0,
+                    "pkg_code": null,
+                    "total_amount": 3200.0,
+                    "receivable_amount": 4000.0,
+                    "ticket_pickup_id": 32774.0,
+                    "parcel_total_amount": null,
+                    "dst_name": null
+                }
+            ],
+            "required": [
+                "id",
+                "dst_name",
+                "parcel_info",
+                "ticket_pickup_id",
+                "pickup_category",
+                "parcel_number",
+                "total_weight",
+                "total_amount",
+                "deductions_amount",
+                "deducted_total_amount",
+                "same_province",
+                "pkg_code",
+                "parcel_total_amount",
+                "created_at",
+                "coupon_use_amount",
+                "receivable_amount",
+                "replacement",
+                "vat_cod_poundage_amount"
+            ],
+            "properties": {
+                "id": {
+                    "$id": "#/properties/data/properties/id",
+                    "title": "The Id Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "dst_name": {
+                    "$id": "#/properties/data/properties/dst_name",
+                    "title": "The Dst_name Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "parcel_info": {
+                    "$id": "#/properties/data/properties/parcel_info",
+                    "type": "object",
+                    "title": "The Parcel_info Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "parcel_amount_before": 4000.0,
+                            "pickup_source_category": 1.0,
+                            "cod_amount": 0.0,
+                            "src_country_code": "TH",
+                            "cancel_marker_category": null,
+                            "max_width": null,
+                            "store_keeper_height": 0.0,
+                            "channel_category": 5.0,
+                            "customary_pno": null,
+                            "coupon_deduction_amount": 800.0,
+                            "remark_second": "",
+                            "ticket_pickup_id": 32774.0,
+                            "returned": false,
+                            "article_category": 99.0,
+                            "weight": 2000.0,
+                            "send_district_code": null,
+                            "return_receipt_no": null,
+                            "store_parcel_amount": 3200.0,
+                            "max_length": null,
+                            "cod_uniform_amount": null,
+                            "store_keeper_weight": 0.0,
+                            "dst_postal_code": "13130",
+                            "dst_code": "AYU",
+                            "express_category_text": "标准",
+                            "exchange_pno": null,
+                            "upcountry_amount": 0.0,
+                            "material_category_text": null,
+                            "store_height": 1.0,
+                            "returned_pno": null,
+                            "dst_district_code": "TH050201",
+                            "settlement_type_text": "寄付",
+                            "customer_type_category_text": "签约客户",
+                            "receipt_text": "不需要",
+                            "difficulty_staff_info_name": null,
+                            "courier_height": 1.0,
+                            "src_country_name": "Thailand",
+                            "difficulty_state": null,
+                            "cod_poundage_amount": 0.0,
+                            "estimate_finished_at": null,
+                            "return_receipt_enabled": false,
+                            "parcel_given_time": 0.0,
+                            "dst_detail_address": "2",
+                            "exhibition_weight": 2000.0,
+                            "difficulty_created_at": null,
+                            "pno_display": "TH050218YC2A",
+                            "detained_marker_category": null,
+                            "store_weight": 2000.0,
+                            "send_district_name": null,
+                            "pkg_code": null,
+                            "courier_weight": 2000.0,
+                            "width": 1.0,
+                            "remark_third": "",
+                            "price_strategy": null,
+                            "store_keeper_width": 0.0,
+                            "express_category": 1.0,
+                            "article_category_text": "其它",
+                            "dst_name": "2",
+                            "sorting_code": "52C-02019-01",
+                            "sorting_line": "0",
+                            "signer_category": null,
+                            "dst_city_code": "TH0502",
+                            "discard_at": null,
+                            "dst_district_name": "ท่าเรือ",
+                            "ticket_pickup_store_text": "网点今日应派件",
+                            "weighing_category_note": null,
+                            "src_name": "1",
+                            "difficulty_marker_category_text": null,
+                            "upcountry": false,
+                            "material_category": null,
+                            "send_province_code": null,
+                            "finished_at": null,
+                            "length": 1.0,
+                            "src_district_code": "TH110101",
+                            "cod_poundage_minimum": 4000.0,
+                            "replacement_enabled": false,
+                            "customary_pno_display": null,
+                            "store_keeper_length": 0.0,
+                            "dst_province_code": "TH05",
+                            "dst_phone": "1346999281",
+                            "sendcountrycode": null,
+                            "ticket_delivery_staff_lat": null,
+                            "client_name": null,
+                            "dst_city_name": "ท่าเรือ",
+                            "display_enabled": true,
+                            "created_at": 1586602317.546,
+                            "sorting_province_no": "05",
+                            "rejection_category_text": null,
+                            "sorting_no": "C",
+                            "agent_id": null,
+                            "printing_count": null,
+                            "dst_country_code": "TH",
+                            "max_sum_of_lwh": null,
+                            "remark_first": "-",
+                            "client_id": "CA0546",
+                            "ticket_delivery_id": null,
+                            "parcel_category": 1.0,
+                            "pno": "TH050218YC2A",
+                            "pickuped_at": 1586602317.546,
+                            "dst_store_name": "测试002",
+                            "dst_district_default": false,
+                            "state": 1.0,
+                            "cod_settlement_category": 0.0,
+                            "send_province_name": null,
+                            "store_total_amount": 3200.0,
+                            "store_length": 1.0,
+                            "cancel_marker_category_text": null,
+                            "cod_enabled": false,
+                            "recent_pno": "TH050218YC2A",
+                            "src_district_name": "นครนายก",
+                            "courier_length": 1.0,
+                            "handover_thailandpost_enabled": false,
+                            "same_province": false,
+                            "state_text": "已揽收",
+                            "up_country_note": null,
+                            "settlement_type": 1.0,
+                            "src_detail_address": "1",
+                            "max_height": null,
+                            "dst_province_name": "พระนครศรีอยุธยา",
+                            "src_city_code": "TH1101",
+                            "parcel_amount": 4000.0,
+                            "updated_at": null,
+                            "sendcountryname": null,
+                            "printed_enabled": false,
+                            "speed_enabled": false,
+                            "send_city_code": null,
+                            "ticket_delivery_staff_lng": null,
+                            "store_width": 1.0,
+                            "price_policy": 1.0,
+                            "dst_country_name": "Thailand",
+                            "out_trade_no": null,
+                            "disc_freight_mark": false,
+                            "bar_code": null,
+                            "dst_home_phone": null,
+                            "ka_diff_ticket_id": null,
+                            "cancel_remark": null,
+                            "src_province_code": "TH11",
+                            "difficulty_staff_info_id": null,
+                            "difficulty_marker_category": null,
+                            "client_grade": 104.0,
+                            "cod_poundage_rate": 20.0,
+                            "discard_reason": null,
+                            "rejected_date": null,
+                            "ticket_pickup_store_id": "TH01510101",
+                            "signed_info": null,
+                            "weighing_category": null,
+                            "src_postal_code": "26000",
+                            "discard_enabled": null,
+                            "returned_pno_display": null,
+                            "settlement_category": 1.0,
+                            "src_city_name": "เมืองนครนายก",
+                            "freight_insure_amount": 0.0,
+                            "speed_sla_dto": null,
+                            "channel_category_text": "KIT",
+                            "detained_marker_category_text": null,
+                            "customer_type_category": 2.0,
+                            "send_city_name": null,
+                            "send_detail_address": null,
+                            "insured": false,
+                            "parcel_note": null,
+                            "src_phone": "1232311232",
+                            "material_amount": 0.0,
+                            "total_amount": 4000.0,
+                            "freight_insure_enabled": false,
+                            "courier_width": 1.0,
+                            "settlement_category_text": "现场结算",
+                            "insure_declare_value": 0.0,
+                            "src_province_name": "นครนายก",
+                            "insure_amount": 0.0,
+                            "height": 1.0,
+                            "signer_content": null,
+                            "ka_warehouse_id": null
+                        }
+                    ],
+                    "required": [
+                        "pno",
+                        "recent_pno",
+                        "pno_display",
+                        "pkg_code",
+                        "exchange_pno",
+                        "pickup_source_category",
+                        "parcel_category",
+                        "replacement_enabled",
+                        "out_trade_no",
+                        "same_province",
+                        "price_strategy",
+                        "client_grade",
+                        "customer_type_category",
+                        "customer_type_category_text",
+                        "channel_category",
+                        "channel_category_text",
+                        "client_id",
+                        "agent_id",
+                        "client_name",
+                        "express_category",
+                        "express_category_text",
+                        "pickuped_at",
+                        "article_category",
+                        "article_category_text",
+                        "material_category",
+                        "material_category_text",
+                        "material_amount",
+                        "freight_insure_enabled",
+                        "freight_insure_amount",
+                        "weight",
+                        "courier_weight",
+                        "store_keeper_weight",
+                        "exhibition_weight",
+                        "store_weight",
+                        "length",
+                        "courier_length",
+                        "store_keeper_length",
+                        "store_length",
+                        "width",
+                        "courier_width",
+                        "store_keeper_width",
+                        "store_width",
+                        "height",
+                        "courier_height",
+                        "store_keeper_height",
+                        "store_height",
+                        "insured",
+                        "insure_amount",
+                        "parcel_amount",
+                        "store_parcel_amount",
+                        "parcel_amount_before",
+                        "coupon_deduction_amount",
+                        "total_amount",
+                        "store_total_amount",
+                        "price_policy",
+                        "upcountry",
+                        "upcountry_amount",
+                        "cod_enabled",
+                        "cod_settlement_category",
+                        "cod_uniform_amount",
+                        "cod_amount",
+                        "cod_poundage_rate",
+                        "cod_poundage_amount",
+                        "cod_poundage_minimum",
+                        "handover_thailandpost_enabled",
+                        "bar_code",
+                        "src_name",
+                        "src_phone",
+                        "src_country_code",
+                        "src_country_name",
+                        "src_province_code",
+                        "src_province_name",
+                        "src_city_code",
+                        "src_city_name",
+                        "src_district_code",
+                        "src_district_name",
+                        "src_detail_address",
+                        "src_postal_code",
+                        "dst_name",
+                        "dst_phone",
+                        "dst_home_phone",
+                        "dst_country_code",
+                        "dst_country_name",
+                        "dst_province_code",
+                        "dst_province_name",
+                        "dst_city_code",
+                        "dst_city_name",
+                        "dst_district_code",
+                        "dst_district_name",
+                        "dst_detail_address",
+                        "dst_postal_code",
+                        "ticket_delivery_staff_lat",
+                        "ticket_delivery_staff_lng",
+                        "settlement_category",
+                        "settlement_category_text",
+                        "settlement_type",
+                        "settlement_type_text",
+                        "returned",
+                        "returned_pno",
+                        "returned_pno_display",
+                        "customary_pno",
+                        "customary_pno_display",
+                        "signer_category",
+                        "signer_content",
+                        "insure_declare_value",
+                        "detained_marker_category",
+                        "detained_marker_category_text",
+                        "difficulty_marker_category",
+                        "difficulty_marker_category_text",
+                        "difficulty_state",
+                        "difficulty_created_at",
+                        "difficulty_staff_info_id",
+                        "difficulty_staff_info_name",
+                        "state",
+                        "state_text",
+                        "parcel_note",
+                        "remark_first",
+                        "remark_second",
+                        "remark_third",
+                        "printing_count",
+                        "ka_warehouse_id",
+                        "dst_code",
+                        "created_at",
+                        "updated_at",
+                        "disc_freight_mark",
+                        "signed_info",
+                        "dst_store_name",
+                        "send_province_code",
+                        "send_province_name",
+                        "sendcountrycode",
+                        "sendcountryname",
+                        "send_city_code",
+                        "send_city_name",
+                        "send_district_code",
+                        "send_district_name",
+                        "send_detail_address",
+                        "ticket_pickup_store_id",
+                        "ticket_pickup_store_text",
+                        "cancel_marker_category",
+                        "cancel_marker_category_text",
+                        "cancel_remark",
+                        "weighing_category",
+                        "weighing_category_note",
+                        "sorting_no",
+                        "sorting_province_no",
+                        "parcel_given_time",
+                        "estimate_finished_at",
+                        "finished_at",
+                        "up_country_note",
+                        "discard_enabled",
+                        "discard_reason",
+                        "discard_at",
+                        "ka_diff_ticket_id",
+                        "rejected_date",
+                        "rejection_category_text",
+                        "sorting_code",
+                        "sorting_line",
+                        "ticket_pickup_id",
+                        "ticket_delivery_id",
+                        "return_receipt_enabled",
+                        "receipt_text",
+                        "return_receipt_no",
+                        "speed_enabled",
+                        "max_length",
+                        "max_width",
+                        "max_height",
+                        "max_sum_of_lwh",
+                        "printed_enabled",
+                        "display_enabled",
+                        "speed_sla_dto",
+                        "dst_district_default"
+                    ],
+                    "properties": {
+                        "pno": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/pno",
+                            "type": "string",
+                            "title": "The Pno Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "TH050218YC2A"
+                            ]
+                        },
+                        "recent_pno": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/recent_pno",
+                            "type": "string",
+                            "title": "The Recent_pno Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "TH050218YC2A"
+                            ]
+                        },
+                        "pno_display": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/pno_display",
+                            "type": "string",
+                            "title": "The Pno_display Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "TH050218YC2A"
+                            ]
+                        },
+                        "pkg_code": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/pkg_code",
+                            "title": "The Pkg_code Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "exchange_pno": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/exchange_pno",
+                            "title": "The Exchange_pno Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "pickup_source_category": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/pickup_source_category",
+                            "type": "integer",
+                            "title": "The Pickup_source_category Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "parcel_category": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/parcel_category",
+                            "type": "integer",
+                            "title": "The Parcel_category Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "replacement_enabled": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/replacement_enabled",
+                            "type": "boolean",
+                            "title": "The Replacement_enabled Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "out_trade_no": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/out_trade_no",
+                            "title": "The Out_trade_no Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "same_province": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/same_province",
+                            "type": "boolean",
+                            "title": "The Same_province Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "price_strategy": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/price_strategy",
+                            "title": "The Price_strategy Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "client_grade": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/client_grade",
+                            "type": "integer",
+                            "title": "The Client_grade Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                104
+                            ]
+                        },
+                        "customer_type_category": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/customer_type_category",
+                            "type": "integer",
+                            "title": "The Customer_type_category Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                2
+                            ]
+                        },
+                        "customer_type_category_text": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/customer_type_category_text",
+                            "type": "string",
+                            "title": "The Customer_type_category_text Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "签约客户"
+                            ]
+                        },
+                        "channel_category": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/channel_category",
+                            "type": "integer",
+                            "title": "The Channel_category Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                5
+                            ]
+                        },
+                        "channel_category_text": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/channel_category_text",
+                            "type": "string",
+                            "title": "The Channel_category_text Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "KIT"
+                            ]
+                        },
+                        "client_id": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/client_id",
+                            "type": "string",
+                            "title": "The Client_id Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "CA0546"
+                            ]
+                        },
+                        "agent_id": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/agent_id",
+                            "title": "The Agent_id Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "client_name": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/client_name",
+                            "title": "The Client_name Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "express_category": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/express_category",
+                            "type": "integer",
+                            "title": "The Express_category Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "express_category_text": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/express_category_text",
+                            "type": "string",
+                            "title": "The Express_category_text Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "标准"
+                            ]
+                        },
+                        "pickuped_at": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/pickuped_at",
+                            "type": "number",
+                            "title": "The Pickuped_at Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1586602317.546
+                            ]
+                        },
+                        "article_category": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/article_category",
+                            "type": "integer",
+                            "title": "The Article_category Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                99
+                            ]
+                        },
+                        "article_category_text": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/article_category_text",
+                            "type": "string",
+                            "title": "The Article_category_text Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "其它"
+                            ]
+                        },
+                        "material_category": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/material_category",
+                            "title": "The Material_category Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "material_category_text": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/material_category_text",
+                            "title": "The Material_category_text Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "material_amount": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/material_amount",
+                            "type": "integer",
+                            "title": "The Material_amount Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "freight_insure_enabled": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/freight_insure_enabled",
+                            "type": "boolean",
+                            "title": "The Freight_insure_enabled Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "freight_insure_amount": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/freight_insure_amount",
+                            "type": "integer",
+                            "title": "The Freight_insure_amount Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "weight": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/weight",
+                            "type": "integer",
+                            "title": "The Weight Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                2000
+                            ]
+                        },
+                        "courier_weight": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/courier_weight",
+                            "type": "integer",
+                            "title": "The Courier_weight Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                2000
+                            ]
+                        },
+                        "store_keeper_weight": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/store_keeper_weight",
+                            "type": "integer",
+                            "title": "The Store_keeper_weight Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "exhibition_weight": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/exhibition_weight",
+                            "type": "integer",
+                            "title": "The Exhibition_weight Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                2000
+                            ]
+                        },
+                        "store_weight": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/store_weight",
+                            "type": "integer",
+                            "title": "The Store_weight Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                2000
+                            ]
+                        },
+                        "length": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/length",
+                            "type": "integer",
+                            "title": "The Length Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "courier_length": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/courier_length",
+                            "type": "integer",
+                            "title": "The Courier_length Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "store_keeper_length": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/store_keeper_length",
+                            "type": "integer",
+                            "title": "The Store_keeper_length Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "store_length": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/store_length",
+                            "type": "integer",
+                            "title": "The Store_length Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "width": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/width",
+                            "type": "integer",
+                            "title": "The Width Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "courier_width": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/courier_width",
+                            "type": "integer",
+                            "title": "The Courier_width Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "store_keeper_width": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/store_keeper_width",
+                            "type": "integer",
+                            "title": "The Store_keeper_width Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "store_width": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/store_width",
+                            "type": "integer",
+                            "title": "The Store_width Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "height": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/height",
+                            "type": "integer",
+                            "title": "The Height Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "courier_height": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/courier_height",
+                            "type": "integer",
+                            "title": "The Courier_height Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "store_keeper_height": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/store_keeper_height",
+                            "type": "integer",
+                            "title": "The Store_keeper_height Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "store_height": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/store_height",
+                            "type": "integer",
+                            "title": "The Store_height Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "insured": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/insured",
+                            "type": "boolean",
+                            "title": "The Insured Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "insure_amount": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/insure_amount",
+                            "type": "integer",
+                            "title": "The Insure_amount Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "parcel_amount": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/parcel_amount",
+                            "type": "integer",
+                            "title": "The Parcel_amount Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                4000
+                            ]
+                        },
+                        "store_parcel_amount": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/store_parcel_amount",
+                            "type": "integer",
+                            "title": "The Store_parcel_amount Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                3200
+                            ]
+                        },
+                        "parcel_amount_before": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/parcel_amount_before",
+                            "type": "integer",
+                            "title": "The Parcel_amount_before Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                4000
+                            ]
+                        },
+                        "coupon_deduction_amount": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/coupon_deduction_amount",
+                            "type": "integer",
+                            "title": "The Coupon_deduction_amount Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                800
+                            ]
+                        },
+                        "total_amount": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/total_amount",
+                            "type": "integer",
+                            "title": "The Total_amount Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                4000
+                            ]
+                        },
+                        "store_total_amount": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/store_total_amount",
+                            "type": "integer",
+                            "title": "The Store_total_amount Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                3200
+                            ]
+                        },
+                        "price_policy": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/price_policy",
+                            "type": "integer",
+                            "title": "The Price_policy Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "upcountry": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/upcountry",
+                            "type": "boolean",
+                            "title": "The Upcountry Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "upcountry_amount": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/upcountry_amount",
+                            "type": "integer",
+                            "title": "The Upcountry_amount Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "cod_enabled": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/cod_enabled",
+                            "type": "boolean",
+                            "title": "The Cod_enabled Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "cod_settlement_category": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/cod_settlement_category",
+                            "type": "integer",
+                            "title": "The Cod_settlement_category Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "cod_uniform_amount": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/cod_uniform_amount",
+                            "title": "The Cod_uniform_amount Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "cod_amount": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/cod_amount",
+                            "type": "integer",
+                            "title": "The Cod_amount Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "cod_poundage_rate": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/cod_poundage_rate",
+                            "type": "integer",
+                            "title": "The Cod_poundage_rate Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                20
+                            ]
+                        },
+                        "cod_poundage_amount": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/cod_poundage_amount",
+                            "type": "integer",
+                            "title": "The Cod_poundage_amount Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "cod_poundage_minimum": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/cod_poundage_minimum",
+                            "type": "integer",
+                            "title": "The Cod_poundage_minimum Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                4000
+                            ]
+                        },
+                        "handover_thailandpost_enabled": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/handover_thailandpost_enabled",
+                            "type": "boolean",
+                            "title": "The Handover_thailandpost_enabled Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "bar_code": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/bar_code",
+                            "title": "The Bar_code Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "src_name": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/src_name",
+                            "type": "string",
+                            "title": "The Src_name Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "1"
+                            ]
+                        },
+                        "src_phone": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/src_phone",
+                            "type": "string",
+                            "title": "The Src_phone Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "1232311232"
+                            ]
+                        },
+                        "src_country_code": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/src_country_code",
+                            "type": "string",
+                            "title": "The Src_country_code Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "TH"
+                            ]
+                        },
+                        "src_country_name": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/src_country_name",
+                            "type": "string",
+                            "title": "The Src_country_name Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Thailand"
+                            ]
+                        },
+                        "src_province_code": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/src_province_code",
+                            "type": "string",
+                            "title": "The Src_province_code Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "TH11"
+                            ]
+                        },
+                        "src_province_name": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/src_province_name",
+                            "type": "string",
+                            "title": "The Src_province_name Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "นครนายก"
+                            ]
+                        },
+                        "src_city_code": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/src_city_code",
+                            "type": "string",
+                            "title": "The Src_city_code Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "TH1101"
+                            ]
+                        },
+                        "src_city_name": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/src_city_name",
+                            "type": "string",
+                            "title": "The Src_city_name Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "เมืองนครนายก"
+                            ]
+                        },
+                        "src_district_code": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/src_district_code",
+                            "type": "string",
+                            "title": "The Src_district_code Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "TH110101"
+                            ]
+                        },
+                        "src_district_name": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/src_district_name",
+                            "type": "string",
+                            "title": "The Src_district_name Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "นครนายก"
+                            ]
+                        },
+                        "src_detail_address": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/src_detail_address",
+                            "type": "string",
+                            "title": "The Src_detail_address Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "1"
+                            ]
+                        },
+                        "src_postal_code": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/src_postal_code",
+                            "type": "string",
+                            "title": "The Src_postal_code Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "26000"
+                            ]
+                        },
+                        "dst_name": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/dst_name",
+                            "type": "string",
+                            "title": "The Dst_name Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "2"
+                            ]
+                        },
+                        "dst_phone": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/dst_phone",
+                            "type": "string",
+                            "title": "The Dst_phone Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "1346999281"
+                            ]
+                        },
+                        "dst_home_phone": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/dst_home_phone",
+                            "title": "The Dst_home_phone Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "dst_country_code": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/dst_country_code",
+                            "type": "string",
+                            "title": "The Dst_country_code Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "TH"
+                            ]
+                        },
+                        "dst_country_name": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/dst_country_name",
+                            "type": "string",
+                            "title": "The Dst_country_name Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Thailand"
+                            ]
+                        },
+                        "dst_province_code": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/dst_province_code",
+                            "type": "string",
+                            "title": "The Dst_province_code Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "TH05"
+                            ]
+                        },
+                        "dst_province_name": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/dst_province_name",
+                            "type": "string",
+                            "title": "The Dst_province_name Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "พระนครศรีอยุธยา"
+                            ]
+                        },
+                        "dst_city_code": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/dst_city_code",
+                            "type": "string",
+                            "title": "The Dst_city_code Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "TH0502"
+                            ]
+                        },
+                        "dst_city_name": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/dst_city_name",
+                            "type": "string",
+                            "title": "The Dst_city_name Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "ท่าเรือ"
+                            ]
+                        },
+                        "dst_district_code": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/dst_district_code",
+                            "type": "string",
+                            "title": "The Dst_district_code Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "TH050201"
+                            ]
+                        },
+                        "dst_district_name": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/dst_district_name",
+                            "type": "string",
+                            "title": "The Dst_district_name Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "ท่าเรือ"
+                            ]
+                        },
+                        "dst_detail_address": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/dst_detail_address",
+                            "type": "string",
+                            "title": "The Dst_detail_address Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "2"
+                            ]
+                        },
+                        "dst_postal_code": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/dst_postal_code",
+                            "type": "string",
+                            "title": "The Dst_postal_code Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "13130"
+                            ]
+                        },
+                        "ticket_delivery_staff_lat": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/ticket_delivery_staff_lat",
+                            "title": "The Ticket_delivery_staff_lat Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "ticket_delivery_staff_lng": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/ticket_delivery_staff_lng",
+                            "title": "The Ticket_delivery_staff_lng Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "settlement_category": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/settlement_category",
+                            "type": "integer",
+                            "title": "The Settlement_category Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "settlement_category_text": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/settlement_category_text",
+                            "type": "string",
+                            "title": "The Settlement_category_text Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "现场结算"
+                            ]
+                        },
+                        "settlement_type": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/settlement_type",
+                            "type": "integer",
+                            "title": "The Settlement_type Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "settlement_type_text": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/settlement_type_text",
+                            "type": "string",
+                            "title": "The Settlement_type_text Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "寄付"
+                            ]
+                        },
+                        "returned": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/returned",
+                            "type": "boolean",
+                            "title": "The Returned Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "returned_pno": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/returned_pno",
+                            "title": "The Returned_pno Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "returned_pno_display": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/returned_pno_display",
+                            "title": "The Returned_pno_display Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "customary_pno": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/customary_pno",
+                            "title": "The Customary_pno Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "customary_pno_display": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/customary_pno_display",
+                            "title": "The Customary_pno_display Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "signer_category": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/signer_category",
+                            "title": "The Signer_category Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "signer_content": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/signer_content",
+                            "title": "The Signer_content Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "insure_declare_value": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/insure_declare_value",
+                            "type": "integer",
+                            "title": "The Insure_declare_value Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "detained_marker_category": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/detained_marker_category",
+                            "title": "The Detained_marker_category Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "detained_marker_category_text": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/detained_marker_category_text",
+                            "title": "The Detained_marker_category_text Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "difficulty_marker_category": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/difficulty_marker_category",
+                            "title": "The Difficulty_marker_category Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "difficulty_marker_category_text": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/difficulty_marker_category_text",
+                            "title": "The Difficulty_marker_category_text Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "difficulty_state": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/difficulty_state",
+                            "title": "The Difficulty_state Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "difficulty_created_at": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/difficulty_created_at",
+                            "title": "The Difficulty_created_at Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "difficulty_staff_info_id": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/difficulty_staff_info_id",
+                            "title": "The Difficulty_staff_info_id Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "difficulty_staff_info_name": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/difficulty_staff_info_name",
+                            "title": "The Difficulty_staff_info_name Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "state": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/state",
+                            "type": "integer",
+                            "title": "The State Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "state_text": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/state_text",
+                            "type": "string",
+                            "title": "The State_text Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "已揽收"
+                            ]
+                        },
+                        "parcel_note": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/parcel_note",
+                            "title": "The Parcel_note Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "remark_first": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/remark_first",
+                            "type": "string",
+                            "title": "The Remark_first Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "-"
+                            ]
+                        },
+                        "remark_second": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/remark_second",
+                            "type": "string",
+                            "title": "The Remark_second Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "remark_third": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/remark_third",
+                            "type": "string",
+                            "title": "The Remark_third Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "printing_count": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/printing_count",
+                            "title": "The Printing_count Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "ka_warehouse_id": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/ka_warehouse_id",
+                            "title": "The Ka_warehouse_id Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "dst_code": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/dst_code",
+                            "type": "string",
+                            "title": "The Dst_code Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "AYU"
+                            ]
+                        },
+                        "created_at": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/created_at",
+                            "type": "number",
+                            "title": "The Created_at Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1586602317.546
+                            ]
+                        },
+                        "updated_at": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/updated_at",
+                            "title": "The Updated_at Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "disc_freight_mark": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/disc_freight_mark",
+                            "type": "boolean",
+                            "title": "The Disc_freight_mark Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "signed_info": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/signed_info",
+                            "title": "The Signed_info Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "dst_store_name": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/dst_store_name",
+                            "type": "string",
+                            "title": "The Dst_store_name Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "测试002"
+                            ]
+                        },
+                        "send_province_code": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/send_province_code",
+                            "title": "The Send_province_code Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "send_province_name": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/send_province_name",
+                            "title": "The Send_province_name Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "sendcountrycode": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/sendcountrycode",
+                            "title": "The Sendcountrycode Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "sendcountryname": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/sendcountryname",
+                            "title": "The Sendcountryname Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "send_city_code": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/send_city_code",
+                            "title": "The Send_city_code Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "send_city_name": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/send_city_name",
+                            "title": "The Send_city_name Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "send_district_code": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/send_district_code",
+                            "title": "The Send_district_code Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "send_district_name": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/send_district_name",
+                            "title": "The Send_district_name Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "send_detail_address": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/send_detail_address",
+                            "title": "The Send_detail_address Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "ticket_pickup_store_id": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/ticket_pickup_store_id",
+                            "type": "string",
+                            "title": "The Ticket_pickup_store_id Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "TH01510101"
+                            ]
+                        },
+                        "ticket_pickup_store_text": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/ticket_pickup_store_text",
+                            "type": "string",
+                            "title": "The Ticket_pickup_store_text Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "网点今日应派件"
+                            ]
+                        },
+                        "cancel_marker_category": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/cancel_marker_category",
+                            "title": "The Cancel_marker_category Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "cancel_marker_category_text": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/cancel_marker_category_text",
+                            "title": "The Cancel_marker_category_text Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "cancel_remark": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/cancel_remark",
+                            "title": "The Cancel_remark Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "weighing_category": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/weighing_category",
+                            "title": "The Weighing_category Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "weighing_category_note": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/weighing_category_note",
+                            "title": "The Weighing_category_note Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "sorting_no": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/sorting_no",
+                            "type": "string",
+                            "title": "The Sorting_no Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "C"
+                            ]
+                        },
+                        "sorting_province_no": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/sorting_province_no",
+                            "type": "string",
+                            "title": "The Sorting_province_no Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "05"
+                            ]
+                        },
+                        "parcel_given_time": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/parcel_given_time",
+                            "type": "integer",
+                            "title": "The Parcel_given_time Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "estimate_finished_at": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/estimate_finished_at",
+                            "title": "The Estimate_finished_at Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "finished_at": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/finished_at",
+                            "title": "The Finished_at Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "up_country_note": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/up_country_note",
+                            "title": "The Up_country_note Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "discard_enabled": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/discard_enabled",
+                            "title": "The Discard_enabled Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "discard_reason": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/discard_reason",
+                            "title": "The Discard_reason Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "discard_at": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/discard_at",
+                            "title": "The Discard_at Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "ka_diff_ticket_id": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/ka_diff_ticket_id",
+                            "title": "The Ka_diff_ticket_id Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "rejected_date": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/rejected_date",
+                            "title": "The Rejected_date Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "rejection_category_text": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/rejection_category_text",
+                            "title": "The Rejection_category_text Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "sorting_code": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/sorting_code",
+                            "type": "string",
+                            "title": "The Sorting_code Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "52C-02019-01"
+                            ]
+                        },
+                        "sorting_line": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/sorting_line",
+                            "type": "string",
+                            "title": "The Sorting_line Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "0"
+                            ]
+                        },
+                        "ticket_pickup_id": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/ticket_pickup_id",
+                            "type": "integer",
+                            "title": "The Ticket_pickup_id Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                32774
+                            ]
+                        },
+                        "ticket_delivery_id": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/ticket_delivery_id",
+                            "title": "The Ticket_delivery_id Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "return_receipt_enabled": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/return_receipt_enabled",
+                            "type": "boolean",
+                            "title": "The Return_receipt_enabled Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "receipt_text": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/receipt_text",
+                            "type": "string",
+                            "title": "The Receipt_text Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "不需要"
+                            ]
+                        },
+                        "return_receipt_no": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/return_receipt_no",
+                            "title": "The Return_receipt_no Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "speed_enabled": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/speed_enabled",
+                            "type": "boolean",
+                            "title": "The Speed_enabled Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "max_length": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/max_length",
+                            "title": "The Max_length Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "max_width": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/max_width",
+                            "title": "The Max_width Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "max_height": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/max_height",
+                            "title": "The Max_height Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "max_sum_of_lwh": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/max_sum_of_lwh",
+                            "title": "The Max_sum_of_lwh Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "printed_enabled": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/printed_enabled",
+                            "type": "boolean",
+                            "title": "The Printed_enabled Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "display_enabled": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/display_enabled",
+                            "type": "boolean",
+                            "title": "The Display_enabled Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                true
+                            ]
+                        },
+                        "speed_sla_dto": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/speed_sla_dto",
+                            "title": "The Speed_sla_dto Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "dst_district_default": {
+                            "$id": "#/properties/data/properties/parcel_info/properties/dst_district_default",
+                            "type": "boolean",
+                            "title": "The Dst_district_default Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        }
+                    }
+                },
+                "ticket_pickup_id": {
+                    "$id": "#/properties/data/properties/ticket_pickup_id",
+                    "type": "integer",
+                    "title": "The Ticket_pickup_id Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        32774
+                    ]
+                },
+                "pickup_category": {
+                    "$id": "#/properties/data/properties/pickup_category",
+                    "type": "integer",
+                    "title": "The Pickup_category Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "parcel_number": {
+                    "$id": "#/properties/data/properties/parcel_number",
+                    "type": "integer",
+                    "title": "The Parcel_number Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "total_weight": {
+                    "$id": "#/properties/data/properties/total_weight",
+                    "type": "integer",
+                    "title": "The Total_weight Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        2000
+                    ]
+                },
+                "total_amount": {
+                    "$id": "#/properties/data/properties/total_amount",
+                    "type": "integer",
+                    "title": "The Total_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        3200
+                    ]
+                },
+                "deductions_amount": {
+                    "$id": "#/properties/data/properties/deductions_amount",
+                    "type": "integer",
+                    "title": "The Deductions_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "deducted_total_amount": {
+                    "$id": "#/properties/data/properties/deducted_total_amount",
+                    "type": "integer",
+                    "title": "The Deducted_total_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        3200
+                    ]
+                },
+                "same_province": {
+                    "$id": "#/properties/data/properties/same_province",
+                    "title": "The Same_province Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "pkg_code": {
+                    "$id": "#/properties/data/properties/pkg_code",
+                    "title": "The Pkg_code Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "parcel_total_amount": {
+                    "$id": "#/properties/data/properties/parcel_total_amount",
+                    "title": "The Parcel_total_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "created_at": {
+                    "$id": "#/properties/data/properties/created_at",
+                    "type": "number",
+                    "title": "The Created_at Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1586602317.546
+                    ]
+                },
+                "coupon_use_amount": {
+                    "$id": "#/properties/data/properties/coupon_use_amount",
+                    "type": "integer",
+                    "title": "The Coupon_use_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        800
+                    ]
+                },
+                "receivable_amount": {
+                    "$id": "#/properties/data/properties/receivable_amount",
+                    "type": "integer",
+                    "title": "The Receivable_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        4000
+                    ]
+                },
+                "replacement": {
+                    "$id": "#/properties/data/properties/replacement",
+                    "title": "The Replacement Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "vat_cod_poundage_amount": {
+                    "$id": "#/properties/data/properties/vat_cod_poundage_amount",
+                    "type": "integer",
+                    "title": "The Vat_cod_poundage_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,3 @@
+====auto===
+fixture初始化的参数列表
+第一次调用fixture

@@ -1,0 +1,51 @@
+host: host
+http_type: http
+request_type: get
+parameter_type: json
+timeout: 120
+address: api/courier/v1/parcels/
+headers:
+  0:
+    Accept-Language: zh-CN
+    X-FLE-SESSION-ID: $storekeeper_login_0_2_0_["data"]["sessionid"]$
+    By-Platform: RB_KIT
+    X-FLE-EQUIPMENT-TYPE: kit
+  1:
+    Accept-Language: en-US
+    X-FLE-SESSION-ID: $storekeeper_login_0_2_0_["data"]["sessionid"]$
+    By-Platform: RB_KIT
+    X-FLE-EQUIPMENT-TYPE: kit
+  2:
+    Accept-Language: th-CN
+    X-FLE-SESSION-ID: $storekeeper_login_0_2_0_["data"]["sessionid"]$
+    By-Platform: RB_KIT
+    X-FLE-EQUIPMENT-TYPE: kit
+success:
+  parameter:
+    0:
+      fleet_bound_images:
+        - sealing_number: $car_seal_code$
+      inbound_unusual_images: []
+      outbound_autograhph_image:
+        image_key: fleetOutboundAutograph/1591255915-003ba372edb6484a825772c4cdc8dd84.jpg
+        image_name: fleetOutboundAutograph/1591255915-003ba372edb6484a825772c4cdc8dd84.jpg
+      remark: ''
+      sealing_enabled: false
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+#    json_schema: "21conventional_circuit_unload.json"
+  relevance: {}
+
+
+
+error:
+  parameter: {}
+  check: {}

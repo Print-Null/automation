@@ -1,0 +1,75 @@
+host: kit_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: /api/courier/v1/ticket/pickups/$app_user_ticket_pickup_list_0_0_["data"]["list"][0]["id"]$/confirm
+headers:
+  0:
+    Accept-Language: zh-CN
+    content-type: application/json; charset=UTF-8
+    X-FLE-SESSION-ID: $kit_user_courier_new_device_login_0_0_0_["data"]["sessionid"]$
+  1:
+    Accept-Language: en-US
+    content-type: application/json; charset=UTF-8
+    X-FLE-SESSION-ID: $kit_user_courier_new_device_login_0_0_0_["data"]["sessionid"]$
+  2:
+    Accept-Language: th-CN
+    content-type: application/json; charset=UTF-8
+    X-FLE-SESSION-ID: $kit_user_courier_new_device_login_0_0_0_["data"]["sessionid"]$
+
+success:
+  parameter:
+    0:
+      width: $[python]random.randint(1,40)$
+      weight: $[python]random.randrange(10,15001,10)$
+      user_order_id: $kit_user_courier_ticket_pickups_0_0_["data"]["not_collected_parcels"][#headers#]["user_order_id"]$
+      src_province_code: "TH04"
+      src_district_code: "TH040106"
+      src_city_code: "TH0401"
+      src_country_code: "TH"
+      src_postal_code: "12000"
+      dst_detail_address: $[python]"揽件时收件人地址修改"+chr(random.randint(65,90))+chr(random.randint(97,122))+str(random.randint(1,100))$
+      dst_country_code: "TH"
+      dst_city_code: "TH2001"
+      dst_province_code: "TH20"
+      dst_postal_code: "20000"
+      dst_district_code: "TH200101"
+      dst_home_phone: ""
+      dst_name: $[python]"收件人名字修改"+chr(random.randint(65,90))+chr(random.randint(97,122))+str(random.randint(1,100))$
+      dst_phone: $[python]random.choice(["0136","0137"])+str(random.randint(1000000,99999999))$
+      src_phone: $[python]random.choice(["0140","0141"])+str(random.randint(1000000,99999999))$
+      height: $[python]random.randint(1,40)$
+      insure_declare_value: 0
+      src_name: $[python]"寄件人名字修改"+chr(random.randint(65,90))+chr(random.randint(97,122))+str(random.randint(1,100))$
+      length: $[python]random.randint(1,40)$
+      src_detail_address: $[python]"揽件时寄件人地址修改"+chr(random.randint(65,90))+chr(random.randint(97,122))+str(random.randint(1,100))$
+      call_duration: 0
+      insured: false
+      freight_insure_enabled: true
+      express_category: 1
+      cod_enabled: false
+      total_amount: 4500
+      cod_amount: 0
+      settlement_category: 1
+      article_category: $[python]random.choice([0,1,2,3,4,5,6,7,9,10,99])$
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    json_schema: "9_kit_user_courier_ticket_pickups_confirm.json"
+
+  relevance:
+    - '["data"]["parcel_info"]["pno"]'
+
+error:
+  parameter: {}
+  check: {}

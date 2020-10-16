@@ -1,0 +1,617 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "code": 1,
+            "msg": "请求成功!",
+            "data": {
+                "head": {
+                    "title": "加班车申请",
+                    "id": "10079",
+                    "staff_id": "16903",
+                    "type": "12",
+                    "created_at": "2020-07-18 11:27:11",
+                    "updated_at": "2020-07-18 11:27:11",
+                    "status": 1,
+                    "options": {
+                        "code1": 1,
+                        "code2": 2
+                    },
+                    "status_text": "待审批",
+                    "serial_no": "VA374168690757632",
+                    "avator": "https://fle-asset-internal.oss-ap-southeast-1.aliyuncs.com/backyardUpload/1562163409-22890f1725284bf4a0e01a4fbb43492f.jpeg"
+                },
+                "detail": [
+                    {
+                        "key": "车辆类型",
+                        "value": "6W6.5"
+                    },
+                    {
+                        "key": "装载量",
+                        "value": "44件"
+                    },
+                    {
+                        "key": "期望到达时间",
+                        "value": "2020-07-18 23:00"
+                    },
+                    {
+                        "key": "出发网点",
+                        "value": "DC111"
+                    },
+                    {
+                        "key": "目的网点",
+                        "value": "网点今日应派"
+                    },
+                    {
+                        "key": "区域",
+                        "value": "B"
+                    },
+                    {
+                        "key": "申请理由",
+                        "value": "Auto加班车,车辆类型201"
+                    },
+                    {
+                        "key": "图片",
+                        "value": ""
+                    },
+                    {
+                        "key": "申请类型",
+                        "value": "普通加班车"
+                    }
+                ],
+                "stream": [
+                    {
+                        "staff_id": "16903",
+                        "name": "测试输入",
+                        "position": "Van Courier",
+                        "department": "Network Operations",
+                        "status": "发起申请",
+                        "status_code": 8,
+                        "time": "2020-07-18 13:27:11",
+                        "is_OK": 0
+                    },
+                    {
+                        "staff_id": "16885",
+                        "name": "测试输入",
+                        "position": "DC Officer",
+                        "department": "Hub Management",
+                        "status": "待审批",
+                        "status_code": 1,
+                        "time": "",
+                        "is_OK": 1
+                    }
+                ],
+                "extend": []
+            }
+        }
+    ],
+    "required": [
+        "code",
+        "msg",
+        "data"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "msg": {
+            "$id": "#/properties/msg",
+            "type": "string",
+            "title": "The msg schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "请求成功!"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "head": {
+                        "title": "加班车申请",
+                        "id": "10079",
+                        "staff_id": "16903",
+                        "type": "12",
+                        "created_at": "2020-07-18 11:27:11",
+                        "updated_at": "2020-07-18 11:27:11",
+                        "status": 1,
+                        "options": {
+                            "code1": 1,
+                            "code2": 2
+                        },
+                        "status_text": "待审批",
+                        "serial_no": "VA374168690757632",
+                        "avator": "https://fle-asset-internal.oss-ap-southeast-1.aliyuncs.com/backyardUpload/1562163409-22890f1725284bf4a0e01a4fbb43492f.jpeg"
+                    },
+                    "detail": [
+                        {
+                            "key": "车辆类型",
+                            "value": "6W6.5"
+                        },
+                        {
+                            "key": "装载量",
+                            "value": "44件"
+                        },
+                        {
+                            "key": "期望到达时间",
+                            "value": "2020-07-18 23:00"
+                        },
+                        {
+                            "key": "出发网点",
+                            "value": "DC111"
+                        },
+                        {
+                            "key": "目的网点",
+                            "value": "网点今日应派"
+                        },
+                        {
+                            "key": "区域",
+                            "value": "B"
+                        },
+                        {
+                            "key": "申请理由",
+                            "value": "Auto加班车,车辆类型201"
+                        },
+                        {
+                            "key": "图片",
+                            "value": ""
+                        },
+                        {
+                            "key": "申请类型",
+                            "value": "普通加班车"
+                        }
+                    ],
+                    "stream": [
+                        {
+                            "staff_id": "16903",
+                            "name": "测试输入",
+                            "position": "Van Courier",
+                            "department": "Network Operations",
+                            "status": "发起申请",
+                            "status_code": 8,
+                            "time": "2020-07-18 13:27:11",
+                            "is_OK": 0
+                        },
+                        {
+                            "staff_id": "16885",
+                            "name": "测试输入",
+                            "position": "DC Officer",
+                            "department": "Hub Management",
+                            "status": "待审批",
+                            "status_code": 1,
+                            "time": "",
+                            "is_OK": 1
+                        }
+                    ],
+                    "extend": []
+                }
+            ],
+            "required": [
+                "head",
+                "detail",
+                "stream",
+                "extend"
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "head": {
+                    "$id": "#/properties/data/properties/head",
+                    "type": "object",
+                    "title": "The head schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "title": "加班车申请",
+                            "id": "10079",
+                            "staff_id": "16903",
+                            "type": "12",
+                            "created_at": "2020-07-18 11:27:11",
+                            "updated_at": "2020-07-18 11:27:11",
+                            "status": 1,
+                            "options": {
+                                "code1": 1,
+                                "code2": 2
+                            },
+                            "status_text": "待审批",
+                            "serial_no": "VA374168690757632",
+                            "avator": "https://fle-asset-internal.oss-ap-southeast-1.aliyuncs.com/backyardUpload/1562163409-22890f1725284bf4a0e01a4fbb43492f.jpeg"
+                        }
+                    ],
+                    "required": [
+                        "title",
+                        "id",
+                        "staff_id",
+                        "type",
+                        "created_at",
+                        "updated_at",
+                        "status",
+                        "options",
+                        "status_text",
+                        "serial_no",
+                        "avator"
+                    ],
+                    "additionalProperties": true,
+                    "properties": {
+                        "title": {
+                            "$id": "#/properties/data/properties/head/properties/title",
+                            "type": "string",
+                            "title": "The title schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "加班车申请"
+                            ]
+                        },
+                        "id": {
+                            "$id": "#/properties/data/properties/head/properties/id",
+                            "type": "string",
+                            "title": "The id schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "10079"
+                            ]
+                        },
+                        "staff_id": {
+                            "$id": "#/properties/data/properties/head/properties/staff_id",
+                            "type": "string",
+                            "title": "The staff_id schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "16903"
+                            ]
+                        },
+                        "type": {
+                            "$id": "#/properties/data/properties/head/properties/type",
+                            "type": "string",
+                            "title": "The type schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "12"
+                            ]
+                        },
+                        "created_at": {
+                            "$id": "#/properties/data/properties/head/properties/created_at",
+                            "type": "string",
+                            "title": "The created_at schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "2020-07-18 11:27:11"
+                            ]
+                        },
+                        "updated_at": {
+                            "$id": "#/properties/data/properties/head/properties/updated_at",
+                            "type": "string",
+                            "title": "The updated_at schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "2020-07-18 11:27:11"
+                            ]
+                        },
+                        "status": {
+                            "$id": "#/properties/data/properties/head/properties/status",
+                            "type": "integer",
+                            "title": "The status schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "options": {
+                            "$id": "#/properties/data/properties/head/properties/options",
+                            "type": "object",
+                            "title": "The options schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "code1": 1,
+                                    "code2": 2
+                                }
+                            ],
+                            "required": [
+                                "code1",
+                                "code2"
+                            ],
+                            "additionalProperties": true,
+                            "properties": {
+                                "code1": {
+                                    "$id": "#/properties/data/properties/head/properties/options/properties/code1",
+                                    "type": "integer",
+                                    "title": "The code1 schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": 0,
+                                    "examples": [
+                                        1
+                                    ]
+                                },
+                                "code2": {
+                                    "$id": "#/properties/data/properties/head/properties/options/properties/code2",
+                                    "type": "integer",
+                                    "title": "The code2 schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": 0,
+                                    "examples": [
+                                        2
+                                    ]
+                                }
+                            }
+                        },
+                        "status_text": {
+                            "$id": "#/properties/data/properties/head/properties/status_text",
+                            "type": "string",
+                            "title": "The status_text schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "待审批"
+                            ]
+                        },
+                        "serial_no": {
+                            "$id": "#/properties/data/properties/head/properties/serial_no",
+                            "type": "string",
+                            "title": "The serial_no schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "VA374168690757632"
+                            ]
+                        },
+                        "avator": {
+                            "$id": "#/properties/data/properties/head/properties/avator",
+                            "type": "string",
+                            "title": "The avator schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "https://fle-asset-internal.oss-ap-southeast-1.aliyuncs.com/backyardUpload/1562163409-22890f1725284bf4a0e01a4fbb43492f.jpeg"
+                            ]
+                        }
+                    }
+                },
+                "detail": {
+                    "$id": "#/properties/data/properties/detail",
+                    "type": "array",
+                    "title": "The detail schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "key": "车辆类型",
+                                "value": "6W6.5"
+                            },
+                            {
+                                "key": "装载量",
+                                "value": "44件"
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/data/properties/detail/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "key": "车辆类型",
+                                        "value": "6W6.5"
+                                    }
+                                ],
+                                "required": [
+                                    "key",
+                                    "value"
+                                ],
+                                "additionalProperties": true,
+                                "properties": {
+                                    "key": {
+                                        "$id": "#/properties/data/properties/detail/items/anyOf/0/properties/key",
+                                        "type": "string",
+                                        "title": "The key schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "车辆类型"
+                                        ]
+                                    },
+                                    "value": {
+                                        "$id": "#/properties/data/properties/detail/items/anyOf/0/properties/value",
+                                        "type": "string",
+                                        "title": "The value schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "6W6.5"
+                                        ]
+                                    }
+                                }
+                            }
+                        ],
+                        "$id": "#/properties/data/properties/detail/items"
+                    }
+                },
+                "stream": {
+                    "$id": "#/properties/data/properties/stream",
+                    "type": "array",
+                    "title": "The stream schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "staff_id": "16903",
+                                "name": "测试输入",
+                                "position": "Van Courier",
+                                "department": "Network Operations",
+                                "status": "发起申请",
+                                "status_code": 8,
+                                "time": "2020-07-18 13:27:11",
+                                "is_OK": 0
+                            },
+                            {
+                                "staff_id": "16885",
+                                "name": "测试输入",
+                                "position": "DC Officer",
+                                "department": "Hub Management",
+                                "status": "待审批",
+                                "status_code": 1,
+                                "time": "",
+                                "is_OK": 1
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/data/properties/stream/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "staff_id": "16903",
+                                        "name": "测试输入",
+                                        "position": "Van Courier",
+                                        "department": "Network Operations",
+                                        "status": "发起申请",
+                                        "status_code": 8,
+                                        "time": "2020-07-18 13:27:11",
+                                        "is_OK": 0
+                                    }
+                                ],
+                                "required": [
+                                    "staff_id",
+                                    "name",
+                                    "position",
+                                    "department",
+                                    "status",
+                                    "status_code",
+                                    "time",
+                                    "is_OK"
+                                ],
+                                "additionalProperties": true,
+                                "properties": {
+                                    "staff_id": {
+                                        "$id": "#/properties/data/properties/stream/items/anyOf/0/properties/staff_id",
+                                        "type": "string",
+                                        "title": "The staff_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "16903"
+                                        ]
+                                    },
+                                    "name": {
+                                        "$id": "#/properties/data/properties/stream/items/anyOf/0/properties/name",
+                                        "type": "string",
+                                        "title": "The name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "测试输入"
+                                        ]
+                                    },
+                                    "position": {
+                                        "$id": "#/properties/data/properties/stream/items/anyOf/0/properties/position",
+                                        "type": "string",
+                                        "title": "The position schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Van Courier"
+                                        ]
+                                    },
+                                    "department": {
+                                        "$id": "#/properties/data/properties/stream/items/anyOf/0/properties/department",
+                                        "type": "string",
+                                        "title": "The department schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Network Operations"
+                                        ]
+                                    },
+                                    "status": {
+                                        "$id": "#/properties/data/properties/stream/items/anyOf/0/properties/status",
+                                        "type": "string",
+                                        "title": "The status schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "发起申请"
+                                        ]
+                                    },
+                                    "status_code": {
+                                        "$id": "#/properties/data/properties/stream/items/anyOf/0/properties/status_code",
+                                        "type": "integer",
+                                        "title": "The status_code schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            8
+                                        ]
+                                    },
+                                    "time": {
+                                        "$id": "#/properties/data/properties/stream/items/anyOf/0/properties/time",
+                                        "type": "string",
+                                        "title": "The time schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "2020-07-18 13:27:11"
+                                        ]
+                                    },
+                                    "is_OK": {
+                                        "$id": "#/properties/data/properties/stream/items/anyOf/0/properties/is_OK",
+                                        "type": "integer",
+                                        "title": "The is_OK schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            0
+                                        ]
+                                    }
+                                }
+                            }
+                        ],
+                        "$id": "#/properties/data/properties/stream/items"
+                    }
+                },
+                "extend": {
+                    "$id": "#/properties/data/properties/extend",
+                    "type": "array"
+                }
+            }
+        }
+    }
+}

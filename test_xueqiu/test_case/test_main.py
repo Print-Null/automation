@@ -18,8 +18,8 @@ class TestMain:
     def test_login(self):
         self.driver.find_element(By.ID, "tv_agree").click()
 
-    def test_main(self):
-        pass
+    def test_webview(self):
+        self.driver.find_element(By.XPATH, "//*[contains(@resource-id,'tabs')]/*[3]").click()
 
     def teardown(self):
         sleep(10)

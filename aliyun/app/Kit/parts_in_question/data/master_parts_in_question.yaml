@@ -1,0 +1,1517 @@
+# 测试用例
+case_data: Kit/parts_in_question/data/
+case_path: Kit/parts_in_question/test_cash/
+test_case:
+  #
+  #test_1为用例的数据准备工作
+################################################################################################################################
+####留仓件：快递员揽件下单-货件留仓(当日运力不足，无法配送、错过班车时间、目的地是偏远地区、目的地是岛屿、客户改约时间、客户不在家/电话无人接听）
+################################################################################################################################
+##                                       留仓件1：      当日运力不足，无法配送
+########-------------------------------------------------------------------------------------------------------------------
+
+## 2kit登入
+  - test_name: kit_auth_new_device_login
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 2
+    #用例描述
+    info: kit-快递员、仓管员登入
+    extend: 2_kit_login.yaml
+
+##  3揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 3
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 3_choose_senders.yaml
+
+## 4揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 4
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 4_choose_recipient_name.yaml
+
+## 5揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 5
+    #用例描述
+    info: 揽件收款来源-输入收件人地址
+    extend: 5_choose_recipient_addressee_details.yaml
+
+##  6揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 6
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 6_submit_solicitation_information.yaml
+
+##  7揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 7
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 7_collection_completed_1.yaml
+
+##  8揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 8
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 8_collection_completed_2.yaml
+
+##  9揽件下单-揽收完成-3
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 9
+    #用例描述
+    info: 揽件收款来源-揽收完成-3
+    extend: 9_collection_completed_3.yaml
+
+##  10货件留仓-获取包裹照片
+  - test_name: kit_parcels_manual_import
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 10
+    #用例描述
+    info: 货件留仓-获取包裹照片
+    extend: 10_get_package_photo.yaml
+
+##  11货件留仓-获取包裹照片
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 11
+    #用例描述
+    info: 货件留仓-输入运单号
+    extend: 11_enter_waybill_number.yaml
+
+##  12货件留仓-当日运力不足，无法配送
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 12
+    #用例描述
+    info: 货件留仓-当日运力不足，无法配送
+    extend: 12_shipment_process.yaml
+
+##  13货件留仓-查看快件详情
+  - test_name: kit_v1_parcels_v0
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 13
+    #用例描述
+    info: 货件留仓-当日运力不足，无法配送-快件详情
+    extend: 13_express_details.yaml
+
+########-------------------------------------------------------------------------------------------------------------------
+##                                              留仓件2：            错过班车时间
+########-------------------------------------------------------------------------------------------------------------------
+
+##  14揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 14
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 3_choose_senders.yaml
+
+## 15揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 15
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 4_choose_recipient_name.yaml
+
+## 16 揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 16
+    #用例描述
+    info: 揽件收款来源-输入收件人地址
+    extend: 5_choose_recipient_addressee_details.yaml
+
+## 17 揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 17
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 6_submit_solicitation_information.yaml
+
+##  18 揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 18
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 7_collection_completed_1.yaml
+
+##  19 揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 19
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 8_collection_completed_2.yaml
+
+##  20 揽件下单-揽收完成-3
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 20
+    #用例描述
+    info: 揽件收款来源-揽收完成-3
+    extend: 9_collection_completed_3.yaml
+
+##  21 货件留仓-获取包裹照片
+  - test_name: kit_parcels_manual_import
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 21
+    #用例描述
+    info: 货件留仓-获取包裹照片
+    extend: 10_get_package_photo.yaml
+
+##  22 货件留仓-获取包裹照片
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 22
+    #用例描述
+    info: 货件留仓-输入运单号
+    extend: 11_enter_waybill_number.yaml
+
+##  23 货件留仓-错过班车时间
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 23
+    #用例描述
+    info: 货件留仓-错过班车时间
+    extend: 24_shipment_process.yaml
+
+##  24 货件留仓-查看快件详情
+  - test_name: kit_v1_parcels_v0
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 24
+    #用例描述
+    info: 货件留仓-错过班车时间-查看快件详情
+    extend: 13_express_details.yaml
+
+########-------------------------------------------------------------------------------------------------------------------
+#####                                        留仓件3：         偏远地区
+########-------------------------------------------------------------------------------------------------------------------
+#  25MS登录-10000登录
+  - test_name: ms_auth_signin
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 25
+    #用例描述
+    info: ms-10000登录
+    extend: 25_ms_login.yaml
+
+#  26MS登录-查找偏远地区的邮编
+  - test_name: ms_setting_district
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 26
+    #用例描述
+    info: ms-查找偏远地区的邮编
+    extend: 26_search_remote_areas_postal_code.yaml
+
+##  27揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 27
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 3_choose_senders.yaml
+
+## 28揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 28
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 4_choose_recipient_name.yaml
+
+##29 揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 29
+    #用例描述
+    info: 揽件收款来源-输入收件人地址-偏远地区
+    extend: 29_choose_recipient_addressee_details.yaml
+
+## 30 揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 30
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 30_submit_solicitation_information.yaml
+
+##  31 揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 31
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 31_collection_completed_1.yaml
+
+##  32 揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 32
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 8_collection_completed_2.yaml
+
+## 33 揽件下单-揽收完成-3
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 33
+    #用例描述
+    info: 揽件收款来源-揽收完成-3
+    extend: 33_collection_completed_3.yaml
+
+##  34 货件留仓-获取包裹照片
+  - test_name: kit_parcels_manual_import
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 34
+    #用例描述
+    info: 货件留仓-获取包裹照片
+    extend: 10_get_package_photo.yaml
+
+##  35 货件留仓-获取包裹照片
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 35
+    #用例描述
+    info: 货件留仓-输入运单号
+    extend: 11_enter_waybill_number.yaml
+
+##  36 货件留仓-偏远地区
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 36
+    #用例描述
+    info: 货件留仓-偏远地区
+    extend: 37_remote_areas.yaml
+
+##  37 货件留仓-偏远地区-查看快件详情
+  - test_name: kit_v1_parcels_v0
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 37
+    #用例描述
+    info: 货件留仓-偏远地区-查看快件详情
+    extend: 13_express_details.yaml
+
+########-------------------------------------------------------------------------------------------------------------------
+##                                     留仓件4：          目的地是岛屿
+########-------------------------------------------------------------------------------------------------------------------
+
+###38自己写用例找到是岛屿的邮政编码
+
+#  39 MS登录-查找偏远地区的邮编
+  - test_name: ms_setting_district
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 39
+    #用例描述
+    info: ms-查找岛屿的邮编
+    extend: 39_search_island_postal_code.yaml
+
+
+##  40 揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 40
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 3_choose_senders.yaml
+
+## 41 揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 41
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 4_choose_recipient_name.yaml
+
+##42 揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 42
+    #用例描述
+    info: 揽件收款来源-输入收件人地址-偏远地区
+    extend: 29_choose_recipient_addressee_details.yaml
+
+##  43 揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 43
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 30_submit_solicitation_information.yaml
+
+##  44揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 44
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 31_collection_completed_1.yaml
+
+##  45揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 45
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 8_collection_completed_2.yaml
+
+##  46揽件下单-揽收完成-3
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 46
+    #用例描述
+    info: 揽件收款来源-揽收完成-3
+    extend: 33_collection_completed_3.yaml
+
+##  47货件留仓-获取包裹照片
+  - test_name: kit_parcels_manual_import
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 47
+    #用例描述
+    info: 货件留仓-获取包裹照片
+    extend: 10_get_package_photo.yaml
+
+##  48货件留仓-获取包裹照片
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 48
+    #用例描述
+    info: 货件留仓-输入运单号
+    extend: 11_enter_waybill_number.yaml
+
+##  49货件留仓-目的地是岛屿
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 49
+    #用例描述
+    info: 货件留仓-目的地是岛屿
+    extend: 49_island_areas.yaml
+
+##  50货件留仓-查看快件详情
+  - test_name: kit_v1_parcels_v0
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 50
+    #用例描述
+    info: 货件留仓-目的地是岛屿-快件详情页
+    extend: 13_express_details.yaml
+#
+####--------------------------------------------------------------------------------------------------------------------
+###                                        留仓件5： 客户改约时间
+####--------------------------------------------------------------------------------------------------------------------
+##  51揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 51
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 3_choose_senders.yaml
+
+## 52揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 52
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 4_choose_recipient_name.yaml
+
+##53 揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 53
+    #用例描述
+    info: 揽件收款来源-输入收件人地址-偏远地区
+    extend: 29_choose_recipient_addressee_details.yaml
+
+##  54揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 54
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 30_submit_solicitation_information.yaml
+
+##  55揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 55
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 31_collection_completed_1.yaml
+
+##  56揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 56
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 8_collection_completed_2.yaml
+
+##  57揽件下单-揽收完成-3
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 57
+    #用例描述
+    info: 揽件收款来源-揽收完成-3
+    extend: 33_collection_completed_3.yaml
+
+##  58货件留仓-获取包裹照片
+  - test_name: kit_parcels_manual_import
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 58
+    #用例描述
+    info: 货件留仓-获取包裹照片
+    extend: 10_get_package_photo.yaml
+
+##  59货件留仓-获取包裹照片
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 59
+    #用例描述
+    info: 货件留仓-输入运单号
+    extend: 11_enter_waybill_number.yaml
+
+##  60货件留仓-客户改约时间
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 60
+    #用例描述
+    info: 货件留仓-客户改约时间
+    extend: 60_customer_rescheduling_time.yaml
+
+##  61货件留仓-查看快件详情
+  - test_name: kit_v1_parcels_v0
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 61
+    #用例描述
+    info: 货件留仓-客户改约时间-快件详情页
+    extend: 13_express_details.yaml
+
+###--------------------------------------------------------------------------------------------------------------------
+##                             留仓件6：         客户不在家/电话无人接听
+########-------------------------------------------------------------------------------------------------------------------
+
+##  62揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 62
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 3_choose_senders.yaml
+
+## 63揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 63
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 4_choose_recipient_name.yaml
+
+##64 揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 64
+    #用例描述
+    info: 揽件收款来源-输入收件人地址-偏远地区
+    extend: 29_choose_recipient_addressee_details.yaml
+
+## 65 揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 65
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 30_submit_solicitation_information.yaml
+
+##  66 揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 66
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 31_collection_completed_1.yaml
+
+##  67 揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 67
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 8_collection_completed_2.yaml
+
+##  68 揽件下单-揽收完成-3
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 68
+    #用例描述
+    info: 揽件收款来源-揽收完成-3
+    extend: 33_collection_completed_3.yaml
+
+##  69货件留仓-获取包裹照片
+  - test_name: kit_parcels_manual_import
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 69
+    #用例描述
+    info: 货件留仓-获取包裹照片
+    extend: 10_get_package_photo.yaml
+
+##  70货件留仓-获取包裹照片
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 70
+    #用例描述
+    info: 货件留仓-输入运单号
+    extend: 11_enter_waybill_number.yaml
+
+##  71 货件留仓-客户不在家/电话无人接听
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 71
+    #用例描述
+    info: 货件留仓-客户不在家/电话无人接听
+    extend: 71_customer_not_at_home.yaml
+
+##  72 货件留仓-查看快件详情
+  - test_name: kit_v1_parcels_v0
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 72
+    #用例描述
+    info: 货件留仓-客户不在家/电话无人接听-快件详情页
+    extend: 13_express_details.yaml
+
+#####################################################################################################################################################################
+##问题件：快递员揽件下单-问题件提交（收件人手机号码是空号、货物破损、货物丢失、COD 金额不正确、货物丢失、收件人/地址不清晰或不正确、收件人电话号码错误、收件人拒收、分错网点、仅外包装破损）
+#####################################################################################################################################################################
+#####                               问题件1：收件人手机号码是空号
+#######---------------------------------------------------------------------------------------------------------------------------------------------------------------
+##  73揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 73
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 3_choose_senders.yaml
+
+## 74揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 74
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 4_choose_recipient_name.yaml
+
+## 75揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 75
+    #用例描述
+    info: 揽件收款来源-输入收件人地址
+    extend: 5_choose_recipient_addressee_details.yaml
+
+##  76揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 76
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 6_submit_solicitation_information.yaml
+
+##  77揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 77
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 7_collection_completed_1.yaml
+
+##  78揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 78
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 8_collection_completed_2.yaml
+
+##  79揽件下单-揽收完成-3
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 79
+    #用例描述
+    info: 揽件收款来源-揽收完成-3
+    extend: 9_collection_completed_3.yaml
+
+##  80仓管员问题单提交-1
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 80
+    #用例描述
+    info: 仓管员问题单提交-输入订单号
+    extend: 80_problem_submission_1.yaml
+#
+## 81 仓管员问题单提交-2
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 81
+    #用例描述
+    info: 仓管员问题单提交-获取图片信息
+    extend: 81_problem_submission_2.yaml
+#
+##  82仓管员问题单提交-3
+  - test_name: kit_problem_submission
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 82
+    #用例描述
+    info: 仓管员问题单提交-收件人手机号码是空号
+    extend: 82_problem_submission_3.yaml
+
+#######-------------------------------------------------------------------------------------------------------------------------
+#####                               问题件2：货物破损
+#######-------------------------------------------------------------------------------------------------------------------------
+##  83揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 83
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 3_choose_senders.yaml
+
+## 84揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 84
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 4_choose_recipient_name.yaml
+
+## 85揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 85
+    #用例描述
+    info: 揽件收款来源-输入收件人地址
+    extend: 5_choose_recipient_addressee_details.yaml
+
+##  86揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 86
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 6_submit_solicitation_information.yaml
+
+##  87揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 87
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 7_collection_completed_1.yaml
+
+##  88揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 88
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 8_collection_completed_2.yaml
+
+##  89揽件下单-揽收完成-3
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 89
+    #用例描述
+    info: 揽件收款来源-揽收完成-3
+    extend: 9_collection_completed_3.yaml
+
+##  90仓管员问题单提交-1
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 90
+    #用例描述
+    info: 仓管员问题单提交-输入订单号
+    extend: 80_problem_submission_1.yaml
+#
+##  91仓管员问题单提交-2
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 91
+    #用例描述
+    info: 仓管员问题单提交-获取图片信息
+    extend: 81_problem_submission_2.yaml
+
+##  92仓管员问题单提交-3
+  - test_name: kit_problem_submission
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 92
+    #用例描述
+    info: 仓管员问题单提交-货物破损
+    extend: 92_problem_submission_3.yaml
+
+#######-------------------------------------------------------------------------------------------------------------------------
+#####                               问题件3：货物丢失
+#######-------------------------------------------------------------------------------------------------------------------------
+##  93揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 93
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 3_choose_senders.yaml
+
+## 94揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 94
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 4_choose_recipient_name.yaml
+
+## 95揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 95
+    #用例描述
+    info: 揽件收款来源-输入收件人地址
+    extend: 5_choose_recipient_addressee_details.yaml
+
+##  96揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 96
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 6_submit_solicitation_information.yaml
+
+##  97揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 97
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 7_collection_completed_1.yaml
+
+##  98揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 98
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 8_collection_completed_2.yaml
+
+##  99揽件下单-揽收完成-3
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 99
+    #用例描述
+    info: 揽件收款来源-揽收完成-3
+    extend: 9_collection_completed_3.yaml
+
+##  100仓管员问题单提交-1
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 100
+    #用例描述
+    info: 仓管员问题单提交-输入订单号
+    extend: 80_problem_submission_1.yaml
+#
+##  101仓管员问题单提交-2
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 101
+    #用例描述
+    info: 仓管员问题单提交-获取图片信息
+    extend: 81_problem_submission_2.yaml
+#
+##  102仓管员问题单提交-3
+  - test_name: kit_problem_submission
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 102
+    #用例描述
+    info: 仓管员问题单提交-货物短少
+    extend: 102_problem_submission_3.yaml
+
+#######-------------------------------------------------------------------------------------------------------------------------
+#####                               问题件4：COD 金额不正确
+#######-------------------------------------------------------------------------------------------------------------------------
+##  103揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 103
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 3_choose_senders.yaml
+
+## 104揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 104
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 4_choose_recipient_name.yaml
+
+## 105揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 105
+    #用例描述
+    info: 揽件收款来源-输入收件人地址
+    extend: 5_choose_recipient_addressee_details.yaml
+
+##  106揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 106
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 6_submit_solicitation_information.yaml
+
+##  107揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 107
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 7_collection_completed_1.yaml
+
+##  108揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 108
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 8_collection_completed_2.yaml
+
+##  109揽件下单-揽收完成-3
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 109
+    #用例描述
+    info: 揽件收款来源-揽收完成-3
+    extend: 9_collection_completed_3.yaml
+
+##  110仓管员问题单提交-1
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 110
+    #用例描述
+    info: 仓管员问题单提交-输入订单号
+    extend: 80_problem_submission_1.yaml
+#
+## 111 仓管员问题单提交-2
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 111
+    #用例描述
+    info: 仓管员问题单提交-获取图片信息
+    extend: 81_problem_submission_2.yaml
+#
+##  112仓管员问题单提交-3
+  - test_name: kit_problem_submission
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 112
+    #用例描述
+    info: 仓管员问题单提交-COD 金额不正确
+    extend: 112_problem_submission_3.yaml
+
+#######-------------------------------------------------------------------------------------------------------------------------
+#####                               问题件5：货物丢失
+#######-------------------------------------------------------------------------------------------------------------------------
+##  113揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 113
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 3_choose_senders.yaml
+
+## 114揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 114
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 4_choose_recipient_name.yaml
+
+## 115揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 115
+    #用例描述
+    info: 揽件收款来源-输入收件人地址
+    extend: 5_choose_recipient_addressee_details.yaml
+
+##  116揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 116
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 6_submit_solicitation_information.yaml
+
+##  117揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 117
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 7_collection_completed_1.yaml
+
+##  118揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 118
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 8_collection_completed_2.yaml
+
+##  119揽件下单-揽收完成-3
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 119
+    #用例描述
+    info: 揽件收款来源-揽收完成-3
+    extend: 9_collection_completed_3.yaml
+
+##  120 仓管员问题单提交-1
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 120
+    #用例描述
+    info: 仓管员问题单提交-输入订单号
+    extend: 80_problem_submission_1.yaml
+#
+##  121 仓管员问题单提交-2
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 121
+    #用例描述
+    info: 仓管员问题单提交-获取图片信息
+    extend: 81_problem_submission_2.yaml
+
+##  122 仓管员问题单提交-3
+  - test_name: kit_problem_submission
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 122
+    #用例描述
+    info: 仓管员问题单提交-货物丢失
+    extend: 122_problem_submission_3.yaml
+#######-------------------------------------------------------------------------------------------------------------------------
+#####                               问题件6：收件人/地址不清晰或不正确
+#######-------------------------------------------------------------------------------------------------------------------------
+##  123揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 123
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 3_choose_senders.yaml
+
+## 124揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 124
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 4_choose_recipient_name.yaml
+
+## 125揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 125
+    #用例描述
+    info: 揽件收款来源-输入收件人地址
+    extend: 5_choose_recipient_addressee_details.yaml
+
+##  126揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 126
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 6_submit_solicitation_information.yaml
+
+##  127揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 127
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 7_collection_completed_1.yaml
+
+##  128揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 128
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 8_collection_completed_2.yaml
+
+##  129揽件下单-揽收完成-3
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 129
+    #用例描述
+    info: 揽件收款来源-揽收完成-3
+    extend: 9_collection_completed_3.yaml
+
+##  130仓管员问题单提交-1
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 130
+    #用例描述
+    info: 仓管员问题单提交-输入订单号
+    extend: 80_problem_submission_1.yaml
+#
+## 131 仓管员问题单提交-2
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 131
+    #用例描述
+    info: 仓管员问题单提交-获取图片信息
+    extend: 81_problem_submission_2.yaml
+#
+##  132仓管员问题单提交-3
+  - test_name: kit_problem_submission
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 132
+    #用例描述
+    info: 仓管员问题单提交-收件人/地址不清晰或不正确
+    extend: 132_problem_submission_3.yaml
+#######-------------------------------------------------------------------------------------------------------------------------
+#####                               问题件7：收件人电话号码错误
+#######-------------------------------------------------------------------------------------------------------------------------
+##  133揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 133
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 3_choose_senders.yaml
+
+## 134揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 134
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 4_choose_recipient_name.yaml
+
+## 135揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 135
+    #用例描述
+    info: 揽件收款来源-输入收件人地址
+    extend: 5_choose_recipient_addressee_details.yaml
+
+##  136揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 136
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 6_submit_solicitation_information.yaml
+
+##  137揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 137
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 7_collection_completed_1.yaml
+
+##  138揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 138
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 8_collection_completed_2.yaml
+
+##  139揽件下单-揽收完成-3
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 139
+    #用例描述
+    info: 揽件收款来源-揽收完成-3
+    extend: 9_collection_completed_3.yaml
+
+##  140仓管员问题单提交-1
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 140
+    #用例描述
+    info: 仓管员问题单提交-输入订单号
+    extend: 80_problem_submission_1.yaml
+#
+## 141 仓管员问题单提交-2
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 141
+    #用例描述
+    info: 仓管员问题单提交-获取图片信息
+    extend: 81_problem_submission_2.yaml
+#
+##  142仓管员问题单提交-3
+  - test_name: kit_problem_submission
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 142
+    #用例描述
+    info: 仓管员问题单提交-收件人电话号码错误
+    extend: 142_problem_submission_3.yaml
+#######-------------------------------------------------------------------------------------------------------------------------
+#####                               问题件8：收件人拒收
+#######-------------------------------------------------------------------------------------------------------------------------
+##  143揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 143
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 3_choose_senders.yaml
+
+## 144揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 144
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 4_choose_recipient_name.yaml
+
+## 145揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 145
+    #用例描述
+    info: 揽件收款来源-输入收件人地址
+    extend: 5_choose_recipient_addressee_details.yaml
+
+##  146揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 146
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 6_submit_solicitation_information.yaml
+
+##  147揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 147
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 7_collection_completed_1.yaml
+
+##  148揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 148
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 8_collection_completed_2.yaml
+
+##  149揽件下单-揽收完成-3
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 149
+    #用例描述
+    info: 揽件收款来源-揽收完成-3
+    extend: 9_collection_completed_3.yaml
+
+##  150仓管员问题单提交-1
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 150
+    #用例描述
+    info: 仓管员问题单提交-输入订单号
+    extend: 80_problem_submission_1.yaml
+#
+## 151 仓管员问题单提交-2
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 151
+    #用例描述
+    info: 仓管员问题单提交-获取图片信息
+    extend: 81_problem_submission_2.yaml
+#
+##  152仓管员问题单提交-3
+  - test_name: kit_problem_submission
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 152
+    #用例描述
+    info: 仓管员问题单提交-收件人拒收
+    extend: 152_problem_submission_3.yaml
+#######-------------------------------------------------------------------------------------------------------------------------
+#####                               问题件9：分错网点-运输错误
+#######-------------------------------------------------------------------------------------------------------------------------
+##  153揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 153
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 3_choose_senders.yaml
+
+## 154揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 154
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 4_choose_recipient_name.yaml
+
+## 155揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 155
+    #用例描述
+    info: 揽件收款来源-输入收件人地址
+    extend: 5_choose_recipient_addressee_details.yaml
+
+##  156揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 156
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 6_submit_solicitation_information.yaml
+
+##  157揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 157
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 7_collection_completed_1.yaml
+
+##  158揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 158
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 8_collection_completed_2.yaml
+
+##  159揽件下单-揽收完成-3
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 159
+    #用例描述
+    info: 揽件收款来源-揽收完成-3
+    extend: 9_collection_completed_3.yaml
+
+##  160 仓管员问题单提交-1
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 160
+    #用例描述
+    info: 仓管员问题单提交-输入订单号
+    extend: 80_problem_submission_1.yaml
+#
+##  161 仓管员问题单提交-2
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 161
+    #用例描述
+    info: 仓管员问题单提交-获取图片信息
+    extend: 81_problem_submission_2.yaml
+
+##  162 仓管员问题单提交-3
+  - test_name: kit_problem_submission
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 162
+    #用例描述
+    info: 仓管员问题单提交-分错网点-运输错误
+    extend: 162_problem_submission_3.yaml
+#######-------------------------------------------------------------------------------------------------------------------------
+#####                               问题件10：分错网点-地址错误
+#######-------------------------------------------------------------------------------------------------------------------------
+##  163揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 163
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 3_choose_senders.yaml
+
+## 164揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 164
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 4_choose_recipient_name.yaml
+
+## 165揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 165
+    #用例描述
+    info: 揽件收款来源-输入收件人地址
+    extend: 5_choose_recipient_addressee_details.yaml
+
+##  166揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 166
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 6_submit_solicitation_information.yaml
+
+##  167揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 167
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 7_collection_completed_1.yaml
+
+##  168揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 168
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 8_collection_completed_2.yaml
+
+##  169揽件下单-揽收完成-3
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 169
+    #用例描述
+    info: 揽件收款来源-揽收完成-3
+    extend: 9_collection_completed_3.yaml
+
+##  170 仓管员问题单提交-1
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 170
+    #用例描述
+    info: 仓管员问题单提交-输入订单号
+    extend: 80_problem_submission_1.yaml
+#
+##  171 仓管员问题单提交-2
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 171
+    #用例描述
+    info: 仓管员问题单提交-获取图片信息
+    extend: 81_problem_submission_2.yaml
+#
+##  172 仓管员问题单提交-3
+  - test_name: kit_problem_submission
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 172
+    #用例描述
+    info: 仓管员问题单提交-分错网点-地址错误
+    extend: 172_problem_submission_3.yaml
+#
+##  173 仓管员问题单提交-换单打印
+  - test_name: kit_parcels_replace_printing
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 173
+    #用例描述
+    info: 仓管员问题单提交-分错网点-地址错误-换单打印
+    extend: 173_replace_printing.yaml
+#######-------------------------------------------------------------------------------------------------------------------------
+#####                               问题件11：仅外包装破损
+#######-------------------------------------------------------------------------------------------------------------------------
+##  173揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 173
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 3_choose_senders.yaml
+
+## 174揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 174
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 4_choose_recipient_name.yaml
+
+## 175揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 175
+    #用例描述
+    info: 揽件收款来源-输入收件人地址
+    extend: 5_choose_recipient_addressee_details.yaml
+
+##  176揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 176
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 6_submit_solicitation_information.yaml
+
+##  177揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 177
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 7_collection_completed_1.yaml
+
+##  178揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 178
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 8_collection_completed_2.yaml
+
+##  179揽件下单-揽收完成-3
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 179
+    #用例描述
+    info: 揽件收款来源-揽收完成-3
+    extend: 9_collection_completed_3.yaml
+
+##  180仓管员问题单提交-1
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 180
+    #用例描述
+    info: 仓管员问题单提交-输入订单号
+    extend: 80_problem_submission_1.yaml
+#
+##  181 仓管员问题单提交-2
+  - test_name: kit_v1_parcels_pre
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 181
+    #用例描述
+    info: 仓管员问题单提交-获取破损前图片信息
+    extend: 181_problem_submission_2.yaml
+#
+##  182 仓管员问题单提交-2
+  - test_name: kit_v1_parcels_aft
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 182
+    #用例描述
+    info: 仓管员问题单提交-获取破损后图片信息
+    extend: 182_problem_submission_3.yaml
+
+##  183 仓管员问题单提交-3
+  - test_name: kit_problem_submission
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 183
+    #用例描述
+    info: 仓管员问题单提交-仅外包装破损
+    extend: 183_problem_submission_4.yaml

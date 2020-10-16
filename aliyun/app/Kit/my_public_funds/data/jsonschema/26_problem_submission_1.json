@@ -1,0 +1,411 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "code": 1,
+            "message": "success",
+            "data": {
+                "marker_category": null,
+                "type": null,
+                "text": null,
+                "desired_at": null,
+                "remark": null,
+                "rejection_category": null,
+                "rejection_category_text": null,
+                "created_at": 1595831573.0,
+                "unmarked_enabled": false,
+                "state": 1,
+                "dst_district_default": false,
+                "dst_name": "收件人",
+                "dst_phone": "01361361361",
+                "dst_home_phone": null,
+                "dst_country_code": "TH",
+                "dst_country_name": "Thailand",
+                "dst_province_code": "TH01",
+                "dst_province_name": "กรุงเทพ",
+                "dst_city_code": "TH0101",
+                "dst_city_name": "คลองเตย",
+                "dst_district_code": "TH010101",
+                "dst_district_name": "คลองตัน",
+                "dst_detail_address": "收件人详细地址",
+                "dst_postal_code": "10110",
+                "damaged_enabled": null,
+                "parcel_route_id": null,
+                "image_list": null
+            }
+        }
+    ],
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The message schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "marker_category": null,
+                    "type": null,
+                    "text": null,
+                    "desired_at": null,
+                    "remark": null,
+                    "rejection_category": null,
+                    "rejection_category_text": null,
+                    "created_at": 1595831573.0,
+                    "unmarked_enabled": false,
+                    "state": 1,
+                    "dst_district_default": false,
+                    "dst_name": "收件人",
+                    "dst_phone": "01361361361",
+                    "dst_home_phone": null,
+                    "dst_country_code": "TH",
+                    "dst_country_name": "Thailand",
+                    "dst_province_code": "TH01",
+                    "dst_province_name": "กรุงเทพ",
+                    "dst_city_code": "TH0101",
+                    "dst_city_name": "คลองเตย",
+                    "dst_district_code": "TH010101",
+                    "dst_district_name": "คลองตัน",
+                    "dst_detail_address": "收件人详细地址",
+                    "dst_postal_code": "10110",
+                    "damaged_enabled": null,
+                    "parcel_route_id": null,
+                    "image_list": null
+                }
+            ],
+            "required": [
+                "marker_category",
+                "type",
+                "text",
+                "desired_at",
+                "remark",
+                "rejection_category",
+                "rejection_category_text",
+                "created_at",
+                "unmarked_enabled",
+                "state",
+                "dst_district_default",
+                "dst_name",
+                "dst_phone",
+                "dst_home_phone",
+                "dst_country_code",
+                "dst_country_name",
+                "dst_province_code",
+                "dst_province_name",
+                "dst_city_code",
+                "dst_city_name",
+                "dst_district_code",
+                "dst_district_name",
+                "dst_detail_address",
+                "dst_postal_code",
+                "damaged_enabled",
+                "parcel_route_id",
+                "image_list"
+            ],
+            "properties": {
+                "marker_category": {
+                    "$id": "#/properties/data/properties/marker_category",
+                    "type": "null",
+                    "title": "The marker_category schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "type": {
+                    "$id": "#/properties/data/properties/type",
+                    "type": "null",
+                    "title": "The type schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "text": {
+                    "$id": "#/properties/data/properties/text",
+                    "type": "null",
+                    "title": "The text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "desired_at": {
+                    "$id": "#/properties/data/properties/desired_at",
+                    "type": "null",
+                    "title": "The desired_at schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "remark": {
+                    "$id": "#/properties/data/properties/remark",
+                    "type": "null",
+                    "title": "The remark schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "rejection_category": {
+                    "$id": "#/properties/data/properties/rejection_category",
+                    "type": "null",
+                    "title": "The rejection_category schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "rejection_category_text": {
+                    "$id": "#/properties/data/properties/rejection_category_text",
+                    "type": "null",
+                    "title": "The rejection_category_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "created_at": {
+                    "$id": "#/properties/data/properties/created_at",
+                    "type": "number",
+                    "title": "The created_at schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        1595831573.0
+                    ]
+                },
+                "unmarked_enabled": {
+                    "$id": "#/properties/data/properties/unmarked_enabled",
+                    "type": "boolean",
+                    "title": "The unmarked_enabled schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "state": {
+                    "$id": "#/properties/data/properties/state",
+                    "type": "integer",
+                    "title": "The state schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "dst_district_default": {
+                    "$id": "#/properties/data/properties/dst_district_default",
+                    "type": "boolean",
+                    "title": "The dst_district_default schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "dst_name": {
+                    "$id": "#/properties/data/properties/dst_name",
+                    "type": "string",
+                    "title": "The dst_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "收件人"
+                    ]
+                },
+                "dst_phone": {
+                    "$id": "#/properties/data/properties/dst_phone",
+                    "type": "string",
+                    "title": "The dst_phone schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "01361361361"
+                    ]
+                },
+                "dst_home_phone": {
+                    "$id": "#/properties/data/properties/dst_home_phone",
+                    "type": "null",
+                    "title": "The dst_home_phone schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "dst_country_code": {
+                    "$id": "#/properties/data/properties/dst_country_code",
+                    "type": "string",
+                    "title": "The dst_country_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH"
+                    ]
+                },
+                "dst_country_name": {
+                    "$id": "#/properties/data/properties/dst_country_name",
+                    "type": "string",
+                    "title": "The dst_country_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Thailand"
+                    ]
+                },
+                "dst_province_code": {
+                    "$id": "#/properties/data/properties/dst_province_code",
+                    "type": "string",
+                    "title": "The dst_province_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH01"
+                    ]
+                },
+                "dst_province_name": {
+                    "$id": "#/properties/data/properties/dst_province_name",
+                    "type": "string",
+                    "title": "The dst_province_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "กรุงเทพ"
+                    ]
+                },
+                "dst_city_code": {
+                    "$id": "#/properties/data/properties/dst_city_code",
+                    "type": "string",
+                    "title": "The dst_city_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH0101"
+                    ]
+                },
+                "dst_city_name": {
+                    "$id": "#/properties/data/properties/dst_city_name",
+                    "type": "string",
+                    "title": "The dst_city_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "คลองเตย"
+                    ]
+                },
+                "dst_district_code": {
+                    "$id": "#/properties/data/properties/dst_district_code",
+                    "type": "string",
+                    "title": "The dst_district_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH010101"
+                    ]
+                },
+                "dst_district_name": {
+                    "$id": "#/properties/data/properties/dst_district_name",
+                    "type": "string",
+                    "title": "The dst_district_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "คลองตัน"
+                    ]
+                },
+                "dst_detail_address": {
+                    "$id": "#/properties/data/properties/dst_detail_address",
+                    "type": "string",
+                    "title": "The dst_detail_address schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "收件人详细地址"
+                    ]
+                },
+                "dst_postal_code": {
+                    "$id": "#/properties/data/properties/dst_postal_code",
+                    "type": "string",
+                    "title": "The dst_postal_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "10110"
+                    ]
+                },
+                "damaged_enabled": {
+                    "$id": "#/properties/data/properties/damaged_enabled",
+                    "type": "null",
+                    "title": "The damaged_enabled schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "parcel_route_id": {
+                    "$id": "#/properties/data/properties/parcel_route_id",
+                    "type": "null",
+                    "title": "The parcel_route_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "image_list": {
+                    "$id": "#/properties/data/properties/image_list",
+                    "type": "null",
+                    "title": "The image_list schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

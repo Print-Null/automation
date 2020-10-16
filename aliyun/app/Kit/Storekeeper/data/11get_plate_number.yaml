@@ -1,0 +1,45 @@
+host: host_10000
+http_type: http
+request_type: get
+parameter_type: json
+timeout: 120
+#address: ms/api/fleet/van?fleetId=$query_company_name_0_0_["data"]["items"][1]["id"]$
+address: ms/api/fleet/van?fleetId=$query_company_name_0_0_["data"]["items"][1]["id"]$
+headers:
+  0:
+    Accept-Language: zh-CN
+    Content-Type: application/json;charset=UTF-8
+    X-MS-SESSION-ID: $ms_login_10000_0_0_0_["data"]["session_id"]$
+  1:
+    Accept-Language: en-US
+    Content-Type: application/json;charset=UTF-8
+    X-MS-SESSION-ID: $ms_login_10000_0_0_0_["data"]["session_id"]$
+  2:
+    Accept-Language: th-CN
+    Content-Type: application/json;charset=UTF-8
+    X-MS-SESSION-ID: $ms_login_10000_0_0_0_["data"]["session_id"]$
+success:
+  parameter: {}
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    json_schema: "11get_plate_number.json"
+  relevance:
+    - '["data"]["items"][0]["plate_number"]'
+    - '["data"]["items"][0]["type_text"]'
+    - '["data"]["items"][0]["id"]'
+    - '["data"]["items"][0]["fleet_id"]'
+
+
+
+error:
+  parameter: {}
+  check: {}

@@ -1,0 +1,502 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "code": 1,
+            "message": "success",
+            "data": {
+                "id": null,
+                "pno": "TH01011N7C5A",
+                "pkg_code": null,
+                "recent_pno": "TH01011N7C5A",
+                "pno_display": "TH01011N7C5A",
+                "print_enabled": false,
+                "src_name": "yr2",
+                "src_phone": "1341341342",
+                "src_country_code": "TH",
+                "src_country_name": "Thailand",
+                "src_province_code": "TH01",
+                "src_province_name": "กรุงเทพ",
+                "src_city_code": "TH0101",
+                "src_city_name": "คลองเตย",
+                "src_district_code": "TH010101",
+                "src_district_name": "คลองตัน",
+                "src_detail_address": "寄件人详细地址2",
+                "src_postal_code": "10110",
+                "dst_name": "收件人2",
+                "dst_phone": "01361361362",
+                "dst_home_phone": null,
+                "dst_country_code": "TH",
+                "dst_country_name": "Thailand",
+                "dst_province_code": "TH01",
+                "dst_province_name": "กรุงเทพ",
+                "dst_city_code": "TH0101",
+                "dst_city_name": "คลองเตย",
+                "dst_district_code": "TH010101",
+                "dst_district_name": "คลองตัน",
+                "dst_detail_address": "收件人详细地址2",
+                "dst_postal_code": "10110",
+                "printing_count": 8,
+                "status": 0,
+                "dst_district_default": false
+            }
+        }
+    ],
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The message schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "id": null,
+                    "pno": "TH01011N7C5A",
+                    "pkg_code": null,
+                    "recent_pno": "TH01011N7C5A",
+                    "pno_display": "TH01011N7C5A",
+                    "print_enabled": false,
+                    "src_name": "yr2",
+                    "src_phone": "1341341342",
+                    "src_country_code": "TH",
+                    "src_country_name": "Thailand",
+                    "src_province_code": "TH01",
+                    "src_province_name": "กรุงเทพ",
+                    "src_city_code": "TH0101",
+                    "src_city_name": "คลองเตย",
+                    "src_district_code": "TH010101",
+                    "src_district_name": "คลองตัน",
+                    "src_detail_address": "寄件人详细地址2",
+                    "src_postal_code": "10110",
+                    "dst_name": "收件人2",
+                    "dst_phone": "01361361362",
+                    "dst_home_phone": null,
+                    "dst_country_code": "TH",
+                    "dst_country_name": "Thailand",
+                    "dst_province_code": "TH01",
+                    "dst_province_name": "กรุงเทพ",
+                    "dst_city_code": "TH0101",
+                    "dst_city_name": "คลองเตย",
+                    "dst_district_code": "TH010101",
+                    "dst_district_name": "คลองตัน",
+                    "dst_detail_address": "收件人详细地址2",
+                    "dst_postal_code": "10110",
+                    "printing_count": 8,
+                    "status": 0,
+                    "dst_district_default": false
+                }
+            ],
+            "required": [
+                "id",
+                "pno",
+                "pkg_code",
+                "recent_pno",
+                "pno_display",
+                "print_enabled",
+                "src_name",
+                "src_phone",
+                "src_country_code",
+                "src_country_name",
+                "src_province_code",
+                "src_province_name",
+                "src_city_code",
+                "src_city_name",
+                "src_district_code",
+                "src_district_name",
+                "src_detail_address",
+                "src_postal_code",
+                "dst_name",
+                "dst_phone",
+                "dst_home_phone",
+                "dst_country_code",
+                "dst_country_name",
+                "dst_province_code",
+                "dst_province_name",
+                "dst_city_code",
+                "dst_city_name",
+                "dst_district_code",
+                "dst_district_name",
+                "dst_detail_address",
+                "dst_postal_code",
+                "printing_count",
+                "status",
+                "dst_district_default"
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "id": {
+                    "$id": "#/properties/data/properties/id",
+                    "type": "null",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "pno": {
+                    "$id": "#/properties/data/properties/pno",
+                    "type": "string",
+                    "title": "The pno schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH01011N7C5A"
+                    ]
+                },
+                "pkg_code": {
+                    "$id": "#/properties/data/properties/pkg_code",
+                    "type": "null",
+                    "title": "The pkg_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "recent_pno": {
+                    "$id": "#/properties/data/properties/recent_pno",
+                    "type": "string",
+                    "title": "The recent_pno schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH01011N7C5A"
+                    ]
+                },
+                "pno_display": {
+                    "$id": "#/properties/data/properties/pno_display",
+                    "type": "string",
+                    "title": "The pno_display schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH01011N7C5A"
+                    ]
+                },
+                "print_enabled": {
+                    "$id": "#/properties/data/properties/print_enabled",
+                    "type": "boolean",
+                    "title": "The print_enabled schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "src_name": {
+                    "$id": "#/properties/data/properties/src_name",
+                    "type": "string",
+                    "title": "The src_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "yr2"
+                    ]
+                },
+                "src_phone": {
+                    "$id": "#/properties/data/properties/src_phone",
+                    "type": "string",
+                    "title": "The src_phone schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "1341341342"
+                    ]
+                },
+                "src_country_code": {
+                    "$id": "#/properties/data/properties/src_country_code",
+                    "type": "string",
+                    "title": "The src_country_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH"
+                    ]
+                },
+                "src_country_name": {
+                    "$id": "#/properties/data/properties/src_country_name",
+                    "type": "string",
+                    "title": "The src_country_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Thailand"
+                    ]
+                },
+                "src_province_code": {
+                    "$id": "#/properties/data/properties/src_province_code",
+                    "type": "string",
+                    "title": "The src_province_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH01"
+                    ]
+                },
+                "src_province_name": {
+                    "$id": "#/properties/data/properties/src_province_name",
+                    "type": "string",
+                    "title": "The src_province_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "กรุงเทพ"
+                    ]
+                },
+                "src_city_code": {
+                    "$id": "#/properties/data/properties/src_city_code",
+                    "type": "string",
+                    "title": "The src_city_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH0101"
+                    ]
+                },
+                "src_city_name": {
+                    "$id": "#/properties/data/properties/src_city_name",
+                    "type": "string",
+                    "title": "The src_city_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "คลองเตย"
+                    ]
+                },
+                "src_district_code": {
+                    "$id": "#/properties/data/properties/src_district_code",
+                    "type": "string",
+                    "title": "The src_district_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH010101"
+                    ]
+                },
+                "src_district_name": {
+                    "$id": "#/properties/data/properties/src_district_name",
+                    "type": "string",
+                    "title": "The src_district_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "คลองตัน"
+                    ]
+                },
+                "src_detail_address": {
+                    "$id": "#/properties/data/properties/src_detail_address",
+                    "type": "string",
+                    "title": "The src_detail_address schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "寄件人详细地址2"
+                    ]
+                },
+                "src_postal_code": {
+                    "$id": "#/properties/data/properties/src_postal_code",
+                    "type": "string",
+                    "title": "The src_postal_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "10110"
+                    ]
+                },
+                "dst_name": {
+                    "$id": "#/properties/data/properties/dst_name",
+                    "type": "string",
+                    "title": "The dst_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "收件人2"
+                    ]
+                },
+                "dst_phone": {
+                    "$id": "#/properties/data/properties/dst_phone",
+                    "type": "string",
+                    "title": "The dst_phone schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "01361361362"
+                    ]
+                },
+                "dst_home_phone": {
+                    "$id": "#/properties/data/properties/dst_home_phone",
+                    "type": "null",
+                    "title": "The dst_home_phone schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "dst_country_code": {
+                    "$id": "#/properties/data/properties/dst_country_code",
+                    "type": "string",
+                    "title": "The dst_country_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH"
+                    ]
+                },
+                "dst_country_name": {
+                    "$id": "#/properties/data/properties/dst_country_name",
+                    "type": "string",
+                    "title": "The dst_country_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Thailand"
+                    ]
+                },
+                "dst_province_code": {
+                    "$id": "#/properties/data/properties/dst_province_code",
+                    "type": "string",
+                    "title": "The dst_province_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH01"
+                    ]
+                },
+                "dst_province_name": {
+                    "$id": "#/properties/data/properties/dst_province_name",
+                    "type": "string",
+                    "title": "The dst_province_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "กรุงเทพ"
+                    ]
+                },
+                "dst_city_code": {
+                    "$id": "#/properties/data/properties/dst_city_code",
+                    "type": "string",
+                    "title": "The dst_city_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH0101"
+                    ]
+                },
+                "dst_city_name": {
+                    "$id": "#/properties/data/properties/dst_city_name",
+                    "type": "string",
+                    "title": "The dst_city_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "คลองเตย"
+                    ]
+                },
+                "dst_district_code": {
+                    "$id": "#/properties/data/properties/dst_district_code",
+                    "type": "string",
+                    "title": "The dst_district_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH010101"
+                    ]
+                },
+                "dst_district_name": {
+                    "$id": "#/properties/data/properties/dst_district_name",
+                    "type": "string",
+                    "title": "The dst_district_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "คลองตัน"
+                    ]
+                },
+                "dst_detail_address": {
+                    "$id": "#/properties/data/properties/dst_detail_address",
+                    "type": "string",
+                    "title": "The dst_detail_address schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "收件人详细地址2"
+                    ]
+                },
+                "dst_postal_code": {
+                    "$id": "#/properties/data/properties/dst_postal_code",
+                    "type": "string",
+                    "title": "The dst_postal_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "10110"
+                    ]
+                },
+                "printing_count": {
+                    "$id": "#/properties/data/properties/printing_count",
+                    "type": "integer",
+                    "title": "The printing_count schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        8
+                    ]
+                },
+                "status": {
+                    "$id": "#/properties/data/properties/status",
+                    "type": "integer",
+                    "title": "The status schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "dst_district_default": {
+                    "$id": "#/properties/data/properties/dst_district_default",
+                    "type": "boolean",
+                    "title": "The dst_district_default schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                }
+            }
+        }
+    }
+}

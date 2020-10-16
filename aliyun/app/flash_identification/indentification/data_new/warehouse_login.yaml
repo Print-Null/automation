@@ -1,0 +1,40 @@
+host: host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: api/courier/v1/auth/new_device_login
+headers:
+  0:
+    content-type: application/json
+    Accept-Language: zh-CN
+
+success:
+  parameter:
+    0:
+      login: '$[config]indentifi_kit_warehouse_usr$'
+      password: '$[config]indentifi_kit_warehouse_pwd$'
+      clientid: '8698940239062391583120286987'
+      clientsd: '1583120286995'
+      os: "android"
+      version: '$[config]login_version$'
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+#    json_schema: "login.json"
+
+  relevance:
+    - '["data"]["sessionid"]'
+
+error:
+  parameter: {}
+  check: {}

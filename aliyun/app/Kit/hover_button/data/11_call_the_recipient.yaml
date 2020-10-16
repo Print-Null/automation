@@ -1,0 +1,54 @@
+host: kit_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: api/courier/v1/ticket/hover_button_phone_contact
+headers:
+  0:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: zh-CN
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+  1:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: en-US
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+  2:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: th-TN
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+
+success:
+  parameter:
+    0:
+      form:
+        call_duration: 0
+        call_type: 2
+        calling_channel: 2
+        diabolo_duration: 0
+        phone: $kit_v1_parcels_0_0_["data"]["dst_phone"]$
+        start_time: 1597127832
+      pno: $kit_pickups_parcel_0_0_0_["data"]["parcel_info"]["pno"]$
+      report_at: 1597127833
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    message:
+      data_key: "msg"
+      z_message: "成功"
+      e_message: "success"
+      t_message: "สำเร็จ"
+      headers_language: "Accept-Language"
+# #schema校验 注：路径存储是当前目录的
+#    json_schema: "9_collection_completed_3.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

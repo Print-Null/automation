@@ -1,0 +1,398 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "code": 1,
+            "message": "success",
+            "data": {
+                "items": [
+                    {
+                        "id": "5f1f93732d738a779c2223d2",
+                        "staff_info_id": 22750,
+                        "staff_info_name": "yr-快递员",
+                        "business_date": [
+                            2020,
+                            7,
+                            28
+                        ],
+                        "business_date_text": "2020-07-28",
+                        "closed": true,
+                        "closed_text": "已结清",
+                        "receivable_amount": 12536100,
+                        "received_amount": 12536100,
+                        "pickup_total_amount": 1489800,
+                        "delivery_total_amount": 130500,
+                        "cod_total_amount": 10915800,
+                        "material_total_amount": 0
+                    }
+                ],
+                "pagination": {
+                    "current_page": 1,
+                    "per_page": 10,
+                    "total_count": 0
+                }
+            }
+        }
+    ],
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The message schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "items": [
+                        {
+                            "id": "5f1f93732d738a779c2223d2",
+                            "staff_info_id": 22750,
+                            "staff_info_name": "yr-快递员",
+                            "business_date": [
+                                2020,
+                                7,
+                                28
+                            ],
+                            "business_date_text": "2020-07-28",
+                            "closed": true,
+                            "closed_text": "已结清",
+                            "receivable_amount": 12536100,
+                            "received_amount": 12536100,
+                            "pickup_total_amount": 1489800,
+                            "delivery_total_amount": 130500,
+                            "cod_total_amount": 10915800,
+                            "material_total_amount": 0
+                        }
+                    ],
+                    "pagination": {
+                        "current_page": 1,
+                        "per_page": 10,
+                        "total_count": 0
+                    }
+                }
+            ],
+            "required": [
+                "items",
+                "pagination"
+            ],
+            "properties": {
+                "items": {
+                    "$id": "#/properties/data/properties/items",
+                    "type": "array",
+                    "title": "The items schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "id": "5f1f93732d738a779c2223d2",
+                                "staff_info_id": 22750,
+                                "staff_info_name": "yr-快递员",
+                                "business_date": [
+                                    2020,
+                                    7,
+                                    28
+                                ],
+                                "business_date_text": "2020-07-28",
+                                "closed": true,
+                                "closed_text": "已结清",
+                                "receivable_amount": 12536100,
+                                "received_amount": 12536100,
+                                "pickup_total_amount": 1489800,
+                                "delivery_total_amount": 130500,
+                                "cod_total_amount": 10915800,
+                                "material_total_amount": 0
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/data/properties/items/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/data/properties/items/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "id": "5f1f93732d738a779c2223d2",
+                                        "staff_info_id": 22750,
+                                        "staff_info_name": "yr-快递员",
+                                        "business_date": [
+                                            2020,
+                                            7,
+                                            28
+                                        ],
+                                        "business_date_text": "2020-07-28",
+                                        "closed": true,
+                                        "closed_text": "已结清",
+                                        "receivable_amount": 12536100,
+                                        "received_amount": 12536100,
+                                        "pickup_total_amount": 1489800,
+                                        "delivery_total_amount": 130500,
+                                        "cod_total_amount": 10915800,
+                                        "material_total_amount": 0
+                                    }
+                                ],
+                                "required": [
+                                    "id",
+                                    "staff_info_id",
+                                    "staff_info_name",
+                                    "business_date",
+                                    "business_date_text",
+                                    "closed",
+                                    "closed_text",
+                                    "receivable_amount",
+                                    "received_amount",
+                                    "pickup_total_amount",
+                                    "delivery_total_amount",
+                                    "cod_total_amount",
+                                    "material_total_amount"
+                                ],
+                                "properties": {
+                                    "id": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/id",
+                                        "type": "string",
+                                        "title": "The id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "5f1f93732d738a779c2223d2"
+                                        ]
+                                    },
+                                    "staff_info_id": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/staff_info_id",
+                                        "type": "integer",
+                                        "title": "The staff_info_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            22750
+                                        ]
+                                    },
+                                    "staff_info_name": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/staff_info_name",
+                                        "type": "string",
+                                        "title": "The staff_info_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "yr-快递员"
+                                        ]
+                                    },
+                                    "business_date": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/business_date",
+                                        "type": "array",
+                                        "title": "The business_date schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": [],
+                                        "examples": [
+                                            [
+                                                2020,
+                                                7
+                                            ]
+                                        ],
+                                        "additionalItems": true,
+                                        "items": {
+                                            "$id": "#/properties/data/properties/items/items/anyOf/0/properties/business_date/items",
+                                            "anyOf": [
+                                                {
+                                                    "$id": "#/properties/data/properties/items/items/anyOf/0/properties/business_date/items/anyOf/0",
+                                                    "type": "integer",
+                                                    "title": "The first anyOf schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": 0,
+                                                    "examples": [
+                                                        2020,
+                                                        7
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "business_date_text": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/business_date_text",
+                                        "type": "string",
+                                        "title": "The business_date_text schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "2020-07-28"
+                                        ]
+                                    },
+                                    "closed": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/closed",
+                                        "type": "boolean",
+                                        "title": "The closed schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": false,
+                                        "examples": [
+                                            true
+                                        ]
+                                    },
+                                    "closed_text": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/closed_text",
+                                        "type": "string",
+                                        "title": "The closed_text schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "已结清"
+                                        ]
+                                    },
+                                    "receivable_amount": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/receivable_amount",
+                                        "type": "integer",
+                                        "title": "The receivable_amount schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            12536100
+                                        ]
+                                    },
+                                    "received_amount": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/received_amount",
+                                        "type": "integer",
+                                        "title": "The received_amount schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            12536100
+                                        ]
+                                    },
+                                    "pickup_total_amount": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/pickup_total_amount",
+                                        "type": "integer",
+                                        "title": "The pickup_total_amount schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            1489800
+                                        ]
+                                    },
+                                    "delivery_total_amount": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/delivery_total_amount",
+                                        "type": "integer",
+                                        "title": "The delivery_total_amount schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            130500
+                                        ]
+                                    },
+                                    "cod_total_amount": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/cod_total_amount",
+                                        "type": "integer",
+                                        "title": "The cod_total_amount schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            10915800
+                                        ]
+                                    },
+                                    "material_total_amount": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/material_total_amount",
+                                        "type": "integer",
+                                        "title": "The material_total_amount schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            0
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                },
+                "pagination": {
+                    "$id": "#/properties/data/properties/pagination",
+                    "type": "object",
+                    "title": "The pagination schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "current_page": 1,
+                            "per_page": 10,
+                            "total_count": 0
+                        }
+                    ],
+                    "required": [
+                        "current_page",
+                        "per_page",
+                        "total_count"
+                    ],
+                    "properties": {
+                        "current_page": {
+                            "$id": "#/properties/data/properties/pagination/properties/current_page",
+                            "type": "integer",
+                            "title": "The current_page schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "per_page": {
+                            "$id": "#/properties/data/properties/pagination/properties/per_page",
+                            "type": "integer",
+                            "title": "The per_page schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                10
+                            ]
+                        },
+                        "total_count": {
+                            "$id": "#/properties/data/properties/pagination/properties/total_count",
+                            "type": "integer",
+                            "title": "The total_count schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

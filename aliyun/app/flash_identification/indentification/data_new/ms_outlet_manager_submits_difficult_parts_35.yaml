@@ -1,0 +1,43 @@
+host: ms_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: ms/api/store/parcel/difficulty_submission
+headers:
+  0:
+    Accept: "application/json, text/plain, */*"
+    Accept-Language: "zh-CN"
+    Content-Type: "application/json;charset=UTF-8"
+    X-MS-SESSION-ID: '$ms_collection_outlets_login_0_0_0_["data"]["session_id"]$'
+
+success:
+  parameter:
+    0:
+      difficulty_marker_category: 22
+      remark: '自动化货物丢失，自动化货物丢失'
+      image_keys: []
+      pno: '$courier_write_order_7_0_0_["data"]["parcel_info"]["pno"]$'
+      delivery_staff_id: ""
+
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+#    json_schema: "login.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

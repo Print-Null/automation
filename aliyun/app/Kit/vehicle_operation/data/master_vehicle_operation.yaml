@@ -1,0 +1,286 @@
+# 测试用例
+case_data: Kit/vehicle_operation/data/
+case_path: Kit/vehicle_operation/test_cash/
+test_case:
+###############################################################################################
+####流程描述：kit-快递员下单-仓管员收件入仓-复称-集包-发件出仓-车辆出港-入港考勤-解车
+################################################################################################
+## 2kit登入
+  - test_name: kit_auth_new_device_login
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 2
+    #用例描述
+    info: kit-快递员、仓管员登入
+    extend: 2_kit_login.yaml
+
+##  3揽件下单-根据客户号选择寄件人信息
+  - test_name: kit_v1_address
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 3
+    #用例描述
+    info: 揽件收款来源-选择寄件人
+    extend: 3_choose_senders.yaml
+
+## 4揽件下单-输入收件人信息
+  - test_name: kit_t3_customers
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 4
+    #用例描述
+    info: 揽件收款来源-输入收件人姓名
+    extend: 4_choose_recipient_name.yaml
+
+## 5揽件下单-输入收件人信息
+  - test_name: kit_recommend_addressRecommend
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 5
+    #用例描述
+    info: 揽件收款来源-输入收件人地址
+    extend: 5_choose_recipient_addressee_details.yaml
+
+##  6揽件下单-提交信息
+  - test_name: kit_pickups_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 6
+    #用例描述
+    info: 揽件收款来源-提交揽件信息
+    extend: 6_submit_solicitation_information.yaml
+
+##  7揽件下单-揽收完成-1
+  - test_name: kit_v1_ticket
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 7
+    #用例描述
+    info: 揽件收款来源-揽收完成-1
+    extend: 7_collection_completed_1.yaml
+
+##  8揽件下单-揽收完成-2
+  - test_name: kit_ticket_pickups
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 8
+    #用例描述
+    info: 揽件收款来源-揽收完成-2
+    extend: 8_collection_completed_2.yaml
+
+##  9揽件下单-揽收完成-3
+  - test_name: kit_message_pickupReward
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 9
+    #用例描述
+    info: 揽件收款来源-揽收完成-3
+    extend: 9_collection_completed_3.yaml
+
+##  10仓管员-收件入仓-手动输入单号-获取拍照图片信息
+  - test_name: kit_aparcels_receive_warehouse
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 10
+    #用例描述
+    info: 收件入仓-手动输入单号-获取拍照图片信息
+    extend: 10_get_picture_information.yaml
+
+##  10仓管员-收件入仓-手动输入单号
+  - test_name: kit_parcels_receive_warehouse
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 10
+    #用例描述
+    info: 收件入仓-手动输入单号
+    extend: 10_receiving_and_warehousing.yaml
+
+###  11仓管员-收件入仓-查看快件详情-----自己写用例，get请求address根据headers变化
+#  - test_name: kit_v1_parcels_v0
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 11
+#    #用例描述
+#    info: 收件入仓-查看快件详情
+#    extend: 11_view_express_details.yaml
+
+###  12仓管员-复称-手动输入   -----自己写用例，get请求address根据headers变化
+#  - test_name: kit_v1_parcels
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 12
+#    #用例描述
+#    info: 复称-手动输入单号
+#    extend: 12_polysemy.yaml
+
+##  13仓管员-复称-复称包裹尺寸重量
+  - test_name: kit_parcels_store_keeper_update_weight
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 13
+    #用例描述
+    info: 复称-复称包裹尺寸重量
+    extend: 13_compound_package.yaml
+
+###  14仓管员-收件入仓-查看快件详情   ----------自己写用例，get请求address根据headers变化
+#  - test_name: kit_v1_parcels_v0
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 14
+#    #用例描述
+#    info: 复称-查看快件详情
+#    extend: 11_view_express_details.yaml
+
+###  15仓管员-集包---自己写了用例（URL里需要随机生成集包号，并且在下个接口需要用到，存入到redis里）
+#  - test_name: kit_valid_search
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 15
+#    #用例描述
+#    info: 集包-手动输入集包号
+#    extend: 15_collection_package.yaml
+
+##  16仓管员-集包
+  - test_name: kit_pack_seal
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 16
+    #用例描述
+    info: 集包-提交信息
+    extend: 16_collection_package_commit.yaml
+
+##  17ms-登录
+  - test_name: ms_auth_signin
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 17
+    #用例描述
+    info: MS-登录
+    extend: 17_ms_login.yaml
+
+###  18ms-10000登录-线路管理-新建常规线路--自己写（需要从返回的结果里取有车辆的公司["data"]["items"]["van_count"]>0里找，并把fleetId存入redis，case_id19需要用到，company_name在case_id23需要用到）
+#  - test_name: ms_api_fleet
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 18
+#    #用例描述
+#    info: MS-10000登录-线路管理-新建常规线路-获取公司名称
+#    extend: 18_get_company_name.yaml
+
+##  19ms-10000登录-线路管理-新建常规线路-根据公司名称获取车牌号
+  - test_name: ms_fleet_van
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 19
+    #用例描述
+    info: MS-10000登录-线路管理-新建常规线路-根据公司名称获取车牌号
+    extend: 19_get_license_plate_number.yaml
+
+###  20ms-10000登录-线路管理-新建常规线路-----需要对请求参数进行特殊梳理--从redis里取值默认是字符串，parameter_new["plate_type"]需要处理成int类型，自己修改了用例
+#  - test_name: ms_van_line
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 20
+#    #用例描述
+#    info: MS-10000登录-线路管理-新建常规线路
+#    extend: 20_new_conventional_line.yaml
+
+##  21ms-10000登录-线路管理-查询新建的线路id
+  - test_name: ms_van_line
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 21
+    #用例描述
+    info: MS-10000登录-线路管理--查询新建的线路id
+    extend: 21_query_new_line_id.yaml
+
+###  22ms-网点经理登录-网点车线任务-打印出车凭证-1------------------get请求里有依赖headers变化的用例，自己写用例
+#  - test_name: ms_proof_line
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 22
+#    #用例描述
+#    info: MS-网点经理登录-网点车线任务-打印出车凭证-1
+#    extend: 22_print_the_vehicle_delivery_certificate_1.yaml
+
+##  23ms-网点经理登录-网点车线任务-打印出车凭证-2
+  - test_name: ms_van_proof
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 23
+    #用例描述
+    info: MS-网点经理登录-网点车线任务-打印出车凭证-2
+    extend: 23_print_the_vehicle_delivery_certificate_2.yaml
+
+##  24仓管员-发件出仓-输入出车凭证编号
+  - test_name: kit_fleet_proof
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 24
+    #用例描述
+    info: 仓管员-发件出仓-输入出车凭证编号
+    extend: 24_input_the_vehicle_certificate.yaml
+
+##  25仓管员-发件出仓-获取车辆信息
+  - test_name: kit_line_store
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 25
+    #用例描述
+    info: 仓管员-发件出仓-获取车辆信息-1
+    extend: 25_get_vehicle_information_1.yaml
+
+##  26仓管员-发件出仓-获取车辆信息
+  - test_name: kit_proof_store_parcel
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 26
+    #用例描述
+    info: 仓管员-发件出仓-获取车辆信息-2
+    extend: 26_get_vehicle_information_2.yaml
+
+##  27仓管员-发件出仓
+  - test_name: kit_v1_parcels
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 27
+    #用例描述
+    info: 仓管员-发件出仓-输入运单号
+    extend: 27_delivery_out_of_warehouse.yaml
+#
+##  28仓管员-车辆出港-输入出车凭证编号
+  - test_name: kit_fleet_proof
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 28
+    #用例描述
+    info: 仓管员-车辆出港-输入出车凭证编号
+    extend: 28_input_the_vehicle_departure_voucher_number.yaml
+
+##  29仓管员-车辆出港-点击车辆信息
+  - test_name: kit_fleet_proof
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 29
+    #用例描述
+    info: 仓管员-车辆出港-点击车辆信息
+    extend: 29_view_vehicle_information.yaml
+
+##  30仓管员-车辆出港-获取装载实况照片
+  - test_name: kit_fleet_autograph
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 30
+    #用例描述
+    info: 仓管员-车辆出港-获取装载实况照片
+    extend: 30_get_loading_live_photos.yaml
+
+###  31仓管员-车辆出港-封车------需要存储parameter里的封车条号到redis里，case_id34需要用到-----自己写用例
+#  - test_name: kit_outbound_new
+#    # 用例ID，第一条用例必填，从1开始递增
+#    case_id: 31
+#    #用例描述
+#    info: 仓管员-车辆出港-封车
+#    extend: 31_vehicle_closure.yaml
+
+##  32仓管员-入港考勤
+  - test_name: kit_inBound_attendance
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 32
+    #用例描述
+    info: 仓管员-入港考勤
+    extend: 32_arrival_attendance.yaml
+
+##  33仓管员-解车-输入出车凭证
+  - test_name: kit_outbound_new
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 33
+    #用例描述
+    info: 仓管员-解车-输入出车凭证
+    extend: 33_input_the_vehicle_departure_voucher_number.yaml
+
+##  34仓管员-解车-获取司机签字图片
+  - test_name: kit_fleet_autograph
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 34
+    #用例描述
+    info: 仓管员-解车-获取司机签字图片
+    extend: 30_get_loading_live_photos.yaml
+
+##  35仓管员-解车-确认解车
+  - test_name: kit_inbound_unload
+    # 用例ID，第一条用例必填，从1开始递增
+    case_id: 35
+    #用例描述
+    info: 仓管员-解车-确认解车
+    extend: 35_confirm_the_release.yaml

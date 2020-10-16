@@ -1,0 +1,42 @@
+host: app_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: /api/user/v1/speed_sla/sla_info_area
+headers:
+  0:
+    Accept-Language: zh-Hans-CN
+    content-type: application/json
+    X-FLE-SESSION-ID: $app_user_login_0_0_0_["data"]["sessionid"]$
+#    Accept-Language: zh-CN
+#  1:
+#    content-type: application/json
+#    Accept-Language: en-US
+#  2:
+#    content-type: application/json
+#    Accept-Language: th-CN
+
+success:
+  parameter:
+    0:
+      dst_postal_code: $app_user_get_addrbooks_0_1_["data"]["user_addrbooks"][0]["postal_code"]$
+      customer_type_category: "1"
+      src_district_code: $app_user_get_addrbooks_0_1_["data"]["user_addrbooks"][0]["district_code"]$
+      src_city_code: $app_user_get_addrbooks_0_1_["data"]["user_addrbooks"][0]["city_code"]$
+      src_province_code: $app_user_get_addrbooks_0_1_["data"]["user_addrbooks"][0]["province_code"]$
+
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    message: "success"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

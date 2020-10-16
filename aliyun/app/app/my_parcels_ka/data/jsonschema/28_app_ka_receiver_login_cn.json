@@ -1,0 +1,700 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "code": 1,
+            "message": "success",
+            "data": {
+                "tid": "08c87108272fda0615da634f12f98b4ce919ee4c02942efea605b11fd4a5a42f",
+                "sessionid": "1595419477_ab27d3c8ffa84f31fe9adb636fffcad77d90fc6212fa7863e22db798b37d0da2_AA0536",
+                "profile": {
+                    "id": "AA0536",
+                    "name": "yxf",
+                    "mobile": "1341234567",
+                    "otp_id": 61670,
+                    "otp_token": "NFQ64XAVERB7ZYBDWJ7FLVNCIHAPRGNCLW6L37RSKPESCGJRYE3G6CGLTM2HPOQP",
+                    "cod_enabled": true,
+                    "primary_account": true,
+                    "client_grade": 0,
+                    "settlement_category": 2,
+                    "settlement_category_text": "定期结算",
+                    "ka_default_warehouse": {
+                        "id": "5ef80fdcd57a3b14c36a5354",
+                        "warehouse_no": "3",
+                        "ka_id": "AA0536",
+                        "ka_info_id": "AA0536",
+                        "name": "yxf3",
+                        "country_name": "Thailand",
+                        "country_code": "TH",
+                        "province_name": "สระบุรี",
+                        "province_code": "TH10",
+                        "city_name": "เมืองสระบุรี",
+                        "city_code": "TH1001",
+                        "district_name": "ปากเพรียว",
+                        "district_code": "TH100101",
+                        "opened": null,
+                        "postal_code": "18000",
+                        "detail_address": "新增揽件地址",
+                        "lat": null,
+                        "lng": null,
+                        "phone": "1701234567",
+                        "src_name": "张三",
+                        "store_id": null,
+                        "store_name": null,
+                        "store_manager_id": null,
+                        "store_manager_email": null,
+                        "ntc_enabled": null
+                    },
+                    "restricted": true,
+                    "beneficiary_enabled": false,
+                    "authentication_type": 1
+                },
+                "version_info": null
+            }
+        }
+    ],
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The message schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "tid": "08c87108272fda0615da634f12f98b4ce919ee4c02942efea605b11fd4a5a42f",
+                    "sessionid": "1595419477_ab27d3c8ffa84f31fe9adb636fffcad77d90fc6212fa7863e22db798b37d0da2_AA0536",
+                    "profile": {
+                        "id": "AA0536",
+                        "name": "yxf",
+                        "mobile": "1341234567",
+                        "otp_id": 61670,
+                        "otp_token": "NFQ64XAVERB7ZYBDWJ7FLVNCIHAPRGNCLW6L37RSKPESCGJRYE3G6CGLTM2HPOQP",
+                        "cod_enabled": true,
+                        "primary_account": true,
+                        "client_grade": 0,
+                        "settlement_category": 2,
+                        "settlement_category_text": "定期结算",
+                        "ka_default_warehouse": {
+                            "id": "5ef80fdcd57a3b14c36a5354",
+                            "warehouse_no": "3",
+                            "ka_id": "AA0536",
+                            "ka_info_id": "AA0536",
+                            "name": "yxf3",
+                            "country_name": "Thailand",
+                            "country_code": "TH",
+                            "province_name": "สระบุรี",
+                            "province_code": "TH10",
+                            "city_name": "เมืองสระบุรี",
+                            "city_code": "TH1001",
+                            "district_name": "ปากเพรียว",
+                            "district_code": "TH100101",
+                            "opened": null,
+                            "postal_code": "18000",
+                            "detail_address": "新增揽件地址",
+                            "lat": null,
+                            "lng": null,
+                            "phone": "1701234567",
+                            "src_name": "张三",
+                            "store_id": null,
+                            "store_name": null,
+                            "store_manager_id": null,
+                            "store_manager_email": null,
+                            "ntc_enabled": null
+                        },
+                        "restricted": true,
+                        "beneficiary_enabled": false,
+                        "authentication_type": 1
+                    },
+                    "version_info": null
+                }
+            ],
+            "required": [
+                "tid",
+                "sessionid",
+                "profile",
+                "version_info"
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "tid": {
+                    "$id": "#/properties/data/properties/tid",
+                    "type": "string",
+                    "title": "The tid schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "08c87108272fda0615da634f12f98b4ce919ee4c02942efea605b11fd4a5a42f"
+                    ]
+                },
+                "sessionid": {
+                    "$id": "#/properties/data/properties/sessionid",
+                    "type": "string",
+                    "title": "The sessionid schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "1595419477_ab27d3c8ffa84f31fe9adb636fffcad77d90fc6212fa7863e22db798b37d0da2_AA0536"
+                    ]
+                },
+                "profile": {
+                    "$id": "#/properties/data/properties/profile",
+                    "type": "object",
+                    "title": "The profile schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "id": "AA0536",
+                            "name": "yxf",
+                            "mobile": "1341234567",
+                            "otp_id": 61670,
+                            "otp_token": "NFQ64XAVERB7ZYBDWJ7FLVNCIHAPRGNCLW6L37RSKPESCGJRYE3G6CGLTM2HPOQP",
+                            "cod_enabled": true,
+                            "primary_account": true,
+                            "client_grade": 0,
+                            "settlement_category": 2,
+                            "settlement_category_text": "定期结算",
+                            "ka_default_warehouse": {
+                                "id": "5ef80fdcd57a3b14c36a5354",
+                                "warehouse_no": "3",
+                                "ka_id": "AA0536",
+                                "ka_info_id": "AA0536",
+                                "name": "yxf3",
+                                "country_name": "Thailand",
+                                "country_code": "TH",
+                                "province_name": "สระบุรี",
+                                "province_code": "TH10",
+                                "city_name": "เมืองสระบุรี",
+                                "city_code": "TH1001",
+                                "district_name": "ปากเพรียว",
+                                "district_code": "TH100101",
+                                "opened": null,
+                                "postal_code": "18000",
+                                "detail_address": "新增揽件地址",
+                                "lat": null,
+                                "lng": null,
+                                "phone": "1701234567",
+                                "src_name": "张三",
+                                "store_id": null,
+                                "store_name": null,
+                                "store_manager_id": null,
+                                "store_manager_email": null,
+                                "ntc_enabled": null
+                            },
+                            "restricted": true,
+                            "beneficiary_enabled": false,
+                            "authentication_type": 1
+                        }
+                    ],
+                    "required": [
+                        "id",
+                        "name",
+                        "mobile",
+                        "otp_id",
+                        "otp_token",
+                        "cod_enabled",
+                        "primary_account",
+                        "client_grade",
+                        "settlement_category",
+                        "settlement_category_text",
+                        "ka_default_warehouse",
+                        "restricted",
+                        "beneficiary_enabled",
+                        "authentication_type"
+                    ],
+                    "additionalProperties": true,
+                    "properties": {
+                        "id": {
+                            "$id": "#/properties/data/properties/profile/properties/id",
+                            "type": "string",
+                            "title": "The id schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "AA0536"
+                            ]
+                        },
+                        "name": {
+                            "$id": "#/properties/data/properties/profile/properties/name",
+                            "type": "string",
+                            "title": "The name schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "yxf"
+                            ]
+                        },
+                        "mobile": {
+                            "$id": "#/properties/data/properties/profile/properties/mobile",
+                            "type": "string",
+                            "title": "The mobile schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "1341234567"
+                            ]
+                        },
+                        "otp_id": {
+                            "$id": "#/properties/data/properties/profile/properties/otp_id",
+                            "type": "integer",
+                            "title": "The otp_id schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                61670
+                            ]
+                        },
+                        "otp_token": {
+                            "$id": "#/properties/data/properties/profile/properties/otp_token",
+                            "type": "string",
+                            "title": "The otp_token schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "NFQ64XAVERB7ZYBDWJ7FLVNCIHAPRGNCLW6L37RSKPESCGJRYE3G6CGLTM2HPOQP"
+                            ]
+                        },
+                        "cod_enabled": {
+                            "$id": "#/properties/data/properties/profile/properties/cod_enabled",
+                            "type": "boolean",
+                            "title": "The cod_enabled schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                true
+                            ]
+                        },
+                        "primary_account": {
+                            "$id": "#/properties/data/properties/profile/properties/primary_account",
+                            "type": "boolean",
+                            "title": "The primary_account schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                true
+                            ]
+                        },
+                        "client_grade": {
+                            "$id": "#/properties/data/properties/profile/properties/client_grade",
+                            "type": "integer",
+                            "title": "The client_grade schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "settlement_category": {
+                            "$id": "#/properties/data/properties/profile/properties/settlement_category",
+                            "type": "integer",
+                            "title": "The settlement_category schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                2
+                            ]
+                        },
+                        "settlement_category_text": {
+                            "$id": "#/properties/data/properties/profile/properties/settlement_category_text",
+                            "type": "string",
+                            "title": "The settlement_category_text schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "定期结算"
+                            ]
+                        },
+                        "ka_default_warehouse": {
+                            "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse",
+                            "type": "object",
+                            "title": "The ka_default_warehouse schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "id": "5ef80fdcd57a3b14c36a5354",
+                                    "warehouse_no": "3",
+                                    "ka_id": "AA0536",
+                                    "ka_info_id": "AA0536",
+                                    "name": "yxf3",
+                                    "country_name": "Thailand",
+                                    "country_code": "TH",
+                                    "province_name": "สระบุรี",
+                                    "province_code": "TH10",
+                                    "city_name": "เมืองสระบุรี",
+                                    "city_code": "TH1001",
+                                    "district_name": "ปากเพรียว",
+                                    "district_code": "TH100101",
+                                    "opened": null,
+                                    "postal_code": "18000",
+                                    "detail_address": "新增揽件地址",
+                                    "lat": null,
+                                    "lng": null,
+                                    "phone": "1701234567",
+                                    "src_name": "张三",
+                                    "store_id": null,
+                                    "store_name": null,
+                                    "store_manager_id": null,
+                                    "store_manager_email": null,
+                                    "ntc_enabled": null
+                                }
+                            ],
+                            "required": [
+                                "id",
+                                "warehouse_no",
+                                "ka_id",
+                                "ka_info_id",
+                                "name",
+                                "country_name",
+                                "country_code",
+                                "province_name",
+                                "province_code",
+                                "city_name",
+                                "city_code",
+                                "district_name",
+                                "district_code",
+                                "opened",
+                                "postal_code",
+                                "detail_address",
+                                "lat",
+                                "lng",
+                                "phone",
+                                "src_name",
+                                "store_id",
+                                "store_name",
+                                "store_manager_id",
+                                "store_manager_email",
+                                "ntc_enabled"
+                            ],
+                            "additionalProperties": true,
+                            "properties": {
+                                "id": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/id",
+                                    "type": "string",
+                                    "title": "The id schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "5ef80fdcd57a3b14c36a5354"
+                                    ]
+                                },
+                                "warehouse_no": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/warehouse_no",
+                                    "type": "string",
+                                    "title": "The warehouse_no schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "3"
+                                    ]
+                                },
+                                "ka_id": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/ka_id",
+                                    "type": "string",
+                                    "title": "The ka_id schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "AA0536"
+                                    ]
+                                },
+                                "ka_info_id": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/ka_info_id",
+                                    "type": "string",
+                                    "title": "The ka_info_id schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "AA0536"
+                                    ]
+                                },
+                                "name": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/name",
+                                    "type": "string",
+                                    "title": "The name schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "yxf3"
+                                    ]
+                                },
+                                "country_name": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/country_name",
+                                    "type": "string",
+                                    "title": "The country_name schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "Thailand"
+                                    ]
+                                },
+                                "country_code": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/country_code",
+                                    "type": "string",
+                                    "title": "The country_code schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "TH"
+                                    ]
+                                },
+                                "province_name": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/province_name",
+                                    "type": "string",
+                                    "title": "The province_name schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "สระบุรี"
+                                    ]
+                                },
+                                "province_code": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/province_code",
+                                    "type": "string",
+                                    "title": "The province_code schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "TH10"
+                                    ]
+                                },
+                                "city_name": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/city_name",
+                                    "type": "string",
+                                    "title": "The city_name schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "เมืองสระบุรี"
+                                    ]
+                                },
+                                "city_code": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/city_code",
+                                    "type": "string",
+                                    "title": "The city_code schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "TH1001"
+                                    ]
+                                },
+                                "district_name": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/district_name",
+                                    "type": "string",
+                                    "title": "The district_name schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "ปากเพรียว"
+                                    ]
+                                },
+                                "district_code": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/district_code",
+                                    "type": "string",
+                                    "title": "The district_code schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "TH100101"
+                                    ]
+                                },
+                                "opened": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/opened",
+                                    "type": "null",
+                                    "title": "The opened schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": null,
+                                    "examples": [
+                                        null
+                                    ]
+                                },
+                                "postal_code": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/postal_code",
+                                    "type": "string",
+                                    "title": "The postal_code schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "18000"
+                                    ]
+                                },
+                                "detail_address": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/detail_address",
+                                    "type": "string",
+                                    "title": "The detail_address schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "新增揽件地址"
+                                    ]
+                                },
+                                "lat": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/lat",
+                                    "type": "null",
+                                    "title": "The lat schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": null,
+                                    "examples": [
+                                        null
+                                    ]
+                                },
+                                "lng": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/lng",
+                                    "type": "null",
+                                    "title": "The lng schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": null,
+                                    "examples": [
+                                        null
+                                    ]
+                                },
+                                "phone": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/phone",
+                                    "type": "string",
+                                    "title": "The phone schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "1701234567"
+                                    ]
+                                },
+                                "src_name": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/src_name",
+                                    "type": "string",
+                                    "title": "The src_name schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "张三"
+                                    ]
+                                },
+                                "store_id": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/store_id",
+                                    "type": "null",
+                                    "title": "The store_id schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": null,
+                                    "examples": [
+                                        null
+                                    ]
+                                },
+                                "store_name": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/store_name",
+                                    "type": "null",
+                                    "title": "The store_name schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": null,
+                                    "examples": [
+                                        null
+                                    ]
+                                },
+                                "store_manager_id": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/store_manager_id",
+                                    "type": "null",
+                                    "title": "The store_manager_id schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": null,
+                                    "examples": [
+                                        null
+                                    ]
+                                },
+                                "store_manager_email": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/store_manager_email",
+                                    "type": "null",
+                                    "title": "The store_manager_email schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": null,
+                                    "examples": [
+                                        null
+                                    ]
+                                },
+                                "ntc_enabled": {
+                                    "$id": "#/properties/data/properties/profile/properties/ka_default_warehouse/properties/ntc_enabled",
+                                    "type": "null",
+                                    "title": "The ntc_enabled schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": null,
+                                    "examples": [
+                                        null
+                                    ]
+                                }
+                            }
+                        },
+                        "restricted": {
+                            "$id": "#/properties/data/properties/profile/properties/restricted",
+                            "type": "boolean",
+                            "title": "The restricted schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                true
+                            ]
+                        },
+                        "beneficiary_enabled": {
+                            "$id": "#/properties/data/properties/profile/properties/beneficiary_enabled",
+                            "type": "boolean",
+                            "title": "The beneficiary_enabled schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "authentication_type": {
+                            "$id": "#/properties/data/properties/profile/properties/authentication_type",
+                            "type": "integer",
+                            "title": "The authentication_type schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        }
+                    }
+                },
+                "version_info": {
+                    "$id": "#/properties/data/properties/version_info",
+                    "type": "null",
+                    "title": "The version_info schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                }
+            }
+        }
+    }
+}

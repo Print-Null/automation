@@ -1,0 +1,46 @@
+host: ms_host
+http_type: http
+request_type: get
+parameter_type: json
+timeout: 120
+address:
+  0: ms/api/store/receivable_bill?closed=0&staffInfoId=$[config]warehouse_keeper_login$&pageSize=20&pageNum=1&startTime=$kit_my_public_funds_lists_uncleared_#headers#_0_["data"]["items"][0]["business_date_text"]$&endTime=$kit_my_public_funds_lists_uncleared_#headers#_0_["data"]["items"][0]["business_date_text"]$
+
+headers:
+  0:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: zh-CN
+    X-MS-SESSION-ID: $ms_auth_signin_3_0_0_["data"]["session_id"]$
+  1:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: en-US
+    X-MS-SESSION-ID: $ms_auth_signin_3_1_0_["data"]["session_id"]$
+  2:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: th-TN
+    X-MS-SESSION-ID: $ms_auth_signin_3_2_0_["data"]["session_id"]$
+
+
+success:
+  parameter: {}
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+# #schema校验 注：路径存储是当前目录的
+#    json_schema: "43_payment_collection_by_courier_1.json"
+
+  relevance:
+    - '["data"]["items"][0]["id"]'
+
+error:
+  parameter: {}
+  check: {}

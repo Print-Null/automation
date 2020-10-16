@@ -1,0 +1,40 @@
+host: kit_host
+http_type: http
+request_type: get
+parameter_type: json
+timeout: 120
+address:
+  0: /api/courier/v1/ticket/pickups/$ka_api_inform_add_inform_0_0_0_["data"]["pickup_id"]$
+headers:
+  0:
+    Accept-Language: zh-CN
+    content-type: application/json; charset=UTF-8
+    X-FLE-SESSION-ID: $kit_api_courier_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+#  1:
+#    Accept-Language: en-US
+#    content-type: application/json; charset=UTF-8
+#    X-FLE-SESSION-ID: $kit_api_courier_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+#  2:
+#    Accept-Language: th-TH
+#    content-type: application/json; charset=UTF-8
+#    X-FLE-SESSION-ID: $kit_api_courier_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+
+success:
+  parameter: {}
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

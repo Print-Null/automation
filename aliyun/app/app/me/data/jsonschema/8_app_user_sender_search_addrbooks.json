@@ -1,0 +1,342 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "code": 1,
+            "message": "success",
+            "data": {
+                "user_addrbooks": [
+                    {
+                        "id": 5483,
+                        "name": "自动化Lc35",
+                        "phone": "66613797174",
+                        "country_code": "TH",
+                        "country_name": "Thailand",
+                        "province_code": "TH01",
+                        "province_name": "กรุงเทพ",
+                        "city_code": "TH0132",
+                        "city_name": "พระนคร",
+                        "district_code": "TH013201",
+                        "district_name": "ชนะสงคราม",
+                        "detail_address": "自动化默认寄件人地址新增Rd4",
+                        "postal_code": "10200",
+                        "src_default": true,
+                        "dst_default": false
+                    }
+                ],
+                "last_page": true
+            }
+        }
+    ],
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The message schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "user_addrbooks": [
+                        {
+                            "id": 5483,
+                            "name": "自动化Lc35",
+                            "phone": "66613797174",
+                            "country_code": "TH",
+                            "country_name": "Thailand",
+                            "province_code": "TH01",
+                            "province_name": "กรุงเทพ",
+                            "city_code": "TH0132",
+                            "city_name": "พระนคร",
+                            "district_code": "TH013201",
+                            "district_name": "ชนะสงคราม",
+                            "detail_address": "自动化默认寄件人地址新增Rd4",
+                            "postal_code": "10200",
+                            "src_default": true,
+                            "dst_default": false
+                        }
+                    ],
+                    "last_page": true
+                }
+            ],
+            "required": [
+                "user_addrbooks",
+                "last_page"
+            ],
+            "additionalProperties": true,
+            "properties": {
+                "user_addrbooks": {
+                    "$id": "#/properties/data/properties/user_addrbooks",
+                    "type": "array",
+                    "title": "The user_addrbooks schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "id": 5483,
+                                "name": "自动化Lc35",
+                                "phone": "66613797174",
+                                "country_code": "TH",
+                                "country_name": "Thailand",
+                                "province_code": "TH01",
+                                "province_name": "กรุงเทพ",
+                                "city_code": "TH0132",
+                                "city_name": "พระนคร",
+                                "district_code": "TH013201",
+                                "district_name": "ชนะสงคราม",
+                                "detail_address": "自动化默认寄件人地址新增Rd4",
+                                "postal_code": "10200",
+                                "src_default": true,
+                                "dst_default": false
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/data/properties/user_addrbooks/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "id": 5483,
+                                        "name": "自动化Lc35",
+                                        "phone": "66613797174",
+                                        "country_code": "TH",
+                                        "country_name": "Thailand",
+                                        "province_code": "TH01",
+                                        "province_name": "กรุงเทพ",
+                                        "city_code": "TH0132",
+                                        "city_name": "พระนคร",
+                                        "district_code": "TH013201",
+                                        "district_name": "ชนะสงคราม",
+                                        "detail_address": "自动化默认寄件人地址新增Rd4",
+                                        "postal_code": "10200",
+                                        "src_default": true,
+                                        "dst_default": false
+                                    }
+                                ],
+                                "required": [
+                                    "id",
+                                    "name",
+                                    "phone",
+                                    "country_code",
+                                    "country_name",
+                                    "province_code",
+                                    "province_name",
+                                    "city_code",
+                                    "city_name",
+                                    "district_code",
+                                    "district_name",
+                                    "detail_address",
+                                    "postal_code",
+                                    "src_default",
+                                    "dst_default"
+                                ],
+                                "additionalProperties": true,
+                                "properties": {
+                                    "id": {
+                                        "$id": "#/properties/data/properties/user_addrbooks/items/anyOf/0/properties/id",
+                                        "type": "integer",
+                                        "title": "The id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            5483
+                                        ]
+                                    },
+                                    "name": {
+                                        "$id": "#/properties/data/properties/user_addrbooks/items/anyOf/0/properties/name",
+                                        "type": "string",
+                                        "title": "The name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "自动化Lc35"
+                                        ]
+                                    },
+                                    "phone": {
+                                        "$id": "#/properties/data/properties/user_addrbooks/items/anyOf/0/properties/phone",
+                                        "type": "string",
+                                        "title": "The phone schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "66613797174"
+                                        ]
+                                    },
+                                    "country_code": {
+                                        "$id": "#/properties/data/properties/user_addrbooks/items/anyOf/0/properties/country_code",
+                                        "type": "string",
+                                        "title": "The country_code schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH"
+                                        ]
+                                    },
+                                    "country_name": {
+                                        "$id": "#/properties/data/properties/user_addrbooks/items/anyOf/0/properties/country_name",
+                                        "type": "string",
+                                        "title": "The country_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Thailand"
+                                        ]
+                                    },
+                                    "province_code": {
+                                        "$id": "#/properties/data/properties/user_addrbooks/items/anyOf/0/properties/province_code",
+                                        "type": "string",
+                                        "title": "The province_code schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH01"
+                                        ]
+                                    },
+                                    "province_name": {
+                                        "$id": "#/properties/data/properties/user_addrbooks/items/anyOf/0/properties/province_name",
+                                        "type": "string",
+                                        "title": "The province_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "กรุงเทพ"
+                                        ]
+                                    },
+                                    "city_code": {
+                                        "$id": "#/properties/data/properties/user_addrbooks/items/anyOf/0/properties/city_code",
+                                        "type": "string",
+                                        "title": "The city_code schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH0132"
+                                        ]
+                                    },
+                                    "city_name": {
+                                        "$id": "#/properties/data/properties/user_addrbooks/items/anyOf/0/properties/city_name",
+                                        "type": "string",
+                                        "title": "The city_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "พระนคร"
+                                        ]
+                                    },
+                                    "district_code": {
+                                        "$id": "#/properties/data/properties/user_addrbooks/items/anyOf/0/properties/district_code",
+                                        "type": "string",
+                                        "title": "The district_code schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH013201"
+                                        ]
+                                    },
+                                    "district_name": {
+                                        "$id": "#/properties/data/properties/user_addrbooks/items/anyOf/0/properties/district_name",
+                                        "type": "string",
+                                        "title": "The district_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "ชนะสงคราม"
+                                        ]
+                                    },
+                                    "detail_address": {
+                                        "$id": "#/properties/data/properties/user_addrbooks/items/anyOf/0/properties/detail_address",
+                                        "type": "string",
+                                        "title": "The detail_address schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "自动化默认寄件人地址新增Rd4"
+                                        ]
+                                    },
+                                    "postal_code": {
+                                        "$id": "#/properties/data/properties/user_addrbooks/items/anyOf/0/properties/postal_code",
+                                        "type": "string",
+                                        "title": "The postal_code schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "10200"
+                                        ]
+                                    },
+                                    "src_default": {
+                                        "$id": "#/properties/data/properties/user_addrbooks/items/anyOf/0/properties/src_default",
+                                        "type": "boolean",
+                                        "title": "The src_default schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": false,
+                                        "examples": [
+                                            true
+                                        ]
+                                    },
+                                    "dst_default": {
+                                        "$id": "#/properties/data/properties/user_addrbooks/items/anyOf/0/properties/dst_default",
+                                        "type": "boolean",
+                                        "title": "The dst_default schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": false,
+                                        "examples": [
+                                            false
+                                        ]
+                                    }
+                                }
+                            }
+                        ],
+                        "$id": "#/properties/data/properties/user_addrbooks/items"
+                    }
+                },
+                "last_page": {
+                    "$id": "#/properties/data/properties/last_page",
+                    "type": "boolean",
+                    "title": "The last_page schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                }
+            }
+        }
+    }
+}

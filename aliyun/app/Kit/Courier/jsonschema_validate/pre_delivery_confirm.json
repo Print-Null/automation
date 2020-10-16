@@ -1,0 +1,232 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "妥投前确认",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The Code Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1.0
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The Message Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The Data Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "cod_enabled": false,
+                    "recent_pno": "TH050219CN8A",
+                    "cod_amount": 0.0,
+                    "pno_display": "TH050219CN8A",
+                    "qr_code_payment_flag": false,
+                    "settlement_type": 1.0,
+                    "exchange_enabled": null,
+                    "settlement_type_text": "寄付",
+                    "receipt_pickup_enabled": null,
+                    "settlement_category_text": "现场结算",
+                    "pno": "TH050219CN8A",
+                    "dst_name": "2",
+                    "settlement_category": 1.0,
+                    "store_total_amount": 4000.0,
+                    "delivery_category": 1.0
+                }
+            ],
+            "additionalProperties": true,
+            "required": [
+                "pno",
+                "recent_pno",
+                "pno_display",
+                "dst_name",
+                "store_total_amount",
+                "settlement_category",
+                "settlement_category_text",
+                "settlement_type",
+                "settlement_type_text",
+                "cod_enabled",
+                "cod_amount",
+                "qr_code_payment_flag",
+                "delivery_category",
+                "exchange_enabled",
+                "receipt_pickup_enabled"
+            ],
+            "properties": {
+                "pno": {
+                    "$id": "#/properties/data/properties/pno",
+                    "type": "string",
+                    "title": "The Pno Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH050219CN8A"
+                    ]
+                },
+                "recent_pno": {
+                    "$id": "#/properties/data/properties/recent_pno",
+                    "type": "string",
+                    "title": "The Recent_pno Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH050219CN8A"
+                    ]
+                },
+                "pno_display": {
+                    "$id": "#/properties/data/properties/pno_display",
+                    "type": "string",
+                    "title": "The Pno_display Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH050219CN8A"
+                    ]
+                },
+                "dst_name": {
+                    "$id": "#/properties/data/properties/dst_name",
+                    "type": "string",
+                    "title": "The Dst_name Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2"
+                    ]
+                },
+                "store_total_amount": {
+                    "$id": "#/properties/data/properties/store_total_amount",
+                    "type": "integer",
+                    "title": "The Store_total_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        4000.0
+                    ]
+                },
+                "settlement_category": {
+                    "$id": "#/properties/data/properties/settlement_category",
+                    "type": "integer",
+                    "title": "The Settlement_category Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1.0
+                    ]
+                },
+                "settlement_category_text": {
+                    "$id": "#/properties/data/properties/settlement_category_text",
+                    "type": "string",
+                    "title": "The Settlement_category_text Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "现场结算"
+                    ]
+                },
+                "settlement_type": {
+                    "$id": "#/properties/data/properties/settlement_type",
+                    "type": "integer",
+                    "title": "The Settlement_type Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1.0
+                    ]
+                },
+                "settlement_type_text": {
+                    "$id": "#/properties/data/properties/settlement_type_text",
+                    "type": "string",
+                    "title": "The Settlement_type_text Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "寄付"
+                    ]
+                },
+                "cod_enabled": {
+                    "$id": "#/properties/data/properties/cod_enabled",
+                    "type": "boolean",
+                    "title": "The Cod_enabled Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "cod_amount": {
+                    "$id": "#/properties/data/properties/cod_amount",
+                    "type": "integer",
+                    "title": "The Cod_amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0.0
+                    ]
+                },
+                "qr_code_payment_flag": {
+                    "$id": "#/properties/data/properties/qr_code_payment_flag",
+                    "type": "boolean",
+                    "title": "The Qr_code_payment_flag Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "delivery_category": {
+                    "$id": "#/properties/data/properties/delivery_category",
+                    "type": "integer",
+                    "title": "The Delivery_category Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1.0
+                    ]
+                },
+                "exchange_enabled": {
+                    "$id": "#/properties/data/properties/exchange_enabled",
+                    "type": "null",
+                    "title": "The Exchange_enabled Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "receipt_pickup_enabled": {
+                    "$id": "#/properties/data/properties/receipt_pickup_enabled",
+                    "type": "null",
+                    "title": "The Receipt_pickup_enabled Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                }
+            }
+        }
+    }
+}

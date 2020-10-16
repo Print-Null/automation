@@ -1,0 +1,47 @@
+host: kit_host
+http_type: http
+request_type: get
+parameter_type: json
+timeout: 120
+address:
+  0: api/courier/v1/parcels/$kit_pickups_parcel_0_0_0_["data"]["parcel_info"]["pno"]$/find_v0?isFromScanner=false
+  1: api/courier/v1/parcels/$kit_pickups_parcel_0_1_0_["data"]["parcel_info"]["pno"]$/find_v0?isFromScanner=false
+  2: api/courier/v1/parcels/$kit_pickups_parcel_0_2_0_["data"]["parcel_info"]["pno"]$/find_v0?isFromScanner=false
+
+headers:
+  0:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: zh-CN
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+#  1:
+#    content-type: application/json; charset=UTF-8
+#    Accept-Language: en-US
+#    X-FLE-SESSION-ID: $kit_auth_new_device_login_0_1_0_["data"]["sessionid"]$
+#  2:
+#    content-type: application/json; charset=UTF-8
+#    Accept-Language: th-TN
+#    X-FLE-SESSION-ID: $kit_auth_new_device_login_0_2_0_["data"]["sessionid"]$
+
+success:
+  parameter: {}
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    data:
+      - 'str(resp.json()["data"]["print"]).lower() == "false"'
+# #schema校验 注：路径存储是当前目录的
+#    json_schema: "22_courier_search.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

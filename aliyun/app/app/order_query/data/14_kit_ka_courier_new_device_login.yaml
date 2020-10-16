@@ -1,0 +1,47 @@
+host: kit_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: /api/courier/v1/auth/new_device_login
+headers:
+  0:
+    Accept-Language: zh-CN
+    content-type: application/json; charset=UTF-8
+  1:
+    content-type: application/json
+    Accept-Language: en-US
+  2:
+    content-type: application/json
+    Accept-Language: th-CN
+
+success:
+  parameter:
+    0:
+      login: $app_ka_ticket_pickup_list_0_0_["data"]["list"][0]["staff_info_id"]$
+      password: $[config]kit_ka_pw$
+      clientid: $[config]kit_ka_clientid$
+      clientsd: $[config]kit_ka_clientsd$
+      os: "android"
+      version: $[config]kit_version$
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    json_schema: "14_kit_ka_courier_new_device_login.json"
+
+  relevance:
+    - '["data"]["sessionid"]'
+    - '["data"]["tid"]'
+
+error:
+  parameter: {}
+  check: {}

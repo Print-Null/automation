@@ -1,0 +1,86 @@
+host: kit_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: api/courier/v1/pack/seal
+headers:
+  #仓管员
+#  0:
+#    content-type: application/json; charset=UTF-8
+#    Accept-Language: zh-CN
+#    X-FLE-SESSION-ID: $kit_auth_new_device_login_1_0_0_["data"]["sessionid"]$
+#  1:
+#    content-type: application/json; charset=UTF-8
+#    Accept-Language: en-US
+#    X-FLE-SESSION-ID: $kit_auth_new_device_login_1_1_0_["data"]["sessionid"]$
+  2:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: th-TN
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_1_2_0_["data"]["sessionid"]$
+
+success:
+  parameter:
+    0:
+        "direction_store_code": $[config]direction_store_code$
+        "pack_category": 1
+        "pack_no": $kit_valid_search_0_0_[pack_no]$
+        "pno_scan_list":
+            -
+              "from_scanner": "false"
+              "pno": $kit_pickups_parcel_0_0_0_["data"]["parcel_info"]["pno"]$
+            -
+              "from_scanner": "false"
+              "pno": $kit_pickups_parcel_0_1_0_["data"]["parcel_info"]["pno"]$
+            -
+              "from_scanner": "false"
+              "pno": $kit_pickups_parcel_0_2_0_["data"]["parcel_info"]["pno"]$
+        "recent_pnos":
+            - $kit_pickups_parcel_0_0_0_["data"]["parcel_info"]["pno"]$
+            - $kit_pickups_parcel_0_1_0_["data"]["parcel_info"]["pno"]$
+            - $kit_pickups_parcel_0_2_0_["data"]["parcel_info"]["pno"]$
+
+        "valid_parcel": "true"
+
+    1:
+        "direction_store_code": $[config]direction_store_code$
+        "pack_category": 1
+        "pack_no": $kit_valid_search_0_0_[pack_no]$
+        "pno_scan_list":
+            -
+              "from_scanner": "false"
+              "pno": $kit_pickups_parcel_0_0_0_["data"]["parcel_info"]["pno"]$
+            -
+              "from_scanner": "false"
+              "pno": $kit_pickups_parcel_0_1_0_["data"]["parcel_info"]["pno"]$
+            -
+              "from_scanner": "false"
+              "pno": $kit_pickups_parcel_0_2_0_["data"]["parcel_info"]["pno"]$
+        "recent_pnos":
+            - $kit_pickups_parcel_0_0_0_["data"]["parcel_info"]["pno"]$
+            - $kit_pickups_parcel_0_1_0_["data"]["parcel_info"]["pno"]$
+            - $kit_pickups_parcel_0_2_0_["data"]["parcel_info"]["pno"]$
+
+        "valid_parcel": "false"
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+# #schema校验 注：路径存储是当前目录的
+#    json_schema: "16_collection_package_commit.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

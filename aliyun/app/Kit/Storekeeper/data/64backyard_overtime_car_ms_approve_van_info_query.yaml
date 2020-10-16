@@ -1,0 +1,51 @@
+host: ms_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address: ms/api/fleet/line/approve/van_info_query
+
+headers:
+  0:
+    Accept-Language: zh-CN
+    Accept: "application/json, text/plain, */*"
+    X-MS-SESSION-ID: $backyard_overtime_car_ms_api_auth_signin_0_0_0_["data"]["session_id"]$
+  1:
+    Accept-Language: en-US
+    Accept-Accept: "application/json, text/plain, */*"
+    X-MS-SESSION-ID: $backyard_overtime_car_ms_api_auth_signin_0_0_0_["data"]["session_id"]$
+  2:
+    Accept-Language: th-CN
+    Accept-Accept: "application/json, text/plain, */*"
+    X-MS-SESSION-ID: $backyard_overtime_car_ms_api_auth_signin_0_0_0_["data"]["session_id"]$
+success:
+  parameter:
+    0:
+      plate_name: '3'
+      province_code: TH01
+      fuzzy: 'True'
+
+
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    json_schema: "64backyard_overtime_car_ms_approve_van_info_query.json"
+  relevance:
+    - '["data"][0]["line_van_query_dto"]["fleet_id"]'
+    - '["data"][0]["line_van_query_dto"]["province_code"]'
+    - '["data"][0]["plate_name"]'
+
+
+
+error:
+  parameter: {}
+  check: {}

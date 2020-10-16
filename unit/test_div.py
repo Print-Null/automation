@@ -1,5 +1,4 @@
 import pytest
-
 from unit.dev import div
 
 """
@@ -91,3 +90,5 @@ def test_div_zero():
 })
 def test_div(num1, num2, expection):
     assert div(num1, num2) == expection
+
+

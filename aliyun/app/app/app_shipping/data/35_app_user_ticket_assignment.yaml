@@ -1,0 +1,47 @@
+host: app_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: /api/user/v1/ticket/assignment
+headers:
+  0:
+    Accept-Language: zh-Hans-CN
+    content-type: application/json
+    X-FLE-SESSION-ID: $app_user_login_0_0_0_["data"]["sessionid"]$
+#    Accept-Language: zh-CN
+#  1:
+#    content-type: application/json
+#    Accept-Language: en-US
+#  2:
+#    content-type: application/json
+#    Accept-Language: th-CN
+
+success:
+  parameter:
+    0:
+      src_postal_code: $app_maps_place_detail_0_0_0_["data"][0]["postal_code"]$
+      src_name: $[python]"C客户自动化快递员"+chr(random.randint(65,90))+chr(random.randint(97,122))+str(random.randint(1,100))$
+      src_phone: $[python]random.choice(["134","135"])+str(random.randint(1000000,99999999))$
+      src_city_code: "TH0141"
+      src_detail_address: $app_maps_place_detail_0_0_0_["data"][0]["detail_address"]$
+      src_district_code: "TH014101"
+      src_lng: $app_maps_place_detail_0_0_0_["data"][0]["lng"]$
+      estimate_parcel_number: $[python]random.randint(1,500)$
+      src_lat: $app_maps_place_detail_0_0_0_["data"][0]["lat"]$
+      src_country_code: "TH"
+      remark: "带文件袋 M号箱x1,"
+      src_province_code: "TH01"
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    message: "success"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

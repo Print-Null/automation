@@ -1,0 +1,59 @@
+host: app_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: /api/user/v1/parcels/modify
+headers:
+  0:
+    Accept-Language: zh-Hans-CN
+    content-type: application/json
+    X-FLE-SESSION-ID: $app_user_sender_login_cn_0_0_0_["data"]["sessionid"]$
+  1:
+    content-type: application/json
+    Accept-Language: en-CN
+    X-FLE-SESSION-ID: $app_user_sender_login_cn_0_0_0_["data"]["sessionid"]$
+  2:
+    content-type: application/json
+    Accept-Language: th-CN
+    X-FLE-SESSION-ID: $app_user_sender_login_cn_0_0_0_["data"]["sessionid"]$
+
+success:
+  parameter:
+    0:
+      src_name: $[config]user_src_name$
+      dst_country_code: "TH"
+      src_country_code: "TH"
+      src_phone: $[config]user_src_phone$
+      src_detail_address: $[config]user_src_detail_address$
+      src_province_code: $[config]user_src_province_code$
+      dst_postal_code: $[config]user_dst_postal_code$
+      src_postal_code: $[config]user_src_postal_code$
+      dst_home_phone: ""
+      src_district_code: $[config]user_src_district_code$
+      dst_phone: $[config]user_dst_phone$
+      pno: $kit_user_sender_courier_ticket_pickups_cn_0_0_["data"]["collected_parcels"][2]["pno"]$
+      dst_city_code: $[config]user_dst_city_code$
+      dst_name: $[python]"修改收件人姓名"+chr(random.randint(65,90))+chr(random.randint(97,122))+str(random.randint(1,100))$
+      dst_district_code: $[config]user_dst_district_code$
+      src_city_code: $[config]user_src_city_code$
+      dst_province_code: $[config]user_dst_province_code$
+      dst_detail_address: $[python]"修改收件人详细地址"+chr(random.randint(65,90))+chr(random.randint(97,122))+str(random.randint(1,100))$
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    json_schema: "23_app_user_sender_parcels_modify_cn.json"
+
+  relevance: {}
+error:
+  parameter: {}
+  check: {}

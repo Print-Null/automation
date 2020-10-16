@@ -1,0 +1,57 @@
+host: backyard_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: api/backyard/v1/auth/new_device_login
+headers:
+  0:
+    content-type: application/json
+    Accept-Language: zh-CN
+#  1:
+#    content-type: application/json
+#    Accept-Language: en-US
+#  2:
+#    content-type: application/json
+#    Accept-Language: th-CN
+
+success:
+  parameter:
+    #出发网点登入
+    0:
+      login: '$[config]DC_warehose_login_usr$'
+      password: '$[config]DC_warehose_login_pwd$'
+      clientid: "8626360321249741575447597157"
+      clientsd: "1575447597168"
+      os: "android"
+      version: '$[config]backyard_version$'
+    #目的地网点登入
+    1:
+      login: '$[config]by_warehose_man_end_login$'
+      password: '$[config]by_warehose_man_end_pwd$'
+      clientid: "8626360321249741575447597157"
+      clientsd: "1575447597168"
+      os: "android"
+      version: '$[config]backyard_version$'
+
+  check:
+
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    # json_schema: "DC_warehouse_login.json"
+
+  relevance:
+    - '["data"]["sessionid"]'
+
+error:
+  parameter: {}
+  check: {}

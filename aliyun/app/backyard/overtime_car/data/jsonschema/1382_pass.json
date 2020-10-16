@@ -1,0 +1,50 @@
+[{
+    "car_type": 100,
+    "fleet_id": '$approve_van_info_query_["data"][0]["line_van_query_dto"]["fleet_id"]$',
+    "plan_date": "$[python]datetime.datetime.now().strftime('%Y-%m-%d')$",
+    "single_line": 1,
+    "system_quote": None,
+    "abnormal_cost": None,
+    "final_cost": 12200,
+    "line_cost": 12200,
+    "line_back_cost": None,
+    "line_name": "FDC1-4W-LT1-qwqe-$[python]datetime.datetime.now().strftime('%Y%m%d')$ 22:00",
+    "line_back_name": "FDC2-4W-qwqe-LT1-null null",
+    "driver": "自动化司机",
+    "driver_phone": "1111111111",
+    "province_code": '$approve_van_info_query_["data"][0]["line_van_query_dto"]["province_code"]$',
+    "plate_name": '$approve_van_info_query_["data"][0]["line_van_query_dto"]["plate_name"]$',
+    "audit_type": 2,
+    "fd_courier_id": "22599",
+    "fd_courier_name": "自动化司机",
+    "line_timetable_dtolist": [
+        {
+            "order_no": 1,
+            "store_id": '$approve_1382_["data"]["start_store"]$',
+            "estimate_end_time": "960",
+            "estimate_start_time": "1020"
+        },
+        {
+            "order_no": 2,
+            "store_id": '$approve_1382_["data"]["end_store"]$',
+            "estimate_start_time": "",
+            "estimate_end_time": "1080"
+        }
+    ],
+    "line_back_timetable_dtolist": [
+        {
+            "order_no": 1,
+            "store_id": '$approve_1382_["data"]["end_store"]$',
+            "estimate_end_time": "",
+            "estimate_start_time": "",
+            "running_mileage": ""
+        },
+        {
+            "order_no": 2,
+            "store_id": '$approve_1382_["data"]["start_store"]$',
+            "running_mileage": "",
+            "estimate_start_time": "",
+            "estimate_end_time": ""
+        }
+    ]
+},{"sdwsd": 1212}]

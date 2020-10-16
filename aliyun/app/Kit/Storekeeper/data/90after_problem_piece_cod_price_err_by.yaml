@@ -1,0 +1,56 @@
+host: host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address: api/courier/v1/ticket/parcels/$courier_pno_number28$/mark
+
+headers:
+#  0:
+#    Accept-Language: zh-CN
+#    By-Platform: "RB_KIT"
+#    Content-Type: "application/json"
+#    X-FLE-SESSION-ID: $backyard_overtime_car_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+#    X-DEVICE-ID: "8673510346528821571665712622"
+#  1:
+#    Accept-Language: en-US
+#    By-Platform: "RB_KIT"
+#    Content-Type: "application/json"
+#    X-FLE-SESSION-ID: $backyard_overtime_car_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+#    X-DEVICE-ID: "8673510346528821571665712622"
+  2:
+    Accept-Language: th-CN
+    By-Platform: "RB_KIT"
+    Content-Type: "application/json"
+    X-FLE-SESSION-ID: $backyard_overtime_car_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+    X-DEVICE-ID: "8673510346528821571665712622"
+success:
+  parameter:
+    0:
+      attachment_form:
+        - object_key: "deliveryPickupsMarkUpload/1587539227-147953f42a194d3e97a7935dd594ad91.jpg"
+      marker_category: 76
+      remark: "自动化备注"
+      upload_photo: true
+
+
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    json_schema: "90after_problem_piece_cod_price_err_by.json"
+  relevance: {}
+
+
+
+error:
+  parameter: {}
+  check: {}

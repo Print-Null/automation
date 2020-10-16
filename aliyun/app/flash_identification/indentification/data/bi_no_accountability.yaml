@@ -1,0 +1,37 @@
+host: fbi_host_domain
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: parcelloseapi/not_lose?lang=zh-CN&$test_1_1_iframe_2$&fbid=$[config]indentifi_bi_usr$&time=$[python]int(time.time())$&remark=a来源无需追责&$bi_qery_list_task_id$
+headers:
+  0:
+    Accept: application/json, text/plain, */*
+    Accept-Encoding: gzip, deflate
+    Accept-Language: zh-CN
+    BI-PLATFORM:
+    Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+    Cookie: $indentifi_bi_usr_PHPSESSID$
+
+success:
+  parameter: {}
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+#    json_schema: "login.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

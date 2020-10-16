@@ -1,0 +1,15 @@
+{
+        "audit_type": 2,
+        "car_type": 100,
+        "capacity": "4",
+        "arrive_time": "2020-05-08 22:00",
+        "start_store": "TH01010243",
+        "end_store": "TH01510301",
+        "reason": "fd",
+        "image_path": [],
+        "fd_courier_id": "22599",
+        "fd_courier_name": "小赖司机",
+        "fd_courier_phone": "1111111111",
+        "fd_courier_plate": "111111112",
+        "province_code": "TH02"
+    }

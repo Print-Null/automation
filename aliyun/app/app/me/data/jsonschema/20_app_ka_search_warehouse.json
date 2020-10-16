@@ -1,0 +1,674 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "code": 1,
+            "message": "success",
+            "data": [
+                {
+                    "id": "5ef8449ed57a3b14c36a536a",
+                    "warehouse_no": "11",
+                    "ka_id": "AA0536",
+                    "ka_info_id": "AA0536",
+                    "name": "yxf11",
+                    "country_name": "Thailand",
+                    "country_code": "TH",
+                    "province_name": "สระบุรี",
+                    "province_code": "TH10",
+                    "city_name": "เมืองสระบุรี",
+                    "city_code": "TH1001",
+                    "district_name": "ปากเพรียว",
+                    "district_code": "TH100101",
+                    "opened": null,
+                    "postal_code": "18000",
+                    "detail_address": "新增揽件地址11",
+                    "lat": null,
+                    "lng": null,
+                    "phone": "14298765432",
+                    "src_name": "新增11",
+                    "store_id": null,
+                    "store_name": null,
+                    "store_manager_id": null,
+                    "store_manager_email": null,
+                    "ntc_enabled": null
+                },
+                {
+                    "id": "5ef84471d57a3b14c36a5369",
+                    "warehouse_no": "10",
+                    "ka_id": "AA0536",
+                    "ka_info_id": "AA0536",
+                    "name": "yxf10",
+                    "country_name": "Thailand",
+                    "country_code": "TH",
+                    "province_name": "สิงห์บุรี",
+                    "province_code": "TH08",
+                    "city_name": "เมืองสิงห์บุรี",
+                    "city_code": "TH0801",
+                    "district_name": "บางพุทรา",
+                    "district_code": "TH080101",
+                    "opened": null,
+                    "postal_code": "16000",
+                    "detail_address": "新增揽件地址10",
+                    "lat": null,
+                    "lng": null,
+                    "phone": "14198765432",
+                    "src_name": "新增10",
+                    "store_id": null,
+                    "store_name": null,
+                    "store_manager_id": null,
+                    "store_manager_email": null,
+                    "ntc_enabled": null
+                },
+                {
+                    "id": "5ef84448d57a3b14c36a5368",
+                    "warehouse_no": "9",
+                    "ka_id": "AA0536",
+                    "ka_info_id": "AA0536",
+                    "name": "yxf9",
+                    "country_name": "Thailand",
+                    "country_code": "TH",
+                    "province_name": "สิงห์บุรี",
+                    "province_code": "TH08",
+                    "city_name": "เมืองสิงห์บุรี",
+                    "city_code": "TH0801",
+                    "district_name": "บางพุทรา",
+                    "district_code": "TH080101",
+                    "opened": null,
+                    "postal_code": "16000",
+                    "detail_address": "新增揽件地址9",
+                    "lat": null,
+                    "lng": null,
+                    "phone": "14013264598",
+                    "src_name": "新增9",
+                    "store_id": null,
+                    "store_name": null,
+                    "store_manager_id": null,
+                    "store_manager_email": null,
+                    "ntc_enabled": null
+                },
+                {
+                    "id": "5ef84419d57a3b14c36a5367",
+                    "warehouse_no": "8",
+                    "ka_id": "AA0536",
+                    "ka_info_id": "AA0536",
+                    "name": "yxf8",
+                    "country_name": "Thailand",
+                    "country_code": "TH",
+                    "province_name": "ลพบุรี",
+                    "province_code": "TH07",
+                    "city_name": "เมืองลพบุรี",
+                    "city_code": "TH0701",
+                    "district_name": "ทะเลชุบศร",
+                    "district_code": "TH070101",
+                    "opened": null,
+                    "postal_code": "15000",
+                    "detail_address": "新增揽件地址8",
+                    "lat": null,
+                    "lng": null,
+                    "phone": "13998765432",
+                    "src_name": "新增8",
+                    "store_id": null,
+                    "store_name": null,
+                    "store_manager_id": null,
+                    "store_manager_email": null,
+                    "ntc_enabled": null
+                },
+                {
+                    "id": "5ef843f4d57a3b14c36a5366",
+                    "warehouse_no": "7",
+                    "ka_id": "AA0536",
+                    "ka_info_id": "AA0536",
+                    "name": "yxf7",
+                    "country_name": "Thailand",
+                    "country_code": "TH",
+                    "province_name": "อ่างทอง",
+                    "province_code": "TH06",
+                    "city_name": "เมืองอ่างทอง",
+                    "city_code": "TH0601",
+                    "district_name": "ตลาดหลวง",
+                    "district_code": "TH060101",
+                    "opened": null,
+                    "postal_code": "14000",
+                    "detail_address": "新增揽件地址7",
+                    "lat": null,
+                    "lng": null,
+                    "phone": "13898765432",
+                    "src_name": "新增7",
+                    "store_id": null,
+                    "store_name": null,
+                    "store_manager_id": null,
+                    "store_manager_email": null,
+                    "ntc_enabled": null
+                },
+                {
+                    "id": "5ef843b5d57a3b14c36a5365",
+                    "warehouse_no": "6",
+                    "ka_id": "AA0536",
+                    "ka_info_id": "AA0536",
+                    "name": "yxf6",
+                    "country_name": "Thailand",
+                    "country_code": "TH",
+                    "province_name": "พระนครศรีอยุธยา",
+                    "province_code": "TH05",
+                    "city_name": "พระนครศรีอยุธยา",
+                    "city_code": "TH0501",
+                    "district_name": "ประตูชัย",
+                    "district_code": "TH050101",
+                    "opened": null,
+                    "postal_code": "13000",
+                    "detail_address": "新增揽件地址6",
+                    "lat": null,
+                    "lng": null,
+                    "phone": "13798765432",
+                    "src_name": "王武",
+                    "store_id": null,
+                    "store_name": null,
+                    "store_manager_id": null,
+                    "store_manager_email": null,
+                    "ntc_enabled": null
+                },
+                {
+                    "id": "5ef84386d57a3b14c36a5364",
+                    "warehouse_no": "5",
+                    "ka_id": "AA0536",
+                    "ka_info_id": "AA0536",
+                    "name": "yxf5",
+                    "country_name": "Thailand",
+                    "country_code": "TH",
+                    "province_name": "ปทุมธานี",
+                    "province_code": "TH04",
+                    "city_name": "เมืองปทุมธานี",
+                    "city_code": "TH0401",
+                    "district_name": "บางปรอก",
+                    "district_code": "TH040101",
+                    "opened": null,
+                    "postal_code": "12000",
+                    "detail_address": "新增揽件地址5",
+                    "lat": null,
+                    "lng": null,
+                    "phone": "13698765432",
+                    "src_name": "上三",
+                    "store_id": null,
+                    "store_name": null,
+                    "store_manager_id": null,
+                    "store_manager_email": null,
+                    "ntc_enabled": null
+                },
+                {
+                    "id": "5ef84354d57a3b14c36a5363",
+                    "warehouse_no": "4",
+                    "ka_id": "AA0536",
+                    "ka_info_id": "AA0536",
+                    "name": "yxf4",
+                    "country_name": "Thailand",
+                    "country_code": "TH",
+                    "province_name": "นนทบุรี",
+                    "province_code": "TH03",
+                    "city_name": "เมืองนนทบุรี",
+                    "city_code": "TH0301",
+                    "district_name": "สวนใหญ่",
+                    "district_code": "TH030101",
+                    "opened": null,
+                    "postal_code": "11000",
+                    "detail_address": "新增揽件地址4",
+                    "lat": null,
+                    "lng": null,
+                    "phone": "13598765432",
+                    "src_name": "莉丝",
+                    "store_id": null,
+                    "store_name": null,
+                    "store_manager_id": null,
+                    "store_manager_email": null,
+                    "ntc_enabled": null
+                },
+                {
+                    "id": "5ef80fdcd57a3b14c36a5354",
+                    "warehouse_no": "3",
+                    "ka_id": "AA0536",
+                    "ka_info_id": "AA0536",
+                    "name": "yxf3",
+                    "country_name": "Thailand",
+                    "country_code": "TH",
+                    "province_name": "สระบุรี",
+                    "province_code": "TH10",
+                    "city_name": "เมืองสระบุรี",
+                    "city_code": "TH1001",
+                    "district_name": "ปากเพรียว",
+                    "district_code": "TH100101",
+                    "opened": null,
+                    "postal_code": "18000",
+                    "detail_address": "新增揽件地址",
+                    "lat": null,
+                    "lng": null,
+                    "phone": "1701234567",
+                    "src_name": "张三",
+                    "store_id": null,
+                    "store_name": null,
+                    "store_manager_id": null,
+                    "store_manager_email": null,
+                    "ntc_enabled": null
+                }
+            ]
+        }
+    ],
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The message schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "array",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "id": "5ef8449ed57a3b14c36a536a",
+                        "warehouse_no": "11",
+                        "ka_id": "AA0536",
+                        "ka_info_id": "AA0536",
+                        "name": "yxf11",
+                        "country_name": "Thailand",
+                        "country_code": "TH",
+                        "province_name": "สระบุรี",
+                        "province_code": "TH10",
+                        "city_name": "เมืองสระบุรี",
+                        "city_code": "TH1001",
+                        "district_name": "ปากเพรียว",
+                        "district_code": "TH100101",
+                        "opened": null,
+                        "postal_code": "18000",
+                        "detail_address": "新增揽件地址11",
+                        "lat": null,
+                        "lng": null,
+                        "phone": "14298765432",
+                        "src_name": "新增11",
+                        "store_id": null,
+                        "store_name": null,
+                        "store_manager_id": null,
+                        "store_manager_email": null,
+                        "ntc_enabled": null
+                    },
+                    {
+                        "id": "5ef84471d57a3b14c36a5369",
+                        "warehouse_no": "10",
+                        "ka_id": "AA0536",
+                        "ka_info_id": "AA0536",
+                        "name": "yxf10",
+                        "country_name": "Thailand",
+                        "country_code": "TH",
+                        "province_name": "สิงห์บุรี",
+                        "province_code": "TH08",
+                        "city_name": "เมืองสิงห์บุรี",
+                        "city_code": "TH0801",
+                        "district_name": "บางพุทรา",
+                        "district_code": "TH080101",
+                        "opened": null,
+                        "postal_code": "16000",
+                        "detail_address": "新增揽件地址10",
+                        "lat": null,
+                        "lng": null,
+                        "phone": "14198765432",
+                        "src_name": "新增10",
+                        "store_id": null,
+                        "store_name": null,
+                        "store_manager_id": null,
+                        "store_manager_email": null,
+                        "ntc_enabled": null
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "anyOf": [
+                    {
+                        "$id": "#/properties/data/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "id": "5ef8449ed57a3b14c36a536a",
+                                "warehouse_no": "11",
+                                "ka_id": "AA0536",
+                                "ka_info_id": "AA0536",
+                                "name": "yxf11",
+                                "country_name": "Thailand",
+                                "country_code": "TH",
+                                "province_name": "สระบุรี",
+                                "province_code": "TH10",
+                                "city_name": "เมืองสระบุรี",
+                                "city_code": "TH1001",
+                                "district_name": "ปากเพรียว",
+                                "district_code": "TH100101",
+                                "opened": null,
+                                "postal_code": "18000",
+                                "detail_address": "新增揽件地址11",
+                                "lat": null,
+                                "lng": null,
+                                "phone": "14298765432",
+                                "src_name": "新增11",
+                                "store_id": null,
+                                "store_name": null,
+                                "store_manager_id": null,
+                                "store_manager_email": null,
+                                "ntc_enabled": null
+                            }
+                        ],
+                        "required": [
+                            "id",
+                            "warehouse_no",
+                            "ka_id",
+                            "ka_info_id",
+                            "name",
+                            "country_name",
+                            "country_code",
+                            "province_name",
+                            "province_code",
+                            "city_name",
+                            "city_code",
+                            "district_name",
+                            "district_code",
+                            "opened",
+                            "postal_code",
+                            "detail_address",
+                            "lat",
+                            "lng",
+                            "phone",
+                            "src_name",
+                            "store_id",
+                            "store_name",
+                            "store_manager_id",
+                            "store_manager_email",
+                            "ntc_enabled"
+                        ],
+                        "additionalProperties": true,
+                        "properties": {
+                            "id": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/id",
+                                "type": "string",
+                                "title": "The id schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "5ef8449ed57a3b14c36a536a"
+                                ]
+                            },
+                            "warehouse_no": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/warehouse_no",
+                                "type": "string",
+                                "title": "The warehouse_no schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "11"
+                                ]
+                            },
+                            "ka_id": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/ka_id",
+                                "type": "string",
+                                "title": "The ka_id schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "AA0536"
+                                ]
+                            },
+                            "ka_info_id": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/ka_info_id",
+                                "type": "string",
+                                "title": "The ka_info_id schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "AA0536"
+                                ]
+                            },
+                            "name": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/name",
+                                "type": "string",
+                                "title": "The name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "yxf11"
+                                ]
+                            },
+                            "country_name": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/country_name",
+                                "type": "string",
+                                "title": "The country_name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Thailand"
+                                ]
+                            },
+                            "country_code": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/country_code",
+                                "type": "string",
+                                "title": "The country_code schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "TH"
+                                ]
+                            },
+                            "province_name": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/province_name",
+                                "type": "string",
+                                "title": "The province_name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "สระบุรี"
+                                ]
+                            },
+                            "province_code": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/province_code",
+                                "type": "string",
+                                "title": "The province_code schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "TH10"
+                                ]
+                            },
+                            "city_name": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/city_name",
+                                "type": "string",
+                                "title": "The city_name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "เมืองสระบุรี"
+                                ]
+                            },
+                            "city_code": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/city_code",
+                                "type": "string",
+                                "title": "The city_code schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "TH1001"
+                                ]
+                            },
+                            "district_name": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/district_name",
+                                "type": "string",
+                                "title": "The district_name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "ปากเพรียว"
+                                ]
+                            },
+                            "district_code": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/district_code",
+                                "type": "string",
+                                "title": "The district_code schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "TH100101"
+                                ]
+                            },
+                            "opened": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/opened",
+                                "type": "null",
+                                "title": "The opened schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "postal_code": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/postal_code",
+                                "type": "string",
+                                "title": "The postal_code schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "18000"
+                                ]
+                            },
+                            "detail_address": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/detail_address",
+                                "type": "string",
+                                "title": "The detail_address schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "新增揽件地址11"
+                                ]
+                            },
+                            "lat": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/lat",
+                                "type": "null",
+                                "title": "The lat schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "lng": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/lng",
+                                "type": "null",
+                                "title": "The lng schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "phone": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/phone",
+                                "type": "string",
+                                "title": "The phone schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "14298765432"
+                                ]
+                            },
+                            "src_name": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/src_name",
+                                "type": "string",
+                                "title": "The src_name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "新增11"
+                                ]
+                            },
+                            "store_id": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/store_id",
+                                "type": "null",
+                                "title": "The store_id schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "store_name": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/store_name",
+                                "type": "null",
+                                "title": "The store_name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "store_manager_id": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/store_manager_id",
+                                "type": "null",
+                                "title": "The store_manager_id schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "store_manager_email": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/store_manager_email",
+                                "type": "null",
+                                "title": "The store_manager_email schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "ntc_enabled": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/ntc_enabled",
+                                "type": "null",
+                                "title": "The ntc_enabled schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "$id": "#/properties/data/items"
+            }
+        }
+    }
+}

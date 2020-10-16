@@ -1,5 +1,4 @@
 import requests
-
 from test_requests.test_wework.api.base_api import BaseApi
 from test_requests.test_wework.api.wework import WeWork
 

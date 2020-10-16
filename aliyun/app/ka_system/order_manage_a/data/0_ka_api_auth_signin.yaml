@@ -1,0 +1,45 @@
+host: ka_system_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: /ka/api/auth/signin
+headers:
+  0:
+    content-type: application/json;charset=UTF-8
+    Accept-Language: zh-CN
+  1:
+    content-type: application/json;charset=UTF-8
+    Accept-Language: en
+  2:
+    content-type: application/json;charset=UTF-8
+    Accept-Language: th
+
+
+success:
+  parameter:
+    0:
+      login: $[config]ka_a_account$
+      password: $[config]ka_a_pwd$
+
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+
+  relevance:
+    - '["data"]["session_id"]'
+
+error:
+  parameter: {}
+  check: {}

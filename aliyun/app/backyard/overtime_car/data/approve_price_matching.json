@@ -1,0 +1,34 @@
+{
+    "car_type": $backyard_overtime_car_ms_api_fleet_line_approve_0_0_["data"]["car_type"]$,
+    "single_line": 1,
+    "line_timetable_dtolist": [
+        {
+            "order_no": 1,
+            "store_id": '$approve_1382_4W_["data"]["start_store"]$',
+            "estimate_end_time": "710",
+            "estimate_start_time": "770"
+        },
+        {
+            "order_no": 2,
+            "store_id": '$approve_1382_4W_["data"]["end_store"]$',
+            "estimate_start_time": "",
+            "estimate_end_time": "830"
+        }
+    ],
+    "line_back_timetable_dtolist": [
+        {
+            "order_no": 1,
+            "store_id": '$approve_1382_4W_["data"]["end_store"]$',
+            "estimate_end_time": "",
+            "estimate_start_time": "",
+            "running_mileage": ""
+        },
+        {
+            "order_no": 2,
+            "store_id": '$approve_1382_4W_["data"]["start_store"]$',
+            "running_mileage": "",
+            "estimate_start_time": "",
+            "estimate_end_time": ""
+        }
+    ]
+}

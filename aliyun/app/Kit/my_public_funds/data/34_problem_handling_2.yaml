@@ -1,0 +1,54 @@
+host: ms_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: ms/api/store/diff_tickets/$ms_store_diff_tickets_#headers#_0_["data"]["items"][0]["id"]$/dispose
+
+headers:
+  0:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: zh-CN
+    X-MS-SESSION-ID: $ms_auth_signin_1_0_0_["data"]["session_id"]$
+  1:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: en-US
+    X-MS-SESSION-ID: $ms_auth_signin_1_1_0_["data"]["session_id"]$
+
+  2:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: th-TN
+    X-MS-SESSION-ID: $ms_auth_signin_1_2_0_["data"]["session_id"]$
+
+success:
+  parameter:
+    0:
+      weight: 1100
+      oprate_result_category: 1
+      remark: ""
+      settlement_type: 2
+      length: ""
+      width: ""
+      height: ""
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+# #schema校验 注：路径存储是当前目录的
+#    json_schema: "34_problem_handling_2.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

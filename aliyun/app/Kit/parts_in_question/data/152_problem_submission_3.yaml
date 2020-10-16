@@ -1,0 +1,55 @@
+host: kit_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: api/courier/v1/parcels/$kit_pickups_parcel_0_#headers#_0_["data"]["parcel_info"]["pno"]$/problem_submission
+
+headers:
+  0:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: zh-CN
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_1_0_0_["data"]["sessionid"]$
+  1:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: en-US
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_1_1_0_["data"]["sessionid"]$
+
+  2:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: th-TN
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_1_2_0_["data"]["sessionid"]$
+
+success:
+  parameter:
+#####收件人拒收---需要kit打电话
+#####COD金额不正确----需要kit打电话
+###收件人号码错误----需要kit打电话
+#收件人/地址不清晰或不正确---需要kit打电话
+    0:
+      difficulty_marker_category: 17
+      image_keys:
+         - $kit_v1_parcels_#headers#_0_["data"]["object_key"]$
+      remark: "收件人拒收"
+      rejection_category: $[python]random.randint(1,2)$  #1 未购买商品  2商品不满意
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+##schema校验 注：路径存储是当前目录的
+#    json_schema: "28_problem_submission_3.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

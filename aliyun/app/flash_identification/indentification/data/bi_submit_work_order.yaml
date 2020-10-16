@@ -1,0 +1,42 @@
+host: fbi_host_domain
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+
+  0: parcelloseapi/workorder?$test_1_1_iframe_0$&$test_1_1_iframe_2$&$test_1_1_iframe_3$&$test_1_1_iframe_1$&pno=$bi_qery_list_pno$&task_id=$bi_qery_list_task_id$&store_id[0]=TH05020201&store_id[1]=&manger_id[0]=7&manger_id[1]=&order_type=8&workorder_title=自动化测试包裹丢失&workorder_content=自动化测试包裹丢失自动化测试包裹丢失自动化测试包裹丢失&speed_level=1
+headers:
+  0:
+    Accept: application/json, text/plain, */*
+    Accept-Encoding: gzip, deflate
+    Accept-Language: zh-CN
+    BI-PLATFORM:
+    Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+    Cookie: $indentifi_bi_usr_PHPSESSID$
+
+
+#    Content-Type: "application/json"
+#    Accept-Language: zh-CN
+
+success:
+  parameter: {}
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "msg"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+#    json_schema: "login.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

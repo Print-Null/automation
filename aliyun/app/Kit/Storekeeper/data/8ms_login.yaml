@@ -1,0 +1,41 @@
+host: ms_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address: ms/api/auth/signin
+headers:
+  0:
+    Accept-Language: zh-CN
+    Content-Type: application/json
+  1:
+    Accept-Language: en-US
+    Content-Type: application/json
+  2:
+    Accept-Language: th-CN
+    Content-Type: application/json
+success:
+  parameter:
+    0:
+      login: '$[config]ms_login_user$'
+      password: '$[config]ms_login_pwd$'
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    json_schema: "8ms_login.json"
+  relevance:
+    - '["data"]["session_id"]'
+
+
+
+error:
+  parameter: {}
+  check: {}

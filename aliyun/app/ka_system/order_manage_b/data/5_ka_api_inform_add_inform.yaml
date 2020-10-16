@@ -1,0 +1,50 @@
+host: ka_system_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: /ka/api/inform/add_inform
+headers:
+  0:
+    content-type: application/json;charset=UTF-8
+    Accept-Language: zh-CN
+    X-KA-SESSION-ID: $ka_api_auth_signin_0_0_0_["data"]["session_id"]$
+#  1:
+#    content-type: application/json;charset=UTF-8
+#    Accept-Language: en
+#    X-KA-SESSION-ID: $ka_api_auth_signin_0_0_0_["data"]["session_id"]$
+#  2:
+#    content-type: application/json;charset=UTF-8
+#    Accept-Language: th
+#    X-KA-SESSION-ID: $ka_api_auth_signin_0_0_0_["data"]["session_id"]$
+
+success:
+  parameter:
+    0:
+      ka_warehouse_id: $[config]warehouse_id$
+      remark: $[python]random.choice(["带胶带","易碎品","包裹很多/体积很大，需要四轮车来取货","带文件袋","带包装箱","上门前联系","需要爬楼"])$
+      estimate_volume: null
+      estimate_parcel_number: $[python]random.randint(1,10000)$
+
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+
+  relevance:
+    - '["data"]["staff_info_id"]'
+    - '["data"]["pickup_id"]'
+
+error:
+  parameter: {}
+  check: {}

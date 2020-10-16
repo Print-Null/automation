@@ -1,0 +1,857 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "code": 1,
+            "message": "success",
+            "data": {
+                "items": [
+                    {
+                        "id": "5f1e78fc2d738a75d74e0d8f",
+                        "pno": "TH01011NFZ4A",
+                        "parcel_info_state": 6,
+                        "client_id": "CA1100",
+                        "customer_type_category": 2,
+                        "service_type": null,
+                        "diff_info_id": "5f1e78fc2d738a75d74e0d8e",
+                        "diff_marker_category": 29,
+                        "diff_marker_category_text": "收件人电话号码是空号",
+                        "rejection_category": null,
+                        "rejection_category_text": null,
+                        "insured": false,
+                        "insure_declare_value": 0,
+                        "insure_declare_desc": null,
+                        "state": 0,
+                        "state_text": "未处理",
+                        "first_operated_long_text": null,
+                        "created_at": 1595832561.0,
+                        "first_operated_at": null,
+                        "first_operator_id": null,
+                        "first_operator_name": null,
+                        "last_operated_at": null,
+                        "elapse_no_operate_long_text": "22m",
+                        "operator_id": null,
+                        "operator_name": null,
+                        "requster_id": "22751",
+                        "requster_name": "yr-仓管员",
+                        "organization_id": "TH03030302",
+                        "organization_name": "U-Projectsunshine收派件网点",
+                        "organization_type": 1,
+                        "dst_store_id": "TH01010102",
+                        "dst_store_name": "zhao=DC",
+                        "ticket_pickup_store_id": "TH03030302",
+                        "ticket_pickup_store_name": "U-Projectsunshine收派件网点",
+                        "pickup_at": 1595831573.0,
+                        "pick_up_to_date_days": "1",
+                        "remark": null,
+                        "finance_diff_state": null,
+                        "finance_diff_state_text": null,
+                        "out_trade_no": null,
+                        "submit_store_id": "TH03030302",
+                        "submit_store_name": "U-Projectsunshine收派件网点",
+                        "submit_store_text": "(TH03030302)U-Projectsunshine收派件网点",
+                        "parcel_note": null,
+                        "count_down": "9h 48m",
+                        "count_down_category": 2
+                    }
+                ],
+                "pagination": {
+                    "current_page": 1,
+                    "per_page": 20,
+                    "total_count": 1
+                }
+            }
+        }
+    ],
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The message schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "items": [
+                        {
+                            "id": "5f1e78fc2d738a75d74e0d8f",
+                            "pno": "TH01011NFZ4A",
+                            "parcel_info_state": 6,
+                            "client_id": "CA1100",
+                            "customer_type_category": 2,
+                            "service_type": null,
+                            "diff_info_id": "5f1e78fc2d738a75d74e0d8e",
+                            "diff_marker_category": 29,
+                            "diff_marker_category_text": "收件人电话号码是空号",
+                            "rejection_category": null,
+                            "rejection_category_text": null,
+                            "insured": false,
+                            "insure_declare_value": 0,
+                            "insure_declare_desc": null,
+                            "state": 0,
+                            "state_text": "未处理",
+                            "first_operated_long_text": null,
+                            "created_at": 1595832561.0,
+                            "first_operated_at": null,
+                            "first_operator_id": null,
+                            "first_operator_name": null,
+                            "last_operated_at": null,
+                            "elapse_no_operate_long_text": "22m",
+                            "operator_id": null,
+                            "operator_name": null,
+                            "requster_id": "22751",
+                            "requster_name": "yr-仓管员",
+                            "organization_id": "TH03030302",
+                            "organization_name": "U-Projectsunshine收派件网点",
+                            "organization_type": 1,
+                            "dst_store_id": "TH01010102",
+                            "dst_store_name": "zhao=DC",
+                            "ticket_pickup_store_id": "TH03030302",
+                            "ticket_pickup_store_name": "U-Projectsunshine收派件网点",
+                            "pickup_at": 1595831573.0,
+                            "pick_up_to_date_days": "1",
+                            "remark": null,
+                            "finance_diff_state": null,
+                            "finance_diff_state_text": null,
+                            "out_trade_no": null,
+                            "submit_store_id": "TH03030302",
+                            "submit_store_name": "U-Projectsunshine收派件网点",
+                            "submit_store_text": "(TH03030302)U-Projectsunshine收派件网点",
+                            "parcel_note": null,
+                            "count_down": "9h 48m",
+                            "count_down_category": 2
+                        }
+                    ],
+                    "pagination": {
+                        "current_page": 1,
+                        "per_page": 20,
+                        "total_count": 1
+                    }
+                }
+            ],
+            "required": [
+                "items",
+                "pagination"
+            ],
+            "properties": {
+                "items": {
+                    "$id": "#/properties/data/properties/items",
+                    "type": "array",
+                    "title": "The items schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "id": "5f1e78fc2d738a75d74e0d8f",
+                                "pno": "TH01011NFZ4A",
+                                "parcel_info_state": 6,
+                                "client_id": "CA1100",
+                                "customer_type_category": 2,
+                                "service_type": null,
+                                "diff_info_id": "5f1e78fc2d738a75d74e0d8e",
+                                "diff_marker_category": 29,
+                                "diff_marker_category_text": "收件人电话号码是空号",
+                                "rejection_category": null,
+                                "rejection_category_text": null,
+                                "insured": false,
+                                "insure_declare_value": 0,
+                                "insure_declare_desc": null,
+                                "state": 0,
+                                "state_text": "未处理",
+                                "first_operated_long_text": null,
+                                "created_at": 1595832561.0,
+                                "first_operated_at": null,
+                                "first_operator_id": null,
+                                "first_operator_name": null,
+                                "last_operated_at": null,
+                                "elapse_no_operate_long_text": "22m",
+                                "operator_id": null,
+                                "operator_name": null,
+                                "requster_id": "22751",
+                                "requster_name": "yr-仓管员",
+                                "organization_id": "TH03030302",
+                                "organization_name": "U-Projectsunshine收派件网点",
+                                "organization_type": 1,
+                                "dst_store_id": "TH01010102",
+                                "dst_store_name": "zhao=DC",
+                                "ticket_pickup_store_id": "TH03030302",
+                                "ticket_pickup_store_name": "U-Projectsunshine收派件网点",
+                                "pickup_at": 1595831573.0,
+                                "pick_up_to_date_days": "1",
+                                "remark": null,
+                                "finance_diff_state": null,
+                                "finance_diff_state_text": null,
+                                "out_trade_no": null,
+                                "submit_store_id": "TH03030302",
+                                "submit_store_name": "U-Projectsunshine收派件网点",
+                                "submit_store_text": "(TH03030302)U-Projectsunshine收派件网点",
+                                "parcel_note": null,
+                                "count_down": "9h 48m",
+                                "count_down_category": 2
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/data/properties/items/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/data/properties/items/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "id": "5f1e78fc2d738a75d74e0d8f",
+                                        "pno": "TH01011NFZ4A",
+                                        "parcel_info_state": 6,
+                                        "client_id": "CA1100",
+                                        "customer_type_category": 2,
+                                        "service_type": null,
+                                        "diff_info_id": "5f1e78fc2d738a75d74e0d8e",
+                                        "diff_marker_category": 29,
+                                        "diff_marker_category_text": "收件人电话号码是空号",
+                                        "rejection_category": null,
+                                        "rejection_category_text": null,
+                                        "insured": false,
+                                        "insure_declare_value": 0,
+                                        "insure_declare_desc": null,
+                                        "state": 0,
+                                        "state_text": "未处理",
+                                        "first_operated_long_text": null,
+                                        "created_at": 1595832561.0,
+                                        "first_operated_at": null,
+                                        "first_operator_id": null,
+                                        "first_operator_name": null,
+                                        "last_operated_at": null,
+                                        "elapse_no_operate_long_text": "22m",
+                                        "operator_id": null,
+                                        "operator_name": null,
+                                        "requster_id": "22751",
+                                        "requster_name": "yr-仓管员",
+                                        "organization_id": "TH03030302",
+                                        "organization_name": "U-Projectsunshine收派件网点",
+                                        "organization_type": 1,
+                                        "dst_store_id": "TH01010102",
+                                        "dst_store_name": "zhao=DC",
+                                        "ticket_pickup_store_id": "TH03030302",
+                                        "ticket_pickup_store_name": "U-Projectsunshine收派件网点",
+                                        "pickup_at": 1595831573.0,
+                                        "pick_up_to_date_days": "1",
+                                        "remark": null,
+                                        "finance_diff_state": null,
+                                        "finance_diff_state_text": null,
+                                        "out_trade_no": null,
+                                        "submit_store_id": "TH03030302",
+                                        "submit_store_name": "U-Projectsunshine收派件网点",
+                                        "submit_store_text": "(TH03030302)U-Projectsunshine收派件网点",
+                                        "parcel_note": null,
+                                        "count_down": "9h 48m",
+                                        "count_down_category": 2
+                                    }
+                                ],
+                                "required": [
+                                    "id",
+                                    "pno",
+                                    "parcel_info_state",
+                                    "client_id",
+                                    "customer_type_category",
+                                    "service_type",
+                                    "diff_info_id",
+                                    "diff_marker_category",
+                                    "diff_marker_category_text",
+                                    "rejection_category",
+                                    "rejection_category_text",
+                                    "insured",
+                                    "insure_declare_value",
+                                    "insure_declare_desc",
+                                    "state",
+                                    "state_text",
+                                    "first_operated_long_text",
+                                    "created_at",
+                                    "first_operated_at",
+                                    "first_operator_id",
+                                    "first_operator_name",
+                                    "last_operated_at",
+                                    "elapse_no_operate_long_text",
+                                    "operator_id",
+                                    "operator_name",
+                                    "requster_id",
+                                    "requster_name",
+                                    "organization_id",
+                                    "organization_name",
+                                    "organization_type",
+                                    "dst_store_id",
+                                    "dst_store_name",
+                                    "ticket_pickup_store_id",
+                                    "ticket_pickup_store_name",
+                                    "pickup_at",
+                                    "pick_up_to_date_days",
+                                    "remark",
+                                    "finance_diff_state",
+                                    "finance_diff_state_text",
+                                    "out_trade_no",
+                                    "submit_store_id",
+                                    "submit_store_name",
+                                    "submit_store_text",
+                                    "parcel_note",
+                                    "count_down",
+                                    "count_down_category"
+                                ],
+                                "properties": {
+                                    "id": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/id",
+                                        "type": "string",
+                                        "title": "The id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "5f1e78fc2d738a75d74e0d8f"
+                                        ]
+                                    },
+                                    "pno": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/pno",
+                                        "type": "string",
+                                        "title": "The pno schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH01011NFZ4A"
+                                        ]
+                                    },
+                                    "parcel_info_state": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/parcel_info_state",
+                                        "type": "integer",
+                                        "title": "The parcel_info_state schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            6
+                                        ]
+                                    },
+                                    "client_id": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/client_id",
+                                        "type": "string",
+                                        "title": "The client_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "CA1100"
+                                        ]
+                                    },
+                                    "customer_type_category": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/customer_type_category",
+                                        "type": "integer",
+                                        "title": "The customer_type_category schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            2
+                                        ]
+                                    },
+                                    "service_type": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/service_type",
+                                        "type": "null",
+                                        "title": "The service_type schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "diff_info_id": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/diff_info_id",
+                                        "type": "string",
+                                        "title": "The diff_info_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "5f1e78fc2d738a75d74e0d8e"
+                                        ]
+                                    },
+                                    "diff_marker_category": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/diff_marker_category",
+                                        "type": "integer",
+                                        "title": "The diff_marker_category schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            29
+                                        ]
+                                    },
+                                    "diff_marker_category_text": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/diff_marker_category_text",
+                                        "type": "string",
+                                        "title": "The diff_marker_category_text schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "收件人电话号码是空号"
+                                        ]
+                                    },
+                                    "rejection_category": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/rejection_category",
+                                        "type": "null",
+                                        "title": "The rejection_category schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "rejection_category_text": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/rejection_category_text",
+                                        "type": "null",
+                                        "title": "The rejection_category_text schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "insured": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/insured",
+                                        "type": "boolean",
+                                        "title": "The insured schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": false,
+                                        "examples": [
+                                            false
+                                        ]
+                                    },
+                                    "insure_declare_value": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/insure_declare_value",
+                                        "type": "integer",
+                                        "title": "The insure_declare_value schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            0
+                                        ]
+                                    },
+                                    "insure_declare_desc": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/insure_declare_desc",
+                                        "type": "null",
+                                        "title": "The insure_declare_desc schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "state": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/state",
+                                        "type": "integer",
+                                        "title": "The state schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            0
+                                        ]
+                                    },
+                                    "state_text": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/state_text",
+                                        "type": "string",
+                                        "title": "The state_text schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "未处理"
+                                        ]
+                                    },
+                                    "first_operated_long_text": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/first_operated_long_text",
+                                        "type": "null",
+                                        "title": "The first_operated_long_text schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "created_at": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/created_at",
+                                        "type": "number",
+                                        "title": "The created_at schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0.0,
+                                        "examples": [
+                                            1595832561.0
+                                        ]
+                                    },
+                                    "first_operated_at": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/first_operated_at",
+                                        "type": "null",
+                                        "title": "The first_operated_at schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "first_operator_id": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/first_operator_id",
+                                        "type": "null",
+                                        "title": "The first_operator_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "first_operator_name": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/first_operator_name",
+                                        "type": "null",
+                                        "title": "The first_operator_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "last_operated_at": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/last_operated_at",
+                                        "type": "null",
+                                        "title": "The last_operated_at schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "elapse_no_operate_long_text": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/elapse_no_operate_long_text",
+                                        "type": "string",
+                                        "title": "The elapse_no_operate_long_text schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "22m"
+                                        ]
+                                    },
+                                    "operator_id": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/operator_id",
+                                        "type": "null",
+                                        "title": "The operator_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "operator_name": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/operator_name",
+                                        "type": "null",
+                                        "title": "The operator_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "requster_id": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/requster_id",
+                                        "type": "string",
+                                        "title": "The requster_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "22751"
+                                        ]
+                                    },
+                                    "requster_name": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/requster_name",
+                                        "type": "string",
+                                        "title": "The requster_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "yr-仓管员"
+                                        ]
+                                    },
+                                    "organization_id": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/organization_id",
+                                        "type": "string",
+                                        "title": "The organization_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH03030302"
+                                        ]
+                                    },
+                                    "organization_name": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/organization_name",
+                                        "type": "string",
+                                        "title": "The organization_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "U-Projectsunshine收派件网点"
+                                        ]
+                                    },
+                                    "organization_type": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/organization_type",
+                                        "type": "integer",
+                                        "title": "The organization_type schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            1
+                                        ]
+                                    },
+                                    "dst_store_id": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/dst_store_id",
+                                        "type": "string",
+                                        "title": "The dst_store_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH01010102"
+                                        ]
+                                    },
+                                    "dst_store_name": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/dst_store_name",
+                                        "type": "string",
+                                        "title": "The dst_store_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "zhao=DC"
+                                        ]
+                                    },
+                                    "ticket_pickup_store_id": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/ticket_pickup_store_id",
+                                        "type": "string",
+                                        "title": "The ticket_pickup_store_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH03030302"
+                                        ]
+                                    },
+                                    "ticket_pickup_store_name": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/ticket_pickup_store_name",
+                                        "type": "string",
+                                        "title": "The ticket_pickup_store_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "U-Projectsunshine收派件网点"
+                                        ]
+                                    },
+                                    "pickup_at": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/pickup_at",
+                                        "type": "number",
+                                        "title": "The pickup_at schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0.0,
+                                        "examples": [
+                                            1595831573.0
+                                        ]
+                                    },
+                                    "pick_up_to_date_days": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/pick_up_to_date_days",
+                                        "type": "string",
+                                        "title": "The pick_up_to_date_days schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "1"
+                                        ]
+                                    },
+                                    "remark": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/remark",
+                                        "type": "null",
+                                        "title": "The remark schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "finance_diff_state": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/finance_diff_state",
+                                        "type": "null",
+                                        "title": "The finance_diff_state schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "finance_diff_state_text": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/finance_diff_state_text",
+                                        "type": "null",
+                                        "title": "The finance_diff_state_text schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "out_trade_no": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/out_trade_no",
+                                        "type": "null",
+                                        "title": "The out_trade_no schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "submit_store_id": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/submit_store_id",
+                                        "type": "string",
+                                        "title": "The submit_store_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH03030302"
+                                        ]
+                                    },
+                                    "submit_store_name": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/submit_store_name",
+                                        "type": "string",
+                                        "title": "The submit_store_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "U-Projectsunshine收派件网点"
+                                        ]
+                                    },
+                                    "submit_store_text": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/submit_store_text",
+                                        "type": "string",
+                                        "title": "The submit_store_text schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "(TH03030302)U-Projectsunshine收派件网点"
+                                        ]
+                                    },
+                                    "parcel_note": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/parcel_note",
+                                        "type": "null",
+                                        "title": "The parcel_note schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "count_down": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/count_down",
+                                        "type": "string",
+                                        "title": "The count_down schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "9h 48m"
+                                        ]
+                                    },
+                                    "count_down_category": {
+                                        "$id": "#/properties/data/properties/items/items/anyOf/0/properties/count_down_category",
+                                        "type": "integer",
+                                        "title": "The count_down_category schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            2
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                },
+                "pagination": {
+                    "$id": "#/properties/data/properties/pagination",
+                    "type": "object",
+                    "title": "The pagination schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "current_page": 1,
+                            "per_page": 20,
+                            "total_count": 1
+                        }
+                    ],
+                    "required": [
+                        "current_page",
+                        "per_page",
+                        "total_count"
+                    ],
+                    "properties": {
+                        "current_page": {
+                            "$id": "#/properties/data/properties/pagination/properties/current_page",
+                            "type": "integer",
+                            "title": "The current_page schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "per_page": {
+                            "$id": "#/properties/data/properties/pagination/properties/per_page",
+                            "type": "integer",
+                            "title": "The per_page schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                20
+                            ]
+                        },
+                        "total_count": {
+                            "$id": "#/properties/data/properties/pagination/properties/total_count",
+                            "type": "integer",
+                            "title": "The total_count schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

@@ -1,0 +1,1192 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "code": 1,
+            "message": "success",
+            "data": {
+                "invalid_pack_no_flag": null,
+                "pack_no": "P9140",
+                "pack_category": 1,
+                "direction_store_code": "C",
+                "seal_store_id": "TH01510101",
+                "seal_store_name": "网点今日应派",
+                "seal_staff_info_id": 20441,
+                "seal_lat": null,
+                "seal_lng": null,
+                "seal_count": 17,
+                "seal_at": 1596098261.641,
+                "es_unseal_store_id": null,
+                "es_unseal_store_name": null,
+                "unseal_store_id": "TH01510101",
+                "unseal_store_name": "网点今日应派",
+                "unseal_staff_info_id": 20441,
+                "unseal_lat": null,
+                "unseal_lng": null,
+                "unseal_count": 17,
+                "unseal_at": 1596099105.549,
+                "state": 3,
+                "created_at": 1596098260.078,
+                "updated_at": 1596099103.923,
+                "pack_routes": [
+                    {
+                        "id": 2611,
+                        "pack_no": "P9140",
+                        "state": 3,
+                        "country_code": "TH",
+                        "province_code": "TH01",
+                        "city_code": "TH0151",
+                        "district_code": "TH015101",
+                        "store_id": "TH01510101",
+                        "store_category": 5,
+                        "organization_type": 1,
+                        "store_name": "网点今日应派",
+                        "route_action": "UNSEAL",
+                        "route_action_text": "??????????????????????????????",
+                        "routed_at": 1596099105.562,
+                        "next_store_id": null,
+                        "next_store_category": null,
+                        "next_store_name": null,
+                        "staff_info_id": 20441,
+                        "staff_info_name": "333",
+                        "remark": "????????????????: 17",
+                        "extra_value": "{\"parcelCount\":17}",
+                        "created_at": 1596099103.933
+                    },
+                    {
+                        "id": 2610,
+                        "pack_no": "P9140",
+                        "state": 1,
+                        "country_code": "TH",
+                        "province_code": "TH01",
+                        "city_code": "TH0151",
+                        "district_code": "TH015101",
+                        "store_id": "TH01510101",
+                        "store_category": 5,
+                        "organization_type": 1,
+                        "store_name": "网点今日应派",
+                        "route_action": "SEAL",
+                        "route_action_text": "????????",
+                        "routed_at": 1596098261.739,
+                        "next_store_id": null,
+                        "next_store_category": null,
+                        "next_store_name": null,
+                        "staff_info_id": 20441,
+                        "staff_info_name": "333",
+                        "remark": "????????????????: 17",
+                        "extra_value": "{\"parcelCount\":17}",
+                        "created_at": 1596098260.103
+                    }
+                ],
+                "pack_seal_details": [
+                    {
+                        "id": 3866,
+                        "pack_no": "P9140",
+                        "pno": "TH05021NT16A",
+                        "current_pno": "TH05021NT16A",
+                        "abbreviation": "AYU",
+                        "direction_store_code": "C"
+                    },
+                    {
+                        "id": 3873,
+                        "pack_no": "P9140",
+                        "pno": "TH05021NT17A",
+                        "current_pno": "TH05021NT17A",
+                        "abbreviation": "AYU",
+                        "direction_store_code": "C"
+                    },
+                    {
+                        "id": 3871,
+                        "pack_no": "P9140",
+                        "pno": "TH05021NT18A",
+                        "current_pno": "TH05021NT18A",
+                        "abbreviation": "AYU",
+                        "direction_store_code": "C"
+                    },
+                    {
+                        "id": 3870,
+                        "pack_no": "P9140",
+                        "pno": "TH05021NT19A",
+                        "current_pno": "TH05021NT19A",
+                        "abbreviation": "AYU",
+                        "direction_store_code": "C"
+                    },
+                    {
+                        "id": 3864,
+                        "pack_no": "P9140",
+                        "pno": "TH05021NT20A",
+                        "current_pno": "TH05021NT20A",
+                        "abbreviation": "AYU",
+                        "direction_store_code": "C"
+                    },
+                    {
+                        "id": 3862,
+                        "pack_no": "P9140",
+                        "pno": "TH05021NT21A",
+                        "current_pno": "TH05021NT21A",
+                        "abbreviation": "AYU",
+                        "direction_store_code": "C"
+                    },
+                    {
+                        "id": 3860,
+                        "pack_no": "P9140",
+                        "pno": "TH05021NT22A",
+                        "current_pno": "TH05021NT22A",
+                        "abbreviation": "AYU",
+                        "direction_store_code": "C"
+                    },
+                    {
+                        "id": 3859,
+                        "pack_no": "P9140",
+                        "pno": "TH05021NT23A",
+                        "current_pno": "TH05021NT23A",
+                        "abbreviation": "AYU",
+                        "direction_store_code": "C"
+                    },
+                    {
+                        "id": 3869,
+                        "pack_no": "P9140",
+                        "pno": "TH05021NT24A",
+                        "current_pno": "TH05021NT24A",
+                        "abbreviation": "AYU",
+                        "direction_store_code": "C"
+                    },
+                    {
+                        "id": 3868,
+                        "pack_no": "P9140",
+                        "pno": "TH05021NT25A",
+                        "current_pno": "TH05021NT25A",
+                        "abbreviation": "AYU",
+                        "direction_store_code": "C"
+                    },
+                    {
+                        "id": 3867,
+                        "pack_no": "P9140",
+                        "pno": "TH05021NT27A",
+                        "current_pno": "TH05021NT27A",
+                        "abbreviation": "AYU",
+                        "direction_store_code": "C"
+                    },
+                    {
+                        "id": 3874,
+                        "pack_no": "P9140",
+                        "pno": "TH05021NT28A",
+                        "current_pno": "TH05021NT28A",
+                        "abbreviation": "AYU",
+                        "direction_store_code": "C"
+                    },
+                    {
+                        "id": 3872,
+                        "pack_no": "P9140",
+                        "pno": "TH05021NT29A",
+                        "current_pno": "TH05021NT29A",
+                        "abbreviation": "AYU",
+                        "direction_store_code": "C"
+                    },
+                    {
+                        "id": 3858,
+                        "pack_no": "P9140",
+                        "pno": "TH05021NT30A",
+                        "current_pno": "TH05021NT30A",
+                        "abbreviation": "AYU",
+                        "direction_store_code": "C"
+                    },
+                    {
+                        "id": 3865,
+                        "pack_no": "P9140",
+                        "pno": "TH05021NT31A",
+                        "current_pno": "TH05021NT31A",
+                        "abbreviation": "AYU",
+                        "direction_store_code": "C"
+                    },
+                    {
+                        "id": 3863,
+                        "pack_no": "P9140",
+                        "pno": "TH05021NT32A",
+                        "current_pno": "TH05021NT32A",
+                        "abbreviation": "AYU",
+                        "direction_store_code": "C"
+                    },
+                    {
+                        "id": 3861,
+                        "pack_no": "P9140",
+                        "pno": "TH05021NT33A",
+                        "current_pno": "TH05021NT33A",
+                        "abbreviation": "AYU",
+                        "direction_store_code": "C"
+                    }
+                ]
+            }
+        }
+    ],
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The message schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "invalid_pack_no_flag": null,
+                    "pack_no": "P9140",
+                    "pack_category": 1,
+                    "direction_store_code": "C",
+                    "seal_store_id": "TH01510101",
+                    "seal_store_name": "网点今日应派",
+                    "seal_staff_info_id": 20441,
+                    "seal_lat": null,
+                    "seal_lng": null,
+                    "seal_count": 17,
+                    "seal_at": 1596098261.641,
+                    "es_unseal_store_id": null,
+                    "es_unseal_store_name": null,
+                    "unseal_store_id": "TH01510101",
+                    "unseal_store_name": "网点今日应派",
+                    "unseal_staff_info_id": 20441,
+                    "unseal_lat": null,
+                    "unseal_lng": null,
+                    "unseal_count": 17,
+                    "unseal_at": 1596099105.549,
+                    "state": 3,
+                    "created_at": 1596098260.078,
+                    "updated_at": 1596099103.923,
+                    "pack_routes": [
+                        {
+                            "id": 2611,
+                            "pack_no": "P9140",
+                            "state": 3,
+                            "country_code": "TH",
+                            "province_code": "TH01",
+                            "city_code": "TH0151",
+                            "district_code": "TH015101",
+                            "store_id": "TH01510101",
+                            "store_category": 5,
+                            "organization_type": 1,
+                            "store_name": "网点今日应派",
+                            "route_action": "UNSEAL",
+                            "route_action_text": "??????????????????????????????",
+                            "routed_at": 1596099105.562,
+                            "next_store_id": null,
+                            "next_store_category": null,
+                            "next_store_name": null,
+                            "staff_info_id": 20441,
+                            "staff_info_name": "333",
+                            "remark": "????????????????: 17",
+                            "extra_value": "{\"parcelCount\":17}",
+                            "created_at": 1596099103.933
+                        },
+                        {
+                            "id": 2610,
+                            "pack_no": "P9140",
+                            "state": 1,
+                            "country_code": "TH",
+                            "province_code": "TH01",
+                            "city_code": "TH0151",
+                            "district_code": "TH015101",
+                            "store_id": "TH01510101",
+                            "store_category": 5,
+                            "organization_type": 1,
+                            "store_name": "网点今日应派",
+                            "route_action": "SEAL",
+                            "route_action_text": "????????",
+                            "routed_at": 1596098261.739,
+                            "next_store_id": null,
+                            "next_store_category": null,
+                            "next_store_name": null,
+                            "staff_info_id": 20441,
+                            "staff_info_name": "333",
+                            "remark": "????????????????: 17",
+                            "extra_value": "{\"parcelCount\":17}",
+                            "created_at": 1596098260.103
+                        }
+                    ],
+                    "pack_seal_details": [
+                        {
+                            "id": 3866,
+                            "pack_no": "P9140",
+                            "pno": "TH05021NT16A",
+                            "current_pno": "TH05021NT16A",
+                            "abbreviation": "AYU",
+                            "direction_store_code": "C"
+                        },
+                        {
+                            "id": 3873,
+                            "pack_no": "P9140",
+                            "pno": "TH05021NT17A",
+                            "current_pno": "TH05021NT17A",
+                            "abbreviation": "AYU",
+                            "direction_store_code": "C"
+                        },
+                        {
+                            "id": 3871,
+                            "pack_no": "P9140",
+                            "pno": "TH05021NT18A",
+                            "current_pno": "TH05021NT18A",
+                            "abbreviation": "AYU",
+                            "direction_store_code": "C"
+                        },
+                        {
+                            "id": 3870,
+                            "pack_no": "P9140",
+                            "pno": "TH05021NT19A",
+                            "current_pno": "TH05021NT19A",
+                            "abbreviation": "AYU",
+                            "direction_store_code": "C"
+                        },
+                        {
+                            "id": 3864,
+                            "pack_no": "P9140",
+                            "pno": "TH05021NT20A",
+                            "current_pno": "TH05021NT20A",
+                            "abbreviation": "AYU",
+                            "direction_store_code": "C"
+                        },
+                        {
+                            "id": 3862,
+                            "pack_no": "P9140",
+                            "pno": "TH05021NT21A",
+                            "current_pno": "TH05021NT21A",
+                            "abbreviation": "AYU",
+                            "direction_store_code": "C"
+                        },
+                        {
+                            "id": 3860,
+                            "pack_no": "P9140",
+                            "pno": "TH05021NT22A",
+                            "current_pno": "TH05021NT22A",
+                            "abbreviation": "AYU",
+                            "direction_store_code": "C"
+                        },
+                        {
+                            "id": 3859,
+                            "pack_no": "P9140",
+                            "pno": "TH05021NT23A",
+                            "current_pno": "TH05021NT23A",
+                            "abbreviation": "AYU",
+                            "direction_store_code": "C"
+                        },
+                        {
+                            "id": 3869,
+                            "pack_no": "P9140",
+                            "pno": "TH05021NT24A",
+                            "current_pno": "TH05021NT24A",
+                            "abbreviation": "AYU",
+                            "direction_store_code": "C"
+                        },
+                        {
+                            "id": 3868,
+                            "pack_no": "P9140",
+                            "pno": "TH05021NT25A",
+                            "current_pno": "TH05021NT25A",
+                            "abbreviation": "AYU",
+                            "direction_store_code": "C"
+                        },
+                        {
+                            "id": 3867,
+                            "pack_no": "P9140",
+                            "pno": "TH05021NT27A",
+                            "current_pno": "TH05021NT27A",
+                            "abbreviation": "AYU",
+                            "direction_store_code": "C"
+                        },
+                        {
+                            "id": 3874,
+                            "pack_no": "P9140",
+                            "pno": "TH05021NT28A",
+                            "current_pno": "TH05021NT28A",
+                            "abbreviation": "AYU",
+                            "direction_store_code": "C"
+                        },
+                        {
+                            "id": 3872,
+                            "pack_no": "P9140",
+                            "pno": "TH05021NT29A",
+                            "current_pno": "TH05021NT29A",
+                            "abbreviation": "AYU",
+                            "direction_store_code": "C"
+                        },
+                        {
+                            "id": 3858,
+                            "pack_no": "P9140",
+                            "pno": "TH05021NT30A",
+                            "current_pno": "TH05021NT30A",
+                            "abbreviation": "AYU",
+                            "direction_store_code": "C"
+                        },
+                        {
+                            "id": 3865,
+                            "pack_no": "P9140",
+                            "pno": "TH05021NT31A",
+                            "current_pno": "TH05021NT31A",
+                            "abbreviation": "AYU",
+                            "direction_store_code": "C"
+                        },
+                        {
+                            "id": 3863,
+                            "pack_no": "P9140",
+                            "pno": "TH05021NT32A",
+                            "current_pno": "TH05021NT32A",
+                            "abbreviation": "AYU",
+                            "direction_store_code": "C"
+                        },
+                        {
+                            "id": 3861,
+                            "pack_no": "P9140",
+                            "pno": "TH05021NT33A",
+                            "current_pno": "TH05021NT33A",
+                            "abbreviation": "AYU",
+                            "direction_store_code": "C"
+                        }
+                    ]
+                }
+            ],
+            "required": [
+                "pack_no",
+                "pack_category",
+                "direction_store_code",
+                "seal_store_id",
+                "seal_store_name",
+                "seal_staff_info_id",
+                "seal_lat",
+                "seal_lng",
+                "seal_count",
+                "seal_at",
+                "es_unseal_store_id",
+                "es_unseal_store_name",
+                "unseal_store_id",
+                "unseal_store_name",
+                "unseal_staff_info_id",
+                "unseal_lat",
+                "unseal_lng",
+                "unseal_count",
+                "unseal_at",
+                "state",
+                "created_at",
+                "updated_at",
+                "pack_routes",
+                "pack_seal_details"
+            ],
+            "properties": {
+                "pack_no": {
+                    "$id": "#/properties/data/properties/pack_no",
+                    "type": "string",
+                    "title": "The pack_no schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "P9140"
+                    ]
+                },
+                "pack_category": {
+                    "$id": "#/properties/data/properties/pack_category",
+                    "type": "integer",
+                    "title": "The pack_category schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "direction_store_code": {
+                    "$id": "#/properties/data/properties/direction_store_code",
+                    "type": "string",
+                    "title": "The direction_store_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "C"
+                    ]
+                },
+                "seal_store_id": {
+                    "$id": "#/properties/data/properties/seal_store_id",
+                    "type": "string",
+                    "title": "The seal_store_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH01510101"
+                    ]
+                },
+                "seal_store_name": {
+                    "$id": "#/properties/data/properties/seal_store_name",
+                    "type": "string",
+                    "title": "The seal_store_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "网点今日应派"
+                    ]
+                },
+                "seal_staff_info_id": {
+                    "$id": "#/properties/data/properties/seal_staff_info_id",
+                    "type": "integer",
+                    "title": "The seal_staff_info_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        20441
+                    ]
+                },
+                "seal_lat": {
+                    "$id": "#/properties/data/properties/seal_lat",
+                    "type": "null",
+                    "title": "The seal_lat schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "seal_lng": {
+                    "$id": "#/properties/data/properties/seal_lng",
+                    "type": "null",
+                    "title": "The seal_lng schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "seal_count": {
+                    "$id": "#/properties/data/properties/seal_count",
+                    "type": "integer",
+                    "title": "The seal_count schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        17
+                    ]
+                },
+                "seal_at": {
+                    "$id": "#/properties/data/properties/seal_at",
+                    "type": "number",
+                    "title": "The seal_at schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        1596098261.641
+                    ]
+                },
+                "es_unseal_store_id": {
+                    "$id": "#/properties/data/properties/es_unseal_store_id",
+                    "type": "null",
+                    "title": "The es_unseal_store_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "es_unseal_store_name": {
+                    "$id": "#/properties/data/properties/es_unseal_store_name",
+                    "type": "null",
+                    "title": "The es_unseal_store_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "unseal_store_id": {
+                    "$id": "#/properties/data/properties/unseal_store_id",
+                    "type": "string",
+                    "title": "The unseal_store_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH01510101"
+                    ]
+                },
+                "unseal_store_name": {
+                    "$id": "#/properties/data/properties/unseal_store_name",
+                    "type": "string",
+                    "title": "The unseal_store_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "网点今日应派"
+                    ]
+                },
+                "unseal_staff_info_id": {
+                    "$id": "#/properties/data/properties/unseal_staff_info_id",
+                    "type": "integer",
+                    "title": "The unseal_staff_info_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        20441
+                    ]
+                },
+                "unseal_lat": {
+                    "$id": "#/properties/data/properties/unseal_lat",
+                    "type": "null",
+                    "title": "The unseal_lat schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "unseal_lng": {
+                    "$id": "#/properties/data/properties/unseal_lng",
+                    "type": "null",
+                    "title": "The unseal_lng schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "unseal_count": {
+                    "$id": "#/properties/data/properties/unseal_count",
+                    "type": "integer",
+                    "title": "The unseal_count schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        17
+                    ]
+                },
+                "unseal_at": {
+                    "$id": "#/properties/data/properties/unseal_at",
+                    "type": "number",
+                    "title": "The unseal_at schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        1596099105.549
+                    ]
+                },
+                "state": {
+                    "$id": "#/properties/data/properties/state",
+                    "type": "integer",
+                    "title": "The state schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        3
+                    ]
+                },
+                "created_at": {
+                    "$id": "#/properties/data/properties/created_at",
+                    "type": "number",
+                    "title": "The created_at schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        1596098260.078
+                    ]
+                },
+                "updated_at": {
+                    "$id": "#/properties/data/properties/updated_at",
+                    "type": "number",
+                    "title": "The updated_at schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        1596099103.923
+                    ]
+                },
+                "pack_routes": {
+                    "$id": "#/properties/data/properties/pack_routes",
+                    "type": "array",
+                    "title": "The pack_routes schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "id": 2611,
+                                "pack_no": "P9140",
+                                "state": 3,
+                                "country_code": "TH",
+                                "province_code": "TH01",
+                                "city_code": "TH0151",
+                                "district_code": "TH015101",
+                                "store_id": "TH01510101",
+                                "store_category": 5,
+                                "organization_type": 1,
+                                "store_name": "网点今日应派",
+                                "route_action": "UNSEAL",
+                                "route_action_text": "??????????????????????????????",
+                                "routed_at": 1596099105.562,
+                                "next_store_id": null,
+                                "next_store_category": null,
+                                "next_store_name": null,
+                                "staff_info_id": 20441,
+                                "staff_info_name": "333",
+                                "remark": "????????????????: 17",
+                                "extra_value": "{\"parcelCount\":17}",
+                                "created_at": 1596099103.933
+                            },
+                            {
+                                "id": 2610,
+                                "pack_no": "P9140",
+                                "state": 1,
+                                "country_code": "TH",
+                                "province_code": "TH01",
+                                "city_code": "TH0151",
+                                "district_code": "TH015101",
+                                "store_id": "TH01510101",
+                                "store_category": 5,
+                                "organization_type": 1,
+                                "store_name": "网点今日应派",
+                                "route_action": "SEAL",
+                                "route_action_text": "????????",
+                                "routed_at": 1596098261.739,
+                                "next_store_id": null,
+                                "next_store_category": null,
+                                "next_store_name": null,
+                                "staff_info_id": 20441,
+                                "staff_info_name": "333",
+                                "remark": "????????????????: 17",
+                                "extra_value": "{\"parcelCount\":17}",
+                                "created_at": 1596098260.103
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/data/properties/pack_routes/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/data/properties/pack_routes/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "id": 2611,
+                                        "pack_no": "P9140",
+                                        "state": 3,
+                                        "country_code": "TH",
+                                        "province_code": "TH01",
+                                        "city_code": "TH0151",
+                                        "district_code": "TH015101",
+                                        "store_id": "TH01510101",
+                                        "store_category": 5,
+                                        "organization_type": 1,
+                                        "store_name": "网点今日应派",
+                                        "route_action": "UNSEAL",
+                                        "route_action_text": "??????????????????????????????",
+                                        "routed_at": 1596099105.562,
+                                        "next_store_id": null,
+                                        "next_store_category": null,
+                                        "next_store_name": null,
+                                        "staff_info_id": 20441,
+                                        "staff_info_name": "333",
+                                        "remark": "????????????????: 17",
+                                        "extra_value": "{\"parcelCount\":17}",
+                                        "created_at": 1596099103.933
+                                    }
+                                ],
+                                "required": [
+                                    "id",
+                                    "pack_no",
+                                    "state",
+                                    "country_code",
+                                    "province_code",
+                                    "city_code",
+                                    "district_code",
+                                    "store_id",
+                                    "store_category",
+                                    "organization_type",
+                                    "store_name",
+                                    "route_action",
+                                    "route_action_text",
+                                    "routed_at",
+                                    "next_store_id",
+                                    "next_store_category",
+                                    "next_store_name",
+                                    "staff_info_id",
+                                    "staff_info_name",
+                                    "remark",
+                                    "extra_value",
+                                    "created_at"
+                                ],
+                                "properties": {
+                                    "id": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/id",
+                                        "type": "integer",
+                                        "title": "The id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            2611
+                                        ]
+                                    },
+                                    "pack_no": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/pack_no",
+                                        "type": "string",
+                                        "title": "The pack_no schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "P9140"
+                                        ]
+                                    },
+                                    "state": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/state",
+                                        "type": "integer",
+                                        "title": "The state schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            3
+                                        ]
+                                    },
+                                    "country_code": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/country_code",
+                                        "type": "string",
+                                        "title": "The country_code schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH"
+                                        ]
+                                    },
+                                    "province_code": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/province_code",
+                                        "type": "string",
+                                        "title": "The province_code schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH01"
+                                        ]
+                                    },
+                                    "city_code": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/city_code",
+                                        "type": "string",
+                                        "title": "The city_code schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH0151"
+                                        ]
+                                    },
+                                    "district_code": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/district_code",
+                                        "type": "string",
+                                        "title": "The district_code schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH015101"
+                                        ]
+                                    },
+                                    "store_id": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/store_id",
+                                        "type": "string",
+                                        "title": "The store_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH01510101"
+                                        ]
+                                    },
+                                    "store_category": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/store_category",
+                                        "type": "integer",
+                                        "title": "The store_category schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            5
+                                        ]
+                                    },
+                                    "organization_type": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/organization_type",
+                                        "type": "integer",
+                                        "title": "The organization_type schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            1
+                                        ]
+                                    },
+                                    "store_name": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/store_name",
+                                        "type": "string",
+                                        "title": "The store_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "网点今日应派"
+                                        ]
+                                    },
+                                    "route_action": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/route_action",
+                                        "type": "string",
+                                        "title": "The route_action schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "UNSEAL"
+                                        ]
+                                    },
+                                    "route_action_text": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/route_action_text",
+                                        "type": "string",
+                                        "title": "The route_action_text schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "??????????????????????????????"
+                                        ]
+                                    },
+                                    "routed_at": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/routed_at",
+                                        "type": "number",
+                                        "title": "The routed_at schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0.0,
+                                        "examples": [
+                                            1596099105.562
+                                        ]
+                                    },
+                                    "next_store_id": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/next_store_id",
+                                        "type": "null",
+                                        "title": "The next_store_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "next_store_category": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/next_store_category",
+                                        "type": "null",
+                                        "title": "The next_store_category schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "next_store_name": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/next_store_name",
+                                        "type": "null",
+                                        "title": "The next_store_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "staff_info_id": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/staff_info_id",
+                                        "type": "integer",
+                                        "title": "The staff_info_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            20441
+                                        ]
+                                    },
+                                    "staff_info_name": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/staff_info_name",
+                                        "type": "string",
+                                        "title": "The staff_info_name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "333"
+                                        ]
+                                    },
+                                    "remark": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/remark",
+                                        "type": "string",
+                                        "title": "The remark schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "????????????????: 17"
+                                        ]
+                                    },
+                                    "extra_value": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/extra_value",
+                                        "type": "string",
+                                        "title": "The extra_value schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "{\"parcelCount\":17}"
+                                        ]
+                                    },
+                                    "created_at": {
+                                        "$id": "#/properties/data/properties/pack_routes/items/anyOf/0/properties/created_at",
+                                        "type": "number",
+                                        "title": "The created_at schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0.0,
+                                        "examples": [
+                                            1596099103.933
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                },
+                "pack_seal_details": {
+                    "$id": "#/properties/data/properties/pack_seal_details",
+                    "type": "array",
+                    "title": "The pack_seal_details schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "id": 3866,
+                                "pack_no": "P9140",
+                                "pno": "TH05021NT16A",
+                                "current_pno": "TH05021NT16A",
+                                "abbreviation": "AYU",
+                                "direction_store_code": "C"
+                            },
+                            {
+                                "id": 3873,
+                                "pack_no": "P9140",
+                                "pno": "TH05021NT17A",
+                                "current_pno": "TH05021NT17A",
+                                "abbreviation": "AYU",
+                                "direction_store_code": "C"
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/data/properties/pack_seal_details/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/data/properties/pack_seal_details/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "id": 3866,
+                                        "pack_no": "P9140",
+                                        "pno": "TH05021NT16A",
+                                        "current_pno": "TH05021NT16A",
+                                        "abbreviation": "AYU",
+                                        "direction_store_code": "C"
+                                    }
+                                ],
+                                "required": [
+                                    "id",
+                                    "pack_no",
+                                    "pno",
+                                    "current_pno",
+                                    "abbreviation",
+                                    "direction_store_code"
+                                ],
+                                "properties": {
+                                    "id": {
+                                        "$id": "#/properties/data/properties/pack_seal_details/items/anyOf/0/properties/id",
+                                        "type": "integer",
+                                        "title": "The id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            3866
+                                        ]
+                                    },
+                                    "pack_no": {
+                                        "$id": "#/properties/data/properties/pack_seal_details/items/anyOf/0/properties/pack_no",
+                                        "type": "string",
+                                        "title": "The pack_no schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "P9140"
+                                        ]
+                                    },
+                                    "pno": {
+                                        "$id": "#/properties/data/properties/pack_seal_details/items/anyOf/0/properties/pno",
+                                        "type": "string",
+                                        "title": "The pno schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH05021NT16A"
+                                        ]
+                                    },
+                                    "current_pno": {
+                                        "$id": "#/properties/data/properties/pack_seal_details/items/anyOf/0/properties/current_pno",
+                                        "type": "string",
+                                        "title": "The current_pno schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TH05021NT16A"
+                                        ]
+                                    },
+                                    "abbreviation": {
+                                        "$id": "#/properties/data/properties/pack_seal_details/items/anyOf/0/properties/abbreviation",
+                                        "type": "string",
+                                        "title": "The abbreviation schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "AYU"
+                                        ]
+                                    },
+                                    "direction_store_code": {
+                                        "$id": "#/properties/data/properties/pack_seal_details/items/anyOf/0/properties/direction_store_code",
+                                        "type": "string",
+                                        "title": "The direction_store_code schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "C"
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

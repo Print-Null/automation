@@ -1,0 +1,95 @@
+host: ms_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address: ms/api/fleet/line/approve/$backyard_overtime_car_ms_fleet_line_approve_FD_unilateral_0_0_["data"]["items"][-1]["id"]$/pass
+#address: ms/api/fleet/line/approve/$backyard_overtime_car_ms_fleet_line_approve_unilateral_0_0_["data"]["items"][-1]["id"]$/pass
+#  1: ms/api/fleet/line/approve/$backyard_overtime_car_ms_fleet_line_approve_0_0_["data"]["items"][-2]["id"]$/pass
+#  2: ms/api/fleet/line/approve/$backyard_overtime_car_ms_fleet_line_approve_0_0_["data"]["items"][-3]["id"]$/pass
+#  3: ms/api/fleet/line/approve/$backyard_overtime_car_ms_fleet_line_approve_0_0_["data"]["items"][-4]["id"]$/pass
+#  4: ms/api/fleet/line/approve/$backyard_overtime_car_ms_fleet_line_approve_0_0_["data"]["items"][-5]["id"]$/pass
+#  5: ms/api/fleet/line/approve/$backyard_overtime_car_ms_fleet_line_approve_0_0_["data"]["items"][-6]["id"]$/pass
+#  6: ms/api/fleet/line/approve/$backyard_overtime_car_ms_fleet_line_approve_0_0_["data"]["items"][-7]["id"]$/pass
+#  7: ms/api/fleet/line/approve/$backyard_overtime_car_ms_fleet_line_approve_0_0_["data"]["items"][-8]["id"]$/pass
+
+headers:
+  0:
+    Accept-Language: zh-CN
+    X-MS-SESSION-ID: $backyard_overtime_car_ms_api_auth_signin_0_0_0_["data"]["session_id"]$
+    Accept: application/json, text/plain, */*
+#  1:
+#    Accept-Language: en-US
+#    X-MS-SESSION-ID: $backyard_overtime_car_ms_api_auth_signin_0_0_["data"]["session_id"]$
+#    Accept: application/json, text/plain, */*
+#  2:
+#    Accept-Language: th-CN
+#    X-MS-SESSION-ID: $backyard_overtime_car_ms_api_auth_signin_0_0_["data"]["session_id"]$
+#    Accept: application/json, text/plain, */*
+success:
+  #加班车申请（中控审批界面）->审批通过
+  #backyard_overtime_car_ms_api_fleet_line_approve_1_0_0 加班车申请（中控审批界面） 需要修改
+  #...
+  #                                                 _0_7 加班车申请（中控审批界面）
+  #backyard_overtime_car_ms_approve_van_info_query_0_0_0 只有 0 车牌号模糊搜索 不用修改
+  parameter:
+    0:
+      car_type: '[int]$backyard_overtime_car_ms_api_fleet_line_approve_1_unilateral_0_0_["data"]["car_type"]$'
+      fleet_id: '$backyard_overtime_car_ms_approve_van_info_query_unilateral_0_0_0_["data"][0]["line_van_query_dto"]["fleet_id"]$'
+      plan_date: "$[python]datetime.datetime.now().strftime('%Y-%m-%d')$"
+      single_line: 2
+      plan_back_date: "$[python]datetime.datetime.now().strftime('%Y-%m-%d')$"
+      system_quote: null
+      abnormal_cost: null
+      final_cost: 3300
+      line_cost: 1100
+      line_back_cost: 2200
+      line_name: 'DD1-$backyard_overtime_car_ms_api_fleet_line_approve_1_unilateral_0_0_["data"]["car_type_text"]$-LT1-3421-$[python]datetime.datetime.now().strftime("%Y-%m-%d 23:10")$'
+      line_back_name: 'DD2-$backyard_overtime_car_ms_api_fleet_line_approve_1_0_0_["data"]["car_type_text"]$-3421-LT1-$[python]datetime.datetime.now().strftime("%Y-%m-%d 23:40")$'
+      driver: 'autoname'
+      driver_phone: '1111111111'
+      province_code: '$backyard_overtime_car_ms_approve_van_info_query_unilateral_0_0_0_["data"][0]["line_van_query_dto"]["province_code"]$'
+      plate_name: '$[python]random.randint(100000000,9999999999)$'  #不用改
+#      plate_name: '$backyard_overtime_car_ms_approve_van_info_query_0_0_0_["data"][0]["plate_name"]$'
+      audit_type: 1
+#      fd_courier_id: '$[config]courier$'
+      fd_courier_id: None
+      fd_courier_name: None
+      line_timetable_dtolist:
+        - order_no: 1
+          store_id: '$backyard_overtime_car_ms_api_fleet_line_approve_1_unilateral_0_0_["data"]["start_store"]$'
+          estimate_end_time: '1380'
+          estimate_start_time: '1390'
+        - order_no: 2
+          store_id: '$backyard_overtime_car_ms_api_fleet_line_approve_1_unilateral_0_0_["data"]["end_store"]$'
+          estimate_start_time: ''
+          estimate_end_time: '1400'
+      line_back_timetable_dtolist:
+        - order_no: 1
+          store_id: '$backyard_overtime_car_ms_api_fleet_line_approve_1_unilateral_0_0_["data"]["end_store"]$'
+          estimate_end_time: '1410'
+          estimate_start_time: '1420'
+          running_mileage: ''
+        - order_no: 2
+          store_id: '$backyard_overtime_car_ms_api_fleet_line_approve_1_unilateral_0_0_["data"]["start_store"]$'
+          running_mileage: ''
+          estimate_start_time: ''
+          estimate_end_time: '1430'
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+
+  relevance: {}
+error:
+  parameter: {}
+  check: {}

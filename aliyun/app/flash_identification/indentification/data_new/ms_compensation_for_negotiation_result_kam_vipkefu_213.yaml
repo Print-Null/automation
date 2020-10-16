@@ -1,0 +1,45 @@
+host: ms_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: ms/api/customer/diff_tickets/$ms_communicated_with_outlets_["data"]["items"][0]["id"]$/consult
+headers:
+  0:
+    Accept: "application/json, text/plain, */*"
+    Accept-Language: "zh-CN"
+    Content-Type: "application/json;charset=UTF-8"
+    X-MS-SESSION-ID: '$ms_collection_outlets_login_0_0_0_["data"]["session_id"]$'
+
+success:
+  parameter:
+    0:
+      negotiation_result_category: 6
+      payee_amount: ''
+      payee_name: ''
+      payee_phone: ''
+      payee_account: ''
+      payee_bank_category: ''
+      remark: '继续配送并赔偿原因'
+      doc_show_products: []
+      doc_claim_fs: []
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+#    json_schema: "login.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

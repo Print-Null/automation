@@ -1,0 +1,42 @@
+host: app_host
+http_type: http
+request_type: get
+parameter_type: json
+timeout: 120
+address:
+  0: /api/ka/v1/orders/order_detail/$app_ka_ticket_orders_list_0_0_["data"][0]["id"]$
+headers:
+  0:
+    Accept-Language: zh-Hans-CN
+    content-type: application/json
+    X-KA-SESSION-ID: $app_ka_login_0_0_0_["data"]["sessionid"]$
+#    Accept-Language: zh-CN
+#  1:
+#    content-type: application/json
+#    Accept-Language: en-US
+#  2:
+#    content-type: application/json
+#    Accept-Language: th-CN
+
+success:
+  parameter: {}
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    message: "success"
+
+  relevance:
+    - '["data"]["src_name"]'
+    - '["data"]["src_phone"]'
+    - '["data"]["src_country_code"]'
+    - '["data"]["src_city_code"]'
+    - '["data"]["src_province_code"]'
+    - '["data"]["src_postal_code"]'
+    - '["data"]["src_district_code"]'
+    - '["data"]["src_detail_address"]'
+
+error:
+  parameter: {}
+  check: {}

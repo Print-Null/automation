@@ -1,0 +1,17 @@
+{'car_type': 210, 'fleet_id': '5c0a4f772d738a2db06c952b', 'plan_date': '2020-05-19', 'single_line': 1, 'system_quote': None, 'abnormal_cost': None, 'final_cost': 2200, 'line_cost': 2200, 'line_back_cost': None, 'line_name': 'DD1-6W8.8-LT1-qwqe-2020-05-19 23:30', 'line_back_name': 'DD2-6W8.8-qwqe-LT1-null null', 'driver': 'xingming', 'driver_phone': '1111111111', 'province_code': 'TH01', 'plate_name': '123(กรุงเทพ)', 'audit_type': 1, 'fd_courier_id': None, 'fd_courier_name': None, 'line_timetable_dtolist': [{'order_no': 1, 'store_id': 'TH01010243', 'estimate_end_time': '838', 'estimate_start_time': '898'}, {'order_no': 2, 'store_id': 'TH01510101', 'estimate_start_time': '', 'estimate_end_time': '958'}], 'line_back_timetable_dtolist': [{'order_no': 1, 'store_id': 'TH01510101', 'estimate_end_time': '', 'estimate_start_time': '', 'running_mileage': ''}, {'order_no': 2, 'store_id': 'TH01010243', 'running_mileage': '', 'estimate_start_time': '', 'estimate_end_time': ''}]}
+
+{"car_type":210,"fleet_id":"5c0b8ace2d738a71df06aba8","plan_date":"2020-05-19",       "single_line":1,"system_quote":null,"abnormal_cost":null,"final_cost":200,"line_cost":200,              "line_back_cost":null,
+"line_name":"FDC1-6W8.8-LT1-3421-20200519 22:06",
+"line_back_name":"FDC2-6W8.8-3421-LT1-null null",
+ "driver":"autoTest","driver_phone":"1111111111","province_code":"TH05","plate_name":"123","audit_type":2,"fd_courier_id":"21202","fd_courier_name":"autoTest","line_timetable_dtolist"
+  :[{"order_no":1,"store_id":"TH01010243","estimate_end_time":"1266","estimate_start_time":"1326"},     {"order_no":2,"store_id":"TH01510101","estimate_start_time":"","estimate_end_time
+  ":"1386"}],"line_back_timetable_dtolist":         [{"order_no":1,"store_id":"TH01510101","estimate_end_time":"","estimate_start_time":"","running_mileage":""},
+                                                     {"order_no":2,"store_id":"TH01010243","running_mileage":"","estimate_start_time":"","estimate_end_time":""}]}
+
+
+
+
+
+ "line_name": 'FDC1-$DC_approve_1382_4W_["data"]["car_type_text"]$-LT1-3421-$[python]datetime.datetime.now().strftime("%Y-%m-%d 23:30")$',
+  "line_back_name": 'FDC2-$DC_approve_1382_4W_["data"]["car_type_text"]$-3421-LT1-null null',
+

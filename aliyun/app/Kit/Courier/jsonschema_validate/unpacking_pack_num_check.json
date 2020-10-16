@@ -1,0 +1,340 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "拆包功能->集包号码检查",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The Code Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1.0
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The Message Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The Data Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "pack_no": "P5712",
+                    "unseal_count": null,
+                    "seal_count": 1.0,
+                    "pack_routes": null,
+                    "unseal_lng": null,
+                    "es_unseal_store_name": null,
+                    "direction_store_code": "C",
+                    "seal_at": null,
+                    "updated_at": null,
+                    "unseal_lat": null,
+                    "unseal_staff_info_id": null,
+                    "seal_store_id": "TH01510101",
+                    "es_unseal_store_id": null,
+                    "pack_category": 1.0,
+                    "unseal_store_id": null,
+                    "seal_store_name": "网点今日应派件",
+                    "created_at": null,
+                    "unseal_store_name": null,
+                    "seal_lng": null,
+                    "pack_seal_details": null,
+                    "seal_staff_info_id": null,
+                    "state": null,
+                    "unseal_at": null,
+                    "seal_lat": null
+                }
+            ],
+            "additionalProperties": true,
+            "required": [
+                "pack_no",
+                "pack_category",
+                "direction_store_code",
+                "seal_store_id",
+                "seal_store_name",
+                "seal_staff_info_id",
+                "seal_lat",
+                "seal_lng",
+                "seal_count",
+                "seal_at",
+                "es_unseal_store_id",
+                "es_unseal_store_name",
+                "unseal_store_id",
+                "unseal_store_name",
+                "unseal_staff_info_id",
+                "unseal_lat",
+                "unseal_lng",
+                "unseal_count",
+                "unseal_at",
+                "state",
+                "created_at",
+                "updated_at",
+                "pack_routes",
+                "pack_seal_details"
+            ],
+            "properties": {
+                "pack_no": {
+                    "$id": "#/properties/data/properties/pack_no",
+                    "type": "string",
+                    "title": "The Pack_no Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "P5712"
+                    ]
+                },
+                "pack_category": {
+                    "$id": "#/properties/data/properties/pack_category",
+                    "type": "integer",
+                    "title": "The Pack_category Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1.0
+                    ]
+                },
+                "direction_store_code": {
+                    "$id": "#/properties/data/properties/direction_store_code",
+                    "type": "string",
+                    "title": "The Direction_store_code Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "C"
+                    ]
+                },
+                "seal_store_id": {
+                    "$id": "#/properties/data/properties/seal_store_id",
+                    "type": "string",
+                    "title": "The Seal_store_id Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH01510101"
+                    ]
+                },
+                "seal_store_name": {
+                    "$id": "#/properties/data/properties/seal_store_name",
+                    "type": "string",
+                    "title": "The Seal_store_name Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "网点今日应派件"
+                    ]
+                },
+                "seal_staff_info_id": {
+                    "$id": "#/properties/data/properties/seal_staff_info_id",
+                    "type": "null",
+                    "title": "The Seal_staff_info_id Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "seal_lat": {
+                    "$id": "#/properties/data/properties/seal_lat",
+                    "type": "null",
+                    "title": "The Seal_lat Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "seal_lng": {
+                    "$id": "#/properties/data/properties/seal_lng",
+                    "type": "null",
+                    "title": "The Seal_lng Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "seal_count": {
+                    "$id": "#/properties/data/properties/seal_count",
+                    "type": "integer",
+                    "title": "The Seal_count Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1.0
+                    ]
+                },
+                "seal_at": {
+                    "$id": "#/properties/data/properties/seal_at",
+                    "type": "null",
+                    "title": "The Seal_at Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "es_unseal_store_id": {
+                    "$id": "#/properties/data/properties/es_unseal_store_id",
+                    "type": "null",
+                    "title": "The Es_unseal_store_id Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "es_unseal_store_name": {
+                    "$id": "#/properties/data/properties/es_unseal_store_name",
+                    "type": "null",
+                    "title": "The Es_unseal_store_name Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "unseal_store_id": {
+                    "$id": "#/properties/data/properties/unseal_store_id",
+                    "type": "null",
+                    "title": "The Unseal_store_id Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "unseal_store_name": {
+                    "$id": "#/properties/data/properties/unseal_store_name",
+                    "type": "null",
+                    "title": "The Unseal_store_name Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "unseal_staff_info_id": {
+                    "$id": "#/properties/data/properties/unseal_staff_info_id",
+                    "type": "null",
+                    "title": "The Unseal_staff_info_id Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "unseal_lat": {
+                    "$id": "#/properties/data/properties/unseal_lat",
+                    "type": "null",
+                    "title": "The Unseal_lat Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "unseal_lng": {
+                    "$id": "#/properties/data/properties/unseal_lng",
+                    "type": "null",
+                    "title": "The Unseal_lng Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "unseal_count": {
+                    "$id": "#/properties/data/properties/unseal_count",
+                    "type": "null",
+                    "title": "The Unseal_count Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "unseal_at": {
+                    "$id": "#/properties/data/properties/unseal_at",
+                    "type": "null",
+                    "title": "The Unseal_at Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "state": {
+                    "$id": "#/properties/data/properties/state",
+                    "type": "null",
+                    "title": "The State Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "created_at": {
+                    "$id": "#/properties/data/properties/created_at",
+                    "type": "null",
+                    "title": "The Created_at Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "updated_at": {
+                    "$id": "#/properties/data/properties/updated_at",
+                    "type": "null",
+                    "title": "The Updated_at Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "pack_routes": {
+                    "$id": "#/properties/data/properties/pack_routes",
+                    "type": "null",
+                    "title": "The Pack_routes Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "pack_seal_details": {
+                    "$id": "#/properties/data/properties/pack_seal_details",
+                    "type": "null",
+                    "title": "The Pack_seal_details Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                }
+            }
+        }
+    }
+}

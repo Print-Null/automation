@@ -1,0 +1,44 @@
+#host: fbi_host_domain
+#http_type: http
+#request_type: post
+#parameter_type: json
+#timeout: 120
+#address:
+##  0: parcelloseapi/taskList?lang=zh-CN&auth=e331789ebbfdc754d975a200e38270ac&fbid= 22521&time= 1592815704&page= 1&pagesize= 100&keyword= &source= &state= &tab= 1&startTime= 1592758800&endTime= 1592845199&area= &vip_type= &taskStartTime= &taskEndTime= &handleStartTime= &handleEndTime=
+#  0: parcelloseapi/taskList?$test_1_1_iframe_0$&$test_1_1_iframe_2$&$test_1_1_iframe_3$&$test_1_1_iframe_1$&page=1&pagesize=100&keyword=&source=&state=&tab=1&startTime=$[python]str(int(time.mktime(time.strptime(str(datetime.date.today()) + " 01:00:00","%Y-%m-%d %H:%M:%S"))))$&endTime=$[python]str(int(time.mktime(time.strptime(str(datetime.date.today() +datetime.timedelta(days=1)) + " 00:59:59","%Y-%m-%d %H:%M:%S"))))$&area=&vip_type=&taskStartTime=&taskEndTime=&handleStartTime=&handleEndTime=
+#headers:
+#  0:
+#    Accept: application/json, text/plain, */*
+#    Accept-Encoding: gzip, deflate
+#    Accept-Language: zh-CN
+#    BI-PLATFORM:
+#    Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+#    Cookie: _ga=GA1.2.1105378886.1568691037; lang=zh-CN; PHPSESSID=847hbbddo1m97n2t59r2hnvp83; _gid=GA1.2.424642011.1592792291
+#    Host: bi.test.fe.com
+#
+##    Content-Type: "application/json"
+##    Accept-Language: zh-CN
+#
+#success:
+#  parameter: {}
+#
+#
+#  check:
+#    check_type: json
+#    expected_code: 200
+#    code: 1
+#    msg:
+#      data_key: "message"
+#      z_message: "success"
+#      e_message: "success"
+#      t_message: "success"
+#      headers_language: "Accept-Language"
+##    json_schema: "login.json"
+#
+#  relevance:
+#    - '["data"]["row"][-1]["task_id"]'
+#    - '["data"]["row"][-1]["pno"]'
+#
+#error:
+#  parameter: {}
+#  check: {}

@@ -1,0 +1,68 @@
+host: fbi_host_domain
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+#  0: workorder/info_reply_save?order_id=$ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+#  1: workorder/info_reply_save?order_id=$ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+#  2: workorder/info_reply_save?order_id=$ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+#  3: workorder/info_reply_save?order_id=$ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+#  4: workorder/info_reply_save?order_id=$ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+#  5: workorder/info_reply_save?order_id=$ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+#  6: workorder/info_reply_save?order_id=$ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+  7: workorder/info_reply_save?order_id=$7ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+  8: workorder/info_reply_save?order_id=$8ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+  9: workorder/info_reply_save?order_id=$9ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+  10: workorder/info_reply_save?order_id=$10ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+#  11: workorder/info_reply_save?order_id=$ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+#  12: workorder/info_reply_save?order_id=$ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+#  13: workorder/info_reply_save?order_id=$ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+#  14: workorder/info_reply_save?order_id=$ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+#  15: workorder/info_reply_save?order_id=$ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+#  16: workorder/info_reply_save?order_id=$ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+#  17: workorder/info_reply_save?order_id=$ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+#  18: workorder/info_reply_save?order_id=$ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+#  19: workorder/info_reply_save?order_id=$ms_work_order_list_page_0_0_["data"]["DataList"][0]["order_id"]$&content=自动化已找到，自动化已找到&img_arr=[{"bucket_name":"fle-staging-asset-internal","object_key":"workOrder/1593326171-94190c09bc87499eb8d151f85ad849ec.jpg"}]&seek_status=2
+
+headers:
+  0:
+    Accept-Encoding: gzip, deflate
+    Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+    Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+    Cookie: $indentifi_manager_PHPSESSID$
+
+
+#  0:
+#  Accept: application/json, text/plain, */*
+#  Accept-Encoding: gzip, deflate
+#  Accept-Language: zh-CN
+#  BI-PLATFORM:
+#  Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+#  Cookie: $[config]bi_gongdan_cookie$
+#  Host: bi.test.fe.com
+
+#    Content-Type: "application/json"
+#    Accept-Language: zh-CN
+
+success:
+  parameter: {}
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 0
+    msg:
+      data_key: "msg"
+      z_message: "ok"
+      e_message: "ok"
+      t_message: "ok"
+      headers_language: "Accept-Language"
+#    json_schema: "login.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

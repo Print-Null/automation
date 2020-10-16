@@ -1,0 +1,172 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "发件出仓",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The Code Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1.0
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The Message Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The Data Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "recent_pno": "TH050219BN4A",
+                    "pno": "TH050219BN4A",
+                    "pno_display": "TH050219BN4A",
+                    "speed_enabled": false,
+                    "next_store_id": "TH05020101",
+                    "express_category_text": "标准",
+                    "next_store_short_name": "TJ002",
+                    "next_store_name": "测试002",
+                    "pack_no": null,
+                    "express_category": 1.0
+                }
+            ],
+            "additionalProperties": true,
+            "required": [
+                "pno",
+                "pack_no",
+                "recent_pno",
+                "pno_display",
+                "express_category",
+                "express_category_text",
+                "next_store_id",
+                "next_store_name",
+                "next_store_short_name",
+                "speed_enabled"
+            ],
+            "properties": {
+                "pno": {
+                    "$id": "#/properties/data/properties/pno",
+                    "type": "string",
+                    "title": "The Pno Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH050219BN4A"
+                    ]
+                },
+                "pack_no": {
+                    "$id": "#/properties/data/properties/pack_no",
+                    "type": "null",
+                    "title": "The Pack_no Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "recent_pno": {
+                    "$id": "#/properties/data/properties/recent_pno",
+                    "type": "string",
+                    "title": "The Recent_pno Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH050219BN4A"
+                    ]
+                },
+                "pno_display": {
+                    "$id": "#/properties/data/properties/pno_display",
+                    "type": "string",
+                    "title": "The Pno_display Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH050219BN4A"
+                    ]
+                },
+                "express_category": {
+                    "$id": "#/properties/data/properties/express_category",
+                    "type": "integer",
+                    "title": "The Express_category Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1.0
+                    ]
+                },
+                "express_category_text": {
+                    "$id": "#/properties/data/properties/express_category_text",
+                    "type": "string",
+                    "title": "The Express_category_text Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "标准"
+                    ]
+                },
+                "next_store_id": {
+                    "$id": "#/properties/data/properties/next_store_id",
+                    "type": "string",
+                    "title": "The Next_store_id Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH05020101"
+                    ]
+                },
+                "next_store_name": {
+                    "$id": "#/properties/data/properties/next_store_name",
+                    "type": "string",
+                    "title": "The Next_store_name Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "测试002"
+                    ]
+                },
+                "next_store_short_name": {
+                    "$id": "#/properties/data/properties/next_store_short_name",
+                    "type": "string",
+                    "title": "The Next_store_short_name Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TJ002"
+                    ]
+                },
+                "speed_enabled": {
+                    "$id": "#/properties/data/properties/speed_enabled",
+                    "type": "boolean",
+                    "title": "The Speed_enabled Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                }
+            }
+        }
+    }
+}

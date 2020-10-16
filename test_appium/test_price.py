@@ -37,7 +37,7 @@ class TestPrice:
             TouchAction(self.driver).long_press(x=size['width'] * 0.5, y=size['height'] * 0.9).move_to(
                 x=size['width'] * 0.5, y=size['height'] * 0.1).release().perform()
 
-    def test_price(self):
+    def test_price1(self):
         size = self.driver.get_window_size()
         x = int(size['width'] * 0.95)
         y = int(size['height'] * 0.95)

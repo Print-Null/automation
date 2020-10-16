@@ -1,0 +1,907 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "code": 1,
+            "message": "success",
+            "data": [
+                {
+                    "id": "CA1100",
+                    "client_id": "CA1100",
+                    "agent_enabled": false,
+                    "agent_id": null,
+                    "name": "yr1",
+                    "client_grade": 999,
+                    "client_grade_text": "New Standard price",
+                    "client_type_category": 2,
+                    "discount_rate": 1,
+                    "cod_enabled": true,
+                    "cod_enabled_text": "开通",
+                    "major_mobile": "1341341341",
+                    "settlement_category": 1,
+                    "settlement_category_text": "现场结算",
+                    "cod_poundage_rate": 25,
+                    "cod_poundage_minimum": 0,
+                    "insure_rate": 0,
+                    "insure_category": 0,
+                    "price_strategy": null,
+                    "customer_type_category": 2,
+                    "customer_type_category_text": "签约客户",
+                    "price_rule": "{\"addedWeightRule\":{\"outProvincePrice\":1000,\"weightRenew\":1000,\"inProvincePrice\":1500,\"inProvincePriceRenewStart\":72000,\"outProvincePriceRenewStart\":50000,\"lwhRenew\":5},\"excludeUpcountry\":false,\"sameProvincePolicy\":0,\"specialRules\":[],\"lastPriceRule\":{\"outProvincePrice\":50000,\"weight\":50000,\"inProvincePrice\":72000,\"lwh\":305},\"rules\":[{\"outProvincePrice\":3500,\"inProvinceLwh\":40,\"weight\":1000,\"inProvincePrice\":2500,\"outProvinceLwh\":40,\"lwh\":40},{\"outProvincePrice\":4000,\"inProvinceLwh\":50,\"weight\":2000,\"inProvincePrice\":3000,\"outProvinceLwh\":50,\"lwh\":50},{\"outProvincePrice\":4500,\"inProvinceLwh\":60,\"weight\":3000,\"inProvincePrice\":3500,\"outProvinceLwh\":60,\"lwh\":60},{\"outProvincePrice\":5000,\"inProvinceLwh\":70,\"weight\":4000,\"inProvincePrice\":4000,\"outProvinceLwh\":70,\"lwh\":70},{\"outProvincePrice\":5500,\"inProvinceLwh\":80,\"weight\":5000,\"inProvincePrice\":4500,\"outProvinceLwh\":80,\"lwh\":80},{\"outProvincePrice\":6000,\"inProvinceLwh\":85,\"weight\":6000,\"inProvincePrice\":6000,\"outProvinceLwh\":85,\"lwh\":85},{\"outProvincePrice\":7000,\"inProvinceLwh\":90,\"weight\":7000,\"inProvincePrice\":7500,\"outProvinceLwh\":90,\"lwh\":90},{\"outProvincePrice\":8000,\"inProvinceLwh\":95,\"weight\":8000,\"inProvincePrice\":9000,\"outProvinceLwh\":95,\"lwh\":95},{\"outProvincePrice\":9000,\"inProvinceLwh\":100,\"weight\":9000,\"inProvincePrice\":10500,\"outProvinceLwh\":100,\"lwh\":100},{\"outProvincePrice\":10000,\"inProvinceLwh\":105,\"weight\":10000,\"inProvincePrice\":12000,\"outProvinceLwh\":105,\"lwh\":105},{\"outProvincePrice\":11000,\"inProvinceLwh\":110,\"weight\":11000,\"inProvincePrice\":13500,\"outProvinceLwh\":110,\"lwh\":110},{\"outProvincePrice\":12000,\"inProvinceLwh\":115,\"weight\":12000,\"inProvincePrice\":15000,\"outProvinceLwh\":115,\"lwh\":115},{\"outProvincePrice\":13000,\"inProvinceLwh\":120,\"weight\":13000,\"inProvincePrice\":16500,\"outProvinceLwh\":120,\"lwh\":120},{\"outProvincePrice\":14000,\"inProvinceLwh\":125,\"weight\":14000,\"inProvincePrice\":18000,\"outProvinceLwh\":125,\"lwh\":125},{\"outProvincePrice\":15000,\"inProvinceLwh\":130,\"weight\":15000,\"inProvincePrice\":19500,\"outProvinceLwh\":130,\"lwh\":130},{\"outProvincePrice\":16000,\"inProvinceLwh\":135,\"weight\":16000,\"inProvincePrice\":21000,\"outProvinceLwh\":135,\"lwh\":135},{\"outProvincePrice\":17000,\"inProvinceLwh\":140,\"weight\":17000,\"inProvincePrice\":22500,\"outProvinceLwh\":140,\"lwh\":140},{\"outProvincePrice\":18000,\"inProvinceLwh\":145,\"weight\":18000,\"inProvincePrice\":24000,\"outProvinceLwh\":145,\"lwh\":145},{\"outProvincePrice\":19000,\"inProvinceLwh\":150,\"weight\":19000,\"inProvincePrice\":25500,\"outProvinceLwh\":150,\"lwh\":150},{\"outProvincePrice\":20000,\"inProvinceLwh\":155,\"weight\":20000,\"inProvincePrice\":27000,\"outProvinceLwh\":155,\"lwh\":155},{\"outProvincePrice\":21000,\"inProvinceLwh\":160,\"weight\":21000,\"inProvincePrice\":28500,\"outProvinceLwh\":160,\"lwh\":160},{\"outProvincePrice\":22000,\"inProvinceLwh\":165,\"weight\":22000,\"inProvincePrice\":30000,\"outProvinceLwh\":165,\"lwh\":165},{\"outProvincePrice\":23000,\"inProvinceLwh\":170,\"weight\":23000,\"inProvincePrice\":31500,\"outProvinceLwh\":170,\"lwh\":170},{\"outProvincePrice\":24000,\"inProvinceLwh\":175,\"weight\":24000,\"inProvincePrice\":33000,\"outProvinceLwh\":175,\"lwh\":175},{\"outProvincePrice\":25000,\"inProvinceLwh\":180,\"weight\":25000,\"inProvincePrice\":34500,\"outProvinceLwh\":180,\"lwh\":180},{\"outProvincePrice\":26000,\"inProvinceLwh\":185,\"weight\":26000,\"inProvincePrice\":36000,\"outProvinceLwh\":185,\"lwh\":185},{\"outProvincePrice\":27000,\"inProvinceLwh\":190,\"weight\":27000,\"inProvincePrice\":37500,\"outProvinceLwh\":190,\"lwh\":190},{\"outProvincePrice\":28000,\"inProvinceLwh\":195,\"weight\":28000,\"inProvincePrice\":39000,\"outProvinceLwh\":195,\"lwh\":195},{\"outProvincePrice\":29000,\"inProvinceLwh\":200,\"weight\":29000,\"inProvincePrice\":40500,\"outProvinceLwh\":200,\"lwh\":200},{\"outProvincePrice\":30000,\"inProvinceLwh\":205,\"weight\":30000,\"inProvincePrice\":42000,\"outProvinceLwh\":205,\"lwh\":205},{\"outProvincePrice\":31000,\"inProvinceLwh\":210,\"weight\":31000,\"inProvincePrice\":43500,\"outProvinceLwh\":210,\"lwh\":210},{\"outProvincePrice\":32000,\"inProvinceLwh\":215,\"weight\":32000,\"inProvincePrice\":45000,\"outProvinceLwh\":215,\"lwh\":215},{\"outProvincePrice\":33000,\"inProvinceLwh\":220,\"weight\":33000,\"inProvincePrice\":46500,\"outProvinceLwh\":220,\"lwh\":220},{\"outProvincePrice\":34000,\"inProvinceLwh\":225,\"weight\":34000,\"inProvincePrice\":48000,\"outProvinceLwh\":225,\"lwh\":225},{\"outProvincePrice\":35000,\"inProvinceLwh\":230,\"weight\":35000,\"inProvincePrice\":49500,\"outProvinceLwh\":230,\"lwh\":230},{\"outProvincePrice\":36000,\"inProvinceLwh\":235,\"weight\":36000,\"inProvincePrice\":51000,\"outProvinceLwh\":235,\"lwh\":235},{\"outProvincePrice\":37000,\"inProvinceLwh\":240,\"weight\":37000,\"inProvincePrice\":52500,\"outProvinceLwh\":240,\"lwh\":240},{\"outProvincePrice\":38000,\"inProvinceLwh\":245,\"weight\":38000,\"inProvincePrice\":54000,\"outProvinceLwh\":245,\"lwh\":245},{\"outProvincePrice\":39000,\"inProvinceLwh\":250,\"weight\":39000,\"inProvincePrice\":55500,\"outProvinceLwh\":250,\"lwh\":250},{\"outProvincePrice\":40000,\"inProvinceLwh\":255,\"weight\":40000,\"inProvincePrice\":57000,\"outProvinceLwh\":255,\"lwh\":255},{\"outProvincePrice\":41000,\"inProvinceLwh\":260,\"weight\":41000,\"inProvincePrice\":58500,\"outProvinceLwh\":260,\"lwh\":260},{\"outProvincePrice\":42000,\"inProvinceLwh\":265,\"weight\":42000,\"inProvincePrice\":60000,\"outProvinceLwh\":265,\"lwh\":265},{\"outProvincePrice\":43000,\"inProvinceLwh\":270,\"weight\":43000,\"inProvincePrice\":61500,\"outProvinceLwh\":270,\"lwh\":270},{\"outProvincePrice\":44000,\"inProvinceLwh\":275,\"weight\":44000,\"inProvincePrice\":63000,\"outProvinceLwh\":275,\"lwh\":275},{\"outProvincePrice\":45000,\"inProvinceLwh\":280,\"weight\":45000,\"inProvincePrice\":64500,\"outProvinceLwh\":280,\"lwh\":280},{\"outProvincePrice\":46000,\"weight\":46000,\"inProvincePrice\":66000,\"lwh\":285},{\"outProvincePrice\":47000,\"weight\":47000,\"inProvincePrice\":67500,\"lwh\":290},{\"outProvincePrice\":48000,\"weight\":48000,\"inProvincePrice\":69000,\"lwh\":295},{\"outProvincePrice\":49000,\"weight\":49000,\"inProvincePrice\":70500,\"lwh\":300},{\"outProvincePrice\":50000,\"weight\":50000,\"inProvincePrice\":72000,\"lwh\":305}],\"firstPriceRule\":{\"outProvincePrice\":3500,\"inProvinceLwh\":40,\"weight\":1000,\"inProvincePrice\":2500,\"outProvinceLwh\":40,\"lwh\":40},\"clientGrade\":104}",
+                    "use_self_price": true,
+                    "discount_limit_rule": null,
+                    "exclude_upcountry_enabled": null,
+                    "cod_settlement_category": 0,
+                    "cod_uniform_amount": null,
+                    "weighing_category": 0,
+                    "weighing_category_note": "该客户按重量或体积计费",
+                    "src_name": "dfdf",
+                    "src_phone": "18524125541",
+                    "country_code": "TH",
+                    "country_name": "Thailand",
+                    "province_code": "TH01",
+                    "province_name": "กรุงเทพ",
+                    "city_code": "TH0101",
+                    "city_name": "คลองเตย",
+                    "district_code": "TH010101",
+                    "district_name": "คลองตัน",
+                    "detail_address": "dfsdfe",
+                    "postal_code": "10110",
+                    "approve_enabled": false,
+                    "approve_text": null,
+                    "approve_state": 2,
+                    "trusted_enabled": false,
+                    "speed_enabled": true,
+                    "speed_note": null,
+                    "speed_client_grade": 115,
+                    "speed_price_rule": "{\"addedWeightRule\":{\"outProvincePrice\":1000,\"weightRenew\":1000,\"inProvincePrice\":1500,\"inProvincePriceRenewStart\":86500,\"outProvincePriceRenewStart\":60000,\"lwhRenew\":5},\"excludeUpcountry\":false,\"sameProvincePolicy\":0,\"specialRules\":[],\"lastPriceRule\":{\"outProvincePrice\":60000,\"weight\":50000,\"inProvincePrice\":86500,\"lwh\":305},\"rules\":[{\"outProvincePrice\":4500,\"inProvinceLwh\":40,\"weight\":1000,\"inProvincePrice\":3000,\"outProvinceLwh\":40,\"lwh\":40},{\"outProvincePrice\":5000,\"inProvinceLwh\":50,\"weight\":2000,\"inProvincePrice\":4000,\"outProvinceLwh\":50,\"lwh\":50},{\"outProvincePrice\":5500,\"inProvinceLwh\":60,\"weight\":3000,\"inProvincePrice\":4500,\"outProvinceLwh\":60,\"lwh\":60},{\"outProvincePrice\":6000,\"inProvinceLwh\":70,\"weight\":4000,\"inProvincePrice\":5000,\"outProvinceLwh\":70,\"lwh\":70},{\"outProvincePrice\":7000,\"inProvinceLwh\":80,\"weight\":5000,\"inProvincePrice\":5500,\"outProvinceLwh\":80,\"lwh\":80},{\"outProvincePrice\":7500,\"inProvinceLwh\":85,\"weight\":6000,\"inProvincePrice\":7500,\"outProvinceLwh\":85,\"lwh\":85},{\"outProvincePrice\":8500,\"inProvinceLwh\":90,\"weight\":7000,\"inProvincePrice\":9000,\"outProvinceLwh\":90,\"lwh\":90},{\"outProvincePrice\":10000,\"inProvinceLwh\":95,\"weight\":8000,\"inProvincePrice\":11000,\"outProvinceLwh\":95,\"lwh\":95},{\"outProvincePrice\":11000,\"inProvinceLwh\":100,\"weight\":9000,\"inProvincePrice\":13000,\"outProvinceLwh\":100,\"lwh\":100},{\"outProvincePrice\":12000,\"inProvinceLwh\":105,\"weight\":10000,\"inProvincePrice\":14500,\"outProvinceLwh\":105,\"lwh\":105},{\"outProvincePrice\":13500,\"inProvinceLwh\":110,\"weight\":11000,\"inProvincePrice\":16500,\"outProvinceLwh\":110,\"lwh\":110},{\"outProvincePrice\":14500,\"inProvinceLwh\":115,\"weight\":12000,\"inProvincePrice\":18000,\"outProvinceLwh\":115,\"lwh\":115},{\"outProvincePrice\":16000,\"inProvinceLwh\":120,\"weight\":13000,\"inProvincePrice\":20000,\"outProvinceLwh\":120,\"lwh\":120},{\"outProvincePrice\":17000,\"inProvinceLwh\":125,\"weight\":14000,\"inProvincePrice\":22000,\"outProvinceLwh\":125,\"lwh\":125},{\"outProvincePrice\":18000,\"inProvinceLwh\":130,\"weight\":15000,\"inProvincePrice\":23500,\"outProvinceLwh\":130,\"lwh\":130},{\"outProvincePrice\":19500,\"inProvinceLwh\":135,\"weight\":16000,\"inProvincePrice\":25500,\"outProvinceLwh\":135,\"lwh\":135},{\"outProvincePrice\":20500,\"inProvinceLwh\":140,\"weight\":17000,\"inProvincePrice\":27000,\"outProvinceLwh\":140,\"lwh\":140},{\"outProvincePrice\":22000,\"inProvinceLwh\":145,\"weight\":18000,\"inProvincePrice\":29000,\"outProvinceLwh\":145,\"lwh\":145},{\"outProvincePrice\":23000,\"inProvinceLwh\":150,\"weight\":19000,\"inProvincePrice\":31000,\"outProvinceLwh\":150,\"lwh\":150},{\"outProvincePrice\":24000,\"inProvinceLwh\":155,\"weight\":20000,\"inProvincePrice\":32500,\"outProvinceLwh\":155,\"lwh\":155},{\"outProvincePrice\":25500,\"inProvinceLwh\":160,\"weight\":21000,\"inProvincePrice\":34500,\"outProvinceLwh\":160,\"lwh\":160},{\"outProvincePrice\":26500,\"inProvinceLwh\":165,\"weight\":22000,\"inProvincePrice\":36000,\"outProvinceLwh\":165,\"lwh\":165},{\"outProvincePrice\":28000,\"inProvinceLwh\":170,\"weight\":23000,\"inProvincePrice\":38000,\"outProvinceLwh\":170,\"lwh\":170},{\"outProvincePrice\":29000,\"inProvinceLwh\":175,\"weight\":24000,\"inProvincePrice\":40000,\"outProvinceLwh\":175,\"lwh\":175},{\"outProvincePrice\":30000,\"inProvinceLwh\":180,\"weight\":25000,\"inProvincePrice\":41500,\"outProvinceLwh\":180,\"lwh\":180},{\"outProvincePrice\":31500,\"inProvinceLwh\":185,\"weight\":26000,\"inProvincePrice\":43500,\"outProvinceLwh\":185,\"lwh\":185},{\"outProvincePrice\":32500,\"inProvinceLwh\":190,\"weight\":27000,\"inProvincePrice\":45000,\"outProvinceLwh\":190,\"lwh\":190},{\"outProvincePrice\":34000,\"inProvinceLwh\":195,\"weight\":28000,\"inProvincePrice\":47000,\"outProvinceLwh\":195,\"lwh\":195},{\"outProvincePrice\":35000,\"inProvinceLwh\":200,\"weight\":29000,\"inProvincePrice\":49000,\"outProvinceLwh\":200,\"lwh\":200},{\"outProvincePrice\":36000,\"inProvinceLwh\":205,\"weight\":30000,\"inProvincePrice\":50500,\"outProvinceLwh\":205,\"lwh\":205},{\"outProvincePrice\":37500,\"inProvinceLwh\":210,\"weight\":31000,\"inProvincePrice\":52500,\"outProvinceLwh\":210,\"lwh\":210},{\"outProvincePrice\":38500,\"inProvinceLwh\":215,\"weight\":32000,\"inProvincePrice\":54000,\"outProvinceLwh\":215,\"lwh\":215},{\"outProvincePrice\":40000,\"inProvinceLwh\":220,\"weight\":33000,\"inProvincePrice\":56000,\"outProvinceLwh\":220,\"lwh\":220},{\"outProvincePrice\":41000,\"inProvinceLwh\":225,\"weight\":34000,\"inProvincePrice\":58000,\"outProvinceLwh\":225,\"lwh\":225},{\"outProvincePrice\":42000,\"inProvinceLwh\":230,\"weight\":35000,\"inProvincePrice\":59500,\"outProvinceLwh\":230,\"lwh\":230},{\"outProvincePrice\":43500,\"inProvinceLwh\":235,\"weight\":36000,\"inProvincePrice\":61500,\"outProvinceLwh\":235,\"lwh\":235},{\"outProvincePrice\":44500,\"inProvinceLwh\":240,\"weight\":37000,\"inProvincePrice\":63000,\"outProvinceLwh\":240,\"lwh\":240},{\"outProvincePrice\":46000,\"inProvinceLwh\":245,\"weight\":38000,\"inProvincePrice\":65000,\"outProvinceLwh\":245,\"lwh\":245},{\"outProvincePrice\":47000,\"inProvinceLwh\":250,\"weight\":39000,\"inProvincePrice\":67000,\"outProvinceLwh\":250,\"lwh\":250},{\"outProvincePrice\":48000,\"inProvinceLwh\":255,\"weight\":40000,\"inProvincePrice\":68500,\"outProvinceLwh\":255,\"lwh\":255},{\"outProvincePrice\":49500,\"inProvinceLwh\":260,\"weight\":41000,\"inProvincePrice\":70500,\"outProvinceLwh\":260,\"lwh\":260},{\"outProvincePrice\":50500,\"inProvinceLwh\":265,\"weight\":42000,\"inProvincePrice\":72000,\"outProvinceLwh\":265,\"lwh\":265},{\"outProvincePrice\":52000,\"inProvinceLwh\":270,\"weight\":43000,\"inProvincePrice\":74000,\"outProvinceLwh\":270,\"lwh\":270},{\"outProvincePrice\":53000,\"inProvinceLwh\":275,\"weight\":44000,\"inProvincePrice\":76000,\"outProvinceLwh\":275,\"lwh\":275},{\"outProvincePrice\":54000,\"inProvinceLwh\":280,\"weight\":45000,\"inProvincePrice\":77500,\"outProvinceLwh\":280,\"lwh\":280},{\"outProvincePrice\":55500,\"weight\":46000,\"inProvincePrice\":79500,\"lwh\":285},{\"outProvincePrice\":56500,\"weight\":47000,\"inProvincePrice\":81000,\"lwh\":290},{\"outProvincePrice\":58000,\"weight\":48000,\"inProvincePrice\":83000,\"lwh\":295},{\"outProvincePrice\":59000,\"weight\":49000,\"inProvincePrice\":85000,\"lwh\":300},{\"outProvincePrice\":60000,\"weight\":50000,\"inProvincePrice\":86500,\"lwh\":305}],\"firstPriceRule\":{\"outProvincePrice\":4500,\"inProvinceLwh\":40,\"weight\":1000,\"inProvincePrice\":3000,\"outProvinceLwh\":40,\"lwh\":40},\"clientGrade\":115}",
+                    "speed_discount_rate": 0,
+                    "max_length": 100,
+                    "max_width": 100,
+                    "max_height": 100,
+                    "max_sum_of_lwh": 280,
+                    "pno": null,
+                    "diff_info_id": null,
+                    "restricted": true,
+                    "beneficiary_enabled": false,
+                    "authentication_type": 1
+                }
+            ]
+        }
+    ],
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The message schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "array",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "id": "CA1100",
+                        "client_id": "CA1100",
+                        "agent_enabled": false,
+                        "agent_id": null,
+                        "name": "yr1",
+                        "client_grade": 999,
+                        "client_grade_text": "New Standard price",
+                        "client_type_category": 2,
+                        "discount_rate": 1,
+                        "cod_enabled": true,
+                        "cod_enabled_text": "开通",
+                        "major_mobile": "1341341341",
+                        "settlement_category": 1,
+                        "settlement_category_text": "现场结算",
+                        "cod_poundage_rate": 25,
+                        "cod_poundage_minimum": 0,
+                        "insure_rate": 0,
+                        "insure_category": 0,
+                        "price_strategy": null,
+                        "customer_type_category": 2,
+                        "customer_type_category_text": "签约客户",
+                        "price_rule": "{\"addedWeightRule\":{\"outProvincePrice\":1000,\"weightRenew\":1000,\"inProvincePrice\":1500,\"inProvincePriceRenewStart\":72000,\"outProvincePriceRenewStart\":50000,\"lwhRenew\":5},\"excludeUpcountry\":false,\"sameProvincePolicy\":0,\"specialRules\":[],\"lastPriceRule\":{\"outProvincePrice\":50000,\"weight\":50000,\"inProvincePrice\":72000,\"lwh\":305},\"rules\":[{\"outProvincePrice\":3500,\"inProvinceLwh\":40,\"weight\":1000,\"inProvincePrice\":2500,\"outProvinceLwh\":40,\"lwh\":40},{\"outProvincePrice\":4000,\"inProvinceLwh\":50,\"weight\":2000,\"inProvincePrice\":3000,\"outProvinceLwh\":50,\"lwh\":50},{\"outProvincePrice\":4500,\"inProvinceLwh\":60,\"weight\":3000,\"inProvincePrice\":3500,\"outProvinceLwh\":60,\"lwh\":60},{\"outProvincePrice\":5000,\"inProvinceLwh\":70,\"weight\":4000,\"inProvincePrice\":4000,\"outProvinceLwh\":70,\"lwh\":70},{\"outProvincePrice\":5500,\"inProvinceLwh\":80,\"weight\":5000,\"inProvincePrice\":4500,\"outProvinceLwh\":80,\"lwh\":80},{\"outProvincePrice\":6000,\"inProvinceLwh\":85,\"weight\":6000,\"inProvincePrice\":6000,\"outProvinceLwh\":85,\"lwh\":85},{\"outProvincePrice\":7000,\"inProvinceLwh\":90,\"weight\":7000,\"inProvincePrice\":7500,\"outProvinceLwh\":90,\"lwh\":90},{\"outProvincePrice\":8000,\"inProvinceLwh\":95,\"weight\":8000,\"inProvincePrice\":9000,\"outProvinceLwh\":95,\"lwh\":95},{\"outProvincePrice\":9000,\"inProvinceLwh\":100,\"weight\":9000,\"inProvincePrice\":10500,\"outProvinceLwh\":100,\"lwh\":100},{\"outProvincePrice\":10000,\"inProvinceLwh\":105,\"weight\":10000,\"inProvincePrice\":12000,\"outProvinceLwh\":105,\"lwh\":105},{\"outProvincePrice\":11000,\"inProvinceLwh\":110,\"weight\":11000,\"inProvincePrice\":13500,\"outProvinceLwh\":110,\"lwh\":110},{\"outProvincePrice\":12000,\"inProvinceLwh\":115,\"weight\":12000,\"inProvincePrice\":15000,\"outProvinceLwh\":115,\"lwh\":115},{\"outProvincePrice\":13000,\"inProvinceLwh\":120,\"weight\":13000,\"inProvincePrice\":16500,\"outProvinceLwh\":120,\"lwh\":120},{\"outProvincePrice\":14000,\"inProvinceLwh\":125,\"weight\":14000,\"inProvincePrice\":18000,\"outProvinceLwh\":125,\"lwh\":125},{\"outProvincePrice\":15000,\"inProvinceLwh\":130,\"weight\":15000,\"inProvincePrice\":19500,\"outProvinceLwh\":130,\"lwh\":130},{\"outProvincePrice\":16000,\"inProvinceLwh\":135,\"weight\":16000,\"inProvincePrice\":21000,\"outProvinceLwh\":135,\"lwh\":135},{\"outProvincePrice\":17000,\"inProvinceLwh\":140,\"weight\":17000,\"inProvincePrice\":22500,\"outProvinceLwh\":140,\"lwh\":140},{\"outProvincePrice\":18000,\"inProvinceLwh\":145,\"weight\":18000,\"inProvincePrice\":24000,\"outProvinceLwh\":145,\"lwh\":145},{\"outProvincePrice\":19000,\"inProvinceLwh\":150,\"weight\":19000,\"inProvincePrice\":25500,\"outProvinceLwh\":150,\"lwh\":150},{\"outProvincePrice\":20000,\"inProvinceLwh\":155,\"weight\":20000,\"inProvincePrice\":27000,\"outProvinceLwh\":155,\"lwh\":155},{\"outProvincePrice\":21000,\"inProvinceLwh\":160,\"weight\":21000,\"inProvincePrice\":28500,\"outProvinceLwh\":160,\"lwh\":160},{\"outProvincePrice\":22000,\"inProvinceLwh\":165,\"weight\":22000,\"inProvincePrice\":30000,\"outProvinceLwh\":165,\"lwh\":165},{\"outProvincePrice\":23000,\"inProvinceLwh\":170,\"weight\":23000,\"inProvincePrice\":31500,\"outProvinceLwh\":170,\"lwh\":170},{\"outProvincePrice\":24000,\"inProvinceLwh\":175,\"weight\":24000,\"inProvincePrice\":33000,\"outProvinceLwh\":175,\"lwh\":175},{\"outProvincePrice\":25000,\"inProvinceLwh\":180,\"weight\":25000,\"inProvincePrice\":34500,\"outProvinceLwh\":180,\"lwh\":180},{\"outProvincePrice\":26000,\"inProvinceLwh\":185,\"weight\":26000,\"inProvincePrice\":36000,\"outProvinceLwh\":185,\"lwh\":185},{\"outProvincePrice\":27000,\"inProvinceLwh\":190,\"weight\":27000,\"inProvincePrice\":37500,\"outProvinceLwh\":190,\"lwh\":190},{\"outProvincePrice\":28000,\"inProvinceLwh\":195,\"weight\":28000,\"inProvincePrice\":39000,\"outProvinceLwh\":195,\"lwh\":195},{\"outProvincePrice\":29000,\"inProvinceLwh\":200,\"weight\":29000,\"inProvincePrice\":40500,\"outProvinceLwh\":200,\"lwh\":200},{\"outProvincePrice\":30000,\"inProvinceLwh\":205,\"weight\":30000,\"inProvincePrice\":42000,\"outProvinceLwh\":205,\"lwh\":205},{\"outProvincePrice\":31000,\"inProvinceLwh\":210,\"weight\":31000,\"inProvincePrice\":43500,\"outProvinceLwh\":210,\"lwh\":210},{\"outProvincePrice\":32000,\"inProvinceLwh\":215,\"weight\":32000,\"inProvincePrice\":45000,\"outProvinceLwh\":215,\"lwh\":215},{\"outProvincePrice\":33000,\"inProvinceLwh\":220,\"weight\":33000,\"inProvincePrice\":46500,\"outProvinceLwh\":220,\"lwh\":220},{\"outProvincePrice\":34000,\"inProvinceLwh\":225,\"weight\":34000,\"inProvincePrice\":48000,\"outProvinceLwh\":225,\"lwh\":225},{\"outProvincePrice\":35000,\"inProvinceLwh\":230,\"weight\":35000,\"inProvincePrice\":49500,\"outProvinceLwh\":230,\"lwh\":230},{\"outProvincePrice\":36000,\"inProvinceLwh\":235,\"weight\":36000,\"inProvincePrice\":51000,\"outProvinceLwh\":235,\"lwh\":235},{\"outProvincePrice\":37000,\"inProvinceLwh\":240,\"weight\":37000,\"inProvincePrice\":52500,\"outProvinceLwh\":240,\"lwh\":240},{\"outProvincePrice\":38000,\"inProvinceLwh\":245,\"weight\":38000,\"inProvincePrice\":54000,\"outProvinceLwh\":245,\"lwh\":245},{\"outProvincePrice\":39000,\"inProvinceLwh\":250,\"weight\":39000,\"inProvincePrice\":55500,\"outProvinceLwh\":250,\"lwh\":250},{\"outProvincePrice\":40000,\"inProvinceLwh\":255,\"weight\":40000,\"inProvincePrice\":57000,\"outProvinceLwh\":255,\"lwh\":255},{\"outProvincePrice\":41000,\"inProvinceLwh\":260,\"weight\":41000,\"inProvincePrice\":58500,\"outProvinceLwh\":260,\"lwh\":260},{\"outProvincePrice\":42000,\"inProvinceLwh\":265,\"weight\":42000,\"inProvincePrice\":60000,\"outProvinceLwh\":265,\"lwh\":265},{\"outProvincePrice\":43000,\"inProvinceLwh\":270,\"weight\":43000,\"inProvincePrice\":61500,\"outProvinceLwh\":270,\"lwh\":270},{\"outProvincePrice\":44000,\"inProvinceLwh\":275,\"weight\":44000,\"inProvincePrice\":63000,\"outProvinceLwh\":275,\"lwh\":275},{\"outProvincePrice\":45000,\"inProvinceLwh\":280,\"weight\":45000,\"inProvincePrice\":64500,\"outProvinceLwh\":280,\"lwh\":280},{\"outProvincePrice\":46000,\"weight\":46000,\"inProvincePrice\":66000,\"lwh\":285},{\"outProvincePrice\":47000,\"weight\":47000,\"inProvincePrice\":67500,\"lwh\":290},{\"outProvincePrice\":48000,\"weight\":48000,\"inProvincePrice\":69000,\"lwh\":295},{\"outProvincePrice\":49000,\"weight\":49000,\"inProvincePrice\":70500,\"lwh\":300},{\"outProvincePrice\":50000,\"weight\":50000,\"inProvincePrice\":72000,\"lwh\":305}],\"firstPriceRule\":{\"outProvincePrice\":3500,\"inProvinceLwh\":40,\"weight\":1000,\"inProvincePrice\":2500,\"outProvinceLwh\":40,\"lwh\":40},\"clientGrade\":104}",
+                        "use_self_price": true,
+                        "discount_limit_rule": null,
+                        "exclude_upcountry_enabled": null,
+                        "cod_settlement_category": 0,
+                        "cod_uniform_amount": null,
+                        "weighing_category": 0,
+                        "weighing_category_note": "该客户按重量或体积计费",
+                        "src_name": "dfdf",
+                        "src_phone": "18524125541",
+                        "country_code": "TH",
+                        "country_name": "Thailand",
+                        "province_code": "TH01",
+                        "province_name": "กรุงเทพ",
+                        "city_code": "TH0101",
+                        "city_name": "คลองเตย",
+                        "district_code": "TH010101",
+                        "district_name": "คลองตัน",
+                        "detail_address": "dfsdfe",
+                        "postal_code": "10110",
+                        "approve_enabled": false,
+                        "approve_text": null,
+                        "approve_state": 2,
+                        "trusted_enabled": false,
+                        "speed_enabled": true,
+                        "speed_note": null,
+                        "speed_client_grade": 115,
+                        "speed_price_rule": "{\"addedWeightRule\":{\"outProvincePrice\":1000,\"weightRenew\":1000,\"inProvincePrice\":1500,\"inProvincePriceRenewStart\":86500,\"outProvincePriceRenewStart\":60000,\"lwhRenew\":5},\"excludeUpcountry\":false,\"sameProvincePolicy\":0,\"specialRules\":[],\"lastPriceRule\":{\"outProvincePrice\":60000,\"weight\":50000,\"inProvincePrice\":86500,\"lwh\":305},\"rules\":[{\"outProvincePrice\":4500,\"inProvinceLwh\":40,\"weight\":1000,\"inProvincePrice\":3000,\"outProvinceLwh\":40,\"lwh\":40},{\"outProvincePrice\":5000,\"inProvinceLwh\":50,\"weight\":2000,\"inProvincePrice\":4000,\"outProvinceLwh\":50,\"lwh\":50},{\"outProvincePrice\":5500,\"inProvinceLwh\":60,\"weight\":3000,\"inProvincePrice\":4500,\"outProvinceLwh\":60,\"lwh\":60},{\"outProvincePrice\":6000,\"inProvinceLwh\":70,\"weight\":4000,\"inProvincePrice\":5000,\"outProvinceLwh\":70,\"lwh\":70},{\"outProvincePrice\":7000,\"inProvinceLwh\":80,\"weight\":5000,\"inProvincePrice\":5500,\"outProvinceLwh\":80,\"lwh\":80},{\"outProvincePrice\":7500,\"inProvinceLwh\":85,\"weight\":6000,\"inProvincePrice\":7500,\"outProvinceLwh\":85,\"lwh\":85},{\"outProvincePrice\":8500,\"inProvinceLwh\":90,\"weight\":7000,\"inProvincePrice\":9000,\"outProvinceLwh\":90,\"lwh\":90},{\"outProvincePrice\":10000,\"inProvinceLwh\":95,\"weight\":8000,\"inProvincePrice\":11000,\"outProvinceLwh\":95,\"lwh\":95},{\"outProvincePrice\":11000,\"inProvinceLwh\":100,\"weight\":9000,\"inProvincePrice\":13000,\"outProvinceLwh\":100,\"lwh\":100},{\"outProvincePrice\":12000,\"inProvinceLwh\":105,\"weight\":10000,\"inProvincePrice\":14500,\"outProvinceLwh\":105,\"lwh\":105},{\"outProvincePrice\":13500,\"inProvinceLwh\":110,\"weight\":11000,\"inProvincePrice\":16500,\"outProvinceLwh\":110,\"lwh\":110},{\"outProvincePrice\":14500,\"inProvinceLwh\":115,\"weight\":12000,\"inProvincePrice\":18000,\"outProvinceLwh\":115,\"lwh\":115},{\"outProvincePrice\":16000,\"inProvinceLwh\":120,\"weight\":13000,\"inProvincePrice\":20000,\"outProvinceLwh\":120,\"lwh\":120},{\"outProvincePrice\":17000,\"inProvinceLwh\":125,\"weight\":14000,\"inProvincePrice\":22000,\"outProvinceLwh\":125,\"lwh\":125},{\"outProvincePrice\":18000,\"inProvinceLwh\":130,\"weight\":15000,\"inProvincePrice\":23500,\"outProvinceLwh\":130,\"lwh\":130},{\"outProvincePrice\":19500,\"inProvinceLwh\":135,\"weight\":16000,\"inProvincePrice\":25500,\"outProvinceLwh\":135,\"lwh\":135},{\"outProvincePrice\":20500,\"inProvinceLwh\":140,\"weight\":17000,\"inProvincePrice\":27000,\"outProvinceLwh\":140,\"lwh\":140},{\"outProvincePrice\":22000,\"inProvinceLwh\":145,\"weight\":18000,\"inProvincePrice\":29000,\"outProvinceLwh\":145,\"lwh\":145},{\"outProvincePrice\":23000,\"inProvinceLwh\":150,\"weight\":19000,\"inProvincePrice\":31000,\"outProvinceLwh\":150,\"lwh\":150},{\"outProvincePrice\":24000,\"inProvinceLwh\":155,\"weight\":20000,\"inProvincePrice\":32500,\"outProvinceLwh\":155,\"lwh\":155},{\"outProvincePrice\":25500,\"inProvinceLwh\":160,\"weight\":21000,\"inProvincePrice\":34500,\"outProvinceLwh\":160,\"lwh\":160},{\"outProvincePrice\":26500,\"inProvinceLwh\":165,\"weight\":22000,\"inProvincePrice\":36000,\"outProvinceLwh\":165,\"lwh\":165},{\"outProvincePrice\":28000,\"inProvinceLwh\":170,\"weight\":23000,\"inProvincePrice\":38000,\"outProvinceLwh\":170,\"lwh\":170},{\"outProvincePrice\":29000,\"inProvinceLwh\":175,\"weight\":24000,\"inProvincePrice\":40000,\"outProvinceLwh\":175,\"lwh\":175},{\"outProvincePrice\":30000,\"inProvinceLwh\":180,\"weight\":25000,\"inProvincePrice\":41500,\"outProvinceLwh\":180,\"lwh\":180},{\"outProvincePrice\":31500,\"inProvinceLwh\":185,\"weight\":26000,\"inProvincePrice\":43500,\"outProvinceLwh\":185,\"lwh\":185},{\"outProvincePrice\":32500,\"inProvinceLwh\":190,\"weight\":27000,\"inProvincePrice\":45000,\"outProvinceLwh\":190,\"lwh\":190},{\"outProvincePrice\":34000,\"inProvinceLwh\":195,\"weight\":28000,\"inProvincePrice\":47000,\"outProvinceLwh\":195,\"lwh\":195},{\"outProvincePrice\":35000,\"inProvinceLwh\":200,\"weight\":29000,\"inProvincePrice\":49000,\"outProvinceLwh\":200,\"lwh\":200},{\"outProvincePrice\":36000,\"inProvinceLwh\":205,\"weight\":30000,\"inProvincePrice\":50500,\"outProvinceLwh\":205,\"lwh\":205},{\"outProvincePrice\":37500,\"inProvinceLwh\":210,\"weight\":31000,\"inProvincePrice\":52500,\"outProvinceLwh\":210,\"lwh\":210},{\"outProvincePrice\":38500,\"inProvinceLwh\":215,\"weight\":32000,\"inProvincePrice\":54000,\"outProvinceLwh\":215,\"lwh\":215},{\"outProvincePrice\":40000,\"inProvinceLwh\":220,\"weight\":33000,\"inProvincePrice\":56000,\"outProvinceLwh\":220,\"lwh\":220},{\"outProvincePrice\":41000,\"inProvinceLwh\":225,\"weight\":34000,\"inProvincePrice\":58000,\"outProvinceLwh\":225,\"lwh\":225},{\"outProvincePrice\":42000,\"inProvinceLwh\":230,\"weight\":35000,\"inProvincePrice\":59500,\"outProvinceLwh\":230,\"lwh\":230},{\"outProvincePrice\":43500,\"inProvinceLwh\":235,\"weight\":36000,\"inProvincePrice\":61500,\"outProvinceLwh\":235,\"lwh\":235},{\"outProvincePrice\":44500,\"inProvinceLwh\":240,\"weight\":37000,\"inProvincePrice\":63000,\"outProvinceLwh\":240,\"lwh\":240},{\"outProvincePrice\":46000,\"inProvinceLwh\":245,\"weight\":38000,\"inProvincePrice\":65000,\"outProvinceLwh\":245,\"lwh\":245},{\"outProvincePrice\":47000,\"inProvinceLwh\":250,\"weight\":39000,\"inProvincePrice\":67000,\"outProvinceLwh\":250,\"lwh\":250},{\"outProvincePrice\":48000,\"inProvinceLwh\":255,\"weight\":40000,\"inProvincePrice\":68500,\"outProvinceLwh\":255,\"lwh\":255},{\"outProvincePrice\":49500,\"inProvinceLwh\":260,\"weight\":41000,\"inProvincePrice\":70500,\"outProvinceLwh\":260,\"lwh\":260},{\"outProvincePrice\":50500,\"inProvinceLwh\":265,\"weight\":42000,\"inProvincePrice\":72000,\"outProvinceLwh\":265,\"lwh\":265},{\"outProvincePrice\":52000,\"inProvinceLwh\":270,\"weight\":43000,\"inProvincePrice\":74000,\"outProvinceLwh\":270,\"lwh\":270},{\"outProvincePrice\":53000,\"inProvinceLwh\":275,\"weight\":44000,\"inProvincePrice\":76000,\"outProvinceLwh\":275,\"lwh\":275},{\"outProvincePrice\":54000,\"inProvinceLwh\":280,\"weight\":45000,\"inProvincePrice\":77500,\"outProvinceLwh\":280,\"lwh\":280},{\"outProvincePrice\":55500,\"weight\":46000,\"inProvincePrice\":79500,\"lwh\":285},{\"outProvincePrice\":56500,\"weight\":47000,\"inProvincePrice\":81000,\"lwh\":290},{\"outProvincePrice\":58000,\"weight\":48000,\"inProvincePrice\":83000,\"lwh\":295},{\"outProvincePrice\":59000,\"weight\":49000,\"inProvincePrice\":85000,\"lwh\":300},{\"outProvincePrice\":60000,\"weight\":50000,\"inProvincePrice\":86500,\"lwh\":305}],\"firstPriceRule\":{\"outProvincePrice\":4500,\"inProvinceLwh\":40,\"weight\":1000,\"inProvincePrice\":3000,\"outProvinceLwh\":40,\"lwh\":40},\"clientGrade\":115}",
+                        "speed_discount_rate": 0,
+                        "max_length": 100,
+                        "max_width": 100,
+                        "max_height": 100,
+                        "max_sum_of_lwh": 280,
+                        "pno": null,
+                        "diff_info_id": null,
+                        "restricted": true,
+                        "beneficiary_enabled": false,
+                        "authentication_type": 1
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "anyOf": [
+                    {
+                        "$id": "#/properties/data/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "id": "CA1100",
+                                "client_id": "CA1100",
+                                "agent_enabled": false,
+                                "agent_id": null,
+                                "name": "yr1",
+                                "client_grade": 999,
+                                "client_grade_text": "New Standard price",
+                                "client_type_category": 2,
+                                "discount_rate": 1,
+                                "cod_enabled": true,
+                                "cod_enabled_text": "开通",
+                                "major_mobile": "1341341341",
+                                "settlement_category": 1,
+                                "settlement_category_text": "现场结算",
+                                "cod_poundage_rate": 25,
+                                "cod_poundage_minimum": 0,
+                                "insure_rate": 0,
+                                "insure_category": 0,
+                                "price_strategy": null,
+                                "customer_type_category": 2,
+                                "customer_type_category_text": "签约客户",
+                                "price_rule": "{\"addedWeightRule\":{\"outProvincePrice\":1000,\"weightRenew\":1000,\"inProvincePrice\":1500,\"inProvincePriceRenewStart\":72000,\"outProvincePriceRenewStart\":50000,\"lwhRenew\":5},\"excludeUpcountry\":false,\"sameProvincePolicy\":0,\"specialRules\":[],\"lastPriceRule\":{\"outProvincePrice\":50000,\"weight\":50000,\"inProvincePrice\":72000,\"lwh\":305},\"rules\":[{\"outProvincePrice\":3500,\"inProvinceLwh\":40,\"weight\":1000,\"inProvincePrice\":2500,\"outProvinceLwh\":40,\"lwh\":40},{\"outProvincePrice\":4000,\"inProvinceLwh\":50,\"weight\":2000,\"inProvincePrice\":3000,\"outProvinceLwh\":50,\"lwh\":50},{\"outProvincePrice\":4500,\"inProvinceLwh\":60,\"weight\":3000,\"inProvincePrice\":3500,\"outProvinceLwh\":60,\"lwh\":60},{\"outProvincePrice\":5000,\"inProvinceLwh\":70,\"weight\":4000,\"inProvincePrice\":4000,\"outProvinceLwh\":70,\"lwh\":70},{\"outProvincePrice\":5500,\"inProvinceLwh\":80,\"weight\":5000,\"inProvincePrice\":4500,\"outProvinceLwh\":80,\"lwh\":80},{\"outProvincePrice\":6000,\"inProvinceLwh\":85,\"weight\":6000,\"inProvincePrice\":6000,\"outProvinceLwh\":85,\"lwh\":85},{\"outProvincePrice\":7000,\"inProvinceLwh\":90,\"weight\":7000,\"inProvincePrice\":7500,\"outProvinceLwh\":90,\"lwh\":90},{\"outProvincePrice\":8000,\"inProvinceLwh\":95,\"weight\":8000,\"inProvincePrice\":9000,\"outProvinceLwh\":95,\"lwh\":95},{\"outProvincePrice\":9000,\"inProvinceLwh\":100,\"weight\":9000,\"inProvincePrice\":10500,\"outProvinceLwh\":100,\"lwh\":100},{\"outProvincePrice\":10000,\"inProvinceLwh\":105,\"weight\":10000,\"inProvincePrice\":12000,\"outProvinceLwh\":105,\"lwh\":105},{\"outProvincePrice\":11000,\"inProvinceLwh\":110,\"weight\":11000,\"inProvincePrice\":13500,\"outProvinceLwh\":110,\"lwh\":110},{\"outProvincePrice\":12000,\"inProvinceLwh\":115,\"weight\":12000,\"inProvincePrice\":15000,\"outProvinceLwh\":115,\"lwh\":115},{\"outProvincePrice\":13000,\"inProvinceLwh\":120,\"weight\":13000,\"inProvincePrice\":16500,\"outProvinceLwh\":120,\"lwh\":120},{\"outProvincePrice\":14000,\"inProvinceLwh\":125,\"weight\":14000,\"inProvincePrice\":18000,\"outProvinceLwh\":125,\"lwh\":125},{\"outProvincePrice\":15000,\"inProvinceLwh\":130,\"weight\":15000,\"inProvincePrice\":19500,\"outProvinceLwh\":130,\"lwh\":130},{\"outProvincePrice\":16000,\"inProvinceLwh\":135,\"weight\":16000,\"inProvincePrice\":21000,\"outProvinceLwh\":135,\"lwh\":135},{\"outProvincePrice\":17000,\"inProvinceLwh\":140,\"weight\":17000,\"inProvincePrice\":22500,\"outProvinceLwh\":140,\"lwh\":140},{\"outProvincePrice\":18000,\"inProvinceLwh\":145,\"weight\":18000,\"inProvincePrice\":24000,\"outProvinceLwh\":145,\"lwh\":145},{\"outProvincePrice\":19000,\"inProvinceLwh\":150,\"weight\":19000,\"inProvincePrice\":25500,\"outProvinceLwh\":150,\"lwh\":150},{\"outProvincePrice\":20000,\"inProvinceLwh\":155,\"weight\":20000,\"inProvincePrice\":27000,\"outProvinceLwh\":155,\"lwh\":155},{\"outProvincePrice\":21000,\"inProvinceLwh\":160,\"weight\":21000,\"inProvincePrice\":28500,\"outProvinceLwh\":160,\"lwh\":160},{\"outProvincePrice\":22000,\"inProvinceLwh\":165,\"weight\":22000,\"inProvincePrice\":30000,\"outProvinceLwh\":165,\"lwh\":165},{\"outProvincePrice\":23000,\"inProvinceLwh\":170,\"weight\":23000,\"inProvincePrice\":31500,\"outProvinceLwh\":170,\"lwh\":170},{\"outProvincePrice\":24000,\"inProvinceLwh\":175,\"weight\":24000,\"inProvincePrice\":33000,\"outProvinceLwh\":175,\"lwh\":175},{\"outProvincePrice\":25000,\"inProvinceLwh\":180,\"weight\":25000,\"inProvincePrice\":34500,\"outProvinceLwh\":180,\"lwh\":180},{\"outProvincePrice\":26000,\"inProvinceLwh\":185,\"weight\":26000,\"inProvincePrice\":36000,\"outProvinceLwh\":185,\"lwh\":185},{\"outProvincePrice\":27000,\"inProvinceLwh\":190,\"weight\":27000,\"inProvincePrice\":37500,\"outProvinceLwh\":190,\"lwh\":190},{\"outProvincePrice\":28000,\"inProvinceLwh\":195,\"weight\":28000,\"inProvincePrice\":39000,\"outProvinceLwh\":195,\"lwh\":195},{\"outProvincePrice\":29000,\"inProvinceLwh\":200,\"weight\":29000,\"inProvincePrice\":40500,\"outProvinceLwh\":200,\"lwh\":200},{\"outProvincePrice\":30000,\"inProvinceLwh\":205,\"weight\":30000,\"inProvincePrice\":42000,\"outProvinceLwh\":205,\"lwh\":205},{\"outProvincePrice\":31000,\"inProvinceLwh\":210,\"weight\":31000,\"inProvincePrice\":43500,\"outProvinceLwh\":210,\"lwh\":210},{\"outProvincePrice\":32000,\"inProvinceLwh\":215,\"weight\":32000,\"inProvincePrice\":45000,\"outProvinceLwh\":215,\"lwh\":215},{\"outProvincePrice\":33000,\"inProvinceLwh\":220,\"weight\":33000,\"inProvincePrice\":46500,\"outProvinceLwh\":220,\"lwh\":220},{\"outProvincePrice\":34000,\"inProvinceLwh\":225,\"weight\":34000,\"inProvincePrice\":48000,\"outProvinceLwh\":225,\"lwh\":225},{\"outProvincePrice\":35000,\"inProvinceLwh\":230,\"weight\":35000,\"inProvincePrice\":49500,\"outProvinceLwh\":230,\"lwh\":230},{\"outProvincePrice\":36000,\"inProvinceLwh\":235,\"weight\":36000,\"inProvincePrice\":51000,\"outProvinceLwh\":235,\"lwh\":235},{\"outProvincePrice\":37000,\"inProvinceLwh\":240,\"weight\":37000,\"inProvincePrice\":52500,\"outProvinceLwh\":240,\"lwh\":240},{\"outProvincePrice\":38000,\"inProvinceLwh\":245,\"weight\":38000,\"inProvincePrice\":54000,\"outProvinceLwh\":245,\"lwh\":245},{\"outProvincePrice\":39000,\"inProvinceLwh\":250,\"weight\":39000,\"inProvincePrice\":55500,\"outProvinceLwh\":250,\"lwh\":250},{\"outProvincePrice\":40000,\"inProvinceLwh\":255,\"weight\":40000,\"inProvincePrice\":57000,\"outProvinceLwh\":255,\"lwh\":255},{\"outProvincePrice\":41000,\"inProvinceLwh\":260,\"weight\":41000,\"inProvincePrice\":58500,\"outProvinceLwh\":260,\"lwh\":260},{\"outProvincePrice\":42000,\"inProvinceLwh\":265,\"weight\":42000,\"inProvincePrice\":60000,\"outProvinceLwh\":265,\"lwh\":265},{\"outProvincePrice\":43000,\"inProvinceLwh\":270,\"weight\":43000,\"inProvincePrice\":61500,\"outProvinceLwh\":270,\"lwh\":270},{\"outProvincePrice\":44000,\"inProvinceLwh\":275,\"weight\":44000,\"inProvincePrice\":63000,\"outProvinceLwh\":275,\"lwh\":275},{\"outProvincePrice\":45000,\"inProvinceLwh\":280,\"weight\":45000,\"inProvincePrice\":64500,\"outProvinceLwh\":280,\"lwh\":280},{\"outProvincePrice\":46000,\"weight\":46000,\"inProvincePrice\":66000,\"lwh\":285},{\"outProvincePrice\":47000,\"weight\":47000,\"inProvincePrice\":67500,\"lwh\":290},{\"outProvincePrice\":48000,\"weight\":48000,\"inProvincePrice\":69000,\"lwh\":295},{\"outProvincePrice\":49000,\"weight\":49000,\"inProvincePrice\":70500,\"lwh\":300},{\"outProvincePrice\":50000,\"weight\":50000,\"inProvincePrice\":72000,\"lwh\":305}],\"firstPriceRule\":{\"outProvincePrice\":3500,\"inProvinceLwh\":40,\"weight\":1000,\"inProvincePrice\":2500,\"outProvinceLwh\":40,\"lwh\":40},\"clientGrade\":104}",
+                                "use_self_price": true,
+                                "discount_limit_rule": null,
+                                "exclude_upcountry_enabled": null,
+                                "cod_settlement_category": 0,
+                                "cod_uniform_amount": null,
+                                "weighing_category": 0,
+                                "weighing_category_note": "该客户按重量或体积计费",
+                                "src_name": "dfdf",
+                                "src_phone": "18524125541",
+                                "country_code": "TH",
+                                "country_name": "Thailand",
+                                "province_code": "TH01",
+                                "province_name": "กรุงเทพ",
+                                "city_code": "TH0101",
+                                "city_name": "คลองเตย",
+                                "district_code": "TH010101",
+                                "district_name": "คลองตัน",
+                                "detail_address": "dfsdfe",
+                                "postal_code": "10110",
+                                "approve_enabled": false,
+                                "approve_text": null,
+                                "approve_state": 2,
+                                "trusted_enabled": false,
+                                "speed_enabled": true,
+                                "speed_note": null,
+                                "speed_client_grade": 115,
+                                "speed_price_rule": "{\"addedWeightRule\":{\"outProvincePrice\":1000,\"weightRenew\":1000,\"inProvincePrice\":1500,\"inProvincePriceRenewStart\":86500,\"outProvincePriceRenewStart\":60000,\"lwhRenew\":5},\"excludeUpcountry\":false,\"sameProvincePolicy\":0,\"specialRules\":[],\"lastPriceRule\":{\"outProvincePrice\":60000,\"weight\":50000,\"inProvincePrice\":86500,\"lwh\":305},\"rules\":[{\"outProvincePrice\":4500,\"inProvinceLwh\":40,\"weight\":1000,\"inProvincePrice\":3000,\"outProvinceLwh\":40,\"lwh\":40},{\"outProvincePrice\":5000,\"inProvinceLwh\":50,\"weight\":2000,\"inProvincePrice\":4000,\"outProvinceLwh\":50,\"lwh\":50},{\"outProvincePrice\":5500,\"inProvinceLwh\":60,\"weight\":3000,\"inProvincePrice\":4500,\"outProvinceLwh\":60,\"lwh\":60},{\"outProvincePrice\":6000,\"inProvinceLwh\":70,\"weight\":4000,\"inProvincePrice\":5000,\"outProvinceLwh\":70,\"lwh\":70},{\"outProvincePrice\":7000,\"inProvinceLwh\":80,\"weight\":5000,\"inProvincePrice\":5500,\"outProvinceLwh\":80,\"lwh\":80},{\"outProvincePrice\":7500,\"inProvinceLwh\":85,\"weight\":6000,\"inProvincePrice\":7500,\"outProvinceLwh\":85,\"lwh\":85},{\"outProvincePrice\":8500,\"inProvinceLwh\":90,\"weight\":7000,\"inProvincePrice\":9000,\"outProvinceLwh\":90,\"lwh\":90},{\"outProvincePrice\":10000,\"inProvinceLwh\":95,\"weight\":8000,\"inProvincePrice\":11000,\"outProvinceLwh\":95,\"lwh\":95},{\"outProvincePrice\":11000,\"inProvinceLwh\":100,\"weight\":9000,\"inProvincePrice\":13000,\"outProvinceLwh\":100,\"lwh\":100},{\"outProvincePrice\":12000,\"inProvinceLwh\":105,\"weight\":10000,\"inProvincePrice\":14500,\"outProvinceLwh\":105,\"lwh\":105},{\"outProvincePrice\":13500,\"inProvinceLwh\":110,\"weight\":11000,\"inProvincePrice\":16500,\"outProvinceLwh\":110,\"lwh\":110},{\"outProvincePrice\":14500,\"inProvinceLwh\":115,\"weight\":12000,\"inProvincePrice\":18000,\"outProvinceLwh\":115,\"lwh\":115},{\"outProvincePrice\":16000,\"inProvinceLwh\":120,\"weight\":13000,\"inProvincePrice\":20000,\"outProvinceLwh\":120,\"lwh\":120},{\"outProvincePrice\":17000,\"inProvinceLwh\":125,\"weight\":14000,\"inProvincePrice\":22000,\"outProvinceLwh\":125,\"lwh\":125},{\"outProvincePrice\":18000,\"inProvinceLwh\":130,\"weight\":15000,\"inProvincePrice\":23500,\"outProvinceLwh\":130,\"lwh\":130},{\"outProvincePrice\":19500,\"inProvinceLwh\":135,\"weight\":16000,\"inProvincePrice\":25500,\"outProvinceLwh\":135,\"lwh\":135},{\"outProvincePrice\":20500,\"inProvinceLwh\":140,\"weight\":17000,\"inProvincePrice\":27000,\"outProvinceLwh\":140,\"lwh\":140},{\"outProvincePrice\":22000,\"inProvinceLwh\":145,\"weight\":18000,\"inProvincePrice\":29000,\"outProvinceLwh\":145,\"lwh\":145},{\"outProvincePrice\":23000,\"inProvinceLwh\":150,\"weight\":19000,\"inProvincePrice\":31000,\"outProvinceLwh\":150,\"lwh\":150},{\"outProvincePrice\":24000,\"inProvinceLwh\":155,\"weight\":20000,\"inProvincePrice\":32500,\"outProvinceLwh\":155,\"lwh\":155},{\"outProvincePrice\":25500,\"inProvinceLwh\":160,\"weight\":21000,\"inProvincePrice\":34500,\"outProvinceLwh\":160,\"lwh\":160},{\"outProvincePrice\":26500,\"inProvinceLwh\":165,\"weight\":22000,\"inProvincePrice\":36000,\"outProvinceLwh\":165,\"lwh\":165},{\"outProvincePrice\":28000,\"inProvinceLwh\":170,\"weight\":23000,\"inProvincePrice\":38000,\"outProvinceLwh\":170,\"lwh\":170},{\"outProvincePrice\":29000,\"inProvinceLwh\":175,\"weight\":24000,\"inProvincePrice\":40000,\"outProvinceLwh\":175,\"lwh\":175},{\"outProvincePrice\":30000,\"inProvinceLwh\":180,\"weight\":25000,\"inProvincePrice\":41500,\"outProvinceLwh\":180,\"lwh\":180},{\"outProvincePrice\":31500,\"inProvinceLwh\":185,\"weight\":26000,\"inProvincePrice\":43500,\"outProvinceLwh\":185,\"lwh\":185},{\"outProvincePrice\":32500,\"inProvinceLwh\":190,\"weight\":27000,\"inProvincePrice\":45000,\"outProvinceLwh\":190,\"lwh\":190},{\"outProvincePrice\":34000,\"inProvinceLwh\":195,\"weight\":28000,\"inProvincePrice\":47000,\"outProvinceLwh\":195,\"lwh\":195},{\"outProvincePrice\":35000,\"inProvinceLwh\":200,\"weight\":29000,\"inProvincePrice\":49000,\"outProvinceLwh\":200,\"lwh\":200},{\"outProvincePrice\":36000,\"inProvinceLwh\":205,\"weight\":30000,\"inProvincePrice\":50500,\"outProvinceLwh\":205,\"lwh\":205},{\"outProvincePrice\":37500,\"inProvinceLwh\":210,\"weight\":31000,\"inProvincePrice\":52500,\"outProvinceLwh\":210,\"lwh\":210},{\"outProvincePrice\":38500,\"inProvinceLwh\":215,\"weight\":32000,\"inProvincePrice\":54000,\"outProvinceLwh\":215,\"lwh\":215},{\"outProvincePrice\":40000,\"inProvinceLwh\":220,\"weight\":33000,\"inProvincePrice\":56000,\"outProvinceLwh\":220,\"lwh\":220},{\"outProvincePrice\":41000,\"inProvinceLwh\":225,\"weight\":34000,\"inProvincePrice\":58000,\"outProvinceLwh\":225,\"lwh\":225},{\"outProvincePrice\":42000,\"inProvinceLwh\":230,\"weight\":35000,\"inProvincePrice\":59500,\"outProvinceLwh\":230,\"lwh\":230},{\"outProvincePrice\":43500,\"inProvinceLwh\":235,\"weight\":36000,\"inProvincePrice\":61500,\"outProvinceLwh\":235,\"lwh\":235},{\"outProvincePrice\":44500,\"inProvinceLwh\":240,\"weight\":37000,\"inProvincePrice\":63000,\"outProvinceLwh\":240,\"lwh\":240},{\"outProvincePrice\":46000,\"inProvinceLwh\":245,\"weight\":38000,\"inProvincePrice\":65000,\"outProvinceLwh\":245,\"lwh\":245},{\"outProvincePrice\":47000,\"inProvinceLwh\":250,\"weight\":39000,\"inProvincePrice\":67000,\"outProvinceLwh\":250,\"lwh\":250},{\"outProvincePrice\":48000,\"inProvinceLwh\":255,\"weight\":40000,\"inProvincePrice\":68500,\"outProvinceLwh\":255,\"lwh\":255},{\"outProvincePrice\":49500,\"inProvinceLwh\":260,\"weight\":41000,\"inProvincePrice\":70500,\"outProvinceLwh\":260,\"lwh\":260},{\"outProvincePrice\":50500,\"inProvinceLwh\":265,\"weight\":42000,\"inProvincePrice\":72000,\"outProvinceLwh\":265,\"lwh\":265},{\"outProvincePrice\":52000,\"inProvinceLwh\":270,\"weight\":43000,\"inProvincePrice\":74000,\"outProvinceLwh\":270,\"lwh\":270},{\"outProvincePrice\":53000,\"inProvinceLwh\":275,\"weight\":44000,\"inProvincePrice\":76000,\"outProvinceLwh\":275,\"lwh\":275},{\"outProvincePrice\":54000,\"inProvinceLwh\":280,\"weight\":45000,\"inProvincePrice\":77500,\"outProvinceLwh\":280,\"lwh\":280},{\"outProvincePrice\":55500,\"weight\":46000,\"inProvincePrice\":79500,\"lwh\":285},{\"outProvincePrice\":56500,\"weight\":47000,\"inProvincePrice\":81000,\"lwh\":290},{\"outProvincePrice\":58000,\"weight\":48000,\"inProvincePrice\":83000,\"lwh\":295},{\"outProvincePrice\":59000,\"weight\":49000,\"inProvincePrice\":85000,\"lwh\":300},{\"outProvincePrice\":60000,\"weight\":50000,\"inProvincePrice\":86500,\"lwh\":305}],\"firstPriceRule\":{\"outProvincePrice\":4500,\"inProvinceLwh\":40,\"weight\":1000,\"inProvincePrice\":3000,\"outProvinceLwh\":40,\"lwh\":40},\"clientGrade\":115}",
+                                "speed_discount_rate": 0,
+                                "max_length": 100,
+                                "max_width": 100,
+                                "max_height": 100,
+                                "max_sum_of_lwh": 280,
+                                "pno": null,
+                                "diff_info_id": null,
+                                "restricted": true,
+                                "beneficiary_enabled": false,
+                                "authentication_type": 1
+                            }
+                        ],
+                        "required": [
+                            "id",
+                            "client_id",
+                            "agent_enabled",
+                            "agent_id",
+                            "name",
+                            "client_grade",
+                            "client_grade_text",
+                            "client_type_category",
+                            "discount_rate",
+                            "cod_enabled",
+                            "cod_enabled_text",
+                            "major_mobile",
+                            "settlement_category",
+                            "settlement_category_text",
+                            "cod_poundage_rate",
+                            "cod_poundage_minimum",
+                            "insure_rate",
+                            "insure_category",
+                            "price_strategy",
+                            "customer_type_category",
+                            "customer_type_category_text",
+                            "price_rule",
+                            "use_self_price",
+                            "discount_limit_rule",
+                            "exclude_upcountry_enabled",
+                            "cod_settlement_category",
+                            "cod_uniform_amount",
+                            "weighing_category",
+                            "weighing_category_note",
+                            "src_name",
+                            "src_phone",
+                            "country_code",
+                            "country_name",
+                            "province_code",
+                            "province_name",
+                            "city_code",
+                            "city_name",
+                            "district_code",
+                            "district_name",
+                            "detail_address",
+                            "postal_code",
+                            "approve_enabled",
+                            "approve_text",
+                            "approve_state",
+                            "trusted_enabled",
+                            "speed_enabled",
+                            "speed_note",
+                            "speed_client_grade",
+                            "speed_price_rule",
+                            "speed_discount_rate",
+                            "max_length",
+                            "max_width",
+                            "max_height",
+                            "max_sum_of_lwh",
+                            "pno",
+                            "diff_info_id",
+                            "restricted",
+                            "beneficiary_enabled",
+                            "authentication_type"
+                        ],
+                        "additionalProperties": true,
+                        "properties": {
+                            "id": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/id",
+                                "type": "string",
+                                "title": "The id schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "CA1100"
+                                ]
+                            },
+                            "client_id": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/client_id",
+                                "type": "string",
+                                "title": "The client_id schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "CA1100"
+                                ]
+                            },
+                            "agent_enabled": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/agent_enabled",
+                                "type": "boolean",
+                                "title": "The agent_enabled schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": false,
+                                "examples": [
+                                    false
+                                ]
+                            },
+                            "agent_id": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/agent_id",
+                                "type": "null",
+                                "title": "The agent_id schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "name": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/name",
+                                "type": "string",
+                                "title": "The name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "yr1"
+                                ]
+                            },
+                            "client_grade": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/client_grade",
+                                "type": "integer",
+                                "title": "The client_grade schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    999
+                                ]
+                            },
+                            "client_grade_text": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/client_grade_text",
+                                "type": "string",
+                                "title": "The client_grade_text schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "New Standard price"
+                                ]
+                            },
+                            "client_type_category": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/client_type_category",
+                                "type": "integer",
+                                "title": "The client_type_category schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    2
+                                ]
+                            },
+                            "discount_rate": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/discount_rate",
+                                "type": "integer",
+                                "title": "The discount_rate schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    1
+                                ]
+                            },
+                            "cod_enabled": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/cod_enabled",
+                                "type": "boolean",
+                                "title": "The cod_enabled schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": false,
+                                "examples": [
+                                    true
+                                ]
+                            },
+                            "cod_enabled_text": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/cod_enabled_text",
+                                "type": "string",
+                                "title": "The cod_enabled_text schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "开通"
+                                ]
+                            },
+                            "major_mobile": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/major_mobile",
+                                "type": "string",
+                                "title": "The major_mobile schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "1341341341"
+                                ]
+                            },
+                            "settlement_category": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/settlement_category",
+                                "type": "integer",
+                                "title": "The settlement_category schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    1
+                                ]
+                            },
+                            "settlement_category_text": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/settlement_category_text",
+                                "type": "string",
+                                "title": "The settlement_category_text schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "现场结算"
+                                ]
+                            },
+                            "cod_poundage_rate": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/cod_poundage_rate",
+                                "type": "integer",
+                                "title": "The cod_poundage_rate schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    25
+                                ]
+                            },
+                            "cod_poundage_minimum": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/cod_poundage_minimum",
+                                "type": "integer",
+                                "title": "The cod_poundage_minimum schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "insure_rate": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/insure_rate",
+                                "type": "integer",
+                                "title": "The insure_rate schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "insure_category": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/insure_category",
+                                "type": "integer",
+                                "title": "The insure_category schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "price_strategy": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/price_strategy",
+                                "type": ["null","string"],
+                                "title": "The price_strategy schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "customer_type_category": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/customer_type_category",
+                                "type": "integer",
+                                "title": "The customer_type_category schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    2
+                                ]
+                            },
+                            "customer_type_category_text": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/customer_type_category_text",
+                                "type": "string",
+                                "title": "The customer_type_category_text schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "签约客户"
+                                ]
+                            },
+                            "price_rule": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/price_rule",
+                                "type": "string",
+                                "title": "The price_rule schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "{\"addedWeightRule\":{\"outProvincePrice\":1000,\"weightRenew\":1000,\"inProvincePrice\":1500,\"inProvincePriceRenewStart\":72000,\"outProvincePriceRenewStart\":50000,\"lwhRenew\":5},\"excludeUpcountry\":false,\"sameProvincePolicy\":0,\"specialRules\":[],\"lastPriceRule\":{\"outProvincePrice\":50000,\"weight\":50000,\"inProvincePrice\":72000,\"lwh\":305},\"rules\":[{\"outProvincePrice\":3500,\"inProvinceLwh\":40,\"weight\":1000,\"inProvincePrice\":2500,\"outProvinceLwh\":40,\"lwh\":40},{\"outProvincePrice\":4000,\"inProvinceLwh\":50,\"weight\":2000,\"inProvincePrice\":3000,\"outProvinceLwh\":50,\"lwh\":50},{\"outProvincePrice\":4500,\"inProvinceLwh\":60,\"weight\":3000,\"inProvincePrice\":3500,\"outProvinceLwh\":60,\"lwh\":60},{\"outProvincePrice\":5000,\"inProvinceLwh\":70,\"weight\":4000,\"inProvincePrice\":4000,\"outProvinceLwh\":70,\"lwh\":70},{\"outProvincePrice\":5500,\"inProvinceLwh\":80,\"weight\":5000,\"inProvincePrice\":4500,\"outProvinceLwh\":80,\"lwh\":80},{\"outProvincePrice\":6000,\"inProvinceLwh\":85,\"weight\":6000,\"inProvincePrice\":6000,\"outProvinceLwh\":85,\"lwh\":85},{\"outProvincePrice\":7000,\"inProvinceLwh\":90,\"weight\":7000,\"inProvincePrice\":7500,\"outProvinceLwh\":90,\"lwh\":90},{\"outProvincePrice\":8000,\"inProvinceLwh\":95,\"weight\":8000,\"inProvincePrice\":9000,\"outProvinceLwh\":95,\"lwh\":95},{\"outProvincePrice\":9000,\"inProvinceLwh\":100,\"weight\":9000,\"inProvincePrice\":10500,\"outProvinceLwh\":100,\"lwh\":100},{\"outProvincePrice\":10000,\"inProvinceLwh\":105,\"weight\":10000,\"inProvincePrice\":12000,\"outProvinceLwh\":105,\"lwh\":105},{\"outProvincePrice\":11000,\"inProvinceLwh\":110,\"weight\":11000,\"inProvincePrice\":13500,\"outProvinceLwh\":110,\"lwh\":110},{\"outProvincePrice\":12000,\"inProvinceLwh\":115,\"weight\":12000,\"inProvincePrice\":15000,\"outProvinceLwh\":115,\"lwh\":115},{\"outProvincePrice\":13000,\"inProvinceLwh\":120,\"weight\":13000,\"inProvincePrice\":16500,\"outProvinceLwh\":120,\"lwh\":120},{\"outProvincePrice\":14000,\"inProvinceLwh\":125,\"weight\":14000,\"inProvincePrice\":18000,\"outProvinceLwh\":125,\"lwh\":125},{\"outProvincePrice\":15000,\"inProvinceLwh\":130,\"weight\":15000,\"inProvincePrice\":19500,\"outProvinceLwh\":130,\"lwh\":130},{\"outProvincePrice\":16000,\"inProvinceLwh\":135,\"weight\":16000,\"inProvincePrice\":21000,\"outProvinceLwh\":135,\"lwh\":135},{\"outProvincePrice\":17000,\"inProvinceLwh\":140,\"weight\":17000,\"inProvincePrice\":22500,\"outProvinceLwh\":140,\"lwh\":140},{\"outProvincePrice\":18000,\"inProvinceLwh\":145,\"weight\":18000,\"inProvincePrice\":24000,\"outProvinceLwh\":145,\"lwh\":145},{\"outProvincePrice\":19000,\"inProvinceLwh\":150,\"weight\":19000,\"inProvincePrice\":25500,\"outProvinceLwh\":150,\"lwh\":150},{\"outProvincePrice\":20000,\"inProvinceLwh\":155,\"weight\":20000,\"inProvincePrice\":27000,\"outProvinceLwh\":155,\"lwh\":155},{\"outProvincePrice\":21000,\"inProvinceLwh\":160,\"weight\":21000,\"inProvincePrice\":28500,\"outProvinceLwh\":160,\"lwh\":160},{\"outProvincePrice\":22000,\"inProvinceLwh\":165,\"weight\":22000,\"inProvincePrice\":30000,\"outProvinceLwh\":165,\"lwh\":165},{\"outProvincePrice\":23000,\"inProvinceLwh\":170,\"weight\":23000,\"inProvincePrice\":31500,\"outProvinceLwh\":170,\"lwh\":170},{\"outProvincePrice\":24000,\"inProvinceLwh\":175,\"weight\":24000,\"inProvincePrice\":33000,\"outProvinceLwh\":175,\"lwh\":175},{\"outProvincePrice\":25000,\"inProvinceLwh\":180,\"weight\":25000,\"inProvincePrice\":34500,\"outProvinceLwh\":180,\"lwh\":180},{\"outProvincePrice\":26000,\"inProvinceLwh\":185,\"weight\":26000,\"inProvincePrice\":36000,\"outProvinceLwh\":185,\"lwh\":185},{\"outProvincePrice\":27000,\"inProvinceLwh\":190,\"weight\":27000,\"inProvincePrice\":37500,\"outProvinceLwh\":190,\"lwh\":190},{\"outProvincePrice\":28000,\"inProvinceLwh\":195,\"weight\":28000,\"inProvincePrice\":39000,\"outProvinceLwh\":195,\"lwh\":195},{\"outProvincePrice\":29000,\"inProvinceLwh\":200,\"weight\":29000,\"inProvincePrice\":40500,\"outProvinceLwh\":200,\"lwh\":200},{\"outProvincePrice\":30000,\"inProvinceLwh\":205,\"weight\":30000,\"inProvincePrice\":42000,\"outProvinceLwh\":205,\"lwh\":205},{\"outProvincePrice\":31000,\"inProvinceLwh\":210,\"weight\":31000,\"inProvincePrice\":43500,\"outProvinceLwh\":210,\"lwh\":210},{\"outProvincePrice\":32000,\"inProvinceLwh\":215,\"weight\":32000,\"inProvincePrice\":45000,\"outProvinceLwh\":215,\"lwh\":215},{\"outProvincePrice\":33000,\"inProvinceLwh\":220,\"weight\":33000,\"inProvincePrice\":46500,\"outProvinceLwh\":220,\"lwh\":220},{\"outProvincePrice\":34000,\"inProvinceLwh\":225,\"weight\":34000,\"inProvincePrice\":48000,\"outProvinceLwh\":225,\"lwh\":225},{\"outProvincePrice\":35000,\"inProvinceLwh\":230,\"weight\":35000,\"inProvincePrice\":49500,\"outProvinceLwh\":230,\"lwh\":230},{\"outProvincePrice\":36000,\"inProvinceLwh\":235,\"weight\":36000,\"inProvincePrice\":51000,\"outProvinceLwh\":235,\"lwh\":235},{\"outProvincePrice\":37000,\"inProvinceLwh\":240,\"weight\":37000,\"inProvincePrice\":52500,\"outProvinceLwh\":240,\"lwh\":240},{\"outProvincePrice\":38000,\"inProvinceLwh\":245,\"weight\":38000,\"inProvincePrice\":54000,\"outProvinceLwh\":245,\"lwh\":245},{\"outProvincePrice\":39000,\"inProvinceLwh\":250,\"weight\":39000,\"inProvincePrice\":55500,\"outProvinceLwh\":250,\"lwh\":250},{\"outProvincePrice\":40000,\"inProvinceLwh\":255,\"weight\":40000,\"inProvincePrice\":57000,\"outProvinceLwh\":255,\"lwh\":255},{\"outProvincePrice\":41000,\"inProvinceLwh\":260,\"weight\":41000,\"inProvincePrice\":58500,\"outProvinceLwh\":260,\"lwh\":260},{\"outProvincePrice\":42000,\"inProvinceLwh\":265,\"weight\":42000,\"inProvincePrice\":60000,\"outProvinceLwh\":265,\"lwh\":265},{\"outProvincePrice\":43000,\"inProvinceLwh\":270,\"weight\":43000,\"inProvincePrice\":61500,\"outProvinceLwh\":270,\"lwh\":270},{\"outProvincePrice\":44000,\"inProvinceLwh\":275,\"weight\":44000,\"inProvincePrice\":63000,\"outProvinceLwh\":275,\"lwh\":275},{\"outProvincePrice\":45000,\"inProvinceLwh\":280,\"weight\":45000,\"inProvincePrice\":64500,\"outProvinceLwh\":280,\"lwh\":280},{\"outProvincePrice\":46000,\"weight\":46000,\"inProvincePrice\":66000,\"lwh\":285},{\"outProvincePrice\":47000,\"weight\":47000,\"inProvincePrice\":67500,\"lwh\":290},{\"outProvincePrice\":48000,\"weight\":48000,\"inProvincePrice\":69000,\"lwh\":295},{\"outProvincePrice\":49000,\"weight\":49000,\"inProvincePrice\":70500,\"lwh\":300},{\"outProvincePrice\":50000,\"weight\":50000,\"inProvincePrice\":72000,\"lwh\":305}],\"firstPriceRule\":{\"outProvincePrice\":3500,\"inProvinceLwh\":40,\"weight\":1000,\"inProvincePrice\":2500,\"outProvinceLwh\":40,\"lwh\":40},\"clientGrade\":104}"
+                                ]
+                            },
+                            "use_self_price": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/use_self_price",
+                                "type": "boolean",
+                                "title": "The use_self_price schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": false,
+                                "examples": [
+                                    true
+                                ]
+                            },
+                            "discount_limit_rule": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/discount_limit_rule",
+                                "type": "null",
+                                "title": "The discount_limit_rule schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "exclude_upcountry_enabled": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/exclude_upcountry_enabled",
+                                "type": "null",
+                                "title": "The exclude_upcountry_enabled schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "cod_settlement_category": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/cod_settlement_category",
+                                "type": "integer",
+                                "title": "The cod_settlement_category schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "cod_uniform_amount": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/cod_uniform_amount",
+                                "type": "null",
+                                "title": "The cod_uniform_amount schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "weighing_category": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/weighing_category",
+                                "type": "integer",
+                                "title": "The weighing_category schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "weighing_category_note": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/weighing_category_note",
+                                "type": "string",
+                                "title": "The weighing_category_note schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "该客户按重量或体积计费"
+                                ]
+                            },
+                            "src_name": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/src_name",
+                                "type": "string",
+                                "title": "The src_name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "dfdf"
+                                ]
+                            },
+                            "src_phone": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/src_phone",
+                                "type": "string",
+                                "title": "The src_phone schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "18524125541"
+                                ]
+                            },
+                            "country_code": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/country_code",
+                                "type": "string",
+                                "title": "The country_code schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "TH"
+                                ]
+                            },
+                            "country_name": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/country_name",
+                                "type": "string",
+                                "title": "The country_name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Thailand"
+                                ]
+                            },
+                            "province_code": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/province_code",
+                                "type": "string",
+                                "title": "The province_code schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "TH01"
+                                ]
+                            },
+                            "province_name": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/province_name",
+                                "type": "string",
+                                "title": "The province_name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "กรุงเทพ"
+                                ]
+                            },
+                            "city_code": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/city_code",
+                                "type": "string",
+                                "title": "The city_code schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "TH0101"
+                                ]
+                            },
+                            "city_name": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/city_name",
+                                "type": "string",
+                                "title": "The city_name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "คลองเตย"
+                                ]
+                            },
+                            "district_code": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/district_code",
+                                "type": "string",
+                                "title": "The district_code schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "TH010101"
+                                ]
+                            },
+                            "district_name": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/district_name",
+                                "type": "string",
+                                "title": "The district_name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "คลองตัน"
+                                ]
+                            },
+                            "detail_address": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/detail_address",
+                                "type": "string",
+                                "title": "The detail_address schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "dfsdfe"
+                                ]
+                            },
+                            "postal_code": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/postal_code",
+                                "type": "string",
+                                "title": "The postal_code schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "10110"
+                                ]
+                            },
+                            "approve_enabled": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/approve_enabled",
+                                "type": "boolean",
+                                "title": "The approve_enabled schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": false,
+                                "examples": [
+                                    false
+                                ]
+                            },
+                            "approve_text": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/approve_text",
+                                "type": "null",
+                                "title": "The approve_text schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "approve_state": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/approve_state",
+                                "type": "integer",
+                                "title": "The approve_state schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    2
+                                ]
+                            },
+                            "trusted_enabled": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/trusted_enabled",
+                                "type": "boolean",
+                                "title": "The trusted_enabled schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": false,
+                                "examples": [
+                                    false
+                                ]
+                            },
+                            "speed_enabled": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/speed_enabled",
+                                "type": "boolean",
+                                "title": "The speed_enabled schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": false,
+                                "examples": [
+                                    true
+                                ]
+                            },
+                            "speed_note": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/speed_note",
+                                "type": "null",
+                                "title": "The speed_note schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "speed_client_grade": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/speed_client_grade",
+                                "type": "integer",
+                                "title": "The speed_client_grade schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    115
+                                ]
+                            },
+                            "speed_price_rule": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/speed_price_rule",
+                                "type": "string",
+                                "title": "The speed_price_rule schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "{\"addedWeightRule\":{\"outProvincePrice\":1000,\"weightRenew\":1000,\"inProvincePrice\":1500,\"inProvincePriceRenewStart\":86500,\"outProvincePriceRenewStart\":60000,\"lwhRenew\":5},\"excludeUpcountry\":false,\"sameProvincePolicy\":0,\"specialRules\":[],\"lastPriceRule\":{\"outProvincePrice\":60000,\"weight\":50000,\"inProvincePrice\":86500,\"lwh\":305},\"rules\":[{\"outProvincePrice\":4500,\"inProvinceLwh\":40,\"weight\":1000,\"inProvincePrice\":3000,\"outProvinceLwh\":40,\"lwh\":40},{\"outProvincePrice\":5000,\"inProvinceLwh\":50,\"weight\":2000,\"inProvincePrice\":4000,\"outProvinceLwh\":50,\"lwh\":50},{\"outProvincePrice\":5500,\"inProvinceLwh\":60,\"weight\":3000,\"inProvincePrice\":4500,\"outProvinceLwh\":60,\"lwh\":60},{\"outProvincePrice\":6000,\"inProvinceLwh\":70,\"weight\":4000,\"inProvincePrice\":5000,\"outProvinceLwh\":70,\"lwh\":70},{\"outProvincePrice\":7000,\"inProvinceLwh\":80,\"weight\":5000,\"inProvincePrice\":5500,\"outProvinceLwh\":80,\"lwh\":80},{\"outProvincePrice\":7500,\"inProvinceLwh\":85,\"weight\":6000,\"inProvincePrice\":7500,\"outProvinceLwh\":85,\"lwh\":85},{\"outProvincePrice\":8500,\"inProvinceLwh\":90,\"weight\":7000,\"inProvincePrice\":9000,\"outProvinceLwh\":90,\"lwh\":90},{\"outProvincePrice\":10000,\"inProvinceLwh\":95,\"weight\":8000,\"inProvincePrice\":11000,\"outProvinceLwh\":95,\"lwh\":95},{\"outProvincePrice\":11000,\"inProvinceLwh\":100,\"weight\":9000,\"inProvincePrice\":13000,\"outProvinceLwh\":100,\"lwh\":100},{\"outProvincePrice\":12000,\"inProvinceLwh\":105,\"weight\":10000,\"inProvincePrice\":14500,\"outProvinceLwh\":105,\"lwh\":105},{\"outProvincePrice\":13500,\"inProvinceLwh\":110,\"weight\":11000,\"inProvincePrice\":16500,\"outProvinceLwh\":110,\"lwh\":110},{\"outProvincePrice\":14500,\"inProvinceLwh\":115,\"weight\":12000,\"inProvincePrice\":18000,\"outProvinceLwh\":115,\"lwh\":115},{\"outProvincePrice\":16000,\"inProvinceLwh\":120,\"weight\":13000,\"inProvincePrice\":20000,\"outProvinceLwh\":120,\"lwh\":120},{\"outProvincePrice\":17000,\"inProvinceLwh\":125,\"weight\":14000,\"inProvincePrice\":22000,\"outProvinceLwh\":125,\"lwh\":125},{\"outProvincePrice\":18000,\"inProvinceLwh\":130,\"weight\":15000,\"inProvincePrice\":23500,\"outProvinceLwh\":130,\"lwh\":130},{\"outProvincePrice\":19500,\"inProvinceLwh\":135,\"weight\":16000,\"inProvincePrice\":25500,\"outProvinceLwh\":135,\"lwh\":135},{\"outProvincePrice\":20500,\"inProvinceLwh\":140,\"weight\":17000,\"inProvincePrice\":27000,\"outProvinceLwh\":140,\"lwh\":140},{\"outProvincePrice\":22000,\"inProvinceLwh\":145,\"weight\":18000,\"inProvincePrice\":29000,\"outProvinceLwh\":145,\"lwh\":145},{\"outProvincePrice\":23000,\"inProvinceLwh\":150,\"weight\":19000,\"inProvincePrice\":31000,\"outProvinceLwh\":150,\"lwh\":150},{\"outProvincePrice\":24000,\"inProvinceLwh\":155,\"weight\":20000,\"inProvincePrice\":32500,\"outProvinceLwh\":155,\"lwh\":155},{\"outProvincePrice\":25500,\"inProvinceLwh\":160,\"weight\":21000,\"inProvincePrice\":34500,\"outProvinceLwh\":160,\"lwh\":160},{\"outProvincePrice\":26500,\"inProvinceLwh\":165,\"weight\":22000,\"inProvincePrice\":36000,\"outProvinceLwh\":165,\"lwh\":165},{\"outProvincePrice\":28000,\"inProvinceLwh\":170,\"weight\":23000,\"inProvincePrice\":38000,\"outProvinceLwh\":170,\"lwh\":170},{\"outProvincePrice\":29000,\"inProvinceLwh\":175,\"weight\":24000,\"inProvincePrice\":40000,\"outProvinceLwh\":175,\"lwh\":175},{\"outProvincePrice\":30000,\"inProvinceLwh\":180,\"weight\":25000,\"inProvincePrice\":41500,\"outProvinceLwh\":180,\"lwh\":180},{\"outProvincePrice\":31500,\"inProvinceLwh\":185,\"weight\":26000,\"inProvincePrice\":43500,\"outProvinceLwh\":185,\"lwh\":185},{\"outProvincePrice\":32500,\"inProvinceLwh\":190,\"weight\":27000,\"inProvincePrice\":45000,\"outProvinceLwh\":190,\"lwh\":190},{\"outProvincePrice\":34000,\"inProvinceLwh\":195,\"weight\":28000,\"inProvincePrice\":47000,\"outProvinceLwh\":195,\"lwh\":195},{\"outProvincePrice\":35000,\"inProvinceLwh\":200,\"weight\":29000,\"inProvincePrice\":49000,\"outProvinceLwh\":200,\"lwh\":200},{\"outProvincePrice\":36000,\"inProvinceLwh\":205,\"weight\":30000,\"inProvincePrice\":50500,\"outProvinceLwh\":205,\"lwh\":205},{\"outProvincePrice\":37500,\"inProvinceLwh\":210,\"weight\":31000,\"inProvincePrice\":52500,\"outProvinceLwh\":210,\"lwh\":210},{\"outProvincePrice\":38500,\"inProvinceLwh\":215,\"weight\":32000,\"inProvincePrice\":54000,\"outProvinceLwh\":215,\"lwh\":215},{\"outProvincePrice\":40000,\"inProvinceLwh\":220,\"weight\":33000,\"inProvincePrice\":56000,\"outProvinceLwh\":220,\"lwh\":220},{\"outProvincePrice\":41000,\"inProvinceLwh\":225,\"weight\":34000,\"inProvincePrice\":58000,\"outProvinceLwh\":225,\"lwh\":225},{\"outProvincePrice\":42000,\"inProvinceLwh\":230,\"weight\":35000,\"inProvincePrice\":59500,\"outProvinceLwh\":230,\"lwh\":230},{\"outProvincePrice\":43500,\"inProvinceLwh\":235,\"weight\":36000,\"inProvincePrice\":61500,\"outProvinceLwh\":235,\"lwh\":235},{\"outProvincePrice\":44500,\"inProvinceLwh\":240,\"weight\":37000,\"inProvincePrice\":63000,\"outProvinceLwh\":240,\"lwh\":240},{\"outProvincePrice\":46000,\"inProvinceLwh\":245,\"weight\":38000,\"inProvincePrice\":65000,\"outProvinceLwh\":245,\"lwh\":245},{\"outProvincePrice\":47000,\"inProvinceLwh\":250,\"weight\":39000,\"inProvincePrice\":67000,\"outProvinceLwh\":250,\"lwh\":250},{\"outProvincePrice\":48000,\"inProvinceLwh\":255,\"weight\":40000,\"inProvincePrice\":68500,\"outProvinceLwh\":255,\"lwh\":255},{\"outProvincePrice\":49500,\"inProvinceLwh\":260,\"weight\":41000,\"inProvincePrice\":70500,\"outProvinceLwh\":260,\"lwh\":260},{\"outProvincePrice\":50500,\"inProvinceLwh\":265,\"weight\":42000,\"inProvincePrice\":72000,\"outProvinceLwh\":265,\"lwh\":265},{\"outProvincePrice\":52000,\"inProvinceLwh\":270,\"weight\":43000,\"inProvincePrice\":74000,\"outProvinceLwh\":270,\"lwh\":270},{\"outProvincePrice\":53000,\"inProvinceLwh\":275,\"weight\":44000,\"inProvincePrice\":76000,\"outProvinceLwh\":275,\"lwh\":275},{\"outProvincePrice\":54000,\"inProvinceLwh\":280,\"weight\":45000,\"inProvincePrice\":77500,\"outProvinceLwh\":280,\"lwh\":280},{\"outProvincePrice\":55500,\"weight\":46000,\"inProvincePrice\":79500,\"lwh\":285},{\"outProvincePrice\":56500,\"weight\":47000,\"inProvincePrice\":81000,\"lwh\":290},{\"outProvincePrice\":58000,\"weight\":48000,\"inProvincePrice\":83000,\"lwh\":295},{\"outProvincePrice\":59000,\"weight\":49000,\"inProvincePrice\":85000,\"lwh\":300},{\"outProvincePrice\":60000,\"weight\":50000,\"inProvincePrice\":86500,\"lwh\":305}],\"firstPriceRule\":{\"outProvincePrice\":4500,\"inProvinceLwh\":40,\"weight\":1000,\"inProvincePrice\":3000,\"outProvinceLwh\":40,\"lwh\":40},\"clientGrade\":115}"
+                                ]
+                            },
+                            "speed_discount_rate": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/speed_discount_rate",
+                                "type": "integer",
+                                "title": "The speed_discount_rate schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "max_length": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/max_length",
+                                "type": "integer",
+                                "title": "The max_length schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    100
+                                ]
+                            },
+                            "max_width": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/max_width",
+                                "type": "integer",
+                                "title": "The max_width schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    100
+                                ]
+                            },
+                            "max_height": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/max_height",
+                                "type": "integer",
+                                "title": "The max_height schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    100
+                                ]
+                            },
+                            "max_sum_of_lwh": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/max_sum_of_lwh",
+                                "type": "integer",
+                                "title": "The max_sum_of_lwh schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    280
+                                ]
+                            },
+                            "pno": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/pno",
+                                "type": "null",
+                                "title": "The pno schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "diff_info_id": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/diff_info_id",
+                                "type": "null",
+                                "title": "The diff_info_id schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "restricted": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/restricted",
+                                "type": "boolean",
+                                "title": "The restricted schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": false,
+                                "examples": [
+                                    true
+                                ]
+                            },
+                            "beneficiary_enabled": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/beneficiary_enabled",
+                                "type": "boolean",
+                                "title": "The beneficiary_enabled schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": false,
+                                "examples": [
+                                    false
+                                ]
+                            },
+                            "authentication_type": {
+                                "$id": "#/properties/data/items/anyOf/0/properties/authentication_type",
+                                "type": "integer",
+                                "title": "The authentication_type schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    1
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "$id": "#/properties/data/items"
+            }
+        }
+    }
+}

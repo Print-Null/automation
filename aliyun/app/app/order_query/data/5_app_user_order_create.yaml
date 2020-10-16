@@ -1,0 +1,121 @@
+host: app_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: /api/user/v1/orders/create_all
+headers:
+  0:
+    Accept-Language: zh-Hans-CN
+    content-type: application/json
+    X-FLE-SESSION-ID: $app_user_login_0_0_0_["data"]["sessionid"]$
+  1:
+    content-type: application/json
+    Accept-Language: en-CN
+    X-FLE-SESSION-ID: $app_user_login_0_0_0_["data"]["sessionid"]$
+  2:
+    content-type: application/json
+    Accept-Language: th-CN
+    X-FLE-SESSION-ID: $app_user_login_0_0_0_["data"]["sessionid"]$
+
+success:
+  parameter:
+    0:  # C客户下单（文件）->包材选择M号箱
+      src_city_code: "TH0122"
+      estimate_total_amount: 10500
+      src_lat: 40.030328816367579
+      order_form_list:
+        -
+          height: $[python]random.randint(1,40)$
+          express_category: $[python]random.randint(1,2)$
+          dst_home_phone: ""
+          weight: $[python]random.randrange(10,15001,10)$
+          width: $[python]random.randint(1,40)$
+          article_category: $[python]random.choice([0,1,2,3,4,5,6,7,9,10,99])$
+          dst_district_code: "TH241101"
+          dst_province_code: "TH24"
+          dst_name: $[python]"receiver自动化"+chr(random.randint(65,90))+chr(random.randint(97,122))+str(random.randint(1,100))$
+          dst_phone: $[python]random.choice(["134","135"])+str(random.randint(1000000,99999999))$
+          freight_insure_enabled: $[python]random.choice(["false","true"])$
+          length: $[python]random.randint(1,40)$
+          dst_detail_address: $[python]"自动化收件地址"+chr(random.randint(65,90))+chr(random.randint(97,122))+str(random.randint(1,100))$
+          dst_city_code: "TH2411"
+          request_id: ""
+          insure_amount: 0
+          insured: 0
+          dst_country_code: "TH"
+          dst_postal_code: "24000"
+          insure_declare_value: 0
+        -
+          height: $[python]random.randint(1,40)$
+          express_category: $[python]random.randint(1,2)$
+          dst_home_phone: ""
+          weight: $[python]random.randrange(10,15001,10)$
+          width: $[python]random.randint(1,40)$
+          article_category: $[python]random.choice([0,1,2,3,4,5,6,7,9,10,99])$
+          dst_district_code: "TH241101"
+          dst_province_code: "TH24"
+          dst_name: $[python]"receiver自动化"+chr(random.randint(65,90))+chr(random.randint(97,122))+str(random.randint(1,100))$
+          dst_phone: $[python]random.choice(["134","135"])+str(random.randint(1000000,99999999))$
+          freight_insure_enabled: $[python]random.choice(["false","true"])$
+          length: $[python]random.randint(1,40)$
+          dst_detail_address: $[python]"自动化收件地址"+chr(random.randint(65,90))+chr(random.randint(97,122))+str(random.randint(1,100))$
+          dst_city_code: "TH2411"
+          request_id: ""
+          insure_amount: 0
+          insured: 0
+          dst_country_code: "TH"
+          dst_postal_code: "24000"
+          insure_declare_value: 0
+        -
+          height: $[python]random.randint(1,40)$
+          express_category: $[python]random.randint(1,2)$
+          dst_home_phone: ""
+          weight: $[python]random.randrange(10,15001,10)$
+          width: $[python]random.randint(1,40)$
+          article_category: $[python]random.choice([0,1,2,3,4,5,6,7,9,10,99])$
+          dst_district_code: "TH241101"
+          dst_province_code: "TH24"
+          dst_name: $[python]"receiver自动化"+chr(random.randint(65,90))+chr(random.randint(97,122))+str(random.randint(1,100))$
+          dst_phone: $[python]random.choice(["134","135"])+str(random.randint(1000000,99999999))$
+          freight_insure_enabled: $[python]random.choice(["false","true"])$
+          length: $[python]random.randint(1,40)$
+          dst_detail_address: $[python]"自动化收件地址"+chr(random.randint(65,90))+chr(random.randint(97,122))+str(random.randint(1,100))$
+          dst_city_code: "TH2411"
+          request_id: ""
+          insure_amount: 0
+          insured: 0
+          dst_country_code: "TH"
+          dst_postal_code: "24000"
+          insure_declare_value: 0
+      src_district_code: "TH012201"
+      src_postal_code: "10260"
+      src_country_code: "TH"
+      src_province_code: "TH01"
+      insure_declare_value: 0
+      src_lng: 116.41071002930403
+      skipping_tips: []
+      src_phone: $[python]random.choice(["158","159"])+str(random.randint(1000000,99999999))$
+      remark: $[python]random.choice(["M号箱x1,","mini号箱x1,","M+号箱x1,","S+号箱x1,","L号箱x1,","A4气泡文件袋x1,","A4文件袋x1,","S号箱x1,"])$
+      src_name: $[python]"sender自动化"+chr(random.randint(65,90))+chr(random.randint(97,122))+str(random.randint(1,100))$
+      src_detail_address: $[python]"自动化寄件地址"+chr(random.randint(65,90))+chr(random.randint(97,122))+str(random.randint(1,100))$
+      insured: 0
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+    json_schema: "5_app_user_order_create.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

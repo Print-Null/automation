@@ -1,0 +1,54 @@
+host: backyard_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address: api/_/fleet/addFleet
+
+headers:
+  0:
+    Accept-Language: zh-CN
+    Content-Type: "application/json"
+    BY-PLATFORM: "FB_ANDROID"
+    X-BY-SESSION-ID: $backyard_overtime_car_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+  1:
+    Accept-Language: en-US
+    Content-Type: "application/json"
+    BY-PLATFORM: "FB_ANDROID"
+    X-BY-SESSION-ID: $backyard_overtime_car_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+  2:
+    Accept-Language: th-CN
+    Content-Type: "application/json"
+    BY-PLATFORM: "FB_ANDROID"
+    X-BY-SESSION-ID: $backyard_overtime_car_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+success:
+  parameter:
+    0:
+      audit_type: 1
+      car_type: 100
+      capacity: 44
+      arrive_time: $[python]datetime.datetime.now().strftime('%Y-%m-%d 23:00')$
+      start_store: $backyard_overtime_car_hc_personInfo_0_0_["data"]["store_id"]$
+      end_store: $backyard_overtime_car_hc_personInfo_end_0_0_["data"]["store_id"]$
+      reason: Auto加班车
+
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "msg"
+      z_message: "请求成功!"
+      e_message: "请求成功!"
+      t_message: "请求成功!"
+      headers_language: "Accept-Language"
+    json_schema: "56backyard_overtime_car_fleet_addFleet.json"
+  relevance: {}
+
+
+
+error:
+  parameter: {}
+  check: {}

@@ -1,0 +1,60 @@
+host: backyard_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address: api/_/hc/personInfo
+headers:
+  #出发网点获取store_id
+  0:
+    Accept-Language: zh-CN
+    X-BY-SESSION-ID: $DC_warehouse_login_0_0_0_["data"]["sessionid"]$
+    Accept-Accept: application/json, text/plain, */*
+    BY-PLATFORM: FB_ANDROID
+#  1:
+#    Accept-Language: en-US
+#    X-BY-SESSION-ID: $DC_warehouse_login_0_0_0_["data"]["sessionid"]$
+#    Accept-Accept: application/json, text/plain, */*
+#    BY-PLATFORM: FB_ANDROID
+#  2:
+#    Accept-Language: th-CN
+#    X-BY-SESSION-ID: $DC_warehouse_login_0_0_0_["data"]["sessionid"]$
+#    Accept-Accept: application/json, text/plain, */*
+#    BY-PLATFORM: FB_ANDROID
+  #目的地网点获取store_id
+  4:
+    Accept-Language: zh-CN
+    X-BY-SESSION-ID: $DC_warehouse_login_1_0_0_["data"]["sessionid"]$
+    Accept-Accept: application/json, text/plain, */*
+    BY-PLATFORM: FB_ANDROID
+#  5:
+#    Accept-Language: en-US
+#    X-BY-SESSION-ID: $DC_warehouse_login_1_0_0_["data"]["sessionid"]$
+#    Accept-Accept: application/json, text/plain, */*
+#    BY-PLATFORM: FB_ANDROID
+#  6:
+#    Accept-Language: th-CN
+#    X-BY-SESSION-ID: $DC_warehouse_login_1_0_0_["data"]["sessionid"]$
+#    Accept-Accept: application/json, text/plain, */*
+#    BY-PLATFORM: FB_ANDROID
+
+success:
+  parameter: {}
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      z_message: "请求成功!"
+      e_message: "请求成功!"
+      t_message: "请求成功!"
+      headers_language: "Accept-Language"
+      data_key: "msg"
+    # json_schema: "DC_warehouse_hc_personInfo.json"
+  relevance:
+    - '["data"]["store_id"]'
+error:
+  parameter: {}
+  check: {}

@@ -1,0 +1,91 @@
+#host: guanwang_host
+#http_type: http
+#request_type: post
+#parameter_type: json
+#timeout: 120
+#address:
+#  /zh/speed/
+#headers:
+#  0:
+#    content-type: application/x-www-form-urlencoded; charset=UTF-8
+#    Accept-Language: zh-CN
+#    Cookie: $[config]user_do_cookie$
+##  1:
+##    content-type: application/json
+##    Accept-Language: en-US
+##  2:
+##    content-type: application/json
+##    Accept-Language: th-CN
+#
+#success:
+#  parameter:
+#
+#    #获取寄件人地址簿信息
+#    0:
+#      src_area: $user_do_get_address_0_0_0_["message"]["list"][0]["area"]$
+#      dst_area: $user_do_get_address_1_0_0_["message"]["list"][0]["area"]$
+#
+#
+#  check:
+#    check_type: json
+#    expected_code: 200
+#    code: 1
+##    msg:
+##      data_key: "message"
+##      z_message: "success"
+##      e_message: "success"
+##      t_message: "success"
+##      headers_language: "Accept-Language"
+##    json_schema: "login.json"
+#
+#  relevance: {}
+#error:
+#  parameter: {}
+#  check: {}
+###异常情况
+##error:
+##  #异常情况-参数
+##  parameter:
+##    #出发网点登入
+##    0:
+##      login: '$[db]Warehouse_man_personInfo_start_login$'
+##      password: '1111111'
+##      clientid: "8626360321249741575447597157"
+##      clientsd: "1575447597168"
+##      os: "android"
+##      version: "1.2.8"
+##    #目的地网点登入
+##    1:
+##      login: '333'
+##      password: '$[config]Warehouse_man_personInfo_end_pwd$'
+##      clientid: "8626360321249741575447597157"
+##      clientsd: "1575447597168"
+##      os: "android"
+##      version: "1.2.8"
+##
+##  #异常情况-校验 注：check和parameter是根据下标一一对应的
+##  check:
+##    0:
+##      # 校验返回类型
+##      check_type: json
+##      # API返回数据期望状态码
+##      code: 100204
+##      # API返回数据信息值
+##      msg:
+##        z_message: "密码输入错误"
+##        e_message: "密码输入错误"
+##        t_message: "密码输入错误"
+##        headers_language: "Accept-Language"
+##        data_key: "message"
+##    1:
+##      # 校验返回类型
+##      check_type: json
+##      # API返回数据期望状态码
+##      code: 100203
+##      # API返回数据信息值
+##      msg:
+##        z_message: "用户名未注册过"
+##        e_message: "用户名未注册过"
+##        t_message: "用户名未注册过"
+##        headers_language: "Accept-Language"
+##        data_key: "message"

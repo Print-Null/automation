@@ -1,0 +1,450 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "code": 1,
+            "message": "success",
+            "data": {
+                "pno": "TH05022A8J7A",
+                "recent_pno": "TH05022A8J7A",
+                "pno_display": "TH05022A8J7A",
+                "express_category": 1,
+                "express_category_text": "标准",
+                "settlement_category": 2,
+                "settlement_category_text": "定期结算",
+                "dst_name": "2",
+                "dst_phone": "01346999281",
+                "dst_home_phone": null,
+                "dst_country_code": "TH",
+                "dst_country_name": "Thailand",
+                "dst_province_code": "TH05",
+                "dst_province_name": "???????????????",
+                "dst_city_code": "TH0502",
+                "dst_city_name": "???????",
+                "dst_district_code": "TH050201",
+                "dst_district_name": "???????",
+                "dst_detail_address": "2",
+                "dst_postal_code": "13130",
+                "returned": false,
+                "returned_parcel_amount": 0,
+                "cod_enabled": false,
+                "cod_amount": 0,
+                "freight_insure_enabled": false,
+                "freight_insure_amount": 0,
+                "speed_enabled": false,
+                "insured": false,
+                "insure_declare_value": 0,
+                "insure_amount": 0
+            }
+        }
+    ],
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The message schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "pno": "TH05022A8J7A",
+                    "recent_pno": "TH05022A8J7A",
+                    "pno_display": "TH05022A8J7A",
+                    "express_category": 1,
+                    "express_category_text": "标准",
+                    "settlement_category": 2,
+                    "settlement_category_text": "定期结算",
+                    "dst_name": "2",
+                    "dst_phone": "01346999281",
+                    "dst_home_phone": null,
+                    "dst_country_code": "TH",
+                    "dst_country_name": "Thailand",
+                    "dst_province_code": "TH05",
+                    "dst_province_name": "???????????????",
+                    "dst_city_code": "TH0502",
+                    "dst_city_name": "???????",
+                    "dst_district_code": "TH050201",
+                    "dst_district_name": "???????",
+                    "dst_detail_address": "2",
+                    "dst_postal_code": "13130",
+                    "returned": false,
+                    "returned_parcel_amount": 0,
+                    "cod_enabled": false,
+                    "cod_amount": 0,
+                    "freight_insure_enabled": false,
+                    "freight_insure_amount": 0,
+                    "speed_enabled": false,
+                    "insured": false,
+                    "insure_declare_value": 0,
+                    "insure_amount": 0
+                }
+            ],
+            "required": [
+                "pno",
+                "recent_pno",
+                "pno_display",
+                "express_category",
+                "express_category_text",
+                "settlement_category",
+                "settlement_category_text",
+                "dst_name",
+                "dst_phone",
+                "dst_home_phone",
+                "dst_country_code",
+                "dst_country_name",
+                "dst_province_code",
+                "dst_province_name",
+                "dst_city_code",
+                "dst_city_name",
+                "dst_district_code",
+                "dst_district_name",
+                "dst_detail_address",
+                "dst_postal_code",
+                "returned",
+                "returned_parcel_amount",
+                "cod_enabled",
+                "cod_amount",
+                "freight_insure_enabled",
+                "freight_insure_amount",
+                "speed_enabled",
+                "insured",
+                "insure_declare_value",
+                "insure_amount"
+            ],
+            "properties": {
+                "pno": {
+                    "$id": "#/properties/data/properties/pno",
+                    "type": "string",
+                    "title": "The pno schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH05022A8J7A"
+                    ]
+                },
+                "recent_pno": {
+                    "$id": "#/properties/data/properties/recent_pno",
+                    "type": "string",
+                    "title": "The recent_pno schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH05022A8J7A"
+                    ]
+                },
+                "pno_display": {
+                    "$id": "#/properties/data/properties/pno_display",
+                    "type": "string",
+                    "title": "The pno_display schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH05022A8J7A"
+                    ]
+                },
+                "express_category": {
+                    "$id": "#/properties/data/properties/express_category",
+                    "type": "integer",
+                    "title": "The express_category schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ]
+                },
+                "express_category_text": {
+                    "$id": "#/properties/data/properties/express_category_text",
+                    "type": "string",
+                    "title": "The express_category_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "标准"
+                    ]
+                },
+                "settlement_category": {
+                    "$id": "#/properties/data/properties/settlement_category",
+                    "type": "integer",
+                    "title": "The settlement_category schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        2
+                    ]
+                },
+                "settlement_category_text": {
+                    "$id": "#/properties/data/properties/settlement_category_text",
+                    "type": "string",
+                    "title": "The settlement_category_text schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "定期结算"
+                    ]
+                },
+                "dst_name": {
+                    "$id": "#/properties/data/properties/dst_name",
+                    "type": "string",
+                    "title": "The dst_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2"
+                    ]
+                },
+                "dst_phone": {
+                    "$id": "#/properties/data/properties/dst_phone",
+                    "type": "string",
+                    "title": "The dst_phone schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "01346999281"
+                    ]
+                },
+                "dst_home_phone": {
+                    "$id": "#/properties/data/properties/dst_home_phone",
+                    "type": "null",
+                    "title": "The dst_home_phone schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "dst_country_code": {
+                    "$id": "#/properties/data/properties/dst_country_code",
+                    "type": "string",
+                    "title": "The dst_country_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH"
+                    ]
+                },
+                "dst_country_name": {
+                    "$id": "#/properties/data/properties/dst_country_name",
+                    "type": "string",
+                    "title": "The dst_country_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Thailand"
+                    ]
+                },
+                "dst_province_code": {
+                    "$id": "#/properties/data/properties/dst_province_code",
+                    "type": "string",
+                    "title": "The dst_province_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH05"
+                    ]
+                },
+                "dst_province_name": {
+                    "$id": "#/properties/data/properties/dst_province_name",
+                    "type": "string",
+                    "title": "The dst_province_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "???????????????"
+                    ]
+                },
+                "dst_city_code": {
+                    "$id": "#/properties/data/properties/dst_city_code",
+                    "type": "string",
+                    "title": "The dst_city_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH0502"
+                    ]
+                },
+                "dst_city_name": {
+                    "$id": "#/properties/data/properties/dst_city_name",
+                    "type": "string",
+                    "title": "The dst_city_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "???????"
+                    ]
+                },
+                "dst_district_code": {
+                    "$id": "#/properties/data/properties/dst_district_code",
+                    "type": "string",
+                    "title": "The dst_district_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TH050201"
+                    ]
+                },
+                "dst_district_name": {
+                    "$id": "#/properties/data/properties/dst_district_name",
+                    "type": "string",
+                    "title": "The dst_district_name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "???????"
+                    ]
+                },
+                "dst_detail_address": {
+                    "$id": "#/properties/data/properties/dst_detail_address",
+                    "type": "string",
+                    "title": "The dst_detail_address schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2"
+                    ]
+                },
+                "dst_postal_code": {
+                    "$id": "#/properties/data/properties/dst_postal_code",
+                    "type": "string",
+                    "title": "The dst_postal_code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "13130"
+                    ]
+                },
+                "returned": {
+                    "$id": "#/properties/data/properties/returned",
+                    "type": "boolean",
+                    "title": "The returned schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "returned_parcel_amount": {
+                    "$id": "#/properties/data/properties/returned_parcel_amount",
+                    "type": "integer",
+                    "title": "The returned_parcel_amount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "cod_enabled": {
+                    "$id": "#/properties/data/properties/cod_enabled",
+                    "type": "boolean",
+                    "title": "The cod_enabled schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "cod_amount": {
+                    "$id": "#/properties/data/properties/cod_amount",
+                    "type": "integer",
+                    "title": "The cod_amount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "freight_insure_enabled": {
+                    "$id": "#/properties/data/properties/freight_insure_enabled",
+                    "type": "boolean",
+                    "title": "The freight_insure_enabled schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "freight_insure_amount": {
+                    "$id": "#/properties/data/properties/freight_insure_amount",
+                    "type": "integer",
+                    "title": "The freight_insure_amount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "speed_enabled": {
+                    "$id": "#/properties/data/properties/speed_enabled",
+                    "type": "boolean",
+                    "title": "The speed_enabled schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "insured": {
+                    "$id": "#/properties/data/properties/insured",
+                    "type": "boolean",
+                    "title": "The insured schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "insure_declare_value": {
+                    "$id": "#/properties/data/properties/insure_declare_value",
+                    "type": "integer",
+                    "title": "The insure_declare_value schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "insure_amount": {
+                    "$id": "#/properties/data/properties/insure_amount",
+                    "type": "integer",
+                    "title": "The insure_amount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

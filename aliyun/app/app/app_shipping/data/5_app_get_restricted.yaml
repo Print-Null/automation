@@ -1,0 +1,47 @@
+host: app_host
+http_type: http
+request_type: get
+parameter_type: json
+timeout: 120
+address:
+  0: /api/pub/v1/restricted/get
+headers: {}
+#  0:
+#    content-type: application/json
+    #Accept-Language: zh-CN
+#  1:
+#    content-type: application/json
+#    Accept-Language: en-US
+#  2:
+#    content-type: application/json
+#    Accept-Language: th-CN
+
+success:
+  parameter: {}
+
+#    #B客户登录
+#    0:
+#      clientsd: "2253286647"
+#      version: "2.6.7"
+#      deviceinfo:
+#          net_work: "WiFi"
+#          device_model: "iPhone9,2,iPhone 7 Plus"
+#          os_version: "13.5.1"
+#          idfa: "FF3E98DA-8729-4399-99DF-835EB536AC37"
+#      password: "$[config]ka_pwd$"
+#      clientid: "6B88D697-B015-4C22-8F08-D140AC464F41"
+#      login: "$[config]ka_account$"
+#      os: "ios"
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    message: "success"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

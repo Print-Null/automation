@@ -1,0 +1,74 @@
+host: ms_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: ms/api/fleet/van/line
+
+headers:
+  0:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: zh-CN
+    X-MS-SESSION-ID: $ms_auth_signin_2_0_0_["data"]["session_id"]$
+
+  1:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: en-US
+    X-MS-SESSION-ID: $ms_auth_signin_2_1_0_["data"]["session_id"]$
+
+  2:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: th-TN
+    X-MS-SESSION-ID: $ms_auth_signin_2_2_0_["data"]["session_id"]$
+
+
+success:
+  parameter:
+    0:
+        area: ""
+        driver: $[config]driver$
+        driver_phone: $[config]driver_phone$
+        fleet_id: $fleetId$
+        mode: $[config]mode$
+        name: $[python]"YR"+str(int(round(time.time()*1000)))$
+        period: $[config]period$
+        plate_id: $ms_fleet_van_0_0_["data"]["items"][0]["id"]$
+        plate_type: $ms_fleet_van_0_0_["data"]["items"][0]["type"]$
+        price: $[config]price$
+        sorting_no: $[config]sorting_no$
+        type: $[config]type$
+        time_tables:
+          -
+             estimate_end_time: $[config]estimate_end_time_1$
+             estimate_start_time: $[config]estimate_start_time_1$
+             order_no: 1
+             running_mileage: $[config]running_mileage_1$
+             store_id: $[config]store_id_1$
+          -
+             estimate_end_time: $[config]estimate_end_time_2$
+             estimate_start_time: $[config]estimate_start_time_2$
+             order_no: 2
+             running_mileage: $[config]running_mileage_2$
+             store_id: $[config]store_id_2$
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+# #schema校验 注：路径存储是当前目录的
+#    json_schema: "20_new_conventional_line.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

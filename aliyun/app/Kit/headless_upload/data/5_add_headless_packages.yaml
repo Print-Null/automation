@@ -1,0 +1,92 @@
+host: kit_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: api/courier/v1/headless/add
+
+headers:
+  #快递员
+  0:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: zh-CN
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+
+  1:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: zh-CN
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_1_0_0_["data"]["sessionid"]$
+
+  2:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: en-US
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_0_1_0_["data"]["sessionid"]$
+
+  #仓管员
+  3:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: en-US
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_1_1_0_["data"]["sessionid"]$
+
+  4:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: th-TN
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_0_2_0_["data"]["sessionid"]$
+
+  5:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: th-TN
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_1_2_0_["data"]["sessionid"]$
+
+success:
+  parameter:
+
+    0:
+      #1来自 2去网
+      "direction_category": 1
+      "direction_store_id": $[config]direction_store_id$
+      "height": $[python]random.randint(1,30)$
+      "length": $[python]random.randint(1,40)$
+      "parcel_describe": $[config]parcel_describe$
+      "parcel_discover_date": $[config]parcel_discover_date$
+      "parcel_headless_category": 1
+      "parcel_image_url":
+        - $kit_headless_upload_photos_0_0_["data"]["object_key"]$
+      "weight": $[python]random.randint(100,1500)$
+      "width": $[python]random.randint(1,40)$
+
+    1:
+      #1来自 2去网
+      "direction_category": 2
+      "direction_store_id": $[config]direction_store_id$
+      "height": $[python]random.randint(1,30)$
+      "length": $[python]random.randint(1,40)$
+      "parcel_describe": $[config]parcel_describe$
+      "parcel_discover_date": $[config]parcel_discover_date$
+      "parcel_headless_category": 1
+      "parcel_image_url":
+        - $kit_headless_upload_photos_1_0_["data"]["object_key"]$
+      "weight": $[python]random.randint(100,1500)$
+      "width": $[python]random.randint(1,40)$
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    code_key: ""
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+# #schema校验 注：路径存储是当前目录的
+#    json_schema: "5_add_headless_packages.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

@@ -1,0 +1,83 @@
+host: kit_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: api/courier/v1/ticket/$kit_pickups_parcel_0_#headers#_0_["data"]["ticket_pickup_id"]$
+#  1: api/courier/v1/ticket/$kit_pickups_parcel_0_1_0_["data"]["ticket_pickup_id"]$
+
+headers:
+  0:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: zh-CN
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_0_0_0_["data"]["sessionid"]$
+  1:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: en-US
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_0_1_0_["data"]["sessionid"]$
+  2:
+    content-type: application/json; charset=UTF-8
+    Accept-Language: th-TN
+    X-FLE-SESSION-ID: $kit_auth_new_device_login_0_2_0_["data"]["sessionid"]$
+
+success:
+  parameter:
+
+    #收件人信息
+    0:
+      "addr_core_ids": []
+      "article_category": $[python]random.choice([0,1,2,3,4,5,6,7,9,10,99])$
+      "call_duration": 0
+      "client_id": $kit_v1_address_0_0_["data"][0]["id"]$
+      "cod_amount": $[python]random.randrange(0,500000,100)$
+      "cod_enabled": true
+      "customer_type_category": 2
+      "dst_city_code": "TH0101"
+      "dst_country_code": "TH"
+      "dst_detail_address": $[config]recipient_address$
+      "dst_district_code": "TH010101"
+      "dst_name": $[config]recipient_name$
+      "dst_phone": $[config]recipient_phone$
+      "dst_postal_code": "10110"
+      "dst_province_code": "TH01"
+      "express_category": 1
+      "freight_insure_enabled": false
+      "height": $[python]random.randint(1,30)$
+      "insure_declare_value": 0
+      "insured": false
+      "length": $[python]random.randint(1,30)$
+      "request_ids": []
+      "settlement_category": 1
+      "skipping_tips": []
+      "src_city_code": "TH0101"
+      "src_country_code": "TH"
+      "src_detail_address": "dfsdfe"
+      "src_district_code": "TH010101"
+      "src_name": $[config]send_name$
+      "src_phone": $[config]send_phone$
+      "src_postal_code": "10110"
+      "src_province_code": "TH01"
+      "total_amount": $[config]total_amount$
+      "weight": $[python]random.randint(100,5000)$
+      "width": $[python]random.randint(1,50)$
+
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    msg:
+      data_key: "message"
+      z_message: "success"
+      e_message: "success"
+      t_message: "success"
+      headers_language: "Accept-Language"
+# #schema校验 注：路径存储是当前目录的
+#    json_schema: "7_collection_completed_1.json"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

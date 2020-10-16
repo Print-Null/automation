@@ -1,0 +1,72 @@
+host: app_host
+http_type: http
+request_type: post
+parameter_type: json
+timeout: 120
+address:
+  0: /api/ka/v1/orders/update/$app_ka_ticket_orders_list_0_0_["data"][0]["id"]$
+headers:
+  0:
+    Accept-Language: zh-Hans-CN
+    content-type: application/json
+    X-KA-SESSION-ID: $app_ka_login_0_0_0_["data"]["sessionid"]$
+#    Accept-Language: zh-CN
+#  1:
+#    content-type: application/json
+#    Accept-Language: en-US
+#  2:
+#    content-type: application/json
+#    Accept-Language: th-CN
+
+success:
+  parameter:
+    0:
+      request_id: $app_ka_address_recommend_0_0_0_["data"]["request_id"]$
+      dst_detail_address: $[python]"自动化B客户修改收件地址"+chr(random.randint(65,90))+chr(random.randint(97,122))+str(random.randint(1,100))$
+      dst_district_code: "TH070101"
+      upcountry_amount: 0
+      insure_amount: 500
+      skipping_tips: []
+      cod_enabled: 0
+      src_name: $app_ka_orders_order_detail_0_0_["data"]["src_name"]$
+      src_phone: $app_ka_orders_order_detail_0_0_["data"]["src_phone"]$
+      length: $[python]random.randint(1,40)$
+      src_country_code: $app_ka_orders_order_detail_0_0_["data"]["src_country_code"]$
+      dst_name: $[python]"自动化B客户修改收件人名字"+chr(random.randint(65,90))+chr(random.randint(97,122))+str(random.randint(1,100))$
+      estimate_parcel_amount: 4000
+      express_category: 2
+      estimate_total_amount: 5000
+      freight_insure_enabled: true
+      src_city_code: $app_ka_orders_order_detail_0_0_["data"]["src_city_code"]$
+      src_province_code: $app_ka_orders_order_detail_0_0_["data"]["src_province_code"]$
+      src_postal_code: $app_ka_orders_order_detail_0_0_["data"]["src_postal_code"]$
+      price_policy: 1
+      insured: 1
+      src_district_code: $app_ka_orders_order_detail_0_0_["data"]["src_district_code"]$
+      height: $[python]random.randint(1,40)$
+      article_category: $[python]random.choice([0,1,2,3,4,5,6,7,9,10,99])$
+      id: $app_ka_ticket_orders_list_0_0_["data"][0]["id"]$
+      dst_postal_code: "15000"
+      dst_country_code: "TH"
+      upcountry: 0
+      insure_declare_value: 100000
+      dst_phone: $[python]random.choice(["180","181"])+str(random.randint(1000000,99999999))$
+      dst_city_code: "TH0701"
+      width: $[python]random.randint(1,40)$
+      weight: $[python]random.randrange(10,15001,10)$
+      src_detail_address: $app_ka_orders_order_detail_0_0_["data"]["src_detail_address"]$
+      dst_province_code: "TH07"
+      cod_amount: 0
+      addr_core_id: ""
+
+  check:
+    check_type: json
+    expected_code: 200
+    code: 1
+    message: "success"
+
+  relevance: {}
+
+error:
+  parameter: {}
+  check: {}

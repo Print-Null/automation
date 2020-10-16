@@ -1,0 +1,71 @@
+
+import sys,os
+sys.path.append(os.path.abspath(os.path.dirname(__file__)).split("/flash/")[0]+"/flash")
+import allure
+from assertpy import assert_that
+import requests
+import logging
+import ast
+import json
+import time
+import pytest
+from common.base import BaseTestCase
+from utils.redisbase import RedisBase
+from jsonschema import validate
+                
+logging.basicConfig(level=logging.INFO)
+
+
+@allure.feature('v1_order_4CLD')
+class Test_open_v1_orders(object):
+
+    @pytest.mark.parametrize("parameter",['{\'mchId\': \'$[config]merchant_id$\', \'nonceStr\': \'$[python]str(int(time.mktime(time.strptime(str(datetime.datetime.now()),"%Y-%m-%d %H:%M:%S.%f"))))$\', \'sign\': \'$[def]create_sign|{}$\', \'outTradeNo\': \'$[python]str(random.randint(1000000000,9999999999999999999999999))$\', \'articleCategory\': \'$[python]random.choice([0,1,2,3,4,5])$\', \'codAmount\': \'$[python]random.randrange(100,5000001,100)$\', \'codEnabled\': 1, \'dstCityName\': \'พระนครศรีอยุธยา\', \'dstDetailAddress\': \'กะ123มัง\', \'dstHomePhone\': \'$[python]"0136"+str(random.randint(100000,999999))$\', \'dstName\': \'$[python]"open order receiver"+str(random.randint(1,99999))$\', \'dstPhone\': \'$[python]"0135"+str(random.randint(100000,999999))$\', \'dstPostalCode\': \'13000\', \'dstProvinceName\': \'พระนครศรีอยุธยา\', \'expressCategory\': 1, \'insureDeclareValue\': \'$[python]random.randrange(100,5000001,100)$\', \'insured\': 1, \'remark\': \'-\', \'srcCityName\': \'บางคอแหลม\', \'srcDetailAddress\': \'88 หมู่ 8 อาคารหลวงไทยทาวเวอร์ ชั้น 3 ถนนพุทธมณฑลสา\', \'srcName\': \'$[python]"open order sender"+str(random.randint(1,99999))$\', \'srcPhone\': \'$[python]"0134"+str(random.randint(100000,999999))$\', \'srcPostalCode\': \'10120\', \'srcProvinceName\': \'กรุงเทพ\', \'weight\': \'$[python]random.randint(1,30000)$\', \'srcDistrictName\': \'\', \'dstDistrictName\': \'\', \'length\': \'$[python]random.randint(1,100)$\', \'width\': \'$[python]random.randint(1,100)$\', \'height\': \'$[python]random.randint(1,80)$\'}', '{\'mchId\': \'$[config]merchant_id$\', \'nonceStr\': \'$[python]str(int(time.mktime(time.strptime(str(datetime.datetime.now()),"%Y-%m-%d %H:%M:%S.%f"))))$\', \'sign\': \'$[def]create_sign|{}$\', \'outTradeNo\': \'$[python]str(random.randint(1000000000,9999999999999999999999999))$\', \'articleCategory\': \'$[python]random.choice([0,1,2,3,4,5])$\', \'codAmount\': 0, \'codEnabled\': 0, \'dstCityName\': \'พระนครศรีอยุธยา\', \'dstDetailAddress\': \'กะ123มัง\', \'dstHomePhone\': \'$[python]"0136"+str(random.randint(100000,999999))$\', \'dstName\': \'$[python]"open order receiver"+str(random.randint(1,99999))$\', \'dstPhone\': \'$[python]"0135"+str(random.randint(100000,999999))$\', \'dstPostalCode\': \'13000\', \'dstProvinceName\': \'พระนครศรีอยุธยา\', \'expressCategory\': 1, \'insureDeclareValue\': 0, \'insured\': 0, \'remark\': \'-\', \'srcCityName\': \'บางคอแหลม\', \'srcDetailAddress\': \'88 หมู่ 8 อาคารหลวงไทยทาวเวอร์ ชั้น 3 ถนนพุทธมณฑลสา\', \'srcName\': \'$[python]"open order sender"+str(random.randint(1,99999))$\', \'srcPhone\': \'$[python]"0134"+str(random.randint(100000,999999))$\', \'srcPostalCode\': \'10120\', \'srcProvinceName\': \'กรุงเทพ\', \'weight\': \'$[python]random.randint(1,30000)$\', \'srcDistrictName\': \'\', \'dstDistrictName\': \'\', \'pre\': 1, \'length\': \'$[python]random.randint(1,100)$\', \'width\': \'$[python]random.randint(1,100)$\', \'height\': \'$[python]random.randint(1,80)$\'}'])
+    @pytest.mark.parametrize("headers",["{'Accept-Language': 'ZH-CN', 'content-type': 'application/x-www-form-urlencoded', 'Connection': 'Keep-Alive', 'Charset': 'UTF-8'}"])
+    @pytest.mark.parametrize("address",['/open/v1/orders'])
+    @pytest.mark.run(order=9)
+    def test_test_open_v1_orders(self, parameter,headers,address):
+        baseTest = BaseTestCase()
+    
+        _parameter = ['{\'mchId\': \'$[config]merchant_id$\', \'nonceStr\': \'$[python]str(int(time.mktime(time.strptime(str(datetime.datetime.now()),"%Y-%m-%d %H:%M:%S.%f"))))$\', \'sign\': \'$[def]create_sign|{}$\', \'outTradeNo\': \'$[python]str(random.randint(1000000000,9999999999999999999999999))$\', \'articleCategory\': \'$[python]random.choice([0,1,2,3,4,5])$\', \'codAmount\': \'$[python]random.randrange(100,5000001,100)$\', \'codEnabled\': 1, \'dstCityName\': \'พระนครศรีอยุธยา\', \'dstDetailAddress\': \'กะ123มัง\', \'dstHomePhone\': \'$[python]"0136"+str(random.randint(100000,999999))$\', \'dstName\': \'$[python]"open order receiver"+str(random.randint(1,99999))$\', \'dstPhone\': \'$[python]"0135"+str(random.randint(100000,999999))$\', \'dstPostalCode\': \'13000\', \'dstProvinceName\': \'พระนครศรีอยุธยา\', \'expressCategory\': 1, \'insureDeclareValue\': \'$[python]random.randrange(100,5000001,100)$\', \'insured\': 1, \'remark\': \'-\', \'srcCityName\': \'บางคอแหลม\', \'srcDetailAddress\': \'88 หมู่ 8 อาคารหลวงไทยทาวเวอร์ ชั้น 3 ถนนพุทธมณฑลสา\', \'srcName\': \'$[python]"open order sender"+str(random.randint(1,99999))$\', \'srcPhone\': \'$[python]"0134"+str(random.randint(100000,999999))$\', \'srcPostalCode\': \'10120\', \'srcProvinceName\': \'กรุงเทพ\', \'weight\': \'$[python]random.randint(1,30000)$\', \'srcDistrictName\': \'\', \'dstDistrictName\': \'\', \'length\': \'$[python]random.randint(1,100)$\', \'width\': \'$[python]random.randint(1,100)$\', \'height\': \'$[python]random.randint(1,80)$\'}', '{\'mchId\': \'$[config]merchant_id$\', \'nonceStr\': \'$[python]str(int(time.mktime(time.strptime(str(datetime.datetime.now()),"%Y-%m-%d %H:%M:%S.%f"))))$\', \'sign\': \'$[def]create_sign|{}$\', \'outTradeNo\': \'$[python]str(random.randint(1000000000,9999999999999999999999999))$\', \'articleCategory\': \'$[python]random.choice([0,1,2,3,4,5])$\', \'codAmount\': 0, \'codEnabled\': 0, \'dstCityName\': \'พระนครศรีอยุธยา\', \'dstDetailAddress\': \'กะ123มัง\', \'dstHomePhone\': \'$[python]"0136"+str(random.randint(100000,999999))$\', \'dstName\': \'$[python]"open order receiver"+str(random.randint(1,99999))$\', \'dstPhone\': \'$[python]"0135"+str(random.randint(100000,999999))$\', \'dstPostalCode\': \'13000\', \'dstProvinceName\': \'พระนครศรีอยุธยา\', \'expressCategory\': 1, \'insureDeclareValue\': 0, \'insured\': 0, \'remark\': \'-\', \'srcCityName\': \'บางคอแหลม\', \'srcDetailAddress\': \'88 หมู่ 8 อาคารหลวงไทยทาวเวอร์ ชั้น 3 ถนนพุทธมณฑลสา\', \'srcName\': \'$[python]"open order sender"+str(random.randint(1,99999))$\', \'srcPhone\': \'$[python]"0134"+str(random.randint(100000,999999))$\', \'srcPostalCode\': \'10120\', \'srcProvinceName\': \'กรุงเทพ\', \'weight\': \'$[python]random.randint(1,30000)$\', \'srcDistrictName\': \'\', \'dstDistrictName\': \'\', \'pre\': 1, \'length\': \'$[python]random.randint(1,100)$\', \'width\': \'$[python]random.randint(1,100)$\', \'height\': \'$[python]random.randint(1,80)$\'}']
+        
+        _headers = ["{'Accept-Language': 'ZH-CN', 'content-type': 'application/x-www-form-urlencoded', 'Connection': 'Keep-Alive', 'Charset': 'UTF-8'}"]
+        headers_new = baseTest.parameter_parser(headers)
+        headers_new = ast.literal_eval(headers_new)
+        
+        parameter_new = baseTest.parameter_parser(parameter, _headers, headers)
+        address_new = baseTest.parameter_parser(address, _headers, headers)
+        if '[int]' in parameter_new:
+            parameter_new = ast.literal_eval(parameter_new)
+            for key in parameter_new:
+                if '[int]' in str(parameter_new[key]):
+                    parameter_new[key] = int(parameter_new[key][5:])
+        else:
+            parameter_new = ast.literal_eval(parameter_new)
+                
+        _address = ['/open/v1/orders']
+            
+        host = 'common_host'
+        host = baseTest.get_host(host)
+        url_data = host + address_new
+        url = baseTest.parameter_parser(url_data)
+        logging.info("url日志信息:")
+        logging.info(url)
+        if "application/json" in str(headers).lower():
+            resp = requests.post(url = url, json = parameter_new, headers = headers_new, timeout = 120, verify = False)
+        else:
+            resp = requests.post(url = url, data = parameter_new, headers = headers_new, timeout = 120, verify = False)
+        logging.info("请求头是：")
+        logging.info(headers_new)
+        logging.info("请求参数日志信息：")
+        logging.info(parameter_new)
+        logging.info("响应结果日志信息：")
+        logging.info(resp.json())
+        
+        RedisBase().set('open_v1_orders_' + str(_parameter.index(parameter)) + '_' + str(_headers.index(headers)) + '_' + str(_address.index(address)) + '_["data"]["pno"]', resp.json()["data"]["pno"], ex=6000)
+        
+        assert_that(baseTest.is_json(resp.text)).is_equal_to(True)
+        
+        assert_that(resp.status_code).is_equal_to(200)
+        
+        assert_that(resp.json()["code"]).is_equal_to(1)
+        

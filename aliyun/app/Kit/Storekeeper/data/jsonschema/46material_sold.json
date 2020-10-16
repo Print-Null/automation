@@ -1,0 +1,274 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "code": 1,
+            "message": "success",
+            "data": {
+                "id": "5f2278612ff36f2a7754e56c",
+                "staff_info_id": 20441,
+                "total_amount": 4000,
+                "total_number": 4,
+                "created_at": 1596094559.201,
+                "detail_dtos": [
+                    {
+                        "id": "5f2278612ff36f2a7754e56d",
+                        "material_category": 1,
+                        "material_category_text": "????????? S",
+                        "material_category_size": "20*30*10",
+                        "price": 1000,
+                        "number": 4,
+                        "total_amount": 4000
+                    }
+                ]
+            }
+        }
+    ],
+    "required": [
+        "code",
+        "message",
+        "data"
+    ],
+    "properties": {
+        "code": {
+            "$id": "#/properties/code",
+            "type": "integer",
+            "title": "The code schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "title": "The message schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "success"
+            ]
+        },
+        "data": {
+            "$id": "#/properties/data",
+            "type": "object",
+            "title": "The data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "id": "5f2278612ff36f2a7754e56c",
+                    "staff_info_id": 20441,
+                    "total_amount": 4000,
+                    "total_number": 4,
+                    "created_at": 1596094559.201,
+                    "detail_dtos": [
+                        {
+                            "id": "5f2278612ff36f2a7754e56d",
+                            "material_category": 1,
+                            "material_category_text": "????????? S",
+                            "material_category_size": "20*30*10",
+                            "price": 1000,
+                            "number": 4,
+                            "total_amount": 4000
+                        }
+                    ]
+                }
+            ],
+            "required": [
+                "id",
+                "staff_info_id",
+                "total_amount",
+                "total_number",
+                "created_at",
+                "detail_dtos"
+            ],
+            "properties": {
+                "id": {
+                    "$id": "#/properties/data/properties/id",
+                    "type": "string",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "5f2278612ff36f2a7754e56c"
+                    ]
+                },
+                "staff_info_id": {
+                    "$id": "#/properties/data/properties/staff_info_id",
+                    "type": "integer",
+                    "title": "The staff_info_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        20441
+                    ]
+                },
+                "total_amount": {
+                    "$id": "#/properties/data/properties/total_amount",
+                    "type": "integer",
+                    "title": "The total_amount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        4000
+                    ]
+                },
+                "total_number": {
+                    "$id": "#/properties/data/properties/total_number",
+                    "type": "integer",
+                    "title": "The total_number schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        4
+                    ]
+                },
+                "created_at": {
+                    "$id": "#/properties/data/properties/created_at",
+                    "type": "number",
+                    "title": "The created_at schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        1596094559.201
+                    ]
+                },
+                "detail_dtos": {
+                    "$id": "#/properties/data/properties/detail_dtos",
+                    "type": "array",
+                    "title": "The detail_dtos schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "id": "5f2278612ff36f2a7754e56d",
+                                "material_category": 1,
+                                "material_category_text": "????????? S",
+                                "material_category_size": "20*30*10",
+                                "price": 1000,
+                                "number": 4,
+                                "total_amount": 4000
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/data/properties/detail_dtos/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/data/properties/detail_dtos/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "id": "5f2278612ff36f2a7754e56d",
+                                        "material_category": 1,
+                                        "material_category_text": "????????? S",
+                                        "material_category_size": "20*30*10",
+                                        "price": 1000,
+                                        "number": 4,
+                                        "total_amount": 4000
+                                    }
+                                ],
+                                "required": [
+                                    "id",
+                                    "material_category",
+                                    "material_category_text",
+                                    "material_category_size",
+                                    "price",
+                                    "number",
+                                    "total_amount"
+                                ],
+                                "properties": {
+                                    "id": {
+                                        "$id": "#/properties/data/properties/detail_dtos/items/anyOf/0/properties/id",
+                                        "type": "string",
+                                        "title": "The id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "5f2278612ff36f2a7754e56d"
+                                        ]
+                                    },
+                                    "material_category": {
+                                        "$id": "#/properties/data/properties/detail_dtos/items/anyOf/0/properties/material_category",
+                                        "type": "integer",
+                                        "title": "The material_category schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            1
+                                        ]
+                                    },
+                                    "material_category_text": {
+                                        "$id": "#/properties/data/properties/detail_dtos/items/anyOf/0/properties/material_category_text",
+                                        "type": "string",
+                                        "title": "The material_category_text schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "????????? S"
+                                        ]
+                                    },
+                                    "material_category_size": {
+                                        "$id": "#/properties/data/properties/detail_dtos/items/anyOf/0/properties/material_category_size",
+                                        "type": "string",
+                                        "title": "The material_category_size schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "20*30*10"
+                                        ]
+                                    },
+                                    "price": {
+                                        "$id": "#/properties/data/properties/detail_dtos/items/anyOf/0/properties/price",
+                                        "type": "integer",
+                                        "title": "The price schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            1000
+                                        ]
+                                    },
+                                    "number": {
+                                        "$id": "#/properties/data/properties/detail_dtos/items/anyOf/0/properties/number",
+                                        "type": "integer",
+                                        "title": "The number schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            4
+                                        ]
+                                    },
+                                    "total_amount": {
+                                        "$id": "#/properties/data/properties/detail_dtos/items/anyOf/0/properties/total_amount",
+                                        "type": "integer",
+                                        "title": "The total_amount schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            4000
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}
