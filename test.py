@@ -56,3 +56,4 @@ def fun(m):
 
 a = fun(5)
 print(a(6))
+print("test")

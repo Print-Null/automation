@@ -8,3 +8,4 @@ request.py
 sign.py
 test.py
 批量修改文件名.py
+*.py

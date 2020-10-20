@@ -21,7 +21,7 @@ params = ["5f377c0f2d738a0f836871fe", "5f377c0f2d738a0f836871ff", "5f377c0f2d738
           "5f377c0f2d738a0f83687207", "5f377c0f2d738a0f83687208", "5f377c0f2d738a0f83687209", "5f377c0a2d738a0f8368"]
 print(params)
 req = requests.post(url=url, headers=header, json=params)
-print(req.ok,req.raise_for_status(),req.status_code,req.raw)
+print(req.ok, req.raise_for_status(), req.status_code, req.raw)
 # print(req.json())
 # print(json.dumps(req.json(), indent=2, ensure_ascii=False))
 # package_infos = [
@@ -155,3 +155,4 @@ print(req.ok,req.raise_for_status(),req.status_code,req.raw)
 #         sign = sha256.hexdigest().upper()
 #         parameter_new = parameter_new.replace("sha256", sign)
 #         return parameter_new
+# test

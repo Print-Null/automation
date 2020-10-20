@@ -71,7 +71,7 @@ class Sign(object):
             sha256.update(string_sign_temp.encode("utf-8"))
             # 加密成sha256字符串并将字母都转换成大写的
             sign = sha256.hexdigest().upper()
-            print("加密后生成的签名：\n%s" % sign)
+            print("加密后生成的签名是：\n%s" % sign)
             parameter = str(parameter).replace(str(parameter["sign"]), sign)
             return ast.literal_eval(parameter)
     # def create_sign(self, parameter, key):

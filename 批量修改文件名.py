@@ -35,6 +35,6 @@ for file in os.listdir(path):
 #     if file.startswith("master"):
 #         # yaml_file = yaml.load(file)
 #         with open(file, "w+", encoding="utf-8") as f:
-#             line = f.readline()
+#             line = f.readlines()
 #             if isinstance(line,dict):
 #                 pass

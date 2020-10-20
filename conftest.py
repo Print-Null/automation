@@ -5,5 +5,6 @@ def pytest_collection_modifyitems(items):
         item.name = item.name.encode("utf-8").decode("unicode_escape")
         item._nodeid = item.nodeid.encode("utf-8").decode("unicode_escape")
     print("我是初始化函数")
+    print("hello world")
 
 
