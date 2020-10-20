@@ -1,5 +1,9 @@
 import pytest
-from unit.dev import div
+
+
+def div(a, b):
+    return a / b
+
 
 """
 @pytest.mark.happy
@@ -90,5 +94,3 @@ def test_div_zero():
 })
 def test_div(num1, num2, expection):
     assert div(num1, num2) == expection
-
-

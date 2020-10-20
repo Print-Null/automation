@@ -1,11 +1,13 @@
 venv
-parcels.yaml
-*.sh
 .idea
 test-demo
+test
+parcels.yaml
+arg_start.sh
+crontab.sh
 conftest.py
 request.py
 sign.py
 test.py
 批量修改文件名.py
-*.py
+interface_aotumation
