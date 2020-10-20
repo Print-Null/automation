@@ -6,13 +6,13 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
 
-class Test_SwichWindows:
+class TestSwitchWindows:
     def setup_method(self, method):
         self.driver = webdriver.Chrome()
         self.driver.get("http://www.6vgood.com/dy6/")
         self.driver.implicitly_wait(4)
 
-    def test_swiwindows(self):
+    def test_switch_windows(self):
         element1 = (By.LINK_TEXT, "谍影重重2[高清]")
         element2 = (By.CSS_SELECTOR, "tr a")
         element3 = (By.CSS_SELECTOR, "#content > div:nth-child(1) > div.context > div:nth-child(3) > a:nth-child(2)")
@@ -55,5 +55,3 @@ class Test_SwichWindows:
         else:
             self.driver = webdriver.Chrome()
 """
-
-

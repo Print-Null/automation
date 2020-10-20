@@ -3,28 +3,6 @@
 # import yaml
 # from sign import Sign
 #
-# sign = Sign()
-#
-# sha_map = {"dstProvinceName": "พระนครศรีอยุธยา",
-#            "expressCategory": 1,
-#            "insureDeclareValue": 12000,
-#            "insured": 1,
-#            "remark": "-",
-#            "srcCityName": "บางคอแหลม",
-#            "srcProvinceName": "กรุงเทพ",
-#            "weight": 500,
-#            "srcDistrictName": "",
-#            "dstDistrictName": "",
-#            "pre": 1,
-#            "length": 22,
-#            "width": 101,
-#            "height": 22,
-#            "sign": "parameter"
-#            }
-# print(type(sha_map))
-# key = "905dd2520bbf04b87df22f05db1821d96cedb8ccbd18fa29ca95220c833bbe36"
-# parameter = sign.create_sign(sha_map, key)
-# print(parameter, type(parameter))
 #
 # # path = r"D:\MyProjects\my_parcels_ka\data"
 # # for file in os.listdir(path):
