@@ -1,2 +1,0 @@
-<function open at 0x03E786A0>
-<function login at 0x03E78610>
