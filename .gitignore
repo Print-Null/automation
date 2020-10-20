@@ -2,6 +2,7 @@ venv
 .idea
 test-demo
 test
+test_xueqiu
 parcels.yaml
 arg_start.sh
 crontab.sh
