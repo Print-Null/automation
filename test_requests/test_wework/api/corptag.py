@@ -1,6 +1,7 @@
 import requests
 from test_requests.test_wework.api.base_api import BaseApi
 from test_requests.test_wework.api.wework import WeWork
+import os
 
 
 class CorpTag(BaseApi):
@@ -8,7 +9,9 @@ class CorpTag(BaseApi):
     token = WeWork.get_token(secret)
 
     def __init__(self):
-        self.data = self.api_load(r"E:\MyProjects\test_requests\test_wework\api\corptag.yaml")
+        old_dir = os.path.abspath(os.path.abspath(os.path.dirname(__file__)).split("api")[0] + "/api/")
+        corptag_dir = os.path.join(old_dir, "corptag.yaml")
+        self.data = self.api_load(corptag_dir)
 
     def get_corptag(self):
         url_get = "https://qyapi.weixin.qq.com/cgi-bin/externalcontact/get_corp_tag_list"
