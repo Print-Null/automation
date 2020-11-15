@@ -2,11 +2,14 @@ import pytest
 from jsonpath import jsonpath
 from test_requests.test_wework.api.base_api import BaseApi
 from test_requests.test_wework.api.corptag import CorpTag
+import os
 
 
 class TestCorpTag:
     corptag = None
-    data = BaseApi().load_yaml(r"E:\MyProjects\test_requests\test_wework\testcase\test_tag.data.yaml")
+    old_dir = os.path.abspath(os.path.abspath(os.path.dirname(__file__)).split("testcase")[0] + "/testcase/")
+    yaml_dir = os.path.join(old_dir, "test_tag.data.yaml")
+    data = BaseApi().load_yaml(yaml_dir)
 
     @classmethod
     def setup(cls):
