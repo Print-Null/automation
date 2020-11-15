@@ -11,7 +11,7 @@ url_post = "https://httpbin.testing-studio.com/post"
 
 
 def test_requests():
-    r = requests.get("https://home.testing-studio.com/categories.json")
+    r = requests.get("https://testerhome.com/",verify=False)
     print(r.status_code)
     print(r.json())
 

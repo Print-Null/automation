@@ -28,6 +28,6 @@ class BaseApi:
             content = content.replace(f"${{{key}}}", repr(value))
         req = yaml.safe_load(content)
 
-        r = requests.request(req["method"], url=req["url"], params=req["params"], json=req["json"])
+        r = requests.request(req["method"], url=req["url"], params=req["params"], json=req["json"], verify=False)
         self.format(r)
         return r.json()
