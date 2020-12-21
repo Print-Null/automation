@@ -25,7 +25,7 @@ class BasePage:
         if self._base_url != "":
             self._driver.get(self._base_url)
 
-    def find(self, by, locator):
+    def find(self, by, locator=None):
         if isinstance(by, tuple):
             return self._driver.find_element(*locator)
         else:
